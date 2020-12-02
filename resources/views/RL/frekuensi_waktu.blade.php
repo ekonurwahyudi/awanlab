@@ -1,0 +1,1 @@
+Ruang lingkup Frekuensi dan waktu
