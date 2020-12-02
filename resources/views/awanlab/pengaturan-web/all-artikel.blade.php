@@ -263,7 +263,7 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td>Gambar</td>
+													<td>Image</td>
 													<td>Lab kalibrasi Telkom sedang melaksanakan KUM Nasional</td>
 													<td >Pada tanggal 26 November 2020 kemarin, Lab kalibrasi Telkom telah melaksanakan Kaji Ulang Mutu (KUM) secara nasional.</td>
 													<td>Admin</td>
