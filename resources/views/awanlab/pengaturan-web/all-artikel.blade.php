@@ -253,7 +253,7 @@
 										<table  class="table table-bordered table-checkable" id="order-listing">
 											<thead>
 												<tr>
-													<th>Url Gambar</th>
+													<th>UrlGambar</th>
 													<th>Judul</th>
 													<th>Deskripsi</th>
 													<th>Editor</th>
