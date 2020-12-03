@@ -254,7 +254,7 @@
 										<!--begin: Datatable-->
 										<form>
                                         <div class="card-body">
-                                        <div class="form-group mb-8">
+                                        <div class="form-group mb-8">                                        
                                         <div class="form-group row">
                                             <label  class="col-2 col-form-label">Judul</label>
                                             <div class="col-10">
@@ -272,6 +272,12 @@
                                             <label for="example-date-input" class="col-2 col-form-label">Tanggal</label>
                                             <div class="col-10">
                                             <input class="form-control" type="date" class="form-control form-control-solid datetimepicker-input" id="kt_datetimepicker_3" data-target-input="nearest"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label  class="col-2 col-form-label">Gambar Cover</label>
+                                            <div class="col-5">
+                                                <input type="file" name="img1" class="dropify" required="required"/>
                                             </div>
                                         </div>
                                         <div class="form-group row">

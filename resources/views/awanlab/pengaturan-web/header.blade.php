@@ -37,7 +37,8 @@ License: You must have a valid license purchased only from themeforest(the above
 		<link href="../halamanadmin/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
 		<link href="../halamanadmin/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
 		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="../halamanadmin/media/logos/favicon.ico" />
+        <link rel="shortcut icon" href="../halamanadmin/media/logos/favicon.ico" />
+        <link rel="stylesheet" href="../halamanadmin/css/dropify.min.css">
 	</head>
 	<!--end::Head-->
     <!--begin::Body-->
