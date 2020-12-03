@@ -34,3 +34,4 @@ Route::middleware('role:admin')->get('/pengaturan-web', 'HomeController@web')->n
 
 //Route Untuk Pengaturan Web
 Route::middleware('role:admin')->get('/pengaturan/artikel', 'PengaturanwebController@artikel')->name('/pengaturan/artikel');
+Route::middleware('role:admin')->get('/pengaturan/tambah-artikel', 'PengaturanwebController@tambah_artikel')->name('/pengaturan/tambah-artikel');

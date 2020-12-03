@@ -215,7 +215,9 @@
 							</div>
 						</div>
 						<!--end::Subheader-->
-						<!--begin::Entry-->
+                        <!--begin::Entry-->
+                        
+                        
 						<div class="d-flex flex-column-fluid">
 							<!--begin::Container-->
 							<div class="container">
@@ -228,55 +230,71 @@
                                         <div class="card card-custom">
 									<div class="card-header flex-wrap py-5">
 										<div class="card-title">
-											<h5 class="card-label">Halaman Artikel & Blog</h5>
+											<h5 class="card-label">Halaman Tambah Artikel</h5>
 										</div>
 										<div class="card-toolbar">
 											<!--begin::Dropdown-->
-                                            <a href="tambah-artikel" class="btn btn-danger font-weight-bold mr-2">
+                                            <a href="artikel" class="btn btn-danger font-weight-bold mr-2">
                                                     <span class="svg-icon">
                                                         <!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Address-card.svg-->
                                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                <path d="M8,17.9148182 L8,5.96685884 C8,5.56391781 8.16211443,5.17792052 8.44982609,4.89581508 L10.965708,2.42895648 C11.5426798,1.86322723 12.4640974,1.85620921 13.0496196,2.41308426 L15.5337377,4.77566479 C15.8314604,5.0588212 16,5.45170806 16,5.86258077 L16,17.9148182 C16,18.7432453 15.3284271,19.4148182 14.5,19.4148182 L9.5,19.4148182 C8.67157288,19.4148182 8,18.7432453 8,17.9148182 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000000, 10.707409) rotate(-135.000000) translate(-12.000000, -10.707409) "/>
-                                                                <rect fill="#000000" opacity="0.3" x="5" y="20" width="15" height="2" rx="1"/>
+                                                            <polygon points="0 0 24 0 24 24 0 24"/>
+                                                            <path d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z" fill="#000000" fill-rule="nonzero" transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999) "/>
+                                                            <path d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999) "/>
                                                             </g>
                                                         </svg>
                                                         <!--end::Svg Icon-->
-                                                    </span>Tambah Artikel</a>
+                                                    </span>Kembali</a>
 											<!--end::Dropdown-->
 											<!--begin::Button-->
 										</div>
 									</div>
 									<div class="card-body">
 										<!--begin: Datatable-->
-										<table  class="table table-bordered table-checkable" id="order-listing">
-											<thead>
-												<tr>
-													<th>Gambar</th>
-													<th>Judul</th>
-													<th>Deskripsi</th>
-													<th>Editor</th>
-													<th>Tanggal</th>
-													<th>Aksi</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Gambar disini</td>
-													<td>Lab kalibrasi Telkom sedang melaksanakan KUM Nasional</td>
-													<td >Pada tanggal 26 November 2020 kemarin, Lab kalibrasi Telkom telah melaksanakan Kaji Ulang Mutu (KUM) secara nasional.</td>
-													<td>Admin</td>
-													<td>25 Nov 2020</td>
-													<td>
-                                                        <div class="ml-0">
-                                                            <a href=""><span class="label label-success label-pill label-inline mr-2">Edit</span></a>
-                                                            <a href=""><span class="label label-danger label-pill label-inline mr-2">Hapus</span></a></div>
-                                                    </td>
-												</tr>
-											</tbody>
-										</table>
-										<!--end: Datatable-->
+										<form>
+                                        <div class="card-body">
+                                        <div class="form-group mb-8">
+                                        <div class="form-group row">
+                                            <label  class="col-2 col-form-label">Judul</label>
+                                            <div class="col-10">
+                                            <input class="form-control" type="text"  id="example-text-input"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-date-input" class="col-2 col-form-label">Deskripsi Artikel</label>
+                                            <div class="col-10">
+                                            <div class="summernote" id="kt_summernote_1"></div>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-date-input" class="col-2 col-form-label">Tanggal</label>
+                                            <div class="col-10">
+                                            <input class="form-control" type="date" class="form-control form-control-solid datetimepicker-input" id="kt_datetimepicker_3" data-target-input="nearest"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label  class="col-2 col-form-label">Editor</label>
+                                            <div class="col-3">
+                                            <input class="form-control" disabled="disabled"  type="text" value="{{ Auth::user()->name }}" id="example-text-input"/>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        </div>
+                                        </div>
+                                        <div class="card-footer">
+                                        <div class="row">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-10">
+                                            <button type="reset" class="btn btn-success mr-2">Publish</button>
+                                            <button type="reset" class="btn btn-secondary">Batal</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </form>
 									</div>
                                 </div>
                                 <br/>
@@ -295,4 +313,5 @@
 					</div>
 					<!--end::Content-->
                     <!--begin::Footer-->
+                    
 @include('awanlab/pengaturan-web/footer')

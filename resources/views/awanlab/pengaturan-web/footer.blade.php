@@ -1229,7 +1229,9 @@
 		</div>
 		<!--end::Chat Panel-->
 		<!--begin::Scrolltop-->
-		
+		<script>
+            
+        </script>
 		<!--end::Demo Panel-->
 		<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
 		<!--begin::Global Config(global config for global JS scripts)-->
@@ -1248,8 +1250,33 @@
         <script src="../halamanadmin/plugins/custom/datatables/datatables.bundle.js"></script>
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-		<script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
-		<!--end::Page Scripts-->
+        <script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
+        <script>
+            // Class definition
+
+            var KTSummernoteDemo = function () {
+            // Private functions
+            var demos = function () {
+            $('.summernote').summernote({
+            height: 350
+            });
+            }
+
+            return {
+            // public functions
+            init: function() {
+            demos();
+            }
+            };
+            }();
+
+            // Initialization
+            jQuery(document).ready(function() {
+            KTSummernoteDemo.init();
+            });
+        </script>
+          <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 	</body>
 	<!--end::Body-->
 </html>
