@@ -26,6 +26,10 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function masuk(){
+        return view('masuk');
+    }
+
     public function awanlab(){
         return view('awanlab/index');
     }

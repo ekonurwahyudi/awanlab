@@ -15,4 +15,7 @@ class LayananController extends Controller
     public function waktu(){
         return view('RL/frekuensi_waktu');
     }
+    public function masuk(){
+        return view('auth/masuk');
+    }
 }

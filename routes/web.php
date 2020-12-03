@@ -25,6 +25,7 @@ Route::get('tentang-kami',function(){
 Route::get('fiberoptic','LayananController@fiber');
 Route::get('kelistrikan','LayananController@listrik');
 Route::get('frekuensiwaktu','LayananController@waktu');
+Route::get('masuk','LayananController@masuk');
 Auth::routes();
 
 //Route Untuk akses login
