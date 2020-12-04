@@ -523,86 +523,28 @@
                 </div><!-- row end -->
                 <!-- slick_slider -->
                 <div class="row slick_slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows":false, "autoplay":true, "centerMode":true, "centerPadding":0, "infinite":true, "initialSlide":2, "responsive": [{"breakpoint":870,"settings":{"slidesToShow": 2}} , {"breakpoint":525,"settings":{"slidesToShow": 1}}]}'>
+                    @foreach ($artikels as $artikel)
                     <div class="ttm-box-col-wrapper col-lg-4">
                         <!-- featured-imagebox-post -->
                         <div class="featured-imagebox featured-imagebox-post">
                             <div class="ttm-post-thumbnail featured-thumbnail"> 
-                                <img class="img-fluid" src="images/blog/blog-one-740x504.jpeg" alt="image"> 
+                                <img class="img-fluid" src="{{ url('storage/artikels/'.$artikel->artikel_gambar)}}" alt="image"> 
                             </div>
                             <div class="featured-content featured-content-post">
                                 <div class="post-meta">
-                                    <span class="ttm-meta-line"><i class="fa fa-user"></i>Admin</span>
-                                    <span class="ttm-meta-line"><i class="fa fa-calendar"></i>26 Nov 2020</span>
+                                    <span class="ttm-meta-line"><i class="fa fa-user"></i>{{$artikel->artikel_editor}}</span>
+                                    <span class="ttm-meta-line"><i class="fa fa-calendar"></i>{{$artikel->artikel_date}}</span>
                                 </div>
                                 <div class="post-title featured-title">
-                                    <h5><a href="blog-single.html">Lab Kalibrasi Telkom sedang melaksanakan KUM Nasional</a></h5>
+                                    <h5><a href="blog-single.html">{{$artikel->artikel_judul}}</a></h5>
                                 </div>
                                 <div class="post-desc featured-desc">
-                                    <p>Pada tanggal 26 November 2020 kemarin, Lab kalibrasi Telkom telah melaksanakan Kaji Ulang Mutu (KUM) secara nasional.</p>
+                                    <p>{{Str::limit(Strip_tags($artikel->artikel_deskripsi),80)}}</p>
                                 </div>
                             </div>
                         </div><!-- featured-imagebox-post end-->
                     </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-post -->
-                        <div class="featured-imagebox featured-imagebox-post">
-                            <div class="ttm-post-thumbnail featured-thumbnail"> 
-                                <img class="img-fluid" src="images/blog/blog-two-740x504.jpg" alt="image"> 
-                            </div>
-                            <div class="featured-content featured-content-post">
-                                <div class="post-meta">
-                                    <span class="ttm-meta-line"><i class="fa fa-user"></i>Admin</span>
-                                    <span class="ttm-meta-line"><i class="fa fa-calendar"></i>26 November 2020</span>
-                                </div>
-                                <div class="post-title featured-title">
-                                    <h5><a href="blog-single.html">Mengapa Harus kalibrasi</a></h5>
-                                </div>
-                                <div class="post-desc featured-desc">
-                                    <p>Kalibrasi diwajibkan agar alat kita tetap berkerja sesuai dengan standar yang telah ditetapkan, oleh karena itu kita diharuskan ketika telah jatuh tempo.</p>
-                                </div>
-                            </div>
-                        </div><!-- featured-imagebox-post end-->
-                    </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-post -->
-                        <div class="featured-imagebox featured-imagebox-post">
-                            <div class="ttm-post-thumbnail featured-thumbnail"> 
-                                <img class="img-fluid" src="images/blog/blog-three-740x504.jpg" alt="image"> 
-                            </div>
-                            <div class="featured-content featured-content-post">
-                                <div class="post-meta">
-                                    <span class="ttm-meta-line"><i class="fa fa-user"></i>Admin</span>
-                                    <span class="ttm-meta-line"><i class="fa fa-calendar"></i>26 November 2020</span>
-                                </div>
-                                <div class="post-title featured-title">
-                                    <h5><a href="blog-single.html">Bagaimana cara merawat alat?</a></h5>
-                                </div>
-                                <div class="post-desc featured-desc">
-                                    <p>Cara agar alat kita tetap terjaga kestabilan kalibrasinya ialah, ada beberapa hal yang harus kita perhatikan. Mulai dari lingkungan yang terjaga.</p>
-                                </div>
-                            </div>
-                        </div><!-- featured-imagebox-post end-->
-                    </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-post -->
-                        <div class="featured-imagebox featured-imagebox-post">
-                            <div class="ttm-post-thumbnail featured-thumbnail"> 
-                                <img class="img-fluid" src="images/blog/blog-four-740x504.jpg" alt="image"> 
-                            </div>
-                            <div class="featured-content featured-content-post">
-                                <div class="post-meta">
-                                    <span class="ttm-meta-line"><i class="fa fa-user"></i>Admin</span>
-                                    <span class="ttm-meta-line"><i class="fa fa-calendar"></i>26 November 2020</span>
-                                </div>
-                                <div class="post-title featured-title">
-                                    <h5><a href="blog-single.html">Kalibrasi Menentukan Kesuksesan Bisnis Anda</a></h5>
-                                </div>
-                                <div class="post-desc featured-desc">
-                                    <p>Dalam hal lain, kalibrasi sangat menunjang kebutuhan bisnis perusahaan kita, mulai dari sertifikasi alat yang sesuai dengan standar.</p>
-                                </div>
-                            </div>
-                        </div><!-- featured-imagebox-post end-->
-                    </div>
+                    @endforeach
                 </div>
                 <div class="row">
                     <div class="col-lg-12">

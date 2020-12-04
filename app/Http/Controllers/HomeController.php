@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facedes\Storage;
+use DB;
 
 class HomeController extends Controller
 {
@@ -36,5 +39,19 @@ class HomeController extends Controller
 
     public function web(){
         return view('awanlab/pengaturan-web');
+    }
+
+    public function beranda(){
+        $artikels = Artikel::all();
+        return view('index',['artikels'=>$artikels]);
+    }
+
+    public function bacaartikel($artikel_id){
+        $artikels = Artikel::find($artikel->artikel_id);
+        return view('artikel',['artikels'=>$artikels]);
+
+    }
+    public function artikel(){
+        return view('artikel');
     }
 }

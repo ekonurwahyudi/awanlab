@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
+
+Route::get('/','HomeController@beranda');
+Route::get('artikel/{{$artikel_id}}','HomeController@bacaartikel');
+Route::get('artikel','HomeController@artikel');
 
 Route::get('tentang-kami',function(){
     return view('tentang-kami');

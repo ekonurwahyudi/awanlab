@@ -68,20 +68,32 @@ class ArtikelController extends Controller
             ]);
         }else {
             //Hapus data lama
-            Storage::disk('local')->delete('public/artikels/'.$artikel->artikel_gambar);
+            \Storage::disk('local')->delete('public/artikels/'.$artikel->artikel_gambar);
 
             //Upload foto baru
-            $artikel = $request->file('artikel_gambar');
-            $artikel->storeAs('public/artikels', $image->hashName());
+            $artikel_gambar = $request->file('artikel_gambar');
+            $artikel_gambar->storeAs('public/artikels',$artikel_gambar->hashName());
 
             $artikel->update([
                 'artikel_judul' => $request->artikel_judul,
                 'artikel_deskripsi' => $request->artikel_deskripsi,
                 'artikel_date' => $request->artikel_date,
-                'artikel_gambar' => $request->hashName(),
+                'artikel_gambar' => $artikel_gambar->hashName(),
                 'artikel_editor' => 'admin'
             ]);
         }
+
+        if($artikel){
+            return redirect()->route('artikel.index')->with(['success' => 'Data berhasil disimpan']);
+        }else{
+            return redirect()->route('artikel.index')->with(['error' => 'Data gagal disimpan']);
+        }
+    }
+
+    public function destroy($artikel_id){
+        $artikel = Artikel::findOrFail($artikel_id);
+        \Storage::disk('local')->delete('public/artikels/'.$artikel->artike_gambar);
+        $artikel->delete();
 
         if($artikel){
             return redirect()->route('artikel.index')->with(['success' => 'Data berhasil disimpan']);

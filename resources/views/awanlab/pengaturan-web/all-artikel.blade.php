@@ -268,23 +268,27 @@
 														<img src="{{ url('storage/artikels/'.$artikel->artikel_gambar)}}" class="rounded" style="width: 50px">
 
 													</td>
-													<td>{{$artikel->artikel_judul}}</td>
-													<td >{{Str::limit(Strip_tags($artikel->artikel_deskripsi),50)}}</td>
+													<td width="200px">{{$artikel->artikel_judul}}</td>
+													<td width="300px">{{Str::limit(Strip_tags($artikel->artikel_deskripsi),50)}}</td>
 													<td>{{$artikel->artikel_editor}}</td>
 													<td>{{$artikel->artikel_date}}</td>
-													<td class="text-center">
+													<!-- <td class="text-center">
 														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('artikel.destroy', $artikel->artikel_id) }}" method="POST">
 															<a href="{{ route('artikel.edit', $artikel->artikel_id) }}" class="btn btn-sm btn-primary">EDIT</a>
 															@csrf
 															@method('DELETE')
 															<button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
 														</form>
-													</td>
-													<!-- <td>
-                                                        <div class="ml-0">
-                                                            <a href="{{ route('artikel.edit',$artikel->artikel_id)}}"><span class="label label-success label-pill label-inline mr-2">Edit</span></a>
-                                                            <a href=""><span class="label label-danger label-pill label-inline mr-2">Hapus</span></a></div>
-                                                    </td> -->
+													</td> -->
+													<td class="text-center"> 
+														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('artikel.destroy', $artikel->artikel_id) }}" method="POST">
+															<!-- <a href="{{ route('artikel.edit', $artikel->artikel_id) }}" class="label label-success label-pill label-inline mr-2">Edit</a> -->
+															<a href="{{ route('artikel.edit', $artikel->artikel_id) }}"  class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit-1"></i></a>
+															@csrf
+															@method('DELETE')
+															<button type="submit" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></button>
+														</form>
+                                                    </td>
 												</tr>
 												@empty
 												<div class="alert alert-danger">
