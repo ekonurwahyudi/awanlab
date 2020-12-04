@@ -1,5 +1,5 @@
 
-@include('awanlab/pengaturan-web/header')
+@include('awanlab/pengaturan-web/header2')
 <!--begin::Aside Menu-->
 <div class="aside-menu-wrapper flex-column-fluid" id="kt_aside_menu_wrapper">
 						<!--begin::Menu Container-->
@@ -234,7 +234,7 @@
 										</div>
 										<div class="card-toolbar">
 											<!--begin::Dropdown-->
-                                            <a href="artikel" class="btn btn-danger font-weight-bold mr-2">
+                                            <a href="/pengaturan/artikel" class="btn btn-danger font-weight-bold mr-2">
                                                     <span class="svg-icon">
                                                         <!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Address-card.svg-->
                                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -252,54 +252,81 @@
 									</div>
 									<div class="card-body">
 										<!--begin: Datatable-->
-										<form>
-                                        <div class="card-body">
-                                        <div class="form-group mb-8">                                        
-                                        <div class="form-group row">
-                                            <label  class="col-2 col-form-label">Judul</label>
-                                            <div class="col-10">
-                                            <input class="form-control" type="text"  id="example-text-input"/>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="example-date-input" class="col-2 col-form-label">Deskripsi Artikel</label>
-                                            <div class="col-10">
-                                            <div class="summernote" id="kt_summernote_1"></div>
-                                            
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="example-date-input" class="col-2 col-form-label">Tanggal</label>
-                                            <div class="col-10">
-                                            <input class="form-control" type="date" class="form-control form-control-solid datetimepicker-input" id="kt_datetimepicker_3" data-target-input="nearest"/>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label  class="col-2 col-form-label">Gambar Cover</label>
-                                            <div class="col-5">
-                                                <input type="file" name="img1" class="dropify" required="required"/>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label  class="col-2 col-form-label">Editor</label>
-                                            <div class="col-3">
-                                            <input class="form-control" disabled="disabled"  type="text" value="{{ Auth::user()->name }}" id="example-text-input"/>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                        </div>
-                                        </div>
-                                        <div class="card-footer">
-                                        <div class="row">
-                                            <div class="col-2">
-                                            </div>
-                                            <div class="col-10">
-                                            <button type="reset" class="btn btn-success mr-2">Publish</button>
-                                            <button type="reset" class="btn btn-secondary">Batal</button>
-                                            </div>
-                                        </div>
-                                        </div>
+										<form action="{{route('artikel.store')}}" method="POST" enctype="multipart/form-data">
+											@csrf
+											<div class="card-body">
+												<div class="form-group mb-8">                                        
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">Judul</label>
+													<div class="col-10">
+														<input class="form-control @error('artikel_judul') is-invalid @enderror" name="artikel_judul" value="{{ old('artikel_judul') }}" type="text"  id="example-text-input"/>
+													</div>
+													@error('artikel_judul')
+														<div class="alert alert-danger mt-2">
+															{{ $message }}
+														</div>
+													@enderror
+												</div>
+												<div class="form-group row">
+													<label for="example-date-input" class="col-2 col-form-label">Deskripsi Artikel</label>
+													<div class="col-10">
+														<textarea id="kt_summernote_1" class="summernote form-control @error('artikel_deskripsi') is-invalid @enderror" name="artikel_deskripsi" >
+														{{old('artikel_deskripsi')}}
+														</textarea>
+													</div>
+													@error('artikel_deskripsi')
+														<div class="alert alert-danger mt-2">
+															{{ $message }}
+														</div>
+													@enderror
+												</div>
+												<div class="form-group row">
+													<label for="example-date-input" class="col-2 col-form-label">Tanggal</label>
+													<div class="col-10">
+														<input class="form-control @error('artikel_date') is-invalid @enderror" name="artikel_date" value="{{old('artikel_date')}}" type="date" class="form-control form-control-solid datetimepicker-input" id="kt_datetimepicker_3" data-target-input="nearest"/>
+													</div>
+													@error('artikel_date')
+														<div class="alert alert-danger mt-2">
+															{{ $message }}
+														</div>
+													@enderror
+												</div>
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">Gambar Cover</label>
+													<div class="col-5">
+														<input type="file" name="artikel_gambar" class="form-control @error('artikel_gambar') is-invalid @enderror dropify"/>
+													</div>
+													@error('artikel_gambar')
+														<div class="alert alert-danger mt-2">
+															{{ $message }}
+														</div>
+													@enderror
+												</div>
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">Editor</label>
+													<div class="col-3">
+														<input class="form-control @error('artikel_editor') is-invalid @enderror" name="artikel_editor" disabled="disabled"  type="text" value="{{ Auth::user()->name }}" id="example-text-input"/>
+													</div>
+													@error('artikel_editor')
+														<div class="alert alert-danger mt-2">
+															{{ $message }}
+														</div>
+													@enderror
+												</div>
+												
+												
+												</div>
+												</div>
+												<div class="card-footer">
+												<div class="row">
+													<div class="col-2">
+													</div>
+													<div class="col-10">
+													<button type="submit" class="btn btn-success mr-2">Publish</button>
+													<button type="reset" class="btn btn-secondary">Batal</button>
+													</div>
+												</div>
+											</div>
                                         </form>
 									</div>
                                 </div>
@@ -320,4 +347,4 @@
 					<!--end::Content-->
                     <!--begin::Footer-->
                     
-@include('awanlab/pengaturan-web/footer')
+@include('awanlab/pengaturan-web/footer2')

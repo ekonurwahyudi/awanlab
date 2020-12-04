@@ -34,5 +34,9 @@ Route::middleware('role:admin')->get('/awanlab', 'HomeController@awanlab')->name
 Route::middleware('role:admin')->get('/pengaturan-web', 'HomeController@web')->name('pengaturan-web');
 
 //Route Untuk Pengaturan Web
-Route::middleware('role:admin')->get('/pengaturan/artikel', 'PengaturanwebController@artikel')->name('/pengaturan/artikel');
-Route::middleware('role:admin')->get('/pengaturan/tambah-artikel', 'PengaturanwebController@tambah_artikel')->name('/pengaturan/tambah-artikel');
+// Route::middleware('role:admin')->get('/pengaturan/artikel', 'PengaturanwebController@artikel')->name('/pengaturan/artikel');
+// Route::middleware('role:admin')->get('/pengaturan/tambah-artikel', 'PengaturanwebController@tambah_artikel')->name('/pengaturan/tambah-artikel');
+
+//Route Untuk Artikel
+Route::resource('/pengaturan/artikel',ArtikelController::class);
+// Route::get('/pengaturan/tambah-artikel','ArtikelController@create');

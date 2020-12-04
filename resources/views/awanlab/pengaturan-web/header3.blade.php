@@ -23,20 +23,22 @@ License: You must have a valid license purchased only from themeforest(the above
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Page Vendors Styles(used by this page)-->
-		<link href="halamanadmin/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../../halamanadmin/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Page Vendors Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
-		<link href="halamanadmin/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="halamanadmin/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="halamanadmin/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../../halamanadmin/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../../halamanadmin/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="../../../halamanadmin/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="../../../halamanadmin/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
-		<link href="halamanadmin/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
-		<link href="halamanadmin/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
-		<link href="halamanadmin/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
-		<link href="halamanadmin/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+		<link href="../../../halamanadmin/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="../../../halamanadmin/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="../../../halamanadmin/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
+		<link href="../../../halamanadmin/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
 		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="halamanadmin/media/logos/favicon.png" />
+        <link rel="shortcut icon" href="../../../halamanadmin/media/logos/favicon.ico" />
+        <link rel="stylesheet" href="../../../halamanadmin/css/dropify.min.css">
 	</head>
 	<!--end::Head-->
     <!--begin::Body-->
@@ -47,7 +49,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!--begin::Logo-->
 			<a href="index.html">
                 <p>Awanlab</p>
-				<!-- <img alt="Logo" src="halamanadmin/media/logos/logo-light.png" /> -->
+				<!-- <img alt="Logo" src="../../../halamanadmin/media/logos/logo-light.png" /> -->
 			</a>
 			<!--end::Logo-->
 			<!--begin::Toolbar-->
@@ -92,7 +94,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <h2>Awanlab</h2>
 						<!-- <a href="index.html" class="brand-logo"> -->
                             <!-- <p>halaman Admin</p> -->
-							<!-- <img alt="Logo" src="halamanadmin/media/logos/logo-light.png" /> -->
+							<!-- <img alt="Logo" src="../../../halamanadmin/media/logos/logo-light.png" /> -->
 						<!-- </a> -->
 						<!--end::Logo-->
 						<!--begin::Toggle-->
