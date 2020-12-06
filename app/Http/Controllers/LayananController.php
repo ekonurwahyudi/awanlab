@@ -11,6 +11,10 @@ class LayananController extends Controller
         return view('RL/master');
     }
 
+    public function layanan(){
+        return view('RL/layanan');
+    }
+
     public function fiber(){
         return view('RL/fiber_optic');
     }

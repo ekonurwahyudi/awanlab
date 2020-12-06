@@ -25,6 +25,7 @@ Route::get('tentang-kami',function(){
 });
 
 //Route Layanan
+Route::get('layanan-kalibrasi','LayananController@layanan');
 Route::get('ruanglingkup','LayananController@ruanglingkup');
 Route::get('fiberoptic','LayananController@fiber');
 Route::get('kelistrikan','LayananController@listrik');

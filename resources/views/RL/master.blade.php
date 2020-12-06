@@ -10,7 +10,7 @@
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a title="Homepage" href="/">Beranda</a>
+                                    <a href="/">Beranda</a>
                                 </span>
                                 <span>Ruang Lingkup</span>
                             </div>

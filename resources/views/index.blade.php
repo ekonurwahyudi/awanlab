@@ -185,7 +185,7 @@
                                         <h5><a href="frekuensiwaktu">Waktu dan Frekuensi</a></h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Lab Kalibrasi Telkom mampu mengkalibrasi ulang peralatan Kelistrikan onSite dan inHouse</p>
+                                        <p>Lab Kalibrasi Telkom mampu mengkalibrasi ulang peralatan Kelistrikan onSite dan inHouse.</p>
                                     </div>
                                 </div>
                             </div>

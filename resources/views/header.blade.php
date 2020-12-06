@@ -121,9 +121,9 @@
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="#" class="mega-menu-link">Layanan</a>
+                                                <a href="layanan-kalibrasi" class="mega-menu-link">Layanan</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="layanan.php">Kalibrasi</a>
+                                                    <li><a href="layanan-kalibrasi">Kalibrasi</a>
                                                     <li><a href="konsultasi.php">Konsultasi</a></li>
                                                 </ul>
                                             </li>
