@@ -536,7 +536,7 @@
                                     <span class="ttm-meta-line"><i class="fa fa-calendar"></i>{{$artikel->artikel_date}}</span>
                                 </div>
                                 <div class="post-title featured-title">
-                                    <h5><a href="blog-single.html">{{$artikel->artikel_judul}}</a></h5>
+                                    <h5><a href="/artikel/{{$artikel->artikel_id}}">{{$artikel->artikel_judul}}</a></h5>
                                 </div>
                                 <div class="post-desc featured-desc">
                                     <p>{{Str::limit(Strip_tags($artikel->artikel_deskripsi),80)}}</p>

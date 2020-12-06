@@ -14,7 +14,8 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    
+     public function __construct()
     {
         $this->middleware('auth');
     }
@@ -24,6 +25,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    
     public function index()
     {
         return view('home');
@@ -39,19 +41,5 @@ class HomeController extends Controller
 
     public function web(){
         return view('awanlab/pengaturan-web');
-    }
-
-    public function beranda(){
-        $artikels = Artikel::all();
-        return view('index',['artikels'=>$artikels]);
-    }
-
-    public function bacaartikel($artikel_id){
-        $artikels = Artikel::find($artikel->artikel_id);
-        return view('artikel',['artikels'=>$artikels]);
-
-    }
-    public function artikel(){
-        return view('artikel');
     }
 }

@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/','HomeController@beranda');
-Route::get('artikel/{{$artikel_id}}','HomeController@bacaartikel');
-Route::get('artikel','HomeController@artikel');
+Route::get('/','LayananController@beranda');
+// Route::get('artikel/{{artikel_id}}','LayananController@bacaartikel');
+Route::get('artikel/{artikel_id}','LayananController@artikel');
+Route::get('artikel/','LayananController@allartikel');
 
 Route::get('tentang-kami',function(){
     return view('tentang-kami');

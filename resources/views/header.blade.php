@@ -137,7 +137,7 @@
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="kerjasama.php" class="mega-menu-link">Kerjasama</a>
+                                                <a href="/artikel" class="mega-menu-link">Artikel</a>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="hubungi-kami.php" class="mega-menu-link">Hubungi Kami</a>
