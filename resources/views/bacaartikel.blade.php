@@ -97,7 +97,7 @@
                                 <div class="site-navigation d-flex flex-row">
                                     <!-- site-branding -->
                                     <div class="site-branding mr-auto">
-                                        <a class="home-link" href="..//" title="Labostica" rel="home">
+                                        <a class="home-link" href="../" rel="home">
                                             <img id="logo-img" class="img-center" src="../images/logo-img.png" alt="logo-img">
                                         </a>
                                     </div><!-- site-branding end -->
@@ -116,21 +116,21 @@
                                                 <a href="../tentang-kami" class="mega-menu-link">Tentang Kami</a>
                                                 <ul class="mega-submenu">
                                                     <li><a href="../tentang-kami">Profil Lab</a>
-                                                    <li><a href="../#">Sertifikasi ISO 17025:2007</a></li>
+                                                    <li><a href="../sertifikat-iso">Sertifikasi ISO 17025:2017</a></li>
                                                     <li><a href="../#">Tim Kami</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="../#" class="mega-menu-link">Layanan</a>
+                                                <a href="" class="mega-menu-link">Layanan</a>
                                                 <ul class="mega-submenu">
                                                     <li><a href="../layanan.php">Kalibrasi</a>
                                                     <li><a href="../konsultasi.php">Konsultasi</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="../#" class="mega-menu-link">info</a>
+                                                <a href="" class="mega-menu-link">info</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="../#">Ruang Lingkup Kalibrasi</a>
+                                                    <li><a href="../ruanglingkup">Ruang Lingkup Kalibrasi</a>
                                                     <li><a href="../#">Tarif Kalibrasi</a></li>
                                                     <li><a href="../#">Client Kami</a>
                                                     <li><a href="../#">Kritik & Saran</a>
@@ -209,6 +209,7 @@
 
 
         <!-- page-title -->
+        
         <div class="ttm-page-title-row">
             <div class="ttm-page-title-row-inner">
                 <div class="container">

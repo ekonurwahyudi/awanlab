@@ -6,13 +6,13 @@
                     <div class="row align-items-center text-center">
                         <div class="col-lg-12">
                             <div class="">
-                                <h4 class="title">Ruang Lingkup Laboratorium Kalibrasi</h4>
+                                <h4 class="title">Sertifikat Lab Kalibrasi Telkom</h4>
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
                                     <a title="Homepage" href="/">Beranda</a>
                                 </span>
-                                <span>Ruang Lingkup</span>
+                                <span>Sertifikat ISO:17025:2017</span>
                             </div>
                         </div>
                     </div>
@@ -28,12 +28,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="ttm-featured-wrapper ttm-portfolio-featured-wrapper text-center">
-                            <img class="img-fluid" src="../images/ruanglingkup/1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="ttm-featured-wrapper ttm-portfolio-featured-wrapper text-center">
-                            <img class="img-fluid" src="../images/ruanglingkup/2.jpg" alt="">
+                            <img class="img-fluid" src="../images/sertifikat-iso.jpg" alt="">
                         </div>
                     </div>
                 </div>

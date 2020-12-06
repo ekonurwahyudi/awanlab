@@ -15,20 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/','LayananController@beranda');
-// Route::get('artikel/{{artikel_id}}','LayananController@bacaartikel');
-Route::get('artikel/{artikel_id}','LayananController@artikel');
-Route::get('artikel/','LayananController@allartikel');
+Route::get('/','BerandaController@beranda');
+Route::get('artikel/{artikel_id}','BerandaController@artikel');
+Route::get('artikel/','BerandaController@allartikel');
+Route::get('sertifikat-iso','BerandaController@sertifikat');
 
 Route::get('tentang-kami',function(){
     return view('tentang-kami');
 });
 
 //Route Layanan
+Route::get('ruanglingkup','LayananController@ruanglingkup');
 Route::get('fiberoptic','LayananController@fiber');
 Route::get('kelistrikan','LayananController@listrik');
 Route::get('frekuensiwaktu','LayananController@waktu');
-Route::get('masuk','LayananController@masuk');
 Auth::routes();
 
 //Route Untuk akses login
