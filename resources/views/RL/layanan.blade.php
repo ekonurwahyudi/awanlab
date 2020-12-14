@@ -33,7 +33,7 @@
                 <div class="col-lg-8 content-area">
                         <div class="ttm-service-single-content-area">
                             <div class="ttm-featured-wrapper mb-40 res-991-mb-20">
-                                <img class="img-fluid" src="images/services/services-01.jpg" alt="">
+                                <img class="img-fluid" src="images/services/listrik.jpeg" alt="">
                             </div>
                             <div class="ttm-service-description">
                                 <h4>Kenapa Harus Kalibrasi?</h4>
@@ -48,7 +48,7 @@
                                     <div class="featured-imagebox featured-imagebox-services">
                                         <!-- featured-thumbnail -->
                                         <div class="featured-thumbnail">
-                                            <a href="#"> <img class="img-fluid" src="images/services/services-03.jpg" alt="image"></a>
+                                            <a href="#"> <img class="img-fluid" src="images/services/optic.jpeg" alt="image"></a>
                                         </div><!-- featured-thumbnail end-->
                                         <div class="featured-content">
                                             <div class="fea_con_right">
@@ -67,7 +67,7 @@
                                     <div class="featured-imagebox featured-imagebox-services">
                                         <!-- featured-thumbnail -->
                                         <div class="featured-thumbnail">
-                                            <a href="#"> <img class="img-fluid" src="images/services/services-01.jpg" alt="image"></a>
+                                            <a href="#"> <img class="img-fluid" src="images/services/listrik.jpeg" alt="image"></a>
                                         </div><!-- featured-thumbnail end-->
                                         <div class="featured-content">
                                             <div class="fea_con_right">
@@ -86,7 +86,7 @@
                                     <div class="featured-imagebox featured-imagebox-services">
                                         <!-- featured-thumbnail -->
                                         <div class="featured-thumbnail">
-                                            <a href="#"> <img class="img-fluid" src="images/services/services-02.jpg" alt="image"></a>
+                                            <a href="#"> <img class="img-fluid" src="images/services/frekuensi.jpeg" alt="image"></a>
                                         </div><!-- featured-thumbnail end-->
                                         <div class="featured-content">
                                             <div class="fea_con_right">
@@ -108,8 +108,8 @@
                     <div class="col-lg-4 widget-area sidebar-right">
                         <aside class="widget widget-download">
                             <ul class="download">
-                                <li><i class="fal fa-file-pdf"></i><div><h4>Certificate ISO 17025</h4><a href="#">Download</a></div></li>
-                                <li><i class="fal fa-file-pdf"></i><div><h4>Ruang Lingkup</h4><a href="#">Download</a></div></li>
+                                <li><i class="fal fa-file-pdf"></i><div><h4>Certificate ISO 17025</h4><a href="https://drive.google.com/open?id=1CrUA1ueVSKHXO1jjOa3Ptrt1hv1ZHA-M">Download</a></div></li>
+                                <li><i class="fal fa-file-pdf"></i><div><h4>Ruang Lingkup</h4><a href="https://drive.google.com/file/d/1fjMDacYMckmOZ65hIuBn5C94WH4SmIbB/view?usp=sharing">Download</a></div></li>
                                 <li><i class="fal fa-file-pdf"></i><div><h4>SOP Lab Kalibrasi</h4><a href="#">Download</a></div></li>
                             </ul>
                         </aside>
@@ -133,7 +133,7 @@
                                                 <h4>Butuh bantuan?</h4>
                                                 <p>Jika kamu membutuhkan bantuan, silahkan hubungi kami.</p>
                                                 <ul class="ttm-textcolor-white">
-                                                    <li><i class="flaticon-call mr-2"></i>(021) 82491919</li>
+                                                    <li><i class="flaticon-call mr-2"></i>021-21480341</li>
                                                     <li><i class="flaticon-placeholder mr-2"></i>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</li>
                                                 </ul>
                                             </div>

@@ -25,6 +25,7 @@
 
 <!-- themify -->
 <link rel="stylesheet" type="text/css" href="css/themify-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 
 <!-- flaticon -->
 <link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
@@ -79,9 +80,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 d-flex flex-row align-items-center">
-                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>(021) 82491919</div>
-                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-envelope-o"></i></div><a href="mailto:yourdomain@gmail.com">labkalibrasi@telkom.co.id</a></div>
-                            <div class="top_bar_contact_item ml-auto"><div class="top_bar_icon"><i class="fa fa-clock-o"></i></div>Waktu Kerja - Sen - Jum: 08:30 - 17:00</div>
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>021-21480341</div>
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fal fa-envelope"></i></div><a href="mailto:yourdomain@gmail.com">labkalibrasi@telkom.co.id</a></div>
+                            <div class="top_bar_contact_item ml-auto"><div class="top_bar_icon"><i class="fal fa-clock"></i></div>Waktu Pelayanan - Sen - Jum: 08:30 - 17:00</div>
+                            <nav class="main-menu menu-mobile" id="menu">
+                                <ul class="menu">
+                                    <li class="mega-menu-item">
+                                    <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fal fa-globe"></i></div>ID</div>
+                                        <ul class="mega-submenu">
+                                            <li><a href="#"></i>English</a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
                             <a href="home"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>Login or Register</div></a>
                         </div>
                     </div>
@@ -117,30 +128,36 @@
                                                 <ul class="mega-submenu">
                                                     <li><a href="tentang-kami">Profil Lab</a>
                                                     <li><a href="sertifikat-iso">Sertifikasi ISO 17025:2017</a></li>
-                                                    <li><a href="#">Tim Kami</a></li>
+                                                    <li><a href="struktur-organisasi">Struktur Organisasi</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="layanan-kalibrasi" class="mega-menu-link">Layanan</a>
                                                 <ul class="mega-submenu">
                                                     <li><a href="layanan-kalibrasi">Kalibrasi</a>
-                                                    <li><a href="konsultasi.php">Konsultasi</a></li>
+                                                    <li><a href="konsultasi">Konsultasi</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="#" class="mega-menu-link">info</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="ruanglingkup">Ruang Lingkup Kalibrasi</a>
-                                                    <li><a href="#">Tarif Kalibrasi</a></li>
+                                                    <li class="mega-menu-item"><a href="ruanglingkup" class="mega-menu-link">Ruang Lingkup Kalibrasi</a>
+                                                    <ul class="mega-submenu">
+                                                        <li><a href="labjakarta">Lab Kalibrasi Jakarta</a>
+                                                        <li><a href="labmedan">Lab Kalibrasi Medan</a></li>
+                                                        <li><a href="labsurabaya">Lab Kalibrasi Surabaya</a></li>
+                                                        <li><a href="labmakassar">Lab Kalibrasi Makassar</a></li>
+                                                    </ul>
+                                                    <!-- <li><a href="#">Tarif Kalibrasi</a></li> -->
                                                     <li><a href="#">Client Kami</a>
-                                                    <li><a href="#">Kritik & Saran</a>
+                                                    <li><a href="kritik-saran">Kritik & Saran</a>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="/artikel" class="mega-menu-link">Artikel</a>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="hubungi-kami.php" class="mega-menu-link">Hubungi Kami</a>
+                                                <a href="hubungi-kami" class="mega-menu-link">Hubungi Kami</a>
                                             </li>
                                         </ul>
                                     </nav>

@@ -45,7 +45,7 @@
                                     <div class="featured-icon-box style1 icon-align-before-heading">
                                         <div class="featured-icon">
                                             <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-md">
-                                                <i class="fal fa-hotel"></i>
+                                            <i class="fal fa-warehouse-alt"></i>
                                             </div>
                                         </div>
                                         <div class="featured-content">
@@ -123,7 +123,7 @@
                         <div class="featured-imagebox featured-imagebox-services">
                             <!-- featured-thumbnail -->
                             <div class="featured-thumbnail">
-                                <a href="fiberoptic"> <img class="img-fluid" src="images/services/services-03.jpg" alt="image"></a>
+                                <a href="fiberoptic"> <img class="img-fluid" src="images/services/optic.jpeg" alt="image"></a>
                             </div><!-- featured-thumbnail end-->
                             <div class="featured-content">
                                 <div class="fea_con_left">
@@ -148,7 +148,7 @@
                         <div class="featured-imagebox featured-imagebox-services">
                             <!-- featured-thumbnail -->
                             <div class="featured-thumbnail">
-                                <a href="kelistrikan"> <img class="img-fluid" src="images/services/services-01.jpg" alt="image"></a>
+                                <a href="kelistrikan"> <img class="img-fluid" src="images/services/listrik.jpeg" alt="image"></a>
                             </div><!-- featured-thumbnail end-->
                             <div class="featured-content">
                                 <div class="fea_con_left">
@@ -172,7 +172,7 @@
                         <div class="featured-imagebox featured-imagebox-services">
                             <!-- featured-thumbnail -->
                             <div class="featured-thumbnail">
-                                <a href="frekuensiwaktu"> <img class="img-fluid" src="images/services/services-02.jpg" alt="image"></a>
+                                <a href="frekuensiwaktu"> <img class="img-fluid" src="images/services/frekuensi.jpeg" alt="image"></a>
                             </div><!-- featured-thumbnail end-->
                             <div class="featured-content">
                                 <div class="fea_con_left">
@@ -559,95 +559,7 @@
 
 
         <!--testimonial-section-->
-        <section class="ttm-row testimonial-section bg-img1 ttm-bg clearfix">
-            <div class="container">
-                <!-- row -->
-                <div class="row">
-                    <div class="col-lg-9 col-md-11 mr-auto">
-                        <div class="row slick_slider slick-dots-style1" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "dots":true, "arrows":false, "autoplay":false, "infinite":true, "centerMode":true, "centerPadding":0, "initialSlide":2, "responsive": [{"breakpoint":500,"settings":{"slidesToShow": 1}}]}'>
-                            <div class="col-lg-6">
-                                <!-- testimonials -->
-                                <div class="testimonials style1">
-                                    <div class="testimonial-content">
-                                       <p class="testimonial-text">The detail is also important, I like to ensure that I always pay attention to detail on anything that I work on</blockquote>
-                                        <div class="star-ratings">
-                                            <ul class="rating">
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="testimonial-avatar">
-                                            <div class="testimonial-img">
-                                                <img class="img-fluid" src="images/testimonial/01.jpg" alt="testimonial-img">
-                                            </div>
-                                             <div class="testimonial-caption">
-                                                <h5>Denial Jhon</h5>
-                                                <label>CEO At Lab</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- testimonials end -->
-                            </div>
-                            <div class="col-lg-6">
-                                <!-- testimonials -->
-                                <div class="testimonials style1"> 
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">With my skill set, knowledge & work ethics I could be a great addition to the team to deliver the best result.</blockquote>
-                                        <div class="star-ratings">
-                                            <ul class="rating">
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="testimonial-avatar">
-                                            <div class="testimonial-img">
-                                                <img class="img-fluid" src="images/testimonial/02.jpg" alt="testimonial-img">
-                                            </div>
-                                            <div class="testimonial-caption">
-                                                <h5>Alan Sears</h5>
-                                                <label>CEO At Lab</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- testimonials end -->
-                            </div>
-                            <div class="col-lg-6">
-                                <!-- testimonials -->
-                                <div class="testimonials style1"> 
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">I always pay attention to detail on anything that I work on to make sure, complete the task successfully.</blockquote>
-                                        <div class="star-ratings">
-                                            <ul class="rating">
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li class="active"><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="testimonial-avatar">
-                                            <div class="testimonial-img">
-                                                <img class="img-fluid" src="images/testimonial/03.jpg" alt="testimonial-img">
-                                            </div>
-                                            <div class="testimonial-caption">
-                                                <h5>Alan Sears</h5>
-                                                <label>CEO At Lab</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- testimonials end -->
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- row end-->
-            </div>
-        </section>
+        @include('testimonial')
         <!--testimonial-section end-->
         <!--client-section-->
         <div class="ttm-row client-section clearfix">

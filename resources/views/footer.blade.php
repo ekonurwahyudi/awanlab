@@ -38,7 +38,7 @@
                                         <h5>Hubungi Kami</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Costumer Care: (021) 82491919</p>
+                                        <p>Costumer Care: 021-21480341</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -99,7 +99,7 @@
                                         <h5>Lab Kalibrasi Jakarta</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat 10570 Phone: 021-21480341</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -115,7 +115,7 @@
                                         <h5>Lab Kalibrasi Medan</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. Gaharu No.1 Medan bt 20235 Phone: 061-4531311</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end--> 
@@ -139,7 +139,7 @@
                                         <h5>Lab Kalibrasi Surabaya</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. Gayungan PTT No.17-19 Surabaya 60235 Phone: 031-8283678</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -155,7 +155,7 @@
                                         <h5>Lab Kalibrasi Makasar</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. AP Pettarani No. 4 Makassar 90211 Phone: 0411-864444, 880444</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -169,9 +169,9 @@
             <div class="container">
                 <div class="row copyright">
                     <div class="col-sm-9">
-                        <span>Copyright © 2020 Lab Calibration Telkom design by ThemetechMount</span>
+                        <span>Copyright © 2020 Laboratorium Calibration Telkom</span>
                     </div>
-                    <div class="col-sm-3">
+                    <!-- <div class="col-sm-3">
                         <div class="d-flex flex-row align-items-center justify-content-end social-icons">
                             <ul class="social-icons list-inline">
                                 <li class="social-facebook"><a class="tooltip-top" target="_blank" href="" data-tooltip="Facebook"><i class="ti ti-facebook"></i></a></li>
@@ -180,7 +180,7 @@
                                 <li class="social-twitter"><a class="tooltip-top" target="_blank" href="" data-tooltip="twitter"><i class="ti ti-twitter-alt"></i></a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

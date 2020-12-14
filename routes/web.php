@@ -13,15 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
+//Route Beranda
 Route::get('/','BerandaController@beranda');
 Route::get('artikel/{artikel_id}','BerandaController@artikel');
 Route::get('artikel/','BerandaController@allartikel');
 Route::get('sertifikat-iso','BerandaController@sertifikat');
-
-Route::get('tentang-kami',function(){
-    return view('tentang-kami');
+Route::get('struktur-organisasi','BerandaController@struktur');
+Route::get('hubungi-kami','BerandaController@hubungikami');
+Route::get('tentang-kami','BerandaController@tentang');
+Route::get('konsultasi','BerandaController@konsultasi');
+Route::post('konsultasi-proses','BerandaController@konsultasiproses');
+Route::get('labjakarta','BerandaController@labjakarta');
+Route::get('labmedan','BerandaController@labmedan');
+Route::get('labsurabaya','BerandaController@labsurabaya');
+Route::get('labmakassar','BerandaController@labmakassar');
+Route::get('kritik-saran','BerandaController@kritik_saran');
+Route::get('chat', function(){
+    return view('chat');
 });
 
 //Route Layanan
