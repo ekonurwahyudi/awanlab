@@ -1,0 +1,99 @@
+@include('header')
+        <!-- page-title -->
+        <!-- <div class="container">
+            <br/>
+            <br/>
+            <div class="row align-items-center text-center">
+                <div class="col-lg-12">
+                    <div class="">
+                        <h4 class="title">Frequently Asked Questions</h4>
+                    </div>
+                    <div class="breadcrumb-wrapper">
+                        <span>
+                            <a href="/">Beranda</a>
+                        </span>
+                        <span>FAQ</span>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!--site-main start-->
+    <div class="site-main pt-0">
+
+
+        <section class="ttm-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="mb-30">
+                            <!-- section title -->
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h2 class="title">Frequently Asked Questions</h2>
+                                </div>
+                            </div><!-- section title end -->
+                        </div>
+                        <div class="accordion">
+                            <!-- toggle -->
+                            <div class="toggle ttm-style-classic ttm-toggle-title-bgcolor-grey ttm-control-right-true">
+                                <div class="toggle-title"><a href="#" >Berapa lama penyelesaian kalibrasi alat ukur saya?</a></div>
+                                <div class="toggle-content">
+                                    <p>Lama penyelesaian kalibrasi alat ukur tergantung dari banyak titik yang diukur dan alat pengukurannya.</p>
+                                </div>
+                            </div><!-- toggle end -->
+                            <!-- toggle -->
+                            <div class="toggle ttm-style-classic ttm-toggle-title-bgcolor-grey ttm-control-right-true">
+                                <div class="toggle-title "><a href="#">Berapa lama sekali saya untuk kalibrasi alat ukur saya?</a></div>
+                                <div class="toggle-content">
+                                    <p>Jika sudah sampai waktu due datenya silahkan dilakukan kalibrasi. Due date tergantung dari alat ukur itu sendiri, ada yang 1-2 tahun bahkan lebih.</p>
+                                </div>
+                            </div><!-- toggle end -->
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="ttm-bgcolor-grey ttm-bg pt-25 pr-30 pb-30 pl-30 res-991-mt-30">
+                            <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                            <div class="layer-content">
+                                <!-- section title -->
+                                <div class="section-title">
+                                    <div class="title-header">
+                                        <h2 class="title">Konsultasi</h2>
+                                    </div>
+                                    <div class="title-desc">Jika kamu ada pertanya silahkan isi form dibawah ini:</div>
+                                </div><!-- section title end -->
+                                <form action="konsultasi-proses" method="post" id="ttm-contactform" class="ttm-contactform wrap-form clearfix">
+                                     @csrf
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label>
+                                                <span class="text-input"><input name="konsultasi_nama" type="text"  placeholder="Nama Lengkap"></span>
+                                            </label>
+                                            <label>
+                                                <span class="text-input"><input name="konsultasi_hp" type="text"  placeholder="Nomor Handphone"></span>
+                                            </label>
+                                            <label>
+                                                <span class="text-input"><input name="konsultasi_email" type="email"  placeholder="Email"></span>
+                                            </label>
+                                            <label>
+                                                <span class="text-input"><textarea name="konsultasi_pesan" rows="4" cols="40" placeholder="Pertayaan"></textarea></span>
+                                            </label>
+                                            <label>
+                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Kirim</button>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div><!--site-main end-->
+
+@include('footer')
