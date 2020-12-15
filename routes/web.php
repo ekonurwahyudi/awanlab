@@ -53,7 +53,7 @@ Route::middleware('role:admin')->get('/pengaturan-web', 'HomeController@web')->n
 Route::resource('/pengaturan/artikel',ArtikelController::class);
 
 //Route Ruang Lingkup Crud
-Route::get('pengaturan/ruanglingkup',function(){
-    return view('awanlab/pengaturan-web/ruanglingkup/ruanglingkup');
-});
+Route::get('/pengaturan/ruanglingkup','RuanglingkupController@index');
+Route::get('/pengaturan/tambah-ruanglingkup','RuanglingkupController@tambah');
+Route::post('/pengaturan/ruanglingkup-proses', 'RuanglingkupController@proses');
 

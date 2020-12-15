@@ -17,6 +17,6 @@ class Ruanglingkup extends Model
         'ruanglingkup_instrument',
         'ruanglingkup_frekuensi',
         'ruanglingkup_rentangukur',
-        'ruanglingkup_ketidakpastian',
-    ]
+        'ruanglingkup_ketidakpastian'
+    ];
 }

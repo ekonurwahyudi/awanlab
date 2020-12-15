@@ -14,7 +14,13 @@ class CreateRuanglingkupsTable extends Migration
     public function up()
     {
         Schema::create('ruanglingkups', function (Blueprint $table) {
-            $table->id();
+            $table->increments('ruanglingkup_id');
+            $table->string('ruanglingkup_lokasi');
+            $table->string('ruanglingkup_kelompokukur');
+            $table->string('ruanglingkup_instrument');
+            $table->text('ruanglingkup_frekuensi');
+            $table->text('ruanglingkup_rentangukur');
+            $table->text('ruanglingkup_ketidakpastian');
             $table->timestamps();
         });
     }

@@ -80,6 +80,7 @@
 								<div class="topbar-item">
 								<div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" data-toggle="dropdown" data-offset="10px,0px">
 										<span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
+										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">{{ Auth::user()->name }}</span>
 										<!-- <span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">
 											
 										</span> -->
@@ -107,7 +108,7 @@
 											</li>
 											<!--end::Item-->
 											<!--begin::Item-->
-											<!-- <li class="navi-item">
+											<li class="navi-item">
 												<a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="navi-link">
 
@@ -116,7 +117,7 @@
 												</form>
 													<span class="navi-text">Logout</span>
 												</a>
-											</li> -->
+											</li>
 										</ul>
 										<!--end::Nav-->
 									</div>
@@ -277,14 +278,14 @@
 								<!--begin::Notice-->
 								<!--end::Notice-->
 								<!--begin::Card-->
-								<div class="card card-custom">
-								<div class="card-header flex-wrap border-0 pt-6 pb-0">
+									<div class="card card-custom">
+									<div class="card-header flex-wrap border-0 pt-6 pb-0">
 										<div class="card-title">
 											<h5 class="card-label">Halaman Ruang Lingkup</h5>
 										</div>
 										<div class="card-toolbar">
 											<!--begin::Dropdown-->
-                                            <a href="{{route('artikel.create')}}" class="btn btn-danger font-weight-bold mr-2">
+                                            <a href="/pengaturan/tambah-ruanglingkup" class="btn btn-danger font-weight-bold mr-2">
                                                     <span class="svg-icon">
                                                         <!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Address-card.svg-->
                                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -296,6 +297,7 @@
                                                         </svg>
                                                         <!--end::Svg Icon-->
                                                     </span>Tambah Ruang Lingkup</a>
+													
 											<!--end::Dropdown-->
 											<!--begin::Button-->
 										</div>
@@ -351,28 +353,14 @@
 												</tr>
 											</thead>
 											<tbody>
+											@foreach ($ruanglingkups as $ruanglingkup)
 												<tr>
-													<td class="text-right">1</td>
-													<td>Kelistrikan</td>
-													<td>AC Current Source</td>
-													<td>f: 10 kHz ~ 1 kHz <br>
-														f: 1 kHz ~ 5 kHz <br>
-														f: 40 Hz ~ 5 kHz <br>
-														f: 5 kHz ~ 100 kHz <br>
-														f: 55 Hz ~ 10 kHz
-													</td>
-													<td>0.00001 A ~ 1 A <br>
-														0.00001 A ~ 1 A <br>
-														1 A ~ 11 A <br>
-														0.00001 A ~ 10 A <br>
-														10 A ~ 20 A
-													</td>
-													<td>0.58 mA/A <br>
-														6.2 mA/A <br>
-														0.66 mA/A <br>
-														0.79 mA/A <br>
-														0.29 mA/A
-													</td>
+													<td class="text-right">{{$ruanglingkup->ruanglingkup_lokasi}}</td>
+													<td>{{$ruanglingkup->ruanglingkup_kelompokukur}}</td>
+													<td>{{$ruanglingkup->ruanglingkup_instrument}}</td>
+													<td><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_frekuensi}}</textarea></td>
+													<td><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_rentangukur}}</textarea></td>
+													<td><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_ketidakpastian}}</textarea></td>
 													<td class="text-center"> 
 														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST">
 															
@@ -383,38 +371,7 @@
 														</form>
                                                     </td>	
 												</tr>
-												<tr>
-													<td class="text-right">3</td>
-													<td>Frekuensi & Waktu</td>
-													<td>AC Current Source</td>
-													<td>f: 10 kHz ~ 1 kHz <br>
-														f: 1 kHz ~ 5 kHz <br>
-														f: 40 Hz ~ 5 kHz <br>
-														f: 5 kHz ~ 100 kHz <br>
-														f: 55 Hz ~ 10 kHz
-													</td>
-													<td>0.00001 A ~ 1 A <br>
-														0.00001 A ~ 1 A <br>
-														1 A ~ 11 A <br>
-														0.00001 A ~ 10 A <br>
-														10 A ~ 20 A
-													</td>
-													<td>0.58 mA/A <br>
-														6.2 mA/A <br>
-														0.66 mA/A <br>
-														0.79 mA/A <br>
-														0.29 mA/A
-													</td>
-													<td class="text-center"> 
-														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST">
-															
-															<a href=""  class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit-1"></i></a>
-															@csrf
-															@method('DELETE')
-															<button type="submit" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></button>
-														</form>
-                                                    </td>	
-												</tr>
+											@endforeach
 											</tbody>
 										</table>
 										<!--end: Datatable-->
