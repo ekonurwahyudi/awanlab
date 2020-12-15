@@ -51,4 +51,9 @@ Route::middleware('role:admin')->get('/pengaturan-web', 'HomeController@web')->n
 
 //Route Untuk Artikel
 Route::resource('/pengaturan/artikel',ArtikelController::class);
-// Route::get('/pengaturan/tambah-artikel','ArtikelController@create');
+
+//Route Ruang Lingkup Crud
+Route::get('pengaturan/ruanglingkup',function(){
+    return view('awanlab/pengaturan-web/ruanglingkup/ruanglingkup');
+});
+

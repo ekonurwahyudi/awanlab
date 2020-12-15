@@ -80,7 +80,9 @@
 								<div class="topbar-item">
 								<div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" data-toggle="dropdown" data-offset="10px,0px">
 										<span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
-										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">{{ Auth::user()->name }}</span>
+										<!-- <span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">
+											
+										</span> -->
 										<span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
 											<span class="symbol-label font-size-h5 font-weight-bold">E</span>
 										</span>
@@ -105,7 +107,7 @@
 											</li>
 											<!--end::Item-->
 											<!--begin::Item-->
-											<li class="navi-item">
+											<!-- <li class="navi-item">
 												<a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="navi-link">
 
@@ -114,7 +116,7 @@
 												</form>
 													<span class="navi-text">Logout</span>
 												</a>
-											</li>
+											</li> -->
 										</ul>
 										<!--end::Nav-->
 									</div>
@@ -154,7 +156,7 @@
 													</a>
 												</li>&nbsp;
 												<li>
-													<a href="/pengaturan/artikel" class="btn btn-hover-light font-weight-bold active">
+													<a href="/pengaturan/artikel" class="btn btn-hover-light font-weight-bold">
 													<span class="svg-icon svg-icon-success">
 														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -174,7 +176,7 @@
 													</a>
 												</li>
 												<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
-													<a href="javascript:;"class="menu-toggle btn btn-hover-light font-weight-bold ">
+													<a href="javascript:;"class="menu-toggle btn btn-hover-light font-weight-bold active">
 													<span class="svg-icon svg-icon-success">
 														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -187,15 +189,15 @@
 													</a>
 													<div class="menu-submenu menu-submenu-classic menu-submenu-left">
 														<ul class="menu-subnav">
-															<li class="menu-item" aria-haspopup="true">
-																<a href="../pengaturan/ruanglingkup" class="menu-link ">
+															<li class="menu-item active" aria-haspopup="true">
+																<a href="../pengaturan/ruanglingkup" class="menu-link">
 																	<span class="svg-icon menu-icon">
 																		<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Safe-chat.svg-->
 																		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																				<rect x="0" y="0" width="24" height="24" />
-																				<path d="M8,17 C8.55228475,17 9,17.4477153 9,18 L9,21 C9,21.5522847 8.55228475,22 8,22 L3,22 C2.44771525,22 2,21.5522847 2,21 L2,18 C2,17.4477153 2.44771525,17 3,17 L3,16.5 C3,15.1192881 4.11928813,14 5.5,14 C6.88071187,14 8,15.1192881 8,16.5 L8,17 Z M5.5,15 C4.67157288,15 4,15.6715729 4,16.5 L4,17 L7,17 L7,16.5 C7,15.6715729 6.32842712,15 5.5,15 Z" fill="#000000" opacity="0.3" />
-																				<path d="M2,11.8650466 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,15.0032706 21.9999948,15.0065399 21.9999843,15.009808 L22.0249378,15 L22.0249378,19.5857864 C22.0249378,20.1380712 21.5772226,20.5857864 21.0249378,20.5857864 C20.7597213,20.5857864 20.5053674,20.4804296 20.317831,20.2928932 L18.0249378,18 L12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.23590829,11 3.04485894,11.3127315 2,11.8650466 Z M6,7 C5.44771525,7 5,7.44771525 5,8 C5,8.55228475 5.44771525,9 6,9 L15,9 C15.5522847,9 16,8.55228475 16,8 C16,7.44771525 15.5522847,7 15,7 L6,7 Z" fill="#000000" />
+																				<rect x="0" y="0" width="24" height="24"/>
+																				<path d="M5.5,2 L18.5,2 C19.3284271,2 20,2.67157288 20,3.5 L20,6.5 C20,7.32842712 19.3284271,8 18.5,8 L5.5,8 C4.67157288,8 4,7.32842712 4,6.5 L4,3.5 C4,2.67157288 4.67157288,2 5.5,2 Z M11,4 C10.4477153,4 10,4.44771525 10,5 C10,5.55228475 10.4477153,6 11,6 L13,6 C13.5522847,6 14,5.55228475 14,5 C14,4.44771525 13.5522847,4 13,4 L11,4 Z" fill="#000000" opacity="0.3"/>
+																				<path d="M5.5,9 L18.5,9 C19.3284271,9 20,9.67157288 20,10.5 L20,13.5 C20,14.3284271 19.3284271,15 18.5,15 L5.5,15 C4.67157288,15 4,14.3284271 4,13.5 L4,10.5 C4,9.67157288 4.67157288,9 5.5,9 Z M11,11 C10.4477153,11 10,11.4477153 10,12 C10,12.5522847 10.4477153,13 11,13 L13,13 C13.5522847,13 14,12.5522847 14,12 C14,11.4477153 13.5522847,11 13,11 L11,11 Z M5.5,16 L18.5,16 C19.3284271,16 20,16.6715729 20,17.5 L20,20.5 C20,21.3284271 19.3284271,22 18.5,22 L5.5,22 C4.67157288,22 4,21.3284271 4,20.5 L4,17.5 C4,16.6715729 4.67157288,16 5.5,16 Z M11,18 C10.4477153,18 10,18.4477153 10,19 C10,19.5522847 10.4477153,20 11,20 L13,20 C13.5522847,20 14,19.5522847 14,19 C14,18.4477153 13.5522847,18 13,18 L11,18 Z" fill="#000000"/>
 																			</g>
 																		</svg>
 																		<!--end::Svg Icon-->
@@ -209,8 +211,9 @@
 																		<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Mail-at.svg-->
 																		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																				<rect x="0" y="0" width="24" height="24" />
-																				<path d="M11.575,21.2 C6.175,21.2 2.85,17.4 2.85,12.575 C2.85,6.875 7.375,3.05 12.525,3.05 C17.45,3.05 21.125,6.075 21.125,10.85 C21.125,15.2 18.825,16.925 16.525,16.925 C15.4,16.925 14.475,16.4 14.075,15.65 C13.3,16.4 12.125,16.875 11,16.875 C8.25,16.875 6.85,14.925 6.85,12.575 C6.85,9.55 9.05,7.1 12.275,7.1 C13.2,7.1 13.95,7.35 14.525,7.775 L14.625,7.35 L17,7.35 L15.825,12.85 C15.6,13.95 15.85,14.825 16.925,14.825 C18.25,14.825 19.025,13.725 19.025,10.8 C19.025,6.9 15.95,5.075 12.5,5.075 C8.625,5.075 5.05,7.75 5.05,12.575 C5.05,16.525 7.575,19.1 11.575,19.1 C13.075,19.1 14.625,18.775 15.975,18.075 L16.8,20.1 C15.25,20.8 13.2,21.2 11.575,21.2 Z M11.4,14.525 C12.05,14.525 12.7,14.35 13.225,13.825 L14.025,10.125 C13.575,9.65 12.925,9.425 12.3,9.425 C10.65,9.425 9.45,10.7 9.45,12.375 C9.45,13.675 10.075,14.525 11.4,14.525 Z" fill="#000000" />
+																				<rect x="0" y="0" width="24" height="24"/>
+																				<path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+																				<path d="M2,11.8650466 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,15.0032706 21.9999948,15.0065399 21.9999843,15.009808 L22.0249378,15 L22.0249378,19.5857864 C22.0249378,20.1380712 21.5772226,20.5857864 21.0249378,20.5857864 C20.7597213,20.5857864 20.5053674,20.4804296 20.317831,20.2928932 L18.0249378,18 L12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.23590829,11 3.04485894,11.3127315 2,11.8650466 Z M6,7 C5.44771525,7 5,7.44771525 5,8 C5,8.55228475 5.44771525,9 6,9 L15,9 C15.5522847,9 16,8.55228475 16,8 C16,7.44771525 15.5522847,7 15,7 L6,7 Z" fill="#000000"/>
 																			</g>
 																		</svg>
 																		<!--end::Svg Icon-->
@@ -224,8 +227,9 @@
 																		<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Mail-at.svg-->
 																		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																				<rect x="0" y="0" width="24" height="24" />
-																				<path d="M11.575,21.2 C6.175,21.2 2.85,17.4 2.85,12.575 C2.85,6.875 7.375,3.05 12.525,3.05 C17.45,3.05 21.125,6.075 21.125,10.85 C21.125,15.2 18.825,16.925 16.525,16.925 C15.4,16.925 14.475,16.4 14.075,15.65 C13.3,16.4 12.125,16.875 11,16.875 C8.25,16.875 6.85,14.925 6.85,12.575 C6.85,9.55 9.05,7.1 12.275,7.1 C13.2,7.1 13.95,7.35 14.525,7.775 L14.625,7.35 L17,7.35 L15.825,12.85 C15.6,13.95 15.85,14.825 16.925,14.825 C18.25,14.825 19.025,13.725 19.025,10.8 C19.025,6.9 15.95,5.075 12.5,5.075 C8.625,5.075 5.05,7.75 5.05,12.575 C5.05,16.525 7.575,19.1 11.575,19.1 C13.075,19.1 14.625,18.775 15.975,18.075 L16.8,20.1 C15.25,20.8 13.2,21.2 11.575,21.2 Z M11.4,14.525 C12.05,14.525 12.7,14.35 13.225,13.825 L14.025,10.125 C13.575,9.65 12.925,9.425 12.3,9.425 C10.65,9.425 9.45,10.7 9.45,12.375 C9.45,13.675 10.075,14.525 11.4,14.525 Z" fill="#000000" />
+																				<rect x="0" y="0" width="24" height="24"/>
+																				<circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10"/>
+																				<path d="M12,16 C12.5522847,16 13,16.4477153 13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 C11,16.4477153 11.4477153,16 12,16 Z M10.591,14.868 L10.591,13.209 L11.851,13.209 C13.447,13.209 14.602,11.991 14.602,10.395 C14.602,8.799 13.447,7.581 11.851,7.581 C10.234,7.581 9.121,8.799 9.121,10.395 L7.336,10.395 C7.336,7.875 9.31,5.922 11.851,5.922 C14.392,5.922 16.387,7.875 16.387,10.395 C16.387,12.915 14.392,14.868 11.851,14.868 L10.591,14.868 Z" fill="#000000"/>
 																			</g>
 																		</svg>
 																		<!--end::Svg Icon-->
@@ -266,19 +270,17 @@
 						</div>
 						<!--end::Subheader-->
 						<!--begin::Entry-->
+						
 						<div class="d-flex flex-column-fluid">
 							<!--begin::Container-->
 							<div class="container">
-								<!--begin::Dashboard-->
-								<!--begin::Row-->
-								<div class="row">
-									
-									<div class="col-lg-12 col-xxl-4 order-1 order-xxl-2">
-                                        <!--begin::List Widget 8-->
-                                        <div class="card card-custom">
-									<div class="card-header flex-wrap py-5">
+								<!--begin::Notice-->
+								<!--end::Notice-->
+								<!--begin::Card-->
+								<div class="card card-custom">
+								<div class="card-header flex-wrap border-0 pt-6 pb-0">
 										<div class="card-title">
-											<h5 class="card-label">Halaman Artikel & Blog</h5>
+											<h5 class="card-label">Halaman Ruang Lingkup</h5>
 										</div>
 										<div class="card-toolbar">
 											<!--begin::Dropdown-->
@@ -287,91 +289,144 @@
                                                         <!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Address-card.svg-->
                                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                <path d="M8,17.9148182 L8,5.96685884 C8,5.56391781 8.16211443,5.17792052 8.44982609,4.89581508 L10.965708,2.42895648 C11.5426798,1.86322723 12.4640974,1.85620921 13.0496196,2.41308426 L15.5337377,4.77566479 C15.8314604,5.0588212 16,5.45170806 16,5.86258077 L16,17.9148182 C16,18.7432453 15.3284271,19.4148182 14.5,19.4148182 L9.5,19.4148182 C8.67157288,19.4148182 8,18.7432453 8,17.9148182 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000000, 10.707409) rotate(-135.000000) translate(-12.000000, -10.707409) "/>
-                                                                <rect fill="#000000" opacity="0.3" x="5" y="20" width="15" height="2" rx="1"/>
-                                                            </g>
+																<rect x="0" y="0" width="24" height="24"/>
+																<path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953) "/>
+																<path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+															</g>
                                                         </svg>
                                                         <!--end::Svg Icon-->
-                                                    </span>Tambah Artikel</a>
+                                                    </span>Tambah Ruang Lingkup</a>
 											<!--end::Dropdown-->
 											<!--begin::Button-->
 										</div>
 									</div>
 									<div class="card-body">
+										<!--begin: Search Form-->
+										<!--begin::Search Form-->
+										<div class="mb-7">
+											<div class="row align-items-center">
+												<div class="col-lg-9 col-xl-8">
+													<div class="row align-items-left">
+														<div class="col-md-4 my-2 my-md-0">
+															<div class="d-flex align-items-right">
+																<!-- <label class="mr-3 mb-0 d-none d-md-block">Lokasi:</label> -->
+																<select class="form-control" id="kt_datatable_search_lokasi">
+																	<option value="">Lokasi Lab (Semua)</option>
+																	<option value="1">Jakarta</option>
+																	<option value="2">Medan</option>
+																	<option value="3">Surabaya</option>
+																	<option value="4">Makassar</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-md-6 my-2 my-md-0">
+															<div class="input-icon">
+																<input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
+																<span>
+																	<i class="flaticon2-search-1 text-muted"></i>
+																</span>
+															</div>
+														</div>
+														<!-- <div class="col-md-2 my-2 my-md-0">
+															<a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
+														</div> -->
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--end::Search Form-->
+										<!--end: Search Form-->
 										<!--begin: Datatable-->
-										<table  class="table table-bordered table-checkable" id="order-listing">
+										<table class="datatable datatable-bordered datatable-head-custom" id="kt_datatable">
 											<thead>
 												<tr>
-													<th>Gambar</th>
-													<th>Judul</th>
-													<th>Deskripsi</th>
-													<th>Editor</th>
-													<th>Tanggal</th>
+													<th>Lokasi</th>
+													<th>Kelompok pengukuran</th>
+													<th>Instrument yang dikalibrasi</th>
+													<th>Frekuensi</th>
+													<th>Rentang Ukur</th>
+													<th>Ketidakpastian</th>
 													<th>Aksi</th>
+
 												</tr>
 											</thead>
 											<tbody>
-												@forelse ($artikels as $artikel)
 												<tr>
-													<td class="text-center">
-														<img src="{{ url('storage/artikels/'.$artikel->artikel_gambar)}}" class="rounded" style="width: 50px">
-
+													<td class="text-right">1</td>
+													<td>Kelistrikan</td>
+													<td>AC Current Source</td>
+													<td>f: 10 kHz ~ 1 kHz <br>
+														f: 1 kHz ~ 5 kHz <br>
+														f: 40 Hz ~ 5 kHz <br>
+														f: 5 kHz ~ 100 kHz <br>
+														f: 55 Hz ~ 10 kHz
 													</td>
-													<td width="200px">{{$artikel->artikel_judul}}</td>
-													<td width="300px">{{Str::limit(Strip_tags($artikel->artikel_deskripsi),50)}}</td>
-													<td>{{$artikel->artikel_editor}}</td>
-													<td>{{$artikel->artikel_date}}</td>
-													<!-- <td class="text-center">
-														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('artikel.destroy', $artikel->artikel_id) }}" method="POST">
-															<a href="{{ route('artikel.edit', $artikel->artikel_id) }}" class="btn btn-sm btn-primary">EDIT</a>
-															@csrf
-															@method('DELETE')
-															<button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
-														</form>
-													</td> -->
+													<td>0.00001 A ~ 1 A <br>
+														0.00001 A ~ 1 A <br>
+														1 A ~ 11 A <br>
+														0.00001 A ~ 10 A <br>
+														10 A ~ 20 A
+													</td>
+													<td>0.58 mA/A <br>
+														6.2 mA/A <br>
+														0.66 mA/A <br>
+														0.79 mA/A <br>
+														0.29 mA/A
+													</td>
 													<td class="text-center"> 
-														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('artikel.destroy', $artikel->artikel_id) }}" method="POST">
-															<!-- <a href="{{ route('artikel.edit', $artikel->artikel_id) }}" class="label label-success label-pill label-inline mr-2">Edit</a> -->
-															<a href="{{ route('artikel.edit', $artikel->artikel_id) }}"  class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit-1"></i></a>
+														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST">
+															
+															<a href=""  class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit-1"></i></a>
 															@csrf
 															@method('DELETE')
 															<button type="submit" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></button>
 														</form>
-                                                    </td>
+                                                    </td>	
 												</tr>
-												@empty
-												<div class="alert alert-danger">
-													Artikel Belum ada
-												</div>
-												@endforelse
+												<tr>
+													<td class="text-right">3</td>
+													<td>Frekuensi & Waktu</td>
+													<td>AC Current Source</td>
+													<td>f: 10 kHz ~ 1 kHz <br>
+														f: 1 kHz ~ 5 kHz <br>
+														f: 40 Hz ~ 5 kHz <br>
+														f: 5 kHz ~ 100 kHz <br>
+														f: 55 Hz ~ 10 kHz
+													</td>
+													<td>0.00001 A ~ 1 A <br>
+														0.00001 A ~ 1 A <br>
+														1 A ~ 11 A <br>
+														0.00001 A ~ 10 A <br>
+														10 A ~ 20 A
+													</td>
+													<td>0.58 mA/A <br>
+														6.2 mA/A <br>
+														0.66 mA/A <br>
+														0.79 mA/A <br>
+														0.29 mA/A
+													</td>
+													<td class="text-center"> 
+														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST">
+															
+															<a href=""  class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit-1"></i></a>
+															@csrf
+															@method('DELETE')
+															<button type="submit" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></button>
+														</form>
+                                                    </td>	
+												</tr>
 											</tbody>
 										</table>
-										
 										<!--end: Datatable-->
 									</div>
-                                </div>
-                                <br/>
-										
-										<!--end::List Widget 8-->
-									</div>
 								</div>
-								<!--end::Row-->
-								<!--begin::Row-->
-								
-								<!--end::Dashboard-->
+								<!--end::Card-->
 							</div>
 							<!--end::Container-->
 						</div>
+
 						<!--end::Entry-->
 					</div>
 					<!--end::Content-->
 					<!--begin::Footer-->
-					<script>
-						@if(session()->has('success'))
-							toastr.success('{{session('success')}}','BERHASIL!');
-						@elseif(session()->has('error'))
-							toastr.error('{{session('error')}}','GAGAL!');
-						@endif
-					</script>
-@include('awanlab/pengaturan-web/footer')
+@include('awanlab/pengaturan-web/ruanglingkup/footer')
