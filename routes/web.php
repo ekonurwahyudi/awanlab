@@ -56,4 +56,6 @@ Route::resource('/pengaturan/artikel',ArtikelController::class);
 Route::get('/pengaturan/ruanglingkup','RuanglingkupController@index');
 Route::get('/pengaturan/tambah-ruanglingkup','RuanglingkupController@tambah');
 Route::post('/pengaturan/ruanglingkup-proses', 'RuanglingkupController@proses');
-
+Route::get('/pengaturan/ruanglingkup-hapus/{ruanglingkup_id}', 'RuanglingkupController@delete');
+Route::get('/pengaturan/ruanglingkup-edit/{ruanglingkup_id}', 'RuanglingkupController@edit');
+Route::post('/pengaturan/ruanglingkup-update/{ruanglingkup_id}', 'RuanglingkupController@update');

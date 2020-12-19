@@ -35,9 +35,9 @@
 
 <!-- REVOLUTION LAYERS STYLES -->
 
-    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <!-- <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
 
-    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css"> -->
 
 <!-- prettyphoto -->
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
@@ -54,10 +54,14 @@
 <!-- responsive -->
 <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"/> -->
 
 <link rel="stylesheet" type="text/css" href="css/floating-wpp.min.css">
-<link rel="stylesheet" type="text/css" href="https://htmlstream.com/preview/front-v2.9.3/assets/vendor/fancybox/jquery.fancybox.css">
+        <link href="../../../halamanadmin/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" /> 
+        <!-- <link href="../../../halamanadmin/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" /> -->
+ <!-- <link href="../../../halamanadmin/css/style.bundle.css" rel="stylesheet" type="text/css" /> -->
+ <link href="../halamanadmin/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" type="text/css" href="css/tambah.css">
 <style>
     textarea {
         padding: 10px;
@@ -174,56 +178,7 @@
                                     </nav>
                                     <div class="header_extra d-flex flex-row align-items-center justify-content-end">
                                             <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-icon-btn-left ttm-btn-color-grey" href="tracking.php"> <i class="ti ti-target"></i>Tracking Order</a>
-                                            <!-- <div id="appointment">
-                                                <h3>Buat Jadwal Kalibrasi</h3>
-                                                <form class="wrap-form appointment_form clearfix" method="post" action="#" id="tes">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                                                    <input name="name" type="text" value="" placeholder="Nama Lengkap" required="required">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                                                    <input name="phone" type="tel" value="" placeholder="Nomor Handphone" required="required">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                                    <input name="email" type="email" value="" placeholder="Email">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group date">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-calendar"></i>
-                                                                    <input type="text" value="" id="datetimepicker1">
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                                    <input name="Note" type="text" value="" placeholder="Catatan">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Buat Jadwal Kalibrasi</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div> -->
+                                            
                                     </div>
                                 </div><!-- site-navigation end-->
                             </div>
@@ -233,4 +188,3 @@
             </div>
             <!-- site-header-menu end-->
         </header><!--header end-->
-        

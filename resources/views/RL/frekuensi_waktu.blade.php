@@ -1,4 +1,4 @@
-@include('../header')
+@include('RL/header')
         <!-- page-title -->
         <div class="">
             <div class="">
@@ -30,63 +30,61 @@
             <div class="container">
                 <!-- row -->
                 <div class="row">
-                <div class="col-lg-8 content-area">
-                        <div class="ttm-service-single-content-area">
-                            <div class="ttm-featured-wrapper mb-40 res-991-mb-20">
-                                <!-- <img class="img-fluid" src="images/services/services-02.jpg" alt=""> -->
-                            </div>
-                            <div class="ttm-service-description">
-                                <!-- <h4>Kalibrasi alat ukur Frekuensi & Waktu</h4> -->
-                                <div class="ttm-featured-wrapper ttm-portfolio-featured-wrapper text-center">
-                                        <h4>Ruang Lingkup Alat Ukur Frekuensi & Waktu</h4>
-                                        <img class="img-fluid" src="../images/ruanglingkup/jakarta/4.jpg" alt="">
-                                        <img class="img-fluid" src="../images/ruanglingkup/jakarta/5.jpg" alt="">
-                                        <img class="img-fluid" src="../images/ruanglingkup/jakarta/6.jpg" alt="">
-                                        <img class="img-fluid" src="../images/ruanglingkup/jakarta/7.jpg" alt="">
-                                        
-                                </div>
-            
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 widget-area sidebar-right">
-                        <aside class="widget widget-download">
-                            <ul class="download">
-                                <li><i class="fal fa-file-pdf"></i><div><h4>Certificate ISO 17025</h4><a href="https://drive.google.com/open?id=1CrUA1ueVSKHXO1jjOa3Ptrt1hv1ZHA-M">Download</a></div></li>
-                                <li><i class="fal fa-file-pdf"></i><div><h4>Ruang Lingkup</h4><a href="https://drive.google.com/file/d/1fjMDacYMckmOZ65hIuBn5C94WH4SmIbB/view?usp=sharing">Download</a></div></li>
-                                <li><i class="fal fa-file-pdf"></i><div><h4>SOP Lab Kalibrasi</h4><a href="#">Download</a></div></li>
-                            </ul>
-                        </aside>
-                        <aside class="widget widget-contact p-0">
-                            <div class="ttm-col-bgcolor-yes ttm-bgcolor-darkgrey col-bg-img-one ttm-col-bgimage-yes ttm-bg pt-20 pl-20 pr-20 pb-20">
-                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
-                                    <div class="ttm-col-wrapper-bg-layer-inner"></div>
-                                </div>
-                                <div class="layer-content">
-                                    <div class="ttm-bg ttm-col-bgcolor-yes ttm-bgcolor-grey pt-1 pb-1 pl-1 pr-1">
-                                        <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
-
-                                        <div class="ttm-col-bgcolor-yes ttm-bgcolor-darkgrey ttm-bg pt-50 pl-30 pr-30 pb-40">
-                                            <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
-                                                <div class="ttm-col-wrapper-bg-layer-inner"></div>
-                                            </div>
-                                            <div class="layer-content">
-                                                <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-white ttm-icon_element-size-lg mb-15">
-                                                    <i class="fal fa-user-headset"></i>
-                                                </div>
-                                                <h4>Butuh bantuan?</h4>
-                                                <p>Jika kamu membutuhkan bantuan, silahkan hubungi kami.</p>
-                                                <ul class="ttm-textcolor-white">
-                                                    <li><i class="flaticon-call mr-2"></i>021-21480341</li>
-                                                    <li><i class="flaticon-placeholder mr-2"></i>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</li>
-                                                </ul>
-                                            </div>
+                    <div class="col-lg-12 content-area">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 col-xl-8">
+                                <div class="row align-items-left">
+                                    <div class="col-md-4 my-2 my-md-0">
+                                        <div class="d-flex align-items-right">
+                                            <!-- <label class="mr-3 mb-0 d-none d-md-block">Lokasi:</label> -->
+                                            <select class="form-control" id="kt_datatable_search_lokasi">
+                                                <option value="">Lokasi Lab (Semua)</option>
+                                                <option value="1">Jakarta</option>
+                                                <option value="2">Medan</option>
+                                                <option value="3">Surabaya</option>
+                                                <option value="4">Makassar</option>
+                                            </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-6 my-2 my-md-0">
+                                        <div class="input-icon">
+                                            <input type="text" class="form-control" placeholder="Cari disini" id="kt_datatable_search_query" />
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-2 my-2 my-md-0">
+                                        <a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
+                                    </div> -->
                                 </div>
                             </div>
-                        </aside>
+                        </div>
+              
+                        <br>
+                        <table class="datatable-bordered datatable-head-custom" id="kt_datatable">
+                            <thead>
+                                <tr>
+                                    <th>Lokasi</th>
+                                    <th>Kelompok pengukuran</th>
+                                    <th>Instrument yang dikalibrasi</th>
+                                    <th>Frekuensi</th>
+                                    <th>Rentang Ukur</th>
+                                    <th>Ketidakpastian</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach ($ruanglingkups as $ruanglingkup)
+                                <tr>
+                                    <td class="text-right">{{$ruanglingkup->ruanglingkup_lokasi}}</td>
+                                    <td>{{$ruanglingkup->ruanglingkup_kelompokukur}}</td>
+                                    <td>{{$ruanglingkup->ruanglingkup_instrument}}</td>
+                                    <td ><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_frekuensi}}</textarea></td>
+                                    <td><textarea style="border-style: none; background-color: white; " disabled="disabled" >{{$ruanglingkup->ruanglingkup_rentangukur}}</textarea></td>
+                                    <td><textarea style="border-style: none; background-color: white; " disabled="disabled">{{$ruanglingkup->ruanglingkup_ketidakpastian}}</textarea></td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
                     </div>
                     
 
@@ -99,4 +97,4 @@
       
     </div><!--site-main end-->
 
-@include('../footer')
+@include('RL/footer')

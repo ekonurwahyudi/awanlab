@@ -1,5 +1,4 @@
 
-    <!--footer start-->
     <footer class="footer widget-footer clearfix">
         <div class="first-footer ttm-bgcolor-skincolor">
             <div class="container">
@@ -184,7 +183,7 @@
                 </div>
             </div>
         </div>
-        <div id="WAButton"></div>
+       
     </footer>
     
     <!--footer end-->
@@ -200,28 +199,28 @@
 
     <!-- Javascript -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/tether.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script> 
-    <script src="js/jquery.easing.js"></script>    
-    <script src="js/jquery-waypoints.js"></script>    
-    <script src="js/jquery-validate.js"></script> 
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/numinate.min.js"></script>
-    <script src="js/imagesloaded.min.js"></script>
-    <script src="js/jquery-isotope.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/jquery.easing.js"></script>     -->
+    <!-- <script src="js/jquery-waypoints.js"></script>     -->
+    <!-- <script src="js/jquery-validate.js"></script>  -->
+    <!-- <script src="js/jquery.prettyPhoto.js"></script> -->
+    <!-- <script src="js/slick.min.js"></script> -->
+    <!-- <script src="js/numinate.min.js"></script> -->
+    <!-- <script src="js/imagesloaded.min.js"></script> -->
+    <!-- <script src="js/jquery-isotope.js"></script> -->
+    <!-- <script src="js/moment.min.js"></script> -->
+    <!-- <script src="js/bootstrap-datetimepicker.min.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
 
     <!-- Revolution Slider -->
-    <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <!-- <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
     <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="revolution/js/slider.js"></script>
+    <script src="revolution/js/slider.js"></script> -->
 
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->    
-
+<!-- 
     <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
@@ -231,46 +230,22 @@
     <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+    <script type="text/javascript" src="js/floating-wpp.min.js"></script> -->
 
-    <script type="text/javascript">
-        $(function() {
-            $('#WAButton').floatingWhatsApp({
-                phone: '+628987088921', //WhatsApp Business phone number International format-
-                //Get it with Toky at https://toky.co/en/features/whatsapp.
-                headerTitle: 'Hubungi kami lewat Whatsapp!', //Popup Title
-                popupMessage: 'Selamat datang di Lab Kalibrasi Telkom, ada yang bisa kami bantu 😀?', //Popup Message
-                showPopup: true, //Enables popup display
-                buttonImage: '<img src="images/whatsapp.svg" />', //Button Image
-                //headerColor: 'crimson', //Custom header color
-                //backgroundColor: 'crimson', //Custom background button color
-                position: "right"
-            });
-        });
-    </script>
-    <!-- JS Implementing Plugins -->
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-
-    <!-- JS Implementing Plugins -->
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/js/components/hs.fancybox.js"></script>
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/js/components/hs.svg-injector.js"></script>
-
-    <!-- JS Plugins Init. -->
-    <script>
-    $(window).on('load', function () {
-        // initialization of svg injector module
-        $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
-
-    $(document).on('ready', function () {
-        // initialization of popups
-        $.HSCore.components.HSFancyBox.init('.js-fancybox');
-    });
-    </script>
-   
+    
+    <script src="https://preview.keenthemes.com/metronic/theme/html/demo1/dist/assets/plugins/global/plugins.bundle.js?v=7.1.7"></script>
+    <script src="https://preview.keenthemes.com/metronic/theme/html/demo1/dist/assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.1.7"></script>
+    <script src="https://preview.keenthemes.com/metronic/theme/html/demo1/dist/assets/js/scripts.bundle.js?v=7.1.7"></script>
+    <!--end::Global Theme Bundle-->
+    <!--begin::Page Scripts(used by this page)-->
+    <script src="https://preview.keenthemes.com/metronic/theme/html/demo1/dist/assets/js/pages/crud/forms/widgets/autosize.js?v=7.1.7"></script>
+    <script src="../../halamanadmin/js/pages/crud/ktdatatable/base/html-table.js?v=7.1.7"></script>
 
     <!-- Javascript end-->
 
 </body>
+    <script src='../../halamanadmin/js/autosize.js'></script>
+    <script>
+        autosize(document.querySelectorAll('textarea'));
+    </script>
 </html>

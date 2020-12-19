@@ -1,4 +1,28 @@
-<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+@include('awanlab/pengaturan-web/header')
+		<div class="container">
+        <h3>no max-height</h3>
+		<table>
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>tea</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><textarea>The coconut palm (also, cocoanut), Cocos nucifera, is a member of the family Arecaceae (palm family). It is the only accepted species in the genus Cocos.
+rtgr
+trgrtg
+trg
+trg
+trg
+trg</textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
 						<!--begin::Container-->
 						<div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
 							<!--begin::Copyright-->

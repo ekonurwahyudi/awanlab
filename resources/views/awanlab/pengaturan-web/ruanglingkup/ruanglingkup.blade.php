@@ -339,7 +339,7 @@
 										<!--end::Search Form-->
 										<!--end: Search Form-->
 										<!--begin: Datatable-->
-										<table class="datatable datatable-bordered datatable-head-custom" id="kt_datatable">
+										<table class="datatable-bordered datatable-head-custom" id="kt_datatable">
 											<thead>
 												<tr>
 													<th>Lokasi</th>
@@ -358,22 +358,16 @@
 													<td class="text-right">{{$ruanglingkup->ruanglingkup_lokasi}}</td>
 													<td>{{$ruanglingkup->ruanglingkup_kelompokukur}}</td>
 													<td>{{$ruanglingkup->ruanglingkup_instrument}}</td>
-													<td><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_frekuensi}}</textarea></td>
-													<td><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_rentangukur}}</textarea></td>
-													<td><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_ketidakpastian}}</textarea></td>
-													<td class="text-center"> 
-														<form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST">
-															
-															<a href=""  class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit-1"></i></a>
-															@csrf
-															@method('DELETE')
-															<button type="submit" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></button>
-														</form>
-                                                    </td>	
+													<td ><textarea style="border-style: none; background-color: white;" disabled="disabled" >{{$ruanglingkup->ruanglingkup_frekuensi}}</textarea></td>
+													<td><textarea style="border-style: none; background-color: white; " disabled="disabled" >{{$ruanglingkup->ruanglingkup_rentangukur}}</textarea></td>
+													<td><textarea style="border-style: none; background-color: white; " disabled="disabled">{{$ruanglingkup->ruanglingkup_ketidakpastian}}</textarea></td>
+													<td><a href="/pengaturan/ruanglingkup-edit/{{$ruanglingkup->ruanglingkup_id}}" class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit"></i></a>
+													<a href="/pengaturan/ruanglingkup-hapus/{{$ruanglingkup->ruanglingkup_id}}" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></a></td>
 												</tr>
 											@endforeach
 											</tbody>
 										</table>
+										
 										<!--end: Datatable-->
 									</div>
 								</div>
