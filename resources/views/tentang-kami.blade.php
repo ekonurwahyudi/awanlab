@@ -123,82 +123,15 @@
                         </div>
                     </div>
                 </div><!-- row end -->
+                <div class="row">
+                    <div class="col-lg-12">
+                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor mr-10 mt-15 js-video-button"  data-video-id='v1mVEQ-pUcw' href=""> <i class="far fa-play-circle"></i> Nonton Video</a>
+                    </div>
+                </div>
             </div>
-            <br><br>
         </section>
-
-        <!-- Services Section -->
-<div class="container">
-  <div class="row justify-content-md-between align-items-center">
-    <div class="col-md-6 col-lg-5 mb-7 mb-md-0">
-      <ul class="list-unstyled u-indicator-vertical-dashed pr-md-4">
-        <!-- Info -->
-        <li class="media u-indicator-vertical-dashed-item">
-          <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-            <span class="fas fa-check btn-icon__inner"></span>
-          </span>
-          <div class="media-body mt-n1">
-            <h3 class="h5 text-primary">Responsive design</h3>
-            <p>Responsive design has grown from a preference to a necessity.</p>
-          </div>
-        </li>
-        <!-- End Info -->
-
-        <!-- Info -->
-        <li class="media u-indicator-vertical-dashed-item">
-          <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-            <span class="fas fa-check btn-icon__inner"></span>
-          </span>
-          <div class="media-body mt-n1">
-            <h3 class="h5 text-primary">Hosting</h3>
-            <p>We know that business never stops, and neither should your website.</p>
-          </div>
-        </li>
-        <!-- End Info -->
-
-        <!-- Info -->
-        <li class="media u-indicator-vertical-dashed-item">
-          <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-            <span class="fas fa-check btn-icon__inner"></span>
-          </span>
-          <div class="media-body mt-n1">
-            <h3 class="h5 text-primary">Search engine optimization</h3>
-            <p>Improve your website's ranking in search results with our comprehensive SEO packages and services.</p>
-          </div>
-        </li>
-        <!-- End Info -->
-      </ul>
-    </div>
-
-    <div id="SVGellipseMockup" class="col-md-6 svg-preloader">
-      <!-- Fancybox -->
-      <a class="js-fancybox u-media-player u-media-player--centered" href="javascript:;"
-         data-src="//vimeo.com/167434033"
-         data-speed="700"
-         data-animate-in="zoomIn"
-         data-animate-out="zoomOut"
-         data-caption="Front - Responsive Website Template">
-       <span class="u-media-player__icon u-media-player__icon--xl text-primary">
-        <span class="fas fa-play u-media-player__icon-inner"></span>
-       </span>
-      </a>
-      <!-- End Fancybox -->
-
-      <!-- SVG Mockup -->
-      <figure class="ie-ellipse-mockup">
-        <img class="js-svg-injector" src="../../assets/svg/illustrations/ellipse-mockup.svg" alt="Image Description"
-             data-img-paths='[
-               {"targetId": "#SVGellipseMockupImg1", "newPath": "../../assets/img/615x750/img3.jpg"}
-             ]'
-             data-parent="#SVGellipseMockup">
-      </figure>
-      <!-- End SVG Mockup -->
-    </div>
-  </div>
-</div>
-<!-- End Services Section -->
-
         <!--introduction-section end-->
     </div><!--site-main end-->
+    
 
 @include('footer')

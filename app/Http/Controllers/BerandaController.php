@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facedes\Storage;
 use DB;
 use Illuminate\Contracts\Support\Jsonable;
+use App;
 
 class BerandaController extends Controller
 {

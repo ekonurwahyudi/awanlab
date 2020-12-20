@@ -199,8 +199,21 @@
 
 
     <!-- Javascript -->
+    <script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+	<script src="../js/jquery-modal-video.min.js"></script>
+	<script>
+		$(".js-video-button").modalVideo({
+			youtube:{
+				controls:0,
+				nocookie: true
+			}
+		});
+	</script>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/jquery.easing.js"></script>    
@@ -248,29 +261,6 @@
             });
         });
     </script>
-    <!-- JS Implementing Plugins -->
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-
-    <!-- JS Implementing Plugins -->
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/js/components/hs.fancybox.js"></script>
-    <script src="https://htmlstream.com/preview/front-v2.9.3/assets/js/components/hs.svg-injector.js"></script>
-
-    <!-- JS Plugins Init. -->
-    <script>
-    $(window).on('load', function () {
-        // initialization of svg injector module
-        $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
-
-    $(document).on('ready', function () {
-        // initialization of popups
-        $.HSCore.components.HSFancyBox.init('.js-fancybox');
-    });
-    </script>
-   
-
-    <!-- Javascript end-->
 
 </body>
 </html>

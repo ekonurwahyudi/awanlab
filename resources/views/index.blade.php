@@ -62,6 +62,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border ttm-btn-color-skincolor mr-10 mt-15" href="tentang-kami">Selengkapnya</a>
+                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor mr-10 mt-15 js-video-button"  data-video-id='v1mVEQ-pUcw' href=""> <i class="far fa-play-circle"></i> Nonton Video</a>
                                 </div>
                             </div>
                         </div>

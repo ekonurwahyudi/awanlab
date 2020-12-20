@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +57,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"/>
 
 <link rel="stylesheet" type="text/css" href="css/floating-wpp.min.css">
-<link rel="stylesheet" type="text/css" href="https://htmlstream.com/preview/front-v2.9.3/assets/vendor/fancybox/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/modal-video.min.css">
 <style>
     textarea {
         padding: 10px;
@@ -93,7 +93,7 @@
                         <div class="col-xl-12 d-flex flex-row align-items-center">
                             <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>021-21480341</div>
                             <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fal fa-envelope"></i></div><a href="mailto:yourdomain@gmail.com">labkalibrasi@telkom.co.id</a></div>
-                            <div class="top_bar_contact_item ml-auto"><div class="top_bar_icon"><i class="fal fa-clock"></i></div>Waktu Pelayanan - Sen - Jum: 08:30 - 17:00</div>
+                            <div class="top_bar_contact_item ml-auto"><div class="top_bar_icon"><i class="fal fa-clock"></i></div>{{ __('header.Waktu')}}</div>
                             <nav class="main-menu menu-mobile" id="menu">
                                 <ul class="menu">
                                     <li class="mega-menu-item">
@@ -104,7 +104,7 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <a href="home"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>Login or Register</div></a>
+                            <a href="home"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>{{ __('header.Login')}}</div></a>
                         </div>
                     </div>
                 </div>

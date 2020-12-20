@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 //Route Beranda
 Route::get('/','BerandaController@beranda');
+// Route::get('/{locale}', 'BerandaController@bahasa');
 Route::get('artikel/{artikel_id}','BerandaController@artikel');
 Route::get('artikel/','BerandaController@allartikel');
 Route::get('sertifikat-iso','BerandaController@sertifikat');
