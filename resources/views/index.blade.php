@@ -13,11 +13,11 @@
                             <!-- section title -->
                             <div class="section-title">
                                 <div class="title-header">
-                                    <h5>Tentang Kami</h5>
+                                    <h5>{{ __('lang.Tentang')}}</h5>
                                     <h2 class="title">Laboratorium Calibration <br> PT. Telekomunikasi Indonesia, Tbk.</h2>
                                 </div>
-                                <div class="title-desc"> PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN) yang bergerak di bidang jasa layanan teknologi informasi dan komunikasi (TIK) dan jaringan telekomunikasi di Indonesia.</div> <br/>
-                                <div class="title-desc"> Dari tahun 1995 sampai saat ini Telkom telah memiliki 4 Laboratorium Kalibrasi yang berada di Jakarta, Surabaya, Makasar dan Medan. Lab Kalibrasi Telkom juga telah terakreditasi oleh Komite Akreditasi Nasional (KAN) dengan Nomor Akreditasi LK 016 IDN, yang mengacu ke ISO/IEC 17025:2017. Kami melayani:</div>
+                                <div class="title-desc"> {{ __('lang.telkom')}}</div> <br/>
+                                <div class="title-desc"> {{ __('lang.tentanglab')}}</div>
                             </div><!-- section title end -->
                             <br/>
                             
@@ -32,10 +32,10 @@
                                         </div>
                                         <div class="featured-content">
                                             <div class="featured-title">
-                                                <h5>Melayani <br> Kalibrasi Onsite</h5>
+                                                <h5>{{__('lang.onsite')}}</h5>
                                             </div>
                                             <div class="featured-desc">
-                                                <p>Beberapa peralatan kalibrasi tidak dapat di kalibrasi di Lab. oleh sebab itu kalibrasi onsite adalah pilihan terbaik untuk perusahaan anda.</p>
+                                                <p>{{__('lang.onsitedes')}}</p>
                                             </div>
                                         </div>
                                     </div><!-- featured-icon-box end-->
@@ -50,10 +50,10 @@
                                         </div>
                                         <div class="featured-content">
                                             <div class="featured-title">
-                                                <h5>Melayani <br> Kalibrasi InHouse</h5>
+                                                <h5>{{__('lang.inhouse')}}</h5>
                                             </div>
                                             <div class="featured-desc">
-                                                <p>Lab Kalibrasi Telkom memberikan jasa kalibrasi yang lengkap yang dilakukan di laboratorium yang memenuhi akreditasi KAN.</p>
+                                                <p>{{__('lang.inhousedes')}}</p>
                                             </div>
                                         </div>
                                     </div><!-- featured-icon-box end-->
@@ -61,8 +61,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border ttm-btn-color-skincolor mr-10 mt-15" href="tentang-kami">Selengkapnya</a>
-                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor mr-10 mt-15 js-video-button"  data-video-id='v1mVEQ-pUcw' href=""> <i class="far fa-play-circle"></i> Nonton Video</a>
+                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border ttm-btn-color-skincolor mr-10 mt-15" href="tentang-kami">{{__('lang.selengkapnya')}}</a>
+                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor mr-10 mt-15 js-video-button"  data-video-id='v1mVEQ-pUcw' href=""> <i class="far fa-play-circle"></i> {{__('lang.nonton')}}</a>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                     </div>
                                     <div class="featured-content text-center">
                                         <div class="featured-title">
-                                            <h5>25 Tahun</h5>
+                                            <h5>25 {{__('lang.tahun')}}</h5>
                                         </div>
                                         <div class="featured-desc">
                                             <p>Experiance Of Laboratory</p>

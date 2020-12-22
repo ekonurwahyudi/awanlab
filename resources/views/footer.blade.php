@@ -15,7 +15,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Lab Kalibrasi Telkom</h5>
+                                        <h5>{{__('lang.telkomlab')}}</h5>
                                     </div>
                                     <div class="featured-desc">
                                         <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Hubungi Kami</h5>
+                                        <h5>{{__('lang.Hubungi')}}</h5>
                                     </div>
                                     <div class="featured-desc">
                                         <p>Costumer Care: 021-21480341</p>
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Email Kami</h5>
+                                        <h5>{{__('lang.emailkami')}}</h5>
                                     </div>
                                     <div class="featured-desc">
                                         <p><a href="mailto:Supportteam@example.com">telkomkalibrasi@telkom.co.id</a></p>
@@ -74,19 +74,19 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 widget-area">
                         <div class="widget widget_text clearfix">
                             <div style="margin-left: 3em">
-                                <img id="footer-logo-img" src="images/footer-logo.png" width="200">
+                                <img id="footer-logo-img" src="../images/footer-logo.png" width="200">
                                 <br>
                                 <br>
                             </div>
                             <div class="textwidget widget-text">
-                                <p class="pb-10 pr-30">Lab Kalibrasi Telkom telah mendapatkan sertifikat KAN ISO 17025:2017 dengan <br>nomor akreditasi LK 016 IDN</p>
+                                <p class="pb-10 pr-30">{{__('lang.kan')}}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area">
                         <div class="widget widget_nav_menu clearfix">
                         <div class="mb-30">
-                                <h4>Lokasi Lab Kalibrasi Telkom</h4>
+                                <h4>{{__('lang.lokasi')}}</h4>
                             </div>
                             <div class="featured-icon-box icon-align-before-content icon-ver_align-top">
                                 <div class="featured-icon">
@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Lab Kalibrasi Jakarta</h5>
+                                        <h5>{{__('lang.jakarta')}}</h5>
                                     </div>
                                     <div class="featured-desc">
                                         <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat 10570 Phone: 021-21480341</p>
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Lab Kalibrasi Medan</h5>
+                                        <h5>{{__('lang.medan')}}</h5>
                                     </div>
                                     <div class="featured-desc">
                                         <p>Jl. Gaharu No.1 Medan bt 20235 Phone: 061-4531311</p>
@@ -136,7 +136,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Lab Kalibrasi Surabaya</h5>
+                                        <h5>{{__('lang.surabaya')}}</h5>
                                     </div>
                                     <div class="featured-desc">
                                         <p>Jl. Gayungan PTT No.17-19 Surabaya 60235 Phone: 031-8283678</p>
@@ -152,7 +152,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Lab Kalibrasi Makasar</h5>
+                                        <h5>{{__('lang.makassar')}}</h5>
                                     </div>
                                     <div class="featured-desc">
                                         <p>Jl. AP Pettarani No. 4 Makassar 90211 Phone: 0411-864444, 880444</p>
@@ -213,20 +213,20 @@
 		});
 	</script>
 
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/jquery.easing.js"></script>    
-    <script src="js/jquery-waypoints.js"></script>    
-    <script src="js/jquery-validate.js"></script> 
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/numinate.min.js"></script>
-    <script src="js/imagesloaded.min.js"></script>
-    <script src="js/jquery-isotope.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="../js/jquery.min.js"></script> -->
+    <script src="../js/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script> 
+    <script src="../js/jquery.easing.js"></script>    
+    <script src="../js/jquery-waypoints.js"></script>    
+    <script src="../js/jquery-validate.js"></script> 
+    <script src="../js/jquery.prettyPhoto.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/numinate.min.js"></script>
+    <script src="../js/imagesloaded.min.js"></script>
+    <script src="../js/jquery-isotope.js"></script>
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/main.js"></script>
 
     <!-- Revolution Slider -->
     <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -244,7 +244,7 @@
     <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+    <script type="text/javascript" src="../js/floating-wpp.min.js"></script>
 
     <script type="text/javascript">
         $(function() {
@@ -254,7 +254,7 @@
                 headerTitle: 'Hubungi kami lewat Whatsapp!', //Popup Title
                 popupMessage: 'Selamat datang di Lab Kalibrasi Telkom, ada yang bisa kami bantu 😀?', //Popup Message
                 showPopup: true, //Enables popup display
-                buttonImage: '<img src="images/whatsapp.svg" />', //Button Image
+                buttonImage: '<img src="../images/whatsapp.svg" />', //Button Image
                 //headerColor: 'crimson', //Custom header color
                 //backgroundColor: 'crimson', //Custom background button color
                 position: "right"

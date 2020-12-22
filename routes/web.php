@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +12,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//Route Translate
+// Route::redirect('/','/id');
+Route::group(['prefix' => LaravelLocalization::setLocale(),
+	'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function()
+{
+    Route::get('/','BerandaController@beranda');
+    Route::get('/tentang-kami','BerandaController@tentang');
+});
+
+
+//Route Translate
+
+// Route::redirect('artikel','artikel/id');
+// Route::redirect('tentang-kami','tentang-kami/id');
+
 //Route Beranda
-Route::get('/','BerandaController@beranda');
-// Route::get('/{locale}', 'BerandaController@bahasa');
+// Route::get('/{locale}','BerandaController@beranda');
 Route::get('artikel/{artikel_id}','BerandaController@artikel');
 Route::get('artikel/','BerandaController@allartikel');
 Route::get('sertifikat-iso','BerandaController@sertifikat');
 Route::get('struktur-organisasi','BerandaController@struktur');
 Route::get('hubungi-kami','BerandaController@hubungikami');
-Route::get('tentang-kami','BerandaController@tentang');
+// Route::get('tentang-kami/{locale}','BerandaController@tentang');
 Route::get('konsultasi','BerandaController@konsultasi');
 Route::post('konsultasi-proses','BerandaController@konsultasiproses');
 Route::get('labjakarta','BerandaController@labjakarta');

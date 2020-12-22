@@ -6,13 +6,13 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="page-title-heading">
-                                <h2 class="title">Tentang Kami</h2>
+                                <h2 class="title">{{__('lang.Tentang')}}</h2>
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a title="Homepage" href="index.php">Beranda</a>
+                                    <a title="Homepage" href="index.php">{{__('lang.Beranda')}}</a>
                                 </span>
-                                <span>Tentang Kami</span>
+                                <span>{{__('lang.Tentang')}}</span>
                             </div>
                         </div>
                     </div>
@@ -38,27 +38,27 @@
                                     <!-- section title -->
                                     <div class="section-title">
                                         <div class="title-header">
-                                            <h5>Tentang Kami</h5>
+                                            <h5>{{ __('lang.Tentang')}}</h5>
                                             <h4 class="title">Laboratorium Calibration <br> PT. Telekomunikasi Indonesia, Tbk.</h4>
                                         </div>
-                                        <div class="title-desc"> PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN) yang bergerak di bidang jasa layanan teknologi informasi dan komunikasi (TIK) dan jaringan telekomunikasi di Indonesia.</div> <br/>
-                                        <div class="title-desc"> Dari tahun 1995 sampai saat ini Telkom telah memiliki 4 Laboratorium Kalibrasi yang berada di Jakarta, Surabaya, Makasar dan Medan. Lab Kalibrasi Telkom juga telah terakreditasi oleh Komite Akreditasi Nasional (KAN) dengan Nomor Akreditasi LK 016 IDN, yang mengacu ke ISO/IEC 17025:2017.</div>
+                                        <div class="title-desc"> {{__('lang.telkom')}}</div> <br/>
+                                        <div class="title-desc"> {{__('lang.tentanglab')}}</div>
                                         
                                         <br/>
-                                        <h4 class="title">Visi</h4>
+                                        <h4 class="title">{{__('lang.visi')}}</h4>
                                         <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
-                                            <li><i class="fa fa-arrow-circle-right"></i><div class="ttm-list-li-content">Menjadi penyedia solusi pemeliharaan infrastruktur telekomunikasi terbaik di regional.</div></li>
+                                            <li><i class="fa fa-arrow-circle-right"></i><div class="ttm-list-li-content">{{__('lang.isivisi')}}</div></li>
                                         </ul>
 
                                         <br/>
-                                        <h4 class="title">Misi</h4>
+                                        <h4 class="title">{{__('lang.misi')}}</h4>
                                         <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
-                                            <li><i class="fa fa-arrow-circle-right"></i><div class="ttm-list-li-content">Menyediakan solusi pemeliharaan yang unggul dalam menjamin availability dan reliability alat produksi, dengan kualitas yang prima dan harga kompetitif.</div></li>
+                                            <li><i class="fa fa-arrow-circle-right"></i><div class="ttm-list-li-content">{{__('lang.isimisi')}}</div></li>
                                         </ul>
                                         
                                     </div><!-- section title end -->
                                     <div class="d-sm-flex align-items-center pt-0">
-                                        <h6 class="mr-2">Ada pertayaan? <u>Hubungi Kami.</u></h6>
+                                        <h6 class="mr-2">{{__('lang.pertayaan')}} <u>{{__('lang.Hubungi')}}.</u></h6>
                                         <div class="d-flex"><h5>(021) 82491919</h5><span class="pl-5 pr-5">or</span><h5>82492121</h5></div>
                                     </div>
                                     <!-- <div class="sep_holder_box width-100 mt-20 mb-30">
@@ -117,7 +117,7 @@
                             <div class="layer-content">
                                 <!-- ttm_single_image-wrapper -->
                                 <div class="ttm_single_image-wrapper text-center">
-                                    <img class="img-fluid" src="images/single-img-one.jpg" alt="">
+                                    <img class="img-fluid" src="../images/single-img-one.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
                 </div><!-- row end -->
                 <div class="row">
                     <div class="col-lg-12">
-                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor mr-10 mt-15 js-video-button"  data-video-id='v1mVEQ-pUcw' href=""> <i class="far fa-play-circle"></i> Nonton Video</a>
+                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor mr-10 mt-15 js-video-button"  data-video-id='v1mVEQ-pUcw' href=""> <i class="far fa-play-circle"></i> {{__('lang.nonton')}}</a>
                     </div>
                 </div>
             </div>

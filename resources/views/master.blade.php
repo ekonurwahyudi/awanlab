@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,10 +19,13 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 
 <!-- fontawesome -->
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"> -->
+<link rel="stylesheet" type="text/css" href="css/all.css">
 
 <!-- themify -->
 <link rel="stylesheet" type="text/css" href="css/themify-icons.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 
 <!-- flaticon -->
 <link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
@@ -53,17 +56,32 @@
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"/>
 
+<link rel="stylesheet" type="text/css" href="css/floating-wpp.min.css">
+<link rel="stylesheet" href="/css/modal-video.min.css">
+<style>
+    textarea {
+        padding: 10px;
+        vertical-align: top;
+        width: 200px;
+    }
+    textarea:focus {
+        outline-style: solid;
+        outline-width: 2px;
+    }
+</style>
+</style>
 </head>
 
 <body>
+    
 
     <!--page start-->
     <div class="page">
 
         <!-- preloader start -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div id="status">&nbsp;</div>
-        </div>
+        </div> -->
         <!-- preloader end -->       
 
         <!--header start-->
@@ -73,10 +91,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 d-flex flex-row align-items-center">
-                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>(021) 82491919</div>
-                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-envelope-o"></i></div><a href="mailto:yourdomain@gmail.com">labkalibrasi@telkom.co.id</a></div>
-                            <div class="top_bar_contact_item ml-auto"><div class="top_bar_icon"><i class="fa fa-clock-o"></i></div>Waktu Kerja - Sen - Jum: 08:30 - 17:00</div>
-                            <a href="login.php"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>Login or Register</div></a>
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>021-21480341</div>
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fal fa-envelope"></i></div><a href="mailto:yourdomain@gmail.com">labkalibrasi@telkom.co.id</a></div>
+                            <div class="top_bar_contact_item ml-auto"><div class="top_bar_icon"><i class="fal fa-clock"></i></div>{{ __('header.Waktu')}}</div>
+                            <nav class="main-menu menu-mobile" id="menu">
+                                <ul class="menu">
+                                    <li class="mega-menu-item">
+                                    <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fal fa-globe"></i></div>ID</div>
+                                        <ul class="mega-submenu">
+                                            <li><a href="#"></i>English</a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a href="home"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>{{ __('header.Login')}}</div></a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +119,7 @@
                                 <div class="site-navigation d-flex flex-row">
                                     <!-- site-branding -->
                                     <div class="site-branding mr-auto">
-                                        <a class="home-link" href="index.php" title="Labostica" rel="home">
+                                        <a class="home-link" href="/" rel="home">
                                             <img id="logo-img" class="img-center" src="images/logo-img.png" alt="logo-img">
                                         </a>
                                     </div><!-- site-branding end -->
@@ -103,39 +131,44 @@
                                     <!-- menu -->
                                     <nav class="main-menu menu-mobile" id="menu">
                                         <ul class="menu">
-                                            <li class="mega-menu-item active">
-                                                <a href="index.php" class="mega-menu-link">Beranda</a>
+                                            <li class="mega-menu-item">
+                                                <a href="/" class="mega-menu-link">Beranda</a>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="tentang-kami.php" class="mega-menu-link">Tentang Kami</a>
+                                                <a href="tentang-kami" class="mega-menu-link">Tentang Kami</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="tentang-kami.php">Profil Lab</a>
-                                                    <li><a href="#">Sertifikasi ISO 17025:2007</a></li>
+                                                    <li><a href="tentang-kami">Profil Lab</a>
+                                                    <li><a href="sertifikat-iso">Sertifikasi ISO 17025:2017</a></li>
+                                                    <li><a href="struktur-organisasi">Struktur Organisasi</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="#" class="mega-menu-link">Layanan</a>
+                                                <a href="layanan-kalibrasi" class="mega-menu-link">Layanan</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="layanan.php">Kalibrasi</a>
-                                                    <li><a href="konsultasi.php">Konsultasi</a></li>
+                                                    <li><a href="layanan-kalibrasi">Kalibrasi</a>
+                                                    <li><a href="konsultasi">Konsultasi</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="#" class="mega-menu-link">info</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="#">Ruang Lingkup Kalibrasi</a>
-                                                    <li><a href="#">Tarif Kalibrasi</a></li>
-                                                    <li><a href="#">Audit Internal</a></li>
-                                                    <li><a href="#">Audit External</a>
+                                                    <li><a href="ruanglingkup" class="mega-menu-link">Ruang Lingkup Kalibrasi</a>
+                                                    <!-- <ul class="mega-submenu">
+                                                        <li><a href="labjakarta">Lab Kalibrasi Jakarta</a>
+                                                        <li><a href="labmedan">Lab Kalibrasi Medan</a></li>
+                                                        <li><a href="labsurabaya">Lab Kalibrasi Surabaya</a></li>
+                                                        <li><a href="labmakassar">Lab Kalibrasi Makassar</a></li>
+                                                    </ul> -->
+                                                    <!-- <li><a href="#">Tarif Kalibrasi</a></li> -->
                                                     <li><a href="#">Client Kami</a>
-                                                    <li><a href="#">Umpan Balik</a>
+                                                    <li><a href="kritik-saran">Kritik & Saran</a>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="kerjasama.php" class="mega-menu-link">Kerjasama</a>
+                                                <a href="/artikel" class="mega-menu-link">Artikel</a>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="hubungi-kami.php" class="mega-menu-link">Hubungi Kami</a>
+                                                <a href="hubungi-kami" class="mega-menu-link">Hubungi Kami</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -200,10 +233,12 @@
             </div>
             <!-- site-header-menu end-->
         </header><!--header end-->
-@yield('slide')
-@yield('konten')
-<!--footer start-->
-<footer class="footer widget-footer clearfix">
+        
+        @yield('konten')
+
+        
+    <!--footer start-->
+    <footer class="footer widget-footer clearfix">
         <div class="first-footer ttm-bgcolor-skincolor">
             <div class="container">
                 <div class="row">
@@ -241,7 +276,7 @@
                                         <h5>Hubungi Kami</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Costumer Care: (021) 82491919</p>
+                                        <p>Costumer Care: 021-21480341</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -302,7 +337,7 @@
                                         <h5>Lab Kalibrasi Jakarta</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat 10570 Phone: 021-21480341</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -318,7 +353,7 @@
                                         <h5>Lab Kalibrasi Medan</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. Gaharu No.1 Medan bt 20235 Phone: 061-4531311</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end--> 
@@ -342,7 +377,7 @@
                                         <h5>Lab Kalibrasi Surabaya</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. Gayungan PTT No.17-19 Surabaya 60235 Phone: 031-8283678</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -358,7 +393,7 @@
                                         <h5>Lab Kalibrasi Makasar</h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</p>
+                                        <p>Jl. AP Pettarani No. 4 Makassar 90211 Phone: 0411-864444, 880444</p>
                                     </div>
                                 </div>
                             </div><!-- featured-icon-box end-->
@@ -372,9 +407,9 @@
             <div class="container">
                 <div class="row copyright">
                     <div class="col-sm-9">
-                        <span>Copyright © 2020 Lab Calibration Telkom design by ThemetechMount</span>
+                        <span>Copyright © 2020 Laboratorium Calibration Telkom</span>
                     </div>
-                    <div class="col-sm-3">
+                    <!-- <div class="col-sm-3">
                         <div class="d-flex flex-row align-items-center justify-content-end social-icons">
                             <ul class="social-icons list-inline">
                                 <li class="social-facebook"><a class="tooltip-top" target="_blank" href="" data-tooltip="Facebook"><i class="ti ti-facebook"></i></a></li>
@@ -383,25 +418,40 @@
                                 <li class="social-twitter"><a class="tooltip-top" target="_blank" href="" data-tooltip="twitter"><i class="ti ti-twitter-alt"></i></a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
+        <div id="WAButton"></div>
     </footer>
+    
     <!--footer end-->
 
     <!--back-to-top start-->
-    <a id="totop" href="#top">
+    <!-- <a id="totop" href="#top">
         <i class="fa fa-angle-up"></i>
-    </a>
+    </a> -->
     <!--back-to-top end-->
 
 </div><!-- page end -->
 
 
     <!-- Javascript -->
+    <script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+	<script src="../js/jquery-modal-video.min.js"></script>
+	<script>
+		$(".js-video-button").modalVideo({
+			youtube:{
+				controls:0,
+				nocookie: true
+			}
+		});
+	</script>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/jquery.easing.js"></script>    
@@ -432,8 +482,23 @@
     <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="js/floating-wpp.min.js"></script>
 
-    <!-- Javascript end-->
+    <script type="text/javascript">
+        $(function() {
+            $('#WAButton').floatingWhatsApp({
+                phone: '+628987088921', //WhatsApp Business phone number International format-
+                //Get it with Toky at https://toky.co/en/features/whatsapp.
+                headerTitle: 'Hubungi kami lewat Whatsapp!', //Popup Title
+                popupMessage: 'Selamat datang di Lab Kalibrasi Telkom, ada yang bisa kami bantu 😀?', //Popup Message
+                showPopup: true, //Enables popup display
+                buttonImage: '<img src="images/whatsapp.svg" />', //Button Image
+                //headerColor: 'crimson', //Custom header color
+                //backgroundColor: 'crimson', //Custom background button color
+                position: "right"
+            });
+        });
+    </script>
 
 </body>
 </html>

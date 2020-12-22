@@ -13,6 +13,7 @@ use App;
 class BerandaController extends Controller
 {
     public function beranda(){
+        // App::setLocale($locale);
         $artikels = Artikel::all();
         return view('index',['artikels'=>$artikels]);
     }
@@ -40,6 +41,7 @@ class BerandaController extends Controller
     }
 
     public function tentang(){
+        // App::setLocale($locale);
         return view('tentang-kami');
     }
     public function konsultasi(){
