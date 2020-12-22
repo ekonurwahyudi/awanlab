@@ -66,6 +66,8 @@ Route::middleware('role:admin')->get('/pengaturan-web', 'HomeController@web')->n
 
 //Route Untuk Artikel
 Route::resource('/pengaturan/artikel',ArtikelController::class);
+Route::redirect('/pengaturan/artikel/create', '../../pengaturan/tambah-artikel');
+Route::get('/pengaturan/tambah-artikel','ArtikelController@create');
 
 //Route Ruang Lingkup Crud
 Route::get('/pengaturan/ruanglingkup','RuanglingkupController@index');
@@ -74,3 +76,7 @@ Route::post('/pengaturan/ruanglingkup-proses', 'RuanglingkupController@proses');
 Route::get('/pengaturan/ruanglingkup-hapus/{ruanglingkup_id}', 'RuanglingkupController@delete');
 Route::get('/pengaturan/ruanglingkup-edit/{ruanglingkup_id}', 'RuanglingkupController@edit');
 Route::post('/pengaturan/ruanglingkup-update/{ruanglingkup_id}', 'RuanglingkupController@update');
+
+//Route Slide Crud
+Route::get('/pengaturan/slide','SlideController@index');
+Route::get('/pengaturan/tambah-slide','SlideController@tambah');

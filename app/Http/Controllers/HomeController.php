@@ -40,6 +40,6 @@ class HomeController extends Controller
     }
 
     public function web(){
-        return view('awanlab/pengaturan-web');
+        return view('awanlab/pengaturan-web/index');
     }
 }

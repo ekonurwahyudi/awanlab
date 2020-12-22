@@ -13,11 +13,11 @@
 						<div class="card card-custom">
 					<div class="card-header flex-wrap py-5">
 						<div class="card-title">
-							<h5 class="card-label">Halaman Tambah Artikel</h5>
+							<h5 class="card-label">Halaman Tambah Slide</h5>
 						</div>
 						<div class="card-toolbar">
 							<!--begin::Dropdown-->
-							<a href="/pengaturan/artikel" class="btn btn-danger font-weight-bold mr-2">
+							<a href="/pengaturan/slide" class="btn btn-danger font-weight-bold mr-2">
 									<span class="svg-icon">
 										<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Address-card.svg-->
 										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -40,7 +40,7 @@
 							<div class="card-body">
 								<div class="form-group mb-8">                                        
 								<div class="form-group row">
-									<label  class="col-2 col-form-label">Judul</label>
+									<label  class="col-2 col-form-label">Judul Slide</label>
 									<div class="col-10">
 										<input class="form-control @error('artikel_judul') is-invalid @enderror" name="artikel_judul" value="{{ old('artikel_judul') }}" type="text"  id="example-text-input"/>
 									</div>
@@ -51,33 +51,10 @@
 									@enderror
 								</div>
 								<div class="form-group row">
-									<label for="example-date-input" class="col-2 col-form-label">Deskripsi Artikel</label>
+									<label  class="col-2 col-form-label">Gambar Slideshow <b>Indonesia</b></label>
 									<div class="col-10">
-										<textarea id="kt_summernote_1" class="summernote form-control @error('artikel_deskripsi') is-invalid @enderror" name="artikel_deskripsi" >
-										{{old('artikel_deskripsi')}}
-										</textarea>
-									</div>
-									@error('artikel_deskripsi')
-										<div class="alert alert-danger mt-2">
-											{{ $message }}
-										</div>
-									@enderror
-								</div>
-								<div class="form-group row">
-									<label for="example-date-input" class="col-2 col-form-label">Tanggal</label>
-									<div class="col-10">
-										<input class="form-control @error('artikel_date') is-invalid @enderror" name="artikel_date" value="{{old('artikel_date')}}" type="date" class="form-control form-control-solid datetimepicker-input" id="kt_datetimepicker_3" data-target-input="nearest"/>
-									</div>
-									@error('artikel_date')
-										<div class="alert alert-danger mt-2">
-											{{ $message }}
-										</div>
-									@enderror
-								</div>
-								<div class="form-group row">
-									<label  class="col-2 col-form-label">Gambar Cover</label>
-									<div class="col-5">
 										<input type="file" name="artikel_gambar" class="form-control @error('artikel_gambar') is-invalid @enderror dropify"/>
+                                        <p style="color:red;">Ukuran 1358x640 pixel</p>
 									</div>
 									@error('artikel_gambar')
 										<div class="alert alert-danger mt-2">
@@ -85,19 +62,18 @@
 										</div>
 									@enderror
 								</div>
-								<div class="form-group row">
-									<label  class="col-2 col-form-label">Editor</label>
-									<div class="col-3">
-										<input class="form-control @error('artikel_editor') is-invalid @enderror" name="artikel_editor" disabled="disabled"  type="text" value="{{ Auth::user()->name }}" id="example-text-input"/>
+                                <div class="form-group row">
+									<label  class="col-2 col-form-label">Gambar Slideshow <b>English</b></label>
+									<div class="col-10">
+										<input type="file" name="artikel_gambar" class="form-control @error('artikel_gambar') is-invalid @enderror dropify"/>
+                                        <p style="color:red;">Ukuran 1358x640 pixel</p>
 									</div>
-									@error('artikel_editor')
+									@error('artikel_gambar')
 										<div class="alert alert-danger mt-2">
 											{{ $message }}
 										</div>
 									@enderror
 								</div>
-								
-								
 								</div>
 								</div>
 								<div class="card-footer">

@@ -5,15 +5,15 @@
 		<meta charset="utf-8" />
 		<title>Dashboard Awanlab</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-		<link href="../../../halamanadmin//plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="../../../halamanadmin//css/style.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="../../../halamanadmin//css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
-		<link href="../../../halamanadmin//css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
-		<link href="../../../halamanadmin//css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
-		<link href="../../../halamanadmin//css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
-		<link rel="shortcut icon" href="../../../halamanadmin//media/logos/favicon.png" />
-		<link rel="stylesheet" href="../../../halamanadmin//css/dropify.min.css">
-		<link href="../../../halamanadmin//plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanadmin/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanadmin/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanadmin/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanadmin/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanadmin/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanadmin/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="../halamanadmin/media/logos/favicon.png" />
+		<link rel="stylesheet" href="../halamanadmin/css/dropify.min.css">
+		<link href="../halamanadmin/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<style>
 			textarea {
 				padding: 10px;
@@ -35,7 +35,7 @@
 			<!--begin::Logo-->
 			<a href="index.html">
                 <p>Awanlab</p>
-				<!-- <img alt="Logo" src="../../../halamanadmin//media/logos/logo-light.png" /> -->
+				<!-- <img alt="Logo" src="../halamanadmin/media/logos/logo-light.png" /> -->
 			</a>
 			<!--end::Logo-->
 			<!--begin::Toolbar-->
@@ -80,7 +80,7 @@
                         <h2>Awanlab</h2>
 						<!-- <a href="index.html" class="brand-logo"> -->
                             <!-- <p>halaman Admin</p> -->
-							<!-- <img alt="Logo" src="../../../halamanadmin//media/logos/logo-light.png" /> -->
+							<!-- <img alt="Logo" src="../halamanadmin/media/logos/logo-light.png" /> -->
 						<!-- </a> -->
 						<!--end::Logo-->
 						<!--begin::Toggle-->
@@ -107,7 +107,7 @@
 							<!--begin::Menu Nav-->
 							<ul class="menu-nav">
 								<li class="menu-item menu-item" aria-haspopup="true">
-									<a href="/awanlab" class="menu-link">
+									<a href="../awanlab" class="menu-link">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -127,7 +127,7 @@
 									<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 								</li>
 								<li class="menu-item menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
-									<a href="/pengaturan-web" class="menu-link menu-toggle">
+									<a href="../pengaturan-web" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -144,7 +144,7 @@
 									
 								</li>
 								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-									<a href="/pengaturan/artikel" class="menu-link menu-toggle">
+									<a href="../pengaturan/artikel" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -194,7 +194,7 @@
 												<i class="menu-arrow"></i>
 												<ul class="menu-subnav">
 													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-														<a href="/pengaturan/ruanglingkup" class="menu-link">
+														<a href="../pengaturan/ruanglingkup" class="menu-link">
 															<span class="svg-icon menu-icon">
 																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -247,7 +247,7 @@
 									</div>
 								</li>
 								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-									<a href="/pengaturan/slide" class="menu-link menu-toggle">
+									<a href="../pengaturan/slide" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -279,7 +279,7 @@
 						<div class="container-fluid d-flex align-items-stretch justify-content-between">
 							<!--begin::Header Menu Wrapper-->
 							<div>
-                                <h5 class="pt-8">Pengaturan Web Kalibrasi</h5>
+                                <h5 class="pt-8">@yield('judul_halaman')</h5>
                             </div>
                             <div>
                             
@@ -369,137 +369,10 @@
 								<!--end::Toolbar-->
 							</div>
 						</div>
-                        
-						<div class="d-flex flex-column-fluid">
-							<!--begin::Container-->
-							<div class="container">
-								<!--begin::Dashboard-->
-								<!--begin::Row-->
-								<div class="row">
-									
-									<div class="col-lg-12 col-xxl-4 order-1 order-xxl-2">
-                                        <!--begin::List Widget 8-->
-                                        <div class="card card-custom">
-									<div class="card-header flex-wrap py-5">
-										<div class="card-title">
-											<h5 class="card-label">Halaman Tambah Artikel</h5>
-										</div>
-										<div class="card-toolbar">
-											<!--begin::Dropdown-->
-                                            <a href="/pengaturan/artikel" class="btn btn-danger font-weight-bold mr-2">
-                                                    <span class="svg-icon">
-                                                        <!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Address-card.svg-->
-                                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                            <polygon points="0 0 24 0 24 24 0 24"/>
-                                                            <path d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z" fill="#000000" fill-rule="nonzero" transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999) "/>
-                                                            <path d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999) "/>
-                                                            </g>
-                                                        </svg>
-                                                        <!--end::Svg Icon-->
-                                                    </span>Kembali</a>
-											<!--end::Dropdown-->
-											<!--begin::Button-->
-										</div>
-									</div>
-									<div class="card-body">
-										<!--begin: Datatable-->
-										<form action="{{route('artikel.update',$artikel->artikel_id)}}" method="POST" enctype="multipart/form-data">
-											@csrf
-											@method('PUT')
-											<div class="card-body">
-												<div class="form-group mb-8">                                        
-												<div class="form-group row">
-													<label  class="col-2 col-form-label">Judul</label>
-													<div class="col-10">
-														<input class="form-control @error('artikel_judul') is-invalid @enderror" name="artikel_judul" value="{{ old('artikel_judul', $artikel->artikel_judul) }}" type="text"  id="example-text-input"/>
-													</div>
-													@error('artikel_judul')
-														<div class="alert alert-danger mt-2">
-															{{ $message }}
-														</div>
-													@enderror
-												</div>
-												<div class="form-group row">
-													<label for="example-date-input" class="col-2 col-form-label">Deskripsi Artikel</label>
-													<div class="col-10">
-														<textarea id="kt_summernote_1" class="summernote form-control @error('artikel_deskripsi') is-invalid @enderror" name="artikel_deskripsi" >
-														{{ old('artikel_deskripsi', $artikel->artikel_deskripsi) }}
-														</textarea>
-													</div>
-													@error('artikel_deskripsi')
-														<div class="alert alert-danger mt-2">
-															{{ $message }}
-														</div>
-													@enderror
-												</div>
-												<div class="form-group row">
-													<label for="example-date-input" class="col-2 col-form-label">Tanggal</label>
-													<div class="col-10">
-														<input class="form-control @error('artikel_date') is-invalid @enderror" name="artikel_date" value="{{ old('artikel_date', $artikel->artikel_date) }}" type="date" class="form-control form-control-solid datetimepicker-input" id="kt_datetimepicker_3" data-target-input="nearest"/>
-													</div>
-													@error('artikel_date')
-														<div class="alert alert-danger mt-2">
-															{{ $message }}
-														</div>
-													@enderror
-												</div>
-												<div class="form-group row">
-													<label  class="col-2 col-form-label">Gambar Cover</label>
-													<div class="col-5">
-														<input type="file" name="artikel_gambar" class="form-control @error('artikel_gambar') is-invalid @enderror dropify" data-default-file="{{ url('storage/artikels/'.$artikel->artikel_gambar)}}"/>
-													</div>
-													@error('artikel_gambar')
-														<div class="alert alert-danger mt-2">
-															{{ $message }}
-														</div>
-													@enderror
-												</div>
-												<div class="form-group row">
-													<label  class="col-2 col-form-label">Editor</label>
-													<div class="col-3">
-														<input class="form-control @error('artikel_editor') is-invalid @enderror" name="artikel_editor" disabled="disabled"  type="text" value="{{ Auth::user()->name }}" id="example-text-input"/>
-													</div>
-													@error('artikel_editor')
-														<div class="alert alert-danger mt-2">
-															{{ $message }}
-														</div>
-													@enderror
-												</div>
-												
-												
-												</div>
-												</div>
-												<div class="card-footer">
-												<div class="row">
-													<div class="col-2">
-													</div>
-													<div class="col-10">
-													<button type="submit" class="btn btn-success mr-2">Publish</button>
-													<button type="/pengaturan/artikel" class="btn btn-secondary">Batal</button>
-													</div>
-												</div>
-											</div>
-                                        </form>
-									</div>
-                                </div>
-                                <br/>
-										
-										<!--end::List Widget 8-->
-									</div>
-								</div>
-								<!--end::Row-->
-								<!--begin::Row-->
-								
-								<!--end::Dashboard-->
-							</div>
-							<!--end::Container-->
-						</div>
-						<!--end::Entry-->
-					</div>
-					<!--end::Content-->
-                    <!--begin::Footer-->
-					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+                
+                    @yield('konten')
+
+                    <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
 						<!--begin::Container-->
 						<div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
 							<!--begin::Copyright-->
@@ -523,11 +396,11 @@
 		</div>
 		<!--end::Main-->
 
-		<script src="../../../halamanadmin//plugins/global/plugins.bundle.js"></script>
-		<script src="../../../halamanadmin//plugins/custom/prismjs/prismjs.bundle.js"></script>
-		<script src="../../../halamanadmin//js/scripts.bundle.js"></script>
-		<script src="../../../../halamanadmin//js/pages/crud/ktdatatable/base/html-table.js?v=7.1.7"></script>
-		<script src="../../../halamanadmin//plugins/custom/datatables/datatables.bundle.js"></script>
+		<script src="../halamanadmin/plugins/global/plugins.bundle.js"></script>
+		<script src="../halamanadmin/plugins/custom/prismjs/prismjs.bundle.js"></script>
+		<script src="../halamanadmin/js/scripts.bundle.js"></script>
+		<script src="../../halamanadmin/js/pages/crud/ktdatatable/base/html-table.js?v=7.1.7"></script>
+		<script src="../halamanadmin/plugins/custom/datatables/datatables.bundle.js"></script>
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
         <script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
@@ -557,11 +430,11 @@
         </script>
         <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-        <script src="../../../halamanadmin//js/dropify.min.js"></script>
-        <script src="../../../halamanadmin//js/dropify.js"></script>
+        <script src="../halamanadmin/js/dropify.min.js"></script>
+        <script src="../halamanadmin/js/dropify.js"></script>
 	</body>
 	<!--end::Body-->
-	<script src='../../../../halamanadmin//js/autosize.js'></script>
+	<script src='../../halamanadmin/js/autosize.js'></script>
 	<script>
 		autosize(document.querySelectorAll('textarea'));
 	</script>
