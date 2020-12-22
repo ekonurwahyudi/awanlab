@@ -6,13 +6,13 @@
                     <div class="row align-items-center text-center">
                         <div class="col-lg-12">
                             <div class="">
-                                <h4 class="title">Struktur Organisasi Lab Kalibrasi</h4>
+                                <h4 class="title">{{__('lang.organisasi')}}</h4>
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a href="/">Beranda</a>
+                                    <a href="/">{{__('lang.Beranda')}}</a>
                                 </span>
-                                <span>Laboratorium Kalibrasi Telkom</span>
+                                <span>{{__('lang.Struktur')}}</span>
                             </div>
                         </div>
                     </div>

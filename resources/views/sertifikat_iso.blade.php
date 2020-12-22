@@ -6,13 +6,13 @@
                     <div class="row align-items-center text-center">
                         <div class="col-lg-12">
                             <div class="">
-                                <h4 class="title">Sertifikat Lab Kalibrasi Telkom</h4>
+                                <h4 class="title">{{__('lang.iso')}}</h4>
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a title="Homepage" href="/">Beranda</a>
+                                    <a title="Homepage" href="/">{{__('lang.Beranda')}}</a>
                                 </span>
-                                <span>Sertifikat ISO:17025:2017</span>
+                                <span>{{__('lang.Sertifikat')}}</span>
                             </div>
                         </div>
                     </div>

@@ -108,9 +108,9 @@
                     <div class="col-lg-4 widget-area sidebar-right">
                         <aside class="widget widget-download">
                             <ul class="download">
-                                <li><i class="fal fa-file-pdf"></i><div><h4>Certificate ISO 17025</h4><a href="https://drive.google.com/open?id=1CrUA1ueVSKHXO1jjOa3Ptrt1hv1ZHA-M">Download</a></div></li>
-                                <li><i class="fal fa-file-pdf"></i><div><h4>Ruang Lingkup</h4><a href="https://drive.google.com/file/d/1fjMDacYMckmOZ65hIuBn5C94WH4SmIbB/view?usp=sharing">Download</a></div></li>
-                                <li><i class="fal fa-file-pdf"></i><div><h4>SOP Lab Kalibrasi</h4><a href="#">Download</a></div></li>
+                                <li><i class="fal fa-file-pdf"></i><div><a href="https://drive.google.com/open?id=1CrUA1ueVSKHXO1jjOa3Ptrt1hv1ZHA-M"><h4>Certificate ISO 17025</h4></a></div></li>
+                                <li><i class="fal fa-file-pdf"></i><div><a href="https://drive.google.com/file/d/1fjMDacYMckmOZ65hIuBn5C94WH4SmIbB/view?usp=sharing"><h4>Ruang Lingkup</h4></a></div></li>
+                                <li><i class="fal fa-file-pdf"></i><div><a href="#"><h4>SOP Lab Kalibrasi</h4></a></div></li>
                             </ul>
                         </aside>
                         <aside class="widget widget-contact p-0">

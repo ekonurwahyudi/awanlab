@@ -5,6 +5,7 @@ return [
     'Profil' => 'Profile Lab',
     'Sertifikat' => 'Certificate ISO 17025:2017',
     'Struktur' => 'Organizational structure',
+    'organisasi' => 'Organization Structure of Telkom Calibration Lab',
     'Layanan' => 'Our Service',
     'Kalibrasi' => 'Calibration',
     'Konsultasi' => 'Consultation',
@@ -58,4 +59,5 @@ return [
     'blog' => 'Blog & Article',
     'sapawa' => 'Welcome to the Telkom Calibration Lab, how can we help you 😀?',
     'waatas' => 'Contact us via Whatsapp!',
+    'slide' => 'images/slides/slide2.png',
 ];
