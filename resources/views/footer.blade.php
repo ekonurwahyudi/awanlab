@@ -251,8 +251,8 @@
             $('#WAButton').floatingWhatsApp({
                 phone: '+628987088921', //WhatsApp Business phone number International format-
                 //Get it with Toky at https://toky.co/en/features/whatsapp.
-                headerTitle: 'Hubungi kami lewat Whatsapp!', //Popup Title
-                popupMessage: 'Selamat datang di Lab Kalibrasi Telkom, ada yang bisa kami bantu 😀?', //Popup Message
+                headerTitle: '{{__('lang.waatas')}}', //Popup Title
+                popupMessage: '{{__('lang.sapawa')}}', //Popup Message
                 showPopup: true, //Enables popup display
                 buttonImage: '<img src="../images/whatsapp.svg" />', //Button Image
                 //headerColor: 'crimson', //Custom header color

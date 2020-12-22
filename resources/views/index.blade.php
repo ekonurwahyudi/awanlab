@@ -112,7 +112,7 @@
                         <div class="section-title with-sep title-style-center_text">
                             <div class="title-header">
                                 <h5>OUR SERVICE</h5>
-                                <h2 class="title">Layanan Kami</h2>
+                                <h2 class="title">{{__('lang.Layanan')}}</h2>
                             </div>
                         </div><!-- section-title end -->
                     </div>
@@ -137,7 +137,7 @@
                                         <h5><a href="fiberoptic">Fiber Optic</a></h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Kami adalah Lab Kalibrasi pertama di Indonesia yang mampu kalibrasi alat Fiber Optic</p>
+                                        <p>{{__('lang.isifiber')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -159,10 +159,10 @@
                                 </div>
                                 <div class="fea_con_right">
                                     <div class="featured-title">
-                                        <h5><a href="kelistrikan">Kelistrikan</a></h5>
+                                        <h5><a href="kelistrikan">{{__('lang.kelistrikan')}}</a></h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Lab Kalibrasi Telkom mampu mengkalibrasi ulang peralatan Kelistrikan onSite dan inHouse</p>
+                                        <p>{{__('lang.isilistrik')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -183,10 +183,10 @@
                                 </div>
                                 <div class="fea_con_right">
                                     <div class="featured-title">
-                                        <h5><a href="frekuensiwaktu">Waktu dan Frekuensi</a></h5>
+                                        <h5><a href="frekuensiwaktu">{{__('lang.frekuensi')}}</a></h5>
                                     </div>
                                     <div class="featured-desc">
-                                        <p>Lab Kalibrasi Telkom mampu mengkalibrasi ulang peralatan Kelistrikan onSite dan inHouse.</p>
+                                        <p>{{__('lang.isifrekuensi')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -195,13 +195,13 @@
                     
                     
                 </div><!-- row end -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-12">
                         <div class="mt-50 res-991-mt-30 text-center">
                             <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border ttm-icon-btn-left ttm-btn-color-skincolor" href="#"><i class="fa fa-calendar"></i>Buat Jadwal Kalibrasi</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!--services-section end-->
@@ -215,7 +215,7 @@
                         <div class="section-title with-sep title-style-center_text">
                             <div class="title-header">
                                 <h5>WHY CHOOSE US</h5>
-                                <h2 class="title">Kenapa Memilih Kami</h2>
+                                <h2 class="title">{{__('lang.kenapa')}}</h2>
                             </div>
                         </div><!-- section-title end -->
                     </div>
@@ -305,10 +305,10 @@
                                             </div>
                                             <div class="ttm-fid-contents">
                                                 <h4 class="ttm-fid-inner">
-                                                    <span>ISO17025
+                                                    <span>ISO:17025
                                                     </span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">Sertifikat KAN 2017</h3>
+                                                <h3 class="ttm-fid-title">{{__('lang.Sertifikat')}}</h3>
                                             </div>
                                         </div><!-- ttm-fid end -->
                                     </div>
@@ -348,7 +348,7 @@
                                                     </span>
                                                     <sub></sub>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">Lokasi Se-Indonesia</h3>
+                                                <h3 class="ttm-fid-title">Location in Indonesia</h3>
                                             </div>
                                         </div><!-- ttm-fid end -->
                                     </div>
@@ -393,7 +393,7 @@
                         <div class="section-title with-sep title-style-center_text">
                             <div class="title-header">
                                 <h5>Way We Work</h5>
-                                <h2 class="title">Proses Alur Kalibrasi</h2>
+                                <h2 class="title">{{__('lang.alur')}}</h2>
                             </div>
                         </div><!-- section-title end -->
                     </div>
@@ -410,10 +410,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Diagnosa Alat</h5>
+                                    <h5>{{__('lang.diagnosa')}}</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Tim ahli kami akan memeriksa alat kalibrasi anda untuk meninjau apa yang perlu dikalibrasi.</p>
+                                    <p>{{__('lang.isidiagnosa')}}</p>
                                 </div>
                             </div>
                             <div class="arrow">
@@ -432,10 +432,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Proses Kalibrasi</h5>
+                                    <h5>{{__('lang.proses')}}</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Setelah hasil pemeriksaan, Tim kami akan mengkalibrasi alat anda, jangan kwatir Tim kami telah profesional dibidang kalibrasi.</p>
+                                    <p>{{__('lang.isiproses')}}</p>
                                 </div>
                             </div>
                             <div class="arrow flip-arrow">
@@ -454,10 +454,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Terbit Sertifikat</h5>
+                                    <h5>{{__('lang.terbit')}}</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Kemudian, setelah alat anda telah dikalibrasi, kami akan menerbitkan sertifikat kalibrasi untuk alat anda.</p>
+                                    <p>{{__('lang.isiterbit')}}</p>
                                 </div>
                             </div>
                         </div><!-- featured-imagebox end-->
@@ -466,7 +466,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="mt-30 res-991-mt-30 text-center">
-                            <strong>Masih bingung? <u><a href="#">lihat selengkapnya.</a></u></strong>
+                            <strong>{{__('lang.bingung')}} <u><a href="#">{{__('lang.lihatselengkapnya')}}</a></u></strong>
                         </div>
                     </div>
                 </div>
@@ -484,10 +484,10 @@
                             <div class="layer-content">
                                 <div class="section-title">
                                     <div class="title-header">
-                                        <h2 class="title">Lab Kalibrasi Telkom Terakreditasi KAN ISO 17025:2017</h2>
+                                        <h2 class="title">{{__('lang.iso')}}</h2>
                                     </div>
                                 </div>
-                                <p>Jangan kwatir Lab Kalibrasi Telkom terlah terakreditasi oleh KAN SNI ISO/IEC 17025:2017 LK-016-IDN.</p>
+                                <p>{{__('lang.kan')}}</p>
                                 <div class="sep_holder_box width-100 mt-35">
                                     <span class="sep_holder"><span class="sep_line"></span></span>
                                 </div>
@@ -516,8 +516,8 @@
                         <!-- section-title -->
                         <div class="section-title with-sep title-style-center_text">
                             <div class="title-header">
-                                <h5>OUR NEWS & BLOG</h5>
-                                <h2 class="title">Blog dan Artikel</h2>
+                                <h5>OUR BLOG & ARTICLE</h5>
+                                <h2 class="title">{{__('lang.blog')}}</h2>
                             </div>
                         </div><!-- section-title end -->
                     </div>
