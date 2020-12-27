@@ -8,13 +8,13 @@
                     <div class="row align-items-center text-center">
                         <div class="col-lg-12">
                             <div class="">
-                                <h3 class="title">Layanan Kalibrasi</h3>
+                                <h3 class="title">{{__('lang.Kalibrasi')}}</h3>
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a href="/">Beranda</a>
+                                    <a href="/">{{__('lang.Beranda')}}</a>
                                 </span>
-                                <span>Layanan Kalibrasi</span>
+                                <span>{{__('lang.Kalibrasi')}}</span>
                             </div>
                         </div>
                     </div>
@@ -33,12 +33,12 @@
                 <div class="col-lg-8 content-area">
                         <div class="ttm-service-single-content-area">
                             <div class="ttm-featured-wrapper mb-40 res-991-mb-20">
-                                <img class="img-fluid" src="images/services/listrik.jpeg" alt="">
+                                <img class="img-fluid" src="../images/services/listrik.jpeg" alt="">
                             </div>
                             <div class="ttm-service-description">
-                                <h4>Kenapa Harus Kalibrasi?</h4>
+                                <h4>{{__('lang.kenapakalibrasi')}}</h4>
                                 <div class="mb-35">
-                                    <p>Kalibrasi diwajibkan agar alat kita tetap berkerja sesuai dengan standar yang telah ditetapkan, oleh karena itu kita diharuskan ketika telah jatuh tempo.</p>
+                                    <p>{{__('lang.isikenapakalibrasi')}}</p>
                                 </div>
             
                             </div>
@@ -48,7 +48,7 @@
                                     <div class="featured-imagebox featured-imagebox-services">
                                         <!-- featured-thumbnail -->
                                         <div class="featured-thumbnail">
-                                            <a href="#"> <img class="img-fluid" src="images/services/optic.jpeg" alt="image"></a>
+                                            <a href="#"> <img class="img-fluid" src="../images/services/optic.jpeg" alt="image"></a>
                                         </div><!-- featured-thumbnail end-->
                                         <div class="featured-content">
                                             <div class="fea_con_right">
@@ -56,7 +56,7 @@
                                                     <h5><a href="fiberoptic">Fiber Optic</a></h5>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Kami adalah Lab Kalibrasi pertama di Indonesia yang mampu kalibrasi alat Fiber Optic.</p>
+                                                    <p>{{__('lang.isifiber')}}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -67,15 +67,15 @@
                                     <div class="featured-imagebox featured-imagebox-services">
                                         <!-- featured-thumbnail -->
                                         <div class="featured-thumbnail">
-                                            <a href="#"> <img class="img-fluid" src="images/services/listrik.jpeg" alt="image"></a>
+                                            <a href="#"> <img class="img-fluid" src="../images/services/listrik.jpeg" alt="image"></a>
                                         </div><!-- featured-thumbnail end-->
                                         <div class="featured-content">
                                             <div class="fea_con_right">
                                                 <div class="featured-title">
-                                                    <h5><a href="kelistrikan">Kelistrikan</a></h5>
+                                                    <h5><a href="kelistrikan">{{__('lang.kelistrikan')}}</a></h5>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Lab Kalibrasi Telkom mampu mengkalibrasi ulang peralatan Kelistrikan onSite dan inHouse.</p>
+                                                    <p>{{__('lang.isilistrik')}}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,15 +86,15 @@
                                     <div class="featured-imagebox featured-imagebox-services">
                                         <!-- featured-thumbnail -->
                                         <div class="featured-thumbnail">
-                                            <a href="#"> <img class="img-fluid" src="images/services/frekuensi.jpeg" alt="image"></a>
+                                            <a href="#"> <img class="img-fluid" src="../images/services/frekuensi.jpeg" alt="image"></a>
                                         </div><!-- featured-thumbnail end-->
                                         <div class="featured-content">
                                             <div class="fea_con_right">
                                                 <div class="featured-title">
-                                                    <h5><a href="frekuensiwaktu">Frekuensi & Waktu</a></h5>
+                                                    <h5><a href="frekuensiwaktu">{{__('lang.frekuensi')}}</a></h5>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Lab Kalibrasi Telkom mampu mengkalibrasi ulang peralatan Kelistrikan onSite dan inHouse.</p>
+                                                    <p>{{__('lang.isifrekuensi')}}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -109,8 +109,8 @@
                         <aside class="widget widget-download">
                             <ul class="download">
                                 <li><i class="fal fa-file-pdf"></i><div><a href="https://drive.google.com/open?id=1CrUA1ueVSKHXO1jjOa3Ptrt1hv1ZHA-M"><h4>Certificate ISO 17025</h4></a></div></li>
-                                <li><i class="fal fa-file-pdf"></i><div><a href="https://drive.google.com/file/d/1fjMDacYMckmOZ65hIuBn5C94WH4SmIbB/view?usp=sharing"><h4>Ruang Lingkup</h4></a></div></li>
-                                <li><i class="fal fa-file-pdf"></i><div><a href="#"><h4>SOP Lab Kalibrasi</h4></a></div></li>
+                                <li><i class="fal fa-file-pdf"></i><div><a href="https://drive.google.com/file/d/1fjMDacYMckmOZ65hIuBn5C94WH4SmIbB/view?usp=sharing"><h4>{{__('lang.Ruang')}}</h4></a></div></li>
+                                <!-- <li><i class="fal fa-file-pdf"></i><div><a href="#"><h4>SOP Lab Kalibrasi</h4></a></div></li> -->
                             </ul>
                         </aside>
                         <aside class="widget widget-contact p-0">
@@ -130,8 +130,8 @@
                                                 <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-white ttm-icon_element-size-lg mb-15">
                                                     <i class="fal fa-user-headset"></i>
                                                 </div>
-                                                <h4>Butuh bantuan?</h4>
-                                                <p>Jika kamu membutuhkan bantuan, silahkan hubungi kami.</p>
+                                                <h4>{{__('lang.bantuan')}}</h4>
+                                                <p>{{__('lang.isibantuan')}}</p>
                                                 <ul class="ttm-textcolor-white">
                                                     <li><i class="flaticon-call mr-2"></i>021-21480341</li>
                                                     <li><i class="flaticon-placeholder mr-2"></i>Jl. Percetakan Negara No. 17-19, Jakarta Pusat</li>

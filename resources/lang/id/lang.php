@@ -7,7 +7,7 @@ return [
     'Struktur' => 'Struktur Organisasi',
     'organisasi' => 'Struktur Organisasi Lab Kalibrasi Telkom',
     'Layanan' => 'Layanan',
-    'Kalibrasi' => 'Kalibrasi',
+    'Kalibrasi' => 'Layanan Kalibrasi',
     'Konsultasi' => 'Konsultasi',
     'Info' => 'Info',
     'Ruang' => 'Ruang Lingkup Kalibrasi',
@@ -60,4 +60,8 @@ return [
     'sapawa' => 'Selamat datang di Lab Kalibrasi Telkom, ada yang bisa kami bantu 😀?',
     'waatas' => 'Hubungi kami lewat Whatsapp!',
     'slide' => 'slideid_',
+    'kenapakalibrasi' => 'Kenapa Harus Kalibrasi?',
+    'isikenapakalibrasi' => 'Kalibrasi diwajibkan agar alat kita tetap berkerja sesuai dengan standar yang telah ditetapkan, oleh karena itu kita diharuskan ketika telah jatuh tempo.',
+    'bantuan' => 'Butuh bantuan?',
+    'isibantuan' => 'Jika kamu membutuhkan bantuan, silahkan hubungi kami.'
 ];

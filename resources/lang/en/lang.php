@@ -7,7 +7,7 @@ return [
     'Struktur' => 'Organizational structure',
     'organisasi' => 'Organization Structure of Telkom Calibration Lab',
     'Layanan' => 'Our Service',
-    'Kalibrasi' => 'Calibration',
+    'Kalibrasi' => 'Service Calibration',
     'Konsultasi' => 'Consultation',
     'Info' => 'Info',
     'Ruang' => 'Calibration Scope',
@@ -60,4 +60,8 @@ return [
     'sapawa' => 'Welcome to the Telkom Calibration Lab, how can we help you 😀?',
     'waatas' => 'Contact us via Whatsapp!',
     'slide' => "slideen_",
+    'kenapakalibrasi' => 'Why should your measuring instrument be calibrated?',
+    'isikenapakalibrasi' => 'Calibration is required so that our measuring instruments continue to work according to predetermined standards, therefore we are required when it is due.',
+    'bantuan' => 'Need some help?',
+    'isibantuan' => 'if you need help, please contact us',
 ];
