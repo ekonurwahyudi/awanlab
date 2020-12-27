@@ -59,5 +59,5 @@ return [
     'blog' => 'Blog & Article',
     'sapawa' => 'Welcome to the Telkom Calibration Lab, how can we help you 😀?',
     'waatas' => 'Contact us via Whatsapp!',
-    'slide' => 'images/slides/slide2.png',
+    'slide' => "slideen_",
 ];

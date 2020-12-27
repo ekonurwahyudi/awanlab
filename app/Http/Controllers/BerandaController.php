@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\Slide;
 use App\Models\konsultasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facedes\Storage;
@@ -13,9 +14,9 @@ use App;
 class BerandaController extends Controller
 {
     public function beranda(){
-        // App::setLocale($locale);
+        $slides = Slide::all();
         $artikels = Artikel::all();
-        return view('index',['artikels'=>$artikels]);
+        return view('index',['slides'=>$slides],['artikels'=>$artikels]);
     }
 
     public function sertifikat(){

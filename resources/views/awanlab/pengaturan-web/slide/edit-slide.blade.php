@@ -34,15 +34,16 @@
 						</div>
 					</div>
 					<div class="card-body">
+                    @foreach ($slide as $slide)
 						<!--begin: Datatable-->
-						<form action="/pengaturan/slide-proses/" method="POST" enctype="multipart/form-data">
-							@csrf
+						<form action="/pengaturan/slide-update/{{$slide->slide_id}}" method="POST" enctype="multipart/form-data">
+							{{csrf_field()}}
 							<div class="card-body">
 								<div class="form-group mb-8">                                        
 								<div class="form-group row">
 									<label  class="col-2 col-form-label">Judul Slide</label>
 									<div class="col-10">
-										<input class="form-control @error('slide_judul') is-invalid @enderror" name="slide_judul" value="{{ old('slide_judul') }}" type="text"  id="example-text-input"/>
+										<input class="form-control @error('slide_judul') is-invalid @enderror" name="slide_judul" value="{{$slide->slide_judul}}" type="text"  id="example-text-input"/>
 									</div>
 									@error('slide_judul')
 										<div class="alert alert-danger mt-2">
@@ -53,7 +54,7 @@
 								<div class="form-group row">
 									<label  class="col-2 col-form-label">Gambar Slideshow <b>Indonesia</b></label>
 									<div class="col-10">
-										<input type="file" name="slide_gambar_id" class="form-control @error('slide_gambar_id') is-invalid @enderror dropify"/>
+										<input type="file" name="slide_gambar_id" class="form-control @error('slide_gambar_id') is-invalid @enderror dropify" data-default-file="{{ url('storage/slides/'.$slide->slide_gambar_id)}}"/>
                                         <p style="color:red;">Ukuran 1358x640 pixel dan format (PNG)</p>
 									</div>
 									@error('slide_gambar_id')
@@ -65,7 +66,7 @@
                                 <div class="form-group row">
 									<label  class="col-2 col-form-label">Gambar Slideshow <b>English</b></label>
 									<div class="col-10">
-										<input type="file" name="slide_gambar_en" class="form-control @error('slide_gambar_en') is-invalid @enderror dropify"/>
+										<input type="file" name="slide_gambar_en" class="form-control @error('slide_gambar_en') is-invalid @enderror dropify" data-default-file="{{ url('storage/slides/'.$slide->slide_gambar_en)}}"/>
                                         <p style="color:red;">Ukuran 1358x640 pixel dan format (PNG)</p>
 									</div>
 									@error('slide_gambar_en')
@@ -88,6 +89,7 @@
 							</div>
 						</form>
 					</div>
+                    @endforeach
 				</div>
 				<br/>
 						

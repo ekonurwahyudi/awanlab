@@ -41,21 +41,30 @@
 												<tr>
 													<th>No</th>
 													<th>Judul Slide</th>
-													<th>Gambar Slideshow</th>
+													<th>Slide (Indonesia)</th>
+													<th>Slide (English)</th>
 													<th>Aksi</th>
 												</tr>
 											</thead>
 											<tbody>
+											@foreach ($slides as $slide)
 												<tr>
 													<td>1</td>
-													<td>Slide 1</td>
+													<td>{{$slide->slide_judul}}</td>
 													<td class="text-center">
-													 Disini gambar
+														<img src="{{ url('storage/slides/'.'slideid_'.$slide->slide_judul.'.png')}}" class="rounded" style="width: 120px">
+
 													</td>
-													<td><a href="#" class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit"></i></a>
-													<a href="#" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></a></td>
+													<td class="text-center">
+														<img src="{{ url('storage/slides/'.'slideen_'.$slide->slide_judul.'.png')}}" class="rounded" style="width: 120px">
+
+													</td>
+
+													<td><a href="/pengaturan-slide-edit/{{$slide->slide_id}}" class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit"></i></a>
+													<a href="/pengaturan/slide-hapus/{{$slide->slide_id}}" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></a></td>
 													
 												</tr>
+											@endforeach
 												
 											</tbody>
 										</table>

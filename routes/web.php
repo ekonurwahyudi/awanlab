@@ -20,6 +20,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 {
     Route::get('/','BerandaController@beranda');
     Route::get('/tentang-kami','BerandaController@tentang');
+    Route::get('layanan-kalibrasi','LayananController@layanan');
+    Route::get('ruanglingkup','LayananController@ruanglingkup');
+    Route::get('fiberoptic','LayananController@fiber');
+    Route::get('kelistrikan','LayananController@listrik');
+    Route::get('frekuensiwaktu','LayananController@waktu');
 });
 
 
@@ -48,11 +53,7 @@ Route::get('chat', function(){
 });
 
 //Route Layanan
-Route::get('layanan-kalibrasi','LayananController@layanan');
-Route::get('ruanglingkup','LayananController@ruanglingkup');
-Route::get('fiberoptic','LayananController@fiber');
-Route::get('kelistrikan','LayananController@listrik');
-Route::get('frekuensiwaktu','LayananController@waktu');
+
 Auth::routes();
 
 //Route Untuk akses login
@@ -80,3 +81,7 @@ Route::post('/pengaturan/ruanglingkup-update/{ruanglingkup_id}', 'RuanglingkupCo
 //Route Slide Crud
 Route::get('/pengaturan/slide','SlideController@index');
 Route::get('/pengaturan/tambah-slide','SlideController@tambah');
+Route::post('/pengaturan/slide-proses','SlideController@store');
+Route::get('/pengaturan-slide-edit/{slide_id}/', 'SlideController@edit');
+Route::post('/pengaturan/slide-update/{slide_id}', 'SlideController@update');
+Route::get('/pengaturan/slide-hapus/{slide_id}', 'SlideController@destroy');

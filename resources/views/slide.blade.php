@@ -3,16 +3,12 @@
             <div  id="rev_slider_5_1" class="rev_slider fullwidthabanner" data-version="5.4.8">
                 <ul>
                     <!-- SLIDE  -->
-                    <li data-index="rs-7" data-transition="slotzoom-horizontal" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <img src="{{__('lang.slide')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                @foreach ($slides as $slide)
+                    <li data-index="rs-7" data-transition="slotzoom-horizontal" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="0" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="{{ url('storage/slides/'.__('lang.slide').$slide->slide_judul.'.png')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- <img src="{{ url('storage/slides/'.$slide->slide_gambar_id)}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina> -->
                     </li>
-                    <!-- <li data-index="rs-7" data-transition="slotzoom-horizontal" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <img src="images/slides/slide2.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                    </li> -->
-
-                   
-
-                    
+                @endforeach
                 </ul>
                 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
             </div>

@@ -59,5 +59,5 @@ return [
     'blog' => 'Blog & Artikel',
     'sapawa' => 'Selamat datang di Lab Kalibrasi Telkom, ada yang bisa kami bantu 😀?',
     'waatas' => 'Hubungi kami lewat Whatsapp!',
-    'slide' => 'images/slides/slide1.png',
+    'slide' => 'slideid_',
 ];
