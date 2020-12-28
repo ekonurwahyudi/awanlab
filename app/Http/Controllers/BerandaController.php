@@ -49,6 +49,16 @@ class BerandaController extends Controller
         return view('konsultasi');
     }
     public function konsultasiproses(Request $request){
+        $pesan = [
+            'required' => 'Wajib di isi'
+        ];
+        $this->validate($request,[
+            'konsultasi_nama' => 'required',
+            'konsultasi_hp' => 'required',
+            'konsultasi_email' => 'required',
+            'konsultasi_pesan' => 'required',
+        ], $pesan);
+
         $konsultasi = Konsultasi::insert([
             'konsultasi_nama' => $request->konsultasi_nama,
             'konsultasi_hp' => $request->konsultasi_hp,

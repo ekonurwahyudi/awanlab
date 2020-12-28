@@ -8,13 +8,13 @@
                     <div class="row align-items-center text-center">
                         <div class="col-lg-12">
                             <div class="">
-                                <h3 class="title">Kalibrasi Alat Ukur Kelistrikan</h3>
+                                <h3 class="title">{{__('lang.detaillistrik')}}</h3>
                             </div>
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a href="/">Beranda</a>
+                                    <a href="/">{{__('lang.Beranda')}}</a>
                                 </span>
-                                <span>Alat Ukur Kelistrikan</span>
+                                <span>{{__('lang.kelistrikan')}}</span>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                                         <div class="d-flex align-items-right">
                                             <!-- <label class="mr-3 mb-0 d-none d-md-block">Lokasi:</label> -->
                                             <select class="form-control" id="kt_datatable_search_lokasi">
-                                                <option value="">Lokasi Lab (Semua)</option>
+                                                <option value="">{{__('lang.lokasi')}}</option>
                                                 <option value="1">Jakarta</option>
                                                 <option value="2">Medan</option>
                                                 <option value="3">Surabaya</option>
@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="col-md-6 my-2 my-md-0">
                                         <div class="input-icon">
-                                            <input type="text" class="form-control" placeholder="Cari disini" id="kt_datatable_search_query" />
+                                            <input type="text" class="form-control" placeholder="Search ....." id="kt_datatable_search_query" />
                                             
                                         </div>
                                     </div>
@@ -64,11 +64,11 @@
                             <thead>
                                 <tr>
                                     <th>Lokasi</th>
-                                    <th>Kelompok pengukuran</th>
-                                    <th>Instrument yang dikalibrasi</th>
-                                    <th>Frekuensi</th>
-                                    <th>Rentang Ukur</th>
-                                    <th>Ketidakpastian</th>
+                                    <th>{{__('lang.kategori')}}</th>
+                                    <th>{{__('lang.instrumen')}}</th>
+                                    <th>{{__('lang.tabelfrekuensi')}}</th>
+                                    <th>{{__('lang.rentang')}}</th>
+                                    <th>{{__('lang.ketidakpastian')}}</th>
 
                                 </tr>
                             </thead>

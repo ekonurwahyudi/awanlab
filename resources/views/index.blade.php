@@ -1,5 +1,5 @@
-@include('header')
-@include('slide')
+@include('/header')
+@include('/slide')
 
     <!--site-main start-->
     <div class="site-main">
@@ -673,4 +673,4 @@
 
 
     </div><!--site-main end-->
-@include('footer')
+@include('/footer')

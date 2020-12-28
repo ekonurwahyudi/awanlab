@@ -25,6 +25,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::get('fiberoptic','LayananController@fiber');
     Route::get('kelistrikan','LayananController@listrik');
     Route::get('frekuensiwaktu','LayananController@waktu');
+    Route::get('konsultasi','BerandaController@konsultasi');
+    Route::post('konsultasi-proses','BerandaController@konsultasiproses');
+    Route::get('labjakarta','BerandaController@labjakarta');
+    Route::get('labmedan','BerandaController@labmedan');
+    Route::get('labsurabaya','BerandaController@labsurabaya');
+    Route::get('labmakassar','BerandaController@labmakassar');
+    Route::get('kritik-saran','BerandaController@kritik_saran');
 });
 
 
@@ -41,13 +48,6 @@ Route::get('sertifikat-iso','BerandaController@sertifikat');
 Route::get('struktur-organisasi','BerandaController@struktur');
 Route::get('hubungi-kami','BerandaController@hubungikami');
 // Route::get('tentang-kami/{locale}','BerandaController@tentang');
-Route::get('konsultasi','BerandaController@konsultasi');
-Route::post('konsultasi-proses','BerandaController@konsultasiproses');
-Route::get('labjakarta','BerandaController@labjakarta');
-Route::get('labmedan','BerandaController@labmedan');
-Route::get('labsurabaya','BerandaController@labsurabaya');
-Route::get('labmakassar','BerandaController@labmakassar');
-Route::get('kritik-saran','BerandaController@kritik_saran');
 Route::get('chat', function(){
     return view('chat');
 });

@@ -60,28 +60,28 @@
                                 <!-- section title -->
                                 <div class="section-title">
                                     <div class="title-header">
-                                        <h2 class="title">Konsultasi</h2>
+                                        <h2 class="title">{{__('lang.Konsultasi')}}</h2>
                                     </div>
-                                    <div class="title-desc">Jika kamu ada pertanya silahkan isi form dibawah ini:</div>
+                                    <div class="title-desc">{{__('lang.formkonsultasi')}}</div>
                                 </div><!-- section title end -->
                                 <form action="konsultasi-proses" method="post" id="ttm-contactform" class="ttm-contactform wrap-form clearfix">
                                      @csrf
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <label>
-                                                <span class="text-input"><input name="konsultasi_nama" type="text"  placeholder="Nama Lengkap"></span>
+                                                <span class="text-input"><input name="konsultasi_nama" type="text"  placeholder="{{__('lang.nama')}}" required></span>
                                             </label>
                                             <label>
-                                                <span class="text-input"><input name="konsultasi_hp" type="text"  placeholder="Nomor Handphone"></span>
+                                                <span class="text-input"><input name="konsultasi_hp" type="text"  placeholder="{{__('lang.nohp')}}" required></span>
                                             </label>
                                             <label>
-                                                <span class="text-input"><input name="konsultasi_email" type="email"  placeholder="Email"></span>
+                                                <span class="text-input"><input name="konsultasi_email" type="email"  placeholder="Email" required></span>
                                             </label>
                                             <label>
-                                                <span class="text-input"><textarea name="konsultasi_pesan" rows="4" cols="40" placeholder="Pertayaan"></textarea></span>
+                                                <span class="text-input"><textarea name="konsultasi_pesan" rows="4" style="width: 300px;" placeholder="{{__('lang.pertayaan')}}" required></textarea></span>
                                             </label>
                                             <label>
-                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Kirim</button>
+                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">submit</button>
                                             </label>
                                         </div>
                                     </div>

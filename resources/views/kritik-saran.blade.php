@@ -6,8 +6,8 @@
                     <div class="row align-items-center text-center">
                         <div class="col-lg-12">
                             <div class="">
-                                <h3 class="title">Kritik & Saran</h4>
-                                <h6>Kritik dan saran kamu sangat berarti untuk perkembangan Lab Kami.</h6>
+                                <h3 class="title">{{__('lang.kritik')}}</h4>
+                                <h6>{{__('lang.isikritik')}}</h6>
                             </div>
                         </div>
                     </div>
@@ -25,13 +25,13 @@
                         <div class="row ">
                             <div class="col-lg-8 text-center" style="width:900px">
                                 <label>
-                                    <span class="text-input"><input name="konsultasi_nama" type="text"  placeholder="Nama (Optional)"></span>
+                                    <span class="text-input"><input name="konsultasi_nama" type="text"  placeholder="{{__('lang.nama')}}(Optional)"></span>
                                 </label>
                                 <label>
-                                    <span class="text-input"><textarea name="konsultasi_pesan" rows="4" cols="40" placeholder="Kritik & Saran"></textarea></span>
+                                    <span class="text-input"><textarea name="konsultasi_pesan" rows="4" style="width:570px;" placeholder="{{__('lang.kritik')}}"></textarea></span>
                                 </label>
                                 <label>
-                                    <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Kirim</button>
+                                    <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Submit</button>
                                 </label>
                             </div>
                         </div>

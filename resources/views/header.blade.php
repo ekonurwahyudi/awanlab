@@ -58,6 +58,8 @@
 
 <link rel="stylesheet" type="text/css" href="../css/floating-wpp.min.css">
 <link rel="stylesheet" href="../css/modal-video.min.css">
+<!-- <link href="../halamanadmin/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" /> -->
+ <!-- <link rel="stylesheet" type="text/css" href="css/tambah.css"> -->
 <style>
     textarea {
         padding: 10px;
@@ -166,7 +168,7 @@
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="..//artikel" class="mega-menu-link">{{ __('lang.Artikel')}}</a>
+                                                <a href="../artikel" class="mega-menu-link">{{ __('lang.Artikel')}}</a>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="../hubungi-kami" class="mega-menu-link">{{ __('lang.Hubungi')}}</a>
