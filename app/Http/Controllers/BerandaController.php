@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Artikel;
 use App\Models\Slide;
 use App\Models\konsultasi;
+use App\Models\Faq;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facedes\Storage;
 use DB;
@@ -46,7 +47,8 @@ class BerandaController extends Controller
         return view('tentang-kami');
     }
     public function konsultasi(){
-        return view('konsultasi');
+        $faq = Faq::all();
+        return view('konsultasi',['faq'=>$faq]);
     }
     public function konsultasiproses(Request $request){
         $pesan = [

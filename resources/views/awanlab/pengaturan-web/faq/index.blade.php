@@ -14,11 +14,11 @@
                                         <div class="card card-custom">
 									<div class="card-header flex-wrap py-5">
 										<div class="card-title">
-											<h5 class="card-label">Halaman Pengaturan Slide</h5>
+											<h5 class="card-label">Halaman Pengaturan Faq</h5>
 										</div>
 										<div class="card-toolbar">
 											<!--begin::Dropdown-->
-                                            <a href="/pengaturan/tambah-slide" class="btn btn-danger font-weight-bold mr-2">
+                                            <a href="/pengaturan/tambah-faq" class="btn btn-danger font-weight-bold mr-2">
 												<span class="svg-icon">
 													<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Address-card.svg-->
 													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -29,7 +29,7 @@
 														</g>
 													</svg>
 													<!--end::Svg Icon-->
-												</span>Tambah Slide</a>
+												</span>Tambah Faq</a>
 											<!--end::Dropdown-->
 											<!--begin::Button-->
 										</div>
@@ -40,33 +40,24 @@
 											<thead>
 												<tr>
 													<th>No</th>
-													<th>Judul Slide</th>
-													<th>Slide (Indonesia)</th>
-													<th>Slide (English)</th>
+													<th>Pertayaan</th>
+													<th>Jawaban</th>
 													<th>Aksi</th>
 												</tr>
 											</thead>
 											<tbody>
 											@php $no = 1; @endphp
-											@foreach ($slides as $slide)
+											@foreach ($faqs as $faq)
 												<tr>
 													<td>{{$no++}}</td>
-													<td>{{$slide->slide_judul}}</td>
-													<td class="text-center">
-														<img src="{{ url('storage/slides/'.'slideid_'.$slide->slide_judul.'.png')}}" class="rounded" style="width: 120px">
-
-													</td>
-													<td class="text-center">
-														<img src="{{ url('storage/slides/'.'slideen_'.$slide->slide_judul.'.png')}}" class="rounded" style="width: 120px">
-
-													</td>
-
-													<td><a href="/pengaturan-slide-edit/{{$slide->slide_id}}" class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit"></i></a>
-													<a href="/pengaturan/slide-hapus/{{$slide->slide_id}}" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></a></td>
+													<td width="280px">{{$faq->faq_pertayaan}}</td>
+                                                    <td width="480px">{{$faq->faq_jawaban}}</td>
+													<td><a href="/pengaturan-edit-faq/{{$faq->faq_id}}" class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit"></i></a>
+													<a href="/pengaturan/faq-hapus/{{$faq->faq_id}}" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></a></td>
 													
 												</tr>
+											
 											@endforeach
-												
 											</tbody>
 										</table>
 										

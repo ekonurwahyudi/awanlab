@@ -85,3 +85,12 @@ Route::post('/pengaturan/slide-proses','SlideController@store');
 Route::get('/pengaturan-slide-edit/{slide_id}/', 'SlideController@edit');
 Route::post('/pengaturan/slide-update/{slide_id}', 'SlideController@update');
 Route::get('/pengaturan/slide-hapus/{slide_id}', 'SlideController@destroy');
+
+//Route Faq Crud
+Route::get('/pengaturan/faq', 'FaqController@index');
+Route::get('/pengaturan/tambah-faq','FaqController@tambah');
+Route::post('/pengaturan/faq-proses','FaqController@proses');
+Route::get('/pengaturan/faq-hapus/{faq_id}', 'FaqController@destroy');
+Route::get('/pengaturan-edit-faq/{faq_id}', 'FaqController@edit');
+Route::post('/pengaturan/faq-update/{faq_id}', 'FaqController@update');
+Route::get('/pengaturan/pertayaan-customer/','FaqController@pertayaan');

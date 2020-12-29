@@ -35,23 +35,21 @@
                                 </div>
                             </div><!-- section title end -->
                         </div>
+
+                       
                         <div class="accordion">
+                            @foreach($faq as $faq)
                             <!-- toggle -->
                             <div class="toggle ttm-style-classic ttm-toggle-title-bgcolor-grey ttm-control-right-true">
-                                <div class="toggle-title"><a href="#" >Berapa lama penyelesaian kalibrasi alat ukur saya?</a></div>
+                                <div class="toggle-title"><a href="#" >{{$faq->faq_pertayaan}}</a></div>
                                 <div class="toggle-content">
-                                    <p>Lama penyelesaian kalibrasi alat ukur tergantung dari banyak titik yang diukur dan alat pengukurannya.</p>
+                                    <p>{{$faq->faq_jawaban}}</p>
                                 </div>
                             </div><!-- toggle end -->
-                            <!-- toggle -->
-                            <div class="toggle ttm-style-classic ttm-toggle-title-bgcolor-grey ttm-control-right-true">
-                                <div class="toggle-title "><a href="#">Berapa lama sekali saya untuk kalibrasi alat ukur saya?</a></div>
-                                <div class="toggle-content">
-                                    <p>Jika sudah sampai waktu due datenya silahkan dilakukan kalibrasi. Due date tergantung dari alat ukur itu sendiri, ada yang 1-2 tahun bahkan lebih.</p>
-                                </div>
-                            </div><!-- toggle end -->
-                            
+                            @endforeach
                        </div>
+                        
+
                     </div>
                     <div class="col-lg-4 col-md-5">
                         <div class="ttm-bgcolor-grey ttm-bg pt-25 pr-30 pb-30 pl-30 res-991-mt-30">
