@@ -226,49 +226,34 @@
 															<th>SPH</th>
 															<th>PO</th>
 															<th>Status Alat</th>
+															<th>Tanggal Antar</th>
 															<th>Tanggal Order</th>
 														</tr>
 													</thead>
 													<tbody>
+													@php $no = 1; @endphp
+													@foreach ($orders as $order)
 														<tr>
-															<td>1</td>
+															<td>{{$no++}}</td>
 															<td width="280px">
-																Nama Alat: <br>
-																Merek: <br>
-																Model: <br>
-																S/N: <br>
-																Jumlah: <br>
-																Lolasi Lab: <br>
-																Inhouse: <br>
-																Nama pada sertifikat: <br>
-																Alamat pada sertifikat: <br>
+																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
+																<b>Merek: </b>{{$order->order_merek}}<br>
+																<b>Model: </b>{{$order->order_model}}<br>
+																<b>S/N: </b>{{$order->order_sn}}<br>
+																<b>Jumlah: </b>{{$order->order_jumlah}} Unit<br>
+																<b>Lolasi Lab: </b>{{$order->order_lokasilab}}<br>
+																<b>Jenis kalibrasi: </b>{{$order->order_jeniskal}}<br>
+																<b>Nama pada sertifikat: </b>{{$order->order_namaser}}<br>
+																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
 															</td>
-															<td>CCL-0812</td>
-															<td>Pilih SPH</td>
+															<td>{{$order->order_ccl}}</td>
+															<td>{{$order->order_statussph}}</td>
 															<td>Input PO</td>
-															<td><span class="label label-primary label-inline font-weight-normal mr-2">Sedang dikalibrasi</span></td>
-															<td>17/01/2021</td>
+															<td width=130px><span class="label label-light-primary label-inline font-weight-normal mr-2">Sedang dikalibrasi</span></td>
+															<td><span class="label label-light-warning label-inline font-weight-normal mr-2">20/01/2021</span></td>
+															<td>{{$order->created_at}}</td>
 														</tr>
-														<tr>
-															<td>2</td>
-															<td width="280px">
-																Nama Alat: <br>
-																Merek: <br>
-																Model: <br>
-																S/N: <br>
-																Jumlah: <br>
-																Lolasi Lab: <br>
-																Inhouse: <br>
-																Nama pada sertifikat: <br>
-																Alamat pada sertifikat: <br>
-															</td>
-															<td>CCL-0811</td>
-															<td>Pilih SPH</td>
-															<td>Input PO</td>
-															<td><span class="label label-primary label-inline font-weight-normal mr-2">Sedang cetak sertifikat</span></td>
-															<td>17/01/2021</td>
-														</tr>
-													
+													@endforeach
 													</tbody>
 												</table>
 												<!--end: Datatable-->

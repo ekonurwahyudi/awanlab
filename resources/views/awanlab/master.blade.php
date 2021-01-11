@@ -316,6 +316,19 @@
 									<div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
 										<!--begin::Nav-->
 										<ul class="navi navi-hover py-4">
+										@guest
+											@if (Route::has('login'))
+												<li class="nav-item">
+													<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+												</li>
+											@endif
+											
+											@if (Route::has('register'))
+												<li class="nav-item">
+													<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+												</li>
+											@endif
+										@else
 											<!--begin::Item-->
 											<li class="navi-item">
 												<a href="#" class="navi-link">
@@ -346,6 +359,7 @@
 									</div>
 								</div>
 								<!--end::User-->
+								@endguest
 							</div>
 							<!--end::Topbar-->
 						</div>

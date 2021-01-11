@@ -170,57 +170,59 @@
 												</div>
 											</div>
 											<div class="card-body">
-                                            <form>
+                                            <form action="/order-proses" method="POST">
+												@csrf
                                                 <div class="card-body">
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Nama Alat :</label>
                                                         <div class="col-8">
-                                                            <input class="form-control" type="text" id="example-text-input"/>
+                                                            <input name="order_namaalat" value="{{ old('order_namaalat') }}" class="form-control" type="text" id="example-text-input"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Merek :</label>
                                                         <div class="col-8">
-                                                            <input class="form-control" type="text" id="example-text-input"/>
+                                                            <input name="order_merek" value="{{ old('order_merek') }}" class="form-control" type="text" id="example-text-input"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Model :</label>
                                                         <div class="col-8">
-                                                            <input class="form-control" type="text" id="example-text-input"/>
+                                                            <input name="order_model" value="{{ old('order_model') }}" class="form-control" type="text" id="example-text-input"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">S/N :</label>
                                                         <div class="col-5">
-                                                            <input class="form-control" type="text" id="example-text-input"/>
+                                                            <input name="order_sn" value="{{ old('order_sn') }}" class="form-control" type="text" id="example-text-input"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Jumlah :</label>
-                                                        <div class="col-5">
-                                                            <input class="form-control" type="number" id="example-text-input"/>
+                                                        <div class="col-5 input-group">
+                                                            <input name="order_jumlah" value="{{ old('order_jumlah') }}" class="form-control" type="number" id="example-text-input" aria-describedby="basic-addon2"/>
+															<div class="input-group-append"><span class="input-group-text">Unit</span></div> 
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-2 col-form-label" for="exampleSelectd">Lokasi Lab :</label>
                                                         <div class="col-5">
-                                                            <select class="form-control" id="exampleSelectd">
+                                                            <select name="order_lokasilab" value="{{ old('order_lokasilab') }}" class="form-control" id="exampleSelectd">
                                                                 <option>Pilih Lokasi lab</option>
-                                                                <option>Jakarta</option>
-                                                                <option>Surabaya</option>
-                                                                <option>Medan</option>
-                                                                <option>Makassar</option>
+                                                                <option value="jakarta">Jakarta</option>
+                                                                <option value="surabaya">Surabaya</option>
+                                                                <option value="medan">Medan</option>
+                                                                <option value="makassar">Makassar</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-2 col-form-label" for="exampleSelectd">Jenis Kalibrasi :</label>
                                                         <div class="col-5">
-                                                            <select class="form-control" id="exampleSelectd">
+                                                            <select name="order_jeniskal" value="{{ old('order_jeniskal') }}" class="form-control" id="exampleSelectd">
                                                                 <option>Pilih jenis kalibrasi</option>
-                                                                <option>Inhouse</option>
-                                                                <option>Onsite</option>
+                                                                <option value="inhouse">Inhouse</option>
+                                                                <option value="onsite">Onsite</option>
                                                             </select>
                                                             <span class="form-text" style="color:red;">Jika anda memilih Onsite akan ada biaya tranportasi Dll.</span>
                                                         </div>
@@ -228,24 +230,22 @@
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Nama pemilik pada sertifikat :</label>
                                                         <div class="col-5">
-                                                            <input class="form-control" type="text" id="example-text-input"/>
+                                                            <input name="order_namaser" value="{{ old('order_namaser') }}" class="form-control" type="text" id="example-text-input"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Alamat pemilik pada sertifikat :</label>
                                                         <div class="col-5">
-                                                            <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                                                            <textarea name="order_alamatser" value="{{ old('order_alamatser') }}" class="form-control" name="" id="" cols="30" rows="4"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-footer">
                                                 <div class="row">
-                                                    <div class="col-2">
+                                                    <div class="col-3">
                                                     </div>
-                                                    <div class="col-10">
-                                                    <button type="reset" class="btn btn-primary mr-2">Order Kalibrasi</button>
+                                                    <div class="col-9">
+                                                    <button type="submit" class="btn btn-primary mr-2">Order Kalibrasi</button>
                                                     </div>
-                                                </div>
                                                 </div>
                                             </form>
 											</div>

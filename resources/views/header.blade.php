@@ -107,7 +107,7 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <a href="../home"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>{{ __('lang.Login')}}</div></a>
+                            <a href="{{ route('login') }}"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>{{ __('lang.Login')}}</div></a>
                         </div>
                     </div>
                 </div>

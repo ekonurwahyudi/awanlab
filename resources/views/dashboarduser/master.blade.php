@@ -4,6 +4,7 @@
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<title>Dashboard Pelanggan Telkom Kalibrasi</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -179,12 +180,32 @@
 								
 								<!--end::Create-->
 								<!--begin::User-->
+
 								<div class="topbar-item">
+								@guest
+									@if (Route::has('login'))
+										<li class="nav-item">
+											<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+										</li>
+									@endif
+									
+									@if (Route::has('register'))
+										<li class="nav-item">
+											<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+										</li>
+									@endif
+								@else
 									<div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" data-toggle="dropdown" data-offset="10px,0px">
 										<span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
-										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Eko Nurwayudi</span>
-										<span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
-											<span class="symbol-label font-size-h5 font-weight-bold">E</span>
+										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">{{ Auth::user()->name }}</span>
+										<span class="symbol symbol-lg-35 symbol-25 symbol-light-primary">
+											<span class="symbol-label font-size-h5 font-weight-bold"><span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-12-28-020759/theme/html/demo5/dist/../src/media/svg/icons/General/User.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+													<polygon points="0 0 24 0 24 24 0 24"/>
+													<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+													<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+												</g>
+											</svg><!--end::Svg Icon--></span></span>
 										</span>
 									</div>
 									<!--end::Toggle-->
@@ -208,18 +229,21 @@
 											<!--end::Item-->
 											<!--begin::Item-->
 											<li class="navi-item">
-												<a href="http://127.0.0.1:8000/logout" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="navi-link">
-
-												<form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
-													<input type="hidden" name="_token" value="5HyrVo1hElMK3G2ojQt4RpMpMjR0cEqlXAoT3rqR">												</form>
-													<span class="navi-text">Logout</span>
+												<a class="dropdown-item" href="{{ route('logout') }}"
+													onclick="event.preventDefault();
+																	document.getElementById('logout-form').submit();">
+														{{ __('Logout') }}
 												</a>
+
+													<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+														@csrf
+													</form>
 											</li>
 										</ul>
 										<!--end::Nav-->
 									</div>
 								</div>
+								@endguest
 								<!--end::User-->
 								<!--begin::Notifications-->
 								

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artikel;
+use App\Models\Orderkalibrasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facedes\Storage;
 use DB;
@@ -14,6 +14,7 @@ class HomeController extends Controller
      *
      * @return void
      */
+
     
      public function __construct()
     {
@@ -25,7 +26,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    
+   
     public function index()
     {
         return view('home');
@@ -44,10 +45,7 @@ class HomeController extends Controller
     }
 
     public function cus(){
-        return view('/dashboarduser/index');
-    }
-
-    public function order(){
-        return view('/dashboarduser/orderkalibrasi');
+        $orders = Orderkalibrasi::all();
+        return view('/dashboarduser/index',compact('orders'));
     }
 }

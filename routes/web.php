@@ -60,6 +60,7 @@ Route::get('/newregister','PerusahaanController@daftar');
 
 //Route Untuk akses login
 Route::middleware('role:customer')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::redirect('/home','/dashboard');
 Route::middleware('role:admin')->get('/awanlab', 'HomeController@awanlab')->name('awanlab');
 Route::middleware('role:admin')->get('/pengaturan-web', 'HomeController@web')->name('pengaturan-web');
 
@@ -106,4 +107,5 @@ Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
 
 //Halaman Dashboard Customer
 Route::get('/dashboard','HomeController@cus');
-Route::get('/dashboard-order','HomeController@order');
+Route::get('/dashboard-order','OrderController@index');
+Route::post('/order-proses','OrderController@proses');
