@@ -92,7 +92,7 @@
             <div class="top_bar ttm-bgcolor-skincolor clearfix">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12 d-flex flex-row align-items-center">
+                        <div class="col-xl-12 d-flex flex-row align-items-center ">
                             <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>021-21480341</div>
                             <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fal fa-envelope"></i></div><a href="../mailto:yourdomain@gmail.com">labkalibrasi@telkom.co.id</a></div>
                             <div class="top_bar_contact_item ml-auto"><div class="top_bar_icon"><i class="fal fa-clock"></i></div>{{ __('lang.Waktu')}}</div>
@@ -122,7 +122,7 @@
                                 <div class="site-navigation d-flex flex-row">
                                     <!-- site-branding -->
                                     <div class="site-branding mr-auto">
-                                        <a class="home-link" href="..//" rel="home">
+                                        <a class="home-link" href="../" rel="home">
                                             <img id="logo-img" class="img-center" src="../images/logo-img.png" alt="logo-img">
                                         </a>
                                     </div><!-- site-branding end -->
@@ -135,7 +135,7 @@
                                     <nav class="main-menu menu-mobile" id="menu">
                                         <ul class="menu">
                                             <li class="mega-menu-item">
-                                                <a href="..//" class="mega-menu-link">{{ __('lang.Beranda')}}</a>
+                                                <a href="../" >{{ __('lang.Beranda')}}</a>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="../tentang-kami" class="mega-menu-link">{{ __('lang.Tentang')}}</a>
@@ -155,7 +155,7 @@
                                             <li class="mega-menu-item">
                                                 <a href="../#" class="mega-menu-link">{{ __('lang.Info')}}</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="../ruanglingkup" class="mega-menu-link">{{ __('lang.Ruang')}}</a>
+                                                    <li><a href="../ruanglingkup" >{{ __('lang.Ruang')}}</a>
                                                     <!-- <ul class="mega-submenu">
                                                         <li><a href="../labjakarta">Lab Kalibrasi Jakarta</a>
                                                         <li><a href="../labmedan">Lab Kalibrasi Medan</a></li>
@@ -163,71 +163,22 @@
                                                         <li><a href="../labmakassar">Lab Kalibrasi Makassar</a></li>
                                                     </ul> -->
                                                     <!-- <li><a href="../#">Tarif Kalibrasi</a></li> -->
-                                                    <li><a href="../#">{{ __('lang.Client')}}</a>
+                                                    <li><a href="#">{{ __('lang.Client')}}</a>
                                                     <li><a href="../kritik-saran">{{ __('lang.Kritik')}}</a>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="../artikel" class="mega-menu-link">{{ __('lang.Artikel')}}</a>
+                                                <a href="../artikel" >{{ __('lang.Artikel')}}</a>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="../hubungi-kami" class="mega-menu-link">{{ __('lang.Hubungi')}}</a>
+                                                <a href="../hubungi-kami" >{{ __('lang.Hubungi')}}</a>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" >Tracking order</a>
                                             </li>
                                         </ul>
                                     </nav>
-                                    <div class="header_extra d-flex flex-row align-items-center justify-content-end">
-                                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-icon-btn-left ttm-btn-color-grey" href="../tracking.php"> <i class="ti ti-target"></i>Tracking Order</a>
-                                            <!-- <div id="appointment">
-                                                <h3>Buat Jadwal Kalibrasi</h3>
-                                                <form class="wrap-form appointment_form clearfix" method="post" action="#" id="tes">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                                                    <input name="name" type="text" value="" placeholder="Nama Lengkap" required="required">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                                                    <input name="phone" type="tel" value="" placeholder="Nomor Handphone" required="required">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                                    <input name="email" type="email" value="" placeholder="Email">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group date">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-calendar"></i>
-                                                                    <input type="text" value="" id="datetimepicker1">
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label class="form-group">
-                                                                <span class="text-input">
-                                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                                    <input name="Note" type="text" value="" placeholder="Catatan">
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Buat Jadwal Kalibrasi</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div> -->
-                                    </div>
+
                                 </div><!-- site-navigation end-->
                             </div>
                         </div>

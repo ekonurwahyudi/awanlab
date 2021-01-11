@@ -20,18 +20,22 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 {
     Route::get('/','BerandaController@beranda');
     Route::get('/tentang-kami','BerandaController@tentang');
-    Route::get('layanan-kalibrasi','LayananController@layanan');
-    Route::get('ruanglingkup','LayananController@ruanglingkup');
-    Route::get('fiberoptic','LayananController@fiber');
-    Route::get('kelistrikan','LayananController@listrik');
-    Route::get('frekuensiwaktu','LayananController@waktu');
-    Route::get('konsultasi','BerandaController@konsultasi');
-    Route::post('konsultasi-proses','BerandaController@konsultasiproses');
-    Route::get('labjakarta','BerandaController@labjakarta');
-    Route::get('labmedan','BerandaController@labmedan');
-    Route::get('labsurabaya','BerandaController@labsurabaya');
-    Route::get('labmakassar','BerandaController@labmakassar');
-    Route::get('kritik-saran','BerandaController@kritik_saran');
+    Route::get('/layanan-kalibrasi','LayananController@layanan');
+    Route::get('/ruanglingkup','LayananController@ruanglingkup');
+    Route::get('/fiberoptic','LayananController@fiber');
+    Route::get('/kelistrikan','LayananController@listrik');
+    Route::get('/frekuensiwaktu','LayananController@waktu');
+    Route::get('/konsultasi','BerandaController@konsultasi');
+    Route::post('/konsultasi-proses','BerandaController@konsultasiproses');
+    Route::get('/labjakarta','BerandaController@labjakarta');
+    Route::get('/labmedan','BerandaController@labmedan');
+    Route::get('/labsurabaya','BerandaController@labsurabaya');
+    Route::get('/labmakassar','BerandaController@labmakassar');
+    Route::get('/kritik-saran','BerandaController@kritik_saran');
+    Route::get('/sertifikat-iso','BerandaController@sertifikat');
+    Route::get('/struktur-organisasi','BerandaController@struktur');
+    Route::get('/hubungi-kami','BerandaController@hubungikami');
+    Route::get('artikel/','BerandaController@allartikel');
 });
 
 
@@ -43,18 +47,16 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 //Route Beranda
 // Route::get('/{locale}','BerandaController@beranda');
 Route::get('artikel/{artikel_id}','BerandaController@artikel');
-Route::get('artikel/','BerandaController@allartikel');
-Route::get('sertifikat-iso','BerandaController@sertifikat');
-Route::get('struktur-organisasi','BerandaController@struktur');
-Route::get('hubungi-kami','BerandaController@hubungikami');
+
 // Route::get('tentang-kami/{locale}','BerandaController@tentang');
 Route::get('chat', function(){
     return view('chat');
 });
 
-//Route Layanan
+//Login + Pendaftaran
+Auth::routes(['verify' => true]);
+Route::get('/newregister','PerusahaanController@daftar');
 
-Auth::routes();
 
 //Route Untuk akses login
 Route::middleware('role:customer')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -94,3 +96,14 @@ Route::get('/pengaturan/faq-hapus/{faq_id}', 'FaqController@destroy');
 Route::get('/pengaturan-edit-faq/{faq_id}', 'FaqController@edit');
 Route::post('/pengaturan/faq-update/{faq_id}', 'FaqController@update');
 Route::get('/pengaturan/pertayaan-customer/','FaqController@pertayaan');
+
+//Route Feedback
+Route::post('/feedback-input','FeedbackController@input');
+Route::get('/pengaturan/kritik-saran','FeedbackController@index');
+
+//Tambah Perusahaan
+Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
+
+//Halaman Dashboard Customer
+Route::get('/dashboard','HomeController@cus');
+Route::get('/dashboard-order','HomeController@order');

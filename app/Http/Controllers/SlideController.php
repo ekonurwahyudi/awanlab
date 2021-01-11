@@ -47,7 +47,8 @@ class SlideController extends Controller
         $slide = Slide::create([
             'slide_judul' => $request->slide_judul,
             'slide_gambar_id' => $filenameSimpan_id,
-            'slide_gambar_en' => $filenameSimpan_en
+            'slide_gambar_en' => $filenameSimpan_en,
+            'slide_link' => $request->slide_link,
         ]);
 
         return redirect('/pengaturan/slide');
@@ -84,7 +85,8 @@ class SlideController extends Controller
 
             $slide = DB::table('slides')->where('slide_id',$request->slide_id)->update([
                 'slide_judul' => $request->slide_judul,
-                'slide_gambar_en' => $filenameSimpan_en
+                'slide_gambar_en' => $filenameSimpan_en,
+                'slide_link' => $request->slide_link,
             ]);
         }elseif($request->file('slide_gambar_en') == ""){
             $slide_judul = ['slide_judul' => $request->slide_judul];
@@ -97,7 +99,8 @@ class SlideController extends Controller
 
             $slide = DB::table('slides')->where('slide_id',$request->slide_id)->update([
                 'slide_judul' => $request->slide_judul,
-                'slide_gambar_id' => $filenameSimpan_id
+                'slide_gambar_id' => $filenameSimpan_id,
+                'slide_link' => $request->slide_link
             ]);
 
         }else{
@@ -118,7 +121,8 @@ class SlideController extends Controller
             $slide = DB::table('slides')->where('slide_id',$request->slide_id)->update([
                 'slide_judul' => $request->slide_judul,
                 'slide_gambar_en' => $filenameSimpan_en,
-                'slide_gambar_id' => $filenameSimpan_id
+                'slide_gambar_id' => $filenameSimpan_id,
+                'slide_link' => $request->slide_link,
             ]);
         }
         return redirect('/pengaturan/slide');

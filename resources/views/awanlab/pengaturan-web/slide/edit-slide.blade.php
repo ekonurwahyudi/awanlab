@@ -75,6 +75,17 @@
 										</div>
 									@enderror
 								</div>
+								<div class="form-group row">
+									<label  class="col-2 col-form-label">Link Tujuan</label>
+									<div class="col-10">
+										<input class="form-control @error('slide_link') is-invalid @enderror" name="slide_link" value="{{$slide->slide_link}}" type="text"  id="example-text-input"/>
+									</div>
+									@error('slide_link')
+										<div class="alert alert-danger mt-2">
+											{{ $message }}
+										</div>
+									@enderror
+								</div>
 								</div>
 								</div>
 								<div class="card-footer">

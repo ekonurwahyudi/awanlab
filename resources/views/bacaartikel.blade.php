@@ -112,7 +112,7 @@
                                     <nav class="main-menu menu-mobile" id="menu">
                                         <ul class="menu">
                                             <li class="mega-menu-item">
-                                                <a href="../" class="mega-menu-link">Beranda</a>
+                                                <a href="../">Beranda</a>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="../tentang-kami" class="mega-menu-link">Tentang Kami</a>
@@ -132,23 +132,23 @@
                                             <li class="mega-menu-item">
                                                 <a href="#" class="mega-menu-link">info</a>
                                                 <ul class="mega-submenu">
-                                                    <li class="mega-menu-item"><a href="ruanglingkup" class="mega-menu-link">Ruang Lingkup Kalibrasi</a>
-                                                    <ul class="mega-submenu">
+                                                    <li class="mega-menu-item"><a href="../ruanglingkup">Ruang Lingkup Kalibrasi</a>
+                                                    <!-- <ul class="mega-submenu">
                                                         <li><a href="../labjakarta">Lab Kalibrasi Jakarta</a>
                                                         <li><a href="../labmedan">Lab Kalibrasi Medan</a></li>
                                                         <li><a href="../labsurabaya">Lab Kalibrasi Surabaya</a></li>
                                                         <li><a href="../labmakassar">Lab Kalibrasi Makassar</a></li>
-                                                    </ul>
+                                                    </ul> -->
                                                     <!-- <li><a href="#">Tarif Kalibrasi</a></li> -->
                                                     <li><a href="#">Client Kami</a>
                                                     <li><a href="#">Kritik & Saran</a>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="/artikel" class="mega-menu-link">Artikel</a>
+                                                <a href="../artikel">Artikel</a>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="../hubungi-kami" class="mega-menu-link">Hubungi Kami</a>
+                                                <a href="../hubungi-kami">Hubungi Kami</a>
                                             </li>
                                         </ul>
                                     </nav>

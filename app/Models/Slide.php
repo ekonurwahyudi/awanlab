@@ -14,6 +14,7 @@ class Slide extends Model
         'slide_id',
         'slide_judul',
         'slide_gambar_id',
-        'slide_gambar_en'
+        'slide_gambar_en',
+        'slide_link',
     ];
 }

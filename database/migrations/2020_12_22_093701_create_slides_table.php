@@ -18,6 +18,7 @@ class CreateSlidesTable extends Migration
             $table->string('slide_judul');
             $table->string('slide_gambar_id');
             $table->string('slide_gambar_en');
+            $table->string('slide_link');
             $table->timestamps();
         });
     }

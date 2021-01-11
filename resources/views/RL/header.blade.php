@@ -137,7 +137,7 @@
                                     <nav class="main-menu menu-mobile" id="menu">
                                         <ul class="menu">
                                             <li class="mega-menu-item">
-                                                <a href="..//" class="mega-menu-link">{{ __('lang.Beranda')}}</a>
+                                                <a href="../">{{ __('lang.Beranda')}}</a>
                                             </li>
                                             <li class="mega-menu-item">
                                                 <a href="../tentang-kami" class="mega-menu-link">{{ __('lang.Tentang')}}</a>
@@ -157,7 +157,7 @@
                                             <li class="mega-menu-item">
                                                 <a href="../#" class="mega-menu-link">{{ __('lang.Info')}}</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="../ruanglingkup" class="mega-menu-link">{{ __('lang.Ruang')}}</a>
+                                                    <li><a href="../ruanglingkup" >{{ __('lang.Ruang')}}</a>
                                                     <!-- <ul class="mega-submenu">
                                                         <li><a href="../labjakarta">Lab Kalibrasi Jakarta</a>
                                                         <li><a href="../labmedan">Lab Kalibrasi Medan</a></li>
@@ -165,15 +165,15 @@
                                                         <li><a href="../labmakassar">Lab Kalibrasi Makassar</a></li>
                                                     </ul> -->
                                                     <!-- <li><a href="../#">Tarif Kalibrasi</a></li> -->
-                                                    <li><a href="../#">{{ __('lang.Client')}}</a>
+                                                    <li><a href="#">{{ __('lang.Client')}}</a>
                                                     <li><a href="../kritik-saran">{{ __('lang.Kritik')}}</a>
                                                 </ul>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="..//artikel" class="mega-menu-link">{{ __('lang.Artikel')}}</a>
+                                                <a href="../artikel">{{ __('lang.Artikel')}}</a>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="../hubungi-kami" class="mega-menu-link">{{ __('lang.Hubungi')}}</a>
+                                                <a href="../hubungi-kami">{{ __('lang.Hubungi')}}</a>
                                             </li>
                                         </ul>
                                     </nav>

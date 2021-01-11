@@ -86,7 +86,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area">
                         <div class="widget widget_nav_menu clearfix">
                         <div class="mb-30">
-                                <h4>{{__('lang.lokasi')}}</h4>
+                                <h4>{{__('lang.lokasifooter')}}</h4>
                             </div>
                             <div class="featured-icon-box icon-align-before-content icon-ver_align-top">
                                 <div class="featured-icon">

@@ -43,6 +43,7 @@
 													<th>Judul Slide</th>
 													<th>Slide (Indonesia)</th>
 													<th>Slide (English)</th>
+													<th>Link Tujuan</th>
 													<th>Aksi</th>
 												</tr>
 											</thead>
@@ -60,7 +61,7 @@
 														<img src="{{ url('storage/slides/'.'slideen_'.$slide->slide_judul.'.png')}}" class="rounded" style="width: 120px">
 
 													</td>
-
+													<td>{{$slide->slide_link}}</td>
 													<td><a href="/pengaturan-slide-edit/{{$slide->slide_id}}" class="btn btn-icon btn-success btn-sm"><i class="flaticon-edit"></i></a>
 													<a href="/pengaturan/slide-hapus/{{$slide->slide_id}}" class="btn btn-icon btn-danger btn-sm"><i class="flaticon-delete"></i></a></td>
 													

@@ -17,7 +17,7 @@ class HomeController extends Controller
     
      public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware(['auth','verified']);
     }
 
     /**
@@ -41,5 +41,13 @@ class HomeController extends Controller
 
     public function web(){
         return view('awanlab/pengaturan-web/index');
+    }
+
+    public function cus(){
+        return view('/dashboarduser/index');
+    }
+
+    public function order(){
+        return view('/dashboarduser/orderkalibrasi');
     }
 }
