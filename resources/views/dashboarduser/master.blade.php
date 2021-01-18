@@ -304,6 +304,33 @@
 		<!--begin::Page Scripts(used by this page)-->
         <script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
 		<!--end::Page Scripts-->
+		<script type="text/javascript">
+				    $(document).on('click', '.edit-modal', function() {
+						$('#footer_action_button').text(" Update");
+						$('#footer_action_button').addClass('glyphicon-check');
+						$('#footer_action_button').removeClass('glyphicon-trash');
+						$('.actionBtn').addClass('btn-success');
+						$('.actionBtn').removeClass('btn-danger');
+						$('.actionBtn').addClass('edit');
+						$('.actionBtn').removeClass('delete');
+						$('.modal-title').text('Edit');
+						$('.deleteContent').hide();
+						$('.form-horizontal').show();
+						$('#order_id').val($(this).data('id'));
+        				$('#order_merek').val($(this).data('name'));
+						// var link : $('#order_id').val($(this).data('id'));
+						// var aku = text('id');
+						// $('#editForm').attr('action', '/spcsph/link');
+						$('#editModal').modal('show');
+					});
+					$('.modal-footer').on('click', '.edit', function() {
+
+						$.ajax({
+							type: 'post',
+							url: '/sphcus/qe',
+						});
+					});
+		</script>
 	</body>
 	<!--end::Body-->
 </html>

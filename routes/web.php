@@ -61,8 +61,8 @@ Route::get('/newregister','PerusahaanController@daftar');
 //Route Untuk akses login
 Route::middleware('role:customer')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::redirect('/home','/dashboard');
-Route::middleware('role:admin')->get('/awanlab', 'HomeController@awanlab')->name('awanlab');
-Route::middleware('role:admin')->get('/pengaturan-web', 'HomeController@web')->name('pengaturan-web');
+Route::middleware('role:superadmin')->get('/awanlab', 'HomeController@awanlab')->name('awanlab');
+Route::middleware('role:superadmin')->get('/pengaturan-web', 'HomeController@web')->name('pengaturan-web');
 
 //Route Untuk Pengaturan Web
 // Route::middleware('role:admin')->get('/pengaturan/artikel', 'PengaturanwebController@artikel')->name('/pengaturan/artikel');
@@ -102,6 +102,13 @@ Route::get('/pengaturan/pertayaan-customer/','FaqController@pertayaan');
 Route::post('/feedback-input','FeedbackController@input');
 Route::get('/pengaturan/kritik-saran','FeedbackController@index');
 
+//Route Master User
+Route::middleware('role:superadmin')->get('/master-user','SuperadminController@user');
+Route::get('/tambah-user','SuperadminController@tambah');
+Route::post('/tambah-user/proses','SuperadminController@proses');
+Route::post('/hapus-user/{id}','SuperadminController@hapus');
+Route::get('/edit-user/{id}','SuperadminController@edit');
+
 //Tambah Perusahaan
 Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
 
@@ -109,3 +116,4 @@ Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
 Route::get('/dashboard','HomeController@cus');
 Route::get('/dashboard-order','OrderController@index');
 Route::post('/order-proses','OrderController@proses');
+Route::post('/sphcus','OrderController@sphcus');

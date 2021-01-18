@@ -14,14 +14,14 @@ class UserSeeder extends Seeder
      */
     public function run()
     {   
-        //role untuk admin
-        $admin = User::create([
-            'name' => 'admin',
-            'email' => 'admin@awanlab.com',
-            'password' => bcrypt('admin')
+        //role untuk super admin
+        $superadmin = User::create([
+            'name' => 'superadmi',
+            'email' => 'superadmin@awanlab.com',
+            'password' => bcrypt('superadmin')
         ]);
 
-        $admin->assignRole('admin');
+        $superadmin->assignRole('superadmin');
 
         //Role untuk customer
         $customer = User::create([
@@ -32,6 +32,41 @@ class UserSeeder extends Seeder
 
         $customer->assignRole('customer');
 
+        //Role untuk CS
+        $cs = User::create([
+            'name' => 'cs',
+            'email' => 'cs@awanlab.com',
+            'password' => bcrypt('cs')
+        ]);
+
+        $cs->assignRole('cs');
+
+        //Role untuk Koordinator Teknik
+        $kortek = User::create([
+            'name' => 'kortek',
+            'email' => 'kortek@awanlab.com',
+            'password' => bcrypt('kortek')
+        ]);
+
+        $kortek->assignRole('kortek');
+
+        //Role untuk Teknisi
+        $teknisi = User::create([
+            'name' => 'teknisi',
+            'email' => 'teknisi@awanlab.com',
+            'password' => bcrypt('teknisi')
+        ]);
+
+        $teknisi->assignRole('teknisi');
+
+        //Role untuk admin
+        $admin = User::create([
+            'name' => 'admin',
+            'email' => 'admin@awanlab.com',
+            'password' => bcrypt('admin')
+        ]);
+
+        $admin->assignRole('admin');
 
     }
 }

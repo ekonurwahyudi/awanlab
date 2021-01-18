@@ -8,6 +8,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
+use Illuminate\Database\Eloquent\Model;
+
 class User extends Authenticatable implements MustVerifyEmail
 {
     use HasFactory, Notifiable, HasRoles;
@@ -23,6 +25,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'alamat',
         'no_hp',
         'nama_perusahaan',
+        'lokasi_kerja',
         'password',
     ];
 
@@ -44,4 +47,10 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function roleuser()
+    {
+    	return $this->hasOne('App\Models\Roleuser');
+    }
+
 }

@@ -215,13 +215,57 @@
 													<!--end::Button-->
 												</div>
 											</div>
+										<!-- Modal SPH-->
+											<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">SPH (Surat Penawaran Harga)</h5> 
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<i aria-hidden="true" class="ki ki-close"></i>
+															</button>
+														</div>
+														<form class="form-horizontal" role="form">
+														@csrf
+														<div class="modal-body">
+														
+															<div class="form-group row">
+																<label class="col-3 col-form-label" for="exampleSelectd">SPH anda :</label>
+																<div class="col-8">
+																	<a href=""><button class="btn btn-primary btn-sm">Lihat SPH</button></a>
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-3 col-form-label" for="id">Status SPH :</label>
+																<div class="col-8">
+																<input type="text" name="order_merek" id="order_merek">
+																	<!-- <select name="order_statussph" value="{{ old('order_statussph') }}" class="form-control" id="exampleSelectd">
+																		<option>Pilih status SPH</option>
+																		<option value="diterima">Diterima</option>
+																		<option value="ditolak">Ditolak</option>
+																	</select> -->
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+														<button type="button" class="btn btn-warning" data-dismiss="modal">
+  							<span class='glyphicon glyphicon-remove'></span> Close
+  						</button>
+															<button type="button" class="edit btn actionBtn" data-dismiss="modal">
+  							<span id="footer_action_button" class='glyphicon'> </span>
+  						</button>
+														</div>
+														</form>
+													</div>
+												</div>
+											</div>
 											<div class="card-body">
 												<!--begin: Datatable-->
 												<table  class="table table-bordered table-checkable" id="order-listing">
 													<thead>
 														<tr>
-															<th>No</th>
-															<th>Detail Alat</th>
+															<th scope="col">No</th>
+															<th scope="col">Detail Alat</th>
 															<th>No. CCL</th>
 															<th>SPH</th>
 															<th>PO</th>
@@ -233,9 +277,10 @@
 													<tbody>
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
+													@php $noid = $order->order_id; @endphp
 														<tr>
 															<td>{{$no++}}</td>
-															<td width="280px">
+															<td width="230px">
 																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
 																<b>Merek: </b>{{$order->order_merek}}<br>
 																<b>Model: </b>{{$order->order_model}}<br>
@@ -247,15 +292,23 @@
 																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
 															</td>
 															<td>{{$order->order_ccl}}</td>
-															<td>{{$order->order_statussph}}</td>
-															<td>Input PO</td>
-															<td width=130px><span class="label label-light-primary label-inline font-weight-normal mr-2">Sedang dikalibrasi</span></td>
-															<td><span class="label label-light-warning label-inline font-weight-normal mr-2">20/01/2021</span></td>
-															<td>{{$order->created_at}}</td>
+															<td width="80px">
+															<button class="edit-modal btn btn-primary" data-id="{{$order->order_id}}" data-name="{{$order->order_merek}}">Lihat SPH</button></td>
+															<td width="80px"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal">Input PO</button></td>
+															<td width=130px><span class="label label-light-primary label-inline font-weight-normal mr-2">{{$order->order_status}}</span></td>
+															<td width="50px"><span class="label label-light-warning label-inline font-weight-normal mr-2">{{$order->order_tglantar}}</span></td>
+															<td width="10px">{{$order->created_at}}</td>
 														</tr>
+														
+														
 													@endforeach
 													</tbody>
 												</table>
+													
+
+													
+														
+												
 												<!--end: Datatable-->
 											</div>
 										</div>

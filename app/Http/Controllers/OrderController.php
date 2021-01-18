@@ -42,4 +42,12 @@ class OrderController extends Controller
 
         return redirect('/dashboard');
     }
+
+    public function sphcus(Request $request){
+        $statussph = DB::table('orderkalibrasis')->where('order_id',$request->order_id)->update([
+            'order_merek' => $request->order_merek,
+        ]);
+
+        return redirect('/dashboard');
+    }
 }
