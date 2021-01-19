@@ -35,7 +35,7 @@
 					</div>
 					<div class="card-body">
 						<!--begin: Datatable-->
-						<form action="/" method="POST" enctype="multipart/form-data">
+						<form action="/update-user/{{$user->id}}" method="POST" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="card-body">
 								<div class="form-group mb-8">                                        
@@ -67,17 +67,17 @@
                                     @php $roleuser = $user->roleuser->role_id; @endphp
                                         <select class="form-control @error('role_user') is-invalid @enderror" name="role_user" id="example-text-input">
                                             @if($roleuser == 1)
-                                            <option value="{{$user->roleuser->role_id}}">Super admin</option>
+                                            <option value="superadmin">Super admin</option>
                                             @elseif ($roleuser == 3)
-                                            <option value="{{$user->roleuser->role_id}}">Customer Service</option>
+                                            <option value="cs">Customer Service</option>
                                             @elseif ($roleuser == 4)
-                                            <option value="{{$user->roleuser->role_id}}">Koordinator Teknik</option>
+                                            <option value="kortek">Koordinator Teknik</option>
                                             @elseif ($roleuser == 5)
-                                            <option value="{{$user->roleuser->role_id}}">Teknisi</option>
+                                            <option value="teknisi">Teknisi</option>
                                             @elseif ($roleuser == 6)
-                                            <option value="{{$user->roleuser->role_id}}">Admin</option>
+                                            <option value="admin">Admin</option>
                                             @else
-                                            <option value="{{$user->roleuser->role_id}}">Customer</option>
+                                            <option value="customer">Customer</option>
                                             @endif
                                             <option value="cs">Customer Service</option>
                                             <option value="kortek">Koodinator Teknik</option>
@@ -134,7 +134,7 @@
                                 <div class="form-group row">
 									<label  class="col-2 col-form-label">Password :</label>
 									<div class="col-6">
-										<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password"/>
+										<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{$user->password}}" required autocomplete="new-password"/>
 									</div>
 									@error('password')
 										<div class="alert alert-danger mt-2">
@@ -145,7 +145,7 @@
                                 <div class="form-group row">
 									<label  class="col-2 col-form-label">Konfirmasi Password :</label>
 									<div class="col-6">
-										<input id="password-confirm" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password"/>
+										<input id="password-confirm" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" value="{{$user->password}}" required autocomplete="new-password"/>
 									</div>
 								</div>
 								

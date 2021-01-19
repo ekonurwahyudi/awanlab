@@ -120,4 +120,33 @@ class SuperadminController extends Controller
         // $users = DB::table('users')->where('id',$id)->get();
         return view('/awanlab/master-user/edit-user',['user' => $user]);
     }
+
+    public function update(Request $request){
+        $updateuser = User::find($request->id);
+        if($request->password == $updateuser->password){      
+                $updateuser->update([
+                    'name' => $request->name,
+                    'email' => $request->email,
+                    'alamat' => $request->alamat,
+                    'no_hp' => $request->no_hp,
+                    'lokasi_kerja' => $request->lokasi_kerja,
+                ]);
+
+                $updateuser->assignRole('admin');
+                return redirect('/master-user');
+        }else{
+            $updateuser->update([
+                'name' => $request->name,
+                'email' => $request->email,
+                'alamat' => $request->alamat,
+                'no_hp' => $request->no_hp,
+                'lokasi_kerja' => $request->lokasi_kerja,
+                'password' => Hash::make($request->password),
+            ]);
+
+            $updateuser->assignRole('cs');
+            return redirect('/master-user');
+        }
+        
+    }
 }

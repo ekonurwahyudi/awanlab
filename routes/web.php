@@ -108,6 +108,7 @@ Route::get('/tambah-user','SuperadminController@tambah');
 Route::post('/tambah-user/proses','SuperadminController@proses');
 Route::post('/hapus-user/{id}','SuperadminController@hapus');
 Route::get('/edit-user/{id}','SuperadminController@edit');
+Route::post('/update-user/{id}','SuperadminController@update');
 
 //Tambah Perusahaan
 Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
