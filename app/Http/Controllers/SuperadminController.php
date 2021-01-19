@@ -33,6 +33,7 @@ class SuperadminController extends Controller
                 'alamat' => $request->alamat,
                 'no_hp' => $request->no_hp,
                 'lokasi_kerja' => $request->lokasi_kerja,
+                'email_verified_at' => "2021-01-18 09:28:59",
                 'password' => Hash::make($request->password),
             ]);
     
@@ -47,6 +48,7 @@ class SuperadminController extends Controller
                 'alamat' => $request->alamat,
                 'no_hp' => $request->no_hp,
                 'lokasi_kerja' => $request->lokasi_kerja,
+                'email_verified_at' => "2021-01-18 09:28:59",
                 'password' => Hash::make($request->password),
             ]);
     
@@ -60,6 +62,7 @@ class SuperadminController extends Controller
                 'alamat' => $request->alamat,
                 'no_hp' => $request->no_hp,
                 'lokasi_kerja' => $request->lokasi_kerja,
+                'email_verified_at' => "2021-01-18 09:28:59",
                 'password' => Hash::make($request->password),
             ]);
     
@@ -73,6 +76,7 @@ class SuperadminController extends Controller
                 'alamat' => $request->alamat,
                 'no_hp' => $request->no_hp,
                 'lokasi_kerja' => $request->lokasi_kerja,
+                'email_verified_at' => "2021-01-18 09:28:59",
                 'password' => Hash::make($request->password),
             ]);
     
@@ -87,6 +91,7 @@ class SuperadminController extends Controller
                 'alamat' => $request->alamat,
                 'no_hp' => $request->no_hp,
                 'lokasi_kerja' => $request->lokasi_kerja,
+                'email_verified_at' => "2021-01-18 09:28:59",
                 'password' => Hash::make($request->password),
             ]);
     
@@ -100,6 +105,7 @@ class SuperadminController extends Controller
                 'alamat' => $request->alamat,
                 'no_hp' => $request->no_hp,
                 'lokasi_kerja' => $request->lokasi_kerja,
+                'email_verified_at' => "2021-01-18 09:28:59",
                 'password' => Hash::make($request->password),
             ]);
     
@@ -131,8 +137,9 @@ class SuperadminController extends Controller
                     'no_hp' => $request->no_hp,
                     'lokasi_kerja' => $request->lokasi_kerja,
                 ]);
-
-                $updateuser->assignRole('admin');
+                DB::table('model_has_roles')->where('user_id',$request->id)->update([
+                    'role_id' => $request->role_user,
+                ]);
                 return redirect('/master-user');
         }else{
             $updateuser->update([
@@ -144,7 +151,9 @@ class SuperadminController extends Controller
                 'password' => Hash::make($request->password),
             ]);
 
-            $updateuser->assignRole('cs');
+            DB::table('model_has_roles')->where('user_id',$request->id)->update([
+                'role_id' => $request->role_user,
+            ]);
             return redirect('/master-user');
         }
         

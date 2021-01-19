@@ -67,23 +67,23 @@
                                     @php $roleuser = $user->roleuser->role_id; @endphp
                                         <select class="form-control @error('role_user') is-invalid @enderror" name="role_user" id="example-text-input">
                                             @if($roleuser == 1)
-                                            <option value="superadmin">Super admin</option>
+                                            <option value="1">Super admin</option>
                                             @elseif ($roleuser == 3)
-                                            <option value="cs">Customer Service</option>
+                                            <option value="3">Customer Service</option>
                                             @elseif ($roleuser == 4)
-                                            <option value="kortek">Koordinator Teknik</option>
+                                            <option value="4">Koordinator Teknik</option>
                                             @elseif ($roleuser == 5)
-                                            <option value="teknisi">Teknisi</option>
+                                            <option value="5">Teknisi</option>
                                             @elseif ($roleuser == 6)
-                                            <option value="admin">Admin</option>
+                                            <option value="6">Admin</option>
                                             @else
-                                            <option value="customer">Customer</option>
+                                            <option value="2">Customer</option>
                                             @endif
-                                            <option value="cs">Customer Service</option>
-                                            <option value="kortek">Koodinator Teknik</option>
-                                            <option value="superadmin">Super Admin</option>
-                                            <option value="teknisi">Teknisi</option>
-                                            <option value="admin">Admin</option>
+                                            <option value="3">Customer Service</option>
+                                            <option value="4">Koodinator Teknik</option>
+                                            <option value="1">Super Admin</option>
+                                            <option value="5">Teknisi</option>
+                                            <option value="6">Admin</option>
                                         </select>
 									</div>
 									@error('role_user')
