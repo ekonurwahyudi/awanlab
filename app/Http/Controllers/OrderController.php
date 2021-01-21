@@ -29,6 +29,7 @@ class OrderController extends Controller
         ], $pesan);
 
         $order = Orderkalibrasi::create([
+            'user_id'  => $request->user_id,
             'order_namaalat'  => $request->order_namaalat,
             'order_merek'  => $request->order_merek,
             'order_model'  => $request->order_model,

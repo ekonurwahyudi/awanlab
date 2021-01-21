@@ -114,7 +114,17 @@ Route::post('/update-user/{id}','SuperadminController@update');
 Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
 
 //Halaman Dashboard Customer
-Route::get('/dashboard','HomeController@cus');
+Route::middleware('role:customer')->get('/dashboard','HomeController@cus');
 Route::get('/dashboard-order','OrderController@index');
 Route::post('/order-proses','OrderController@proses');
 Route::post('/sphcus','OrderController@sphcus');
+
+//Halaman Dashboard Customer Service (CS)
+Route::middleware('role:cs')->get('/dashboard-cs','CsController@index');
+Route::get('/order-diproses','CsController@orderdiproses');
+Route::get('cetak-kup','CsController@kup');
+
+//Tes Session
+Route::get('/session/tampil','TesController@tampilkanSession');
+Route::get('/session/buat','TesController@buatSession');
+Route::get('/session/hapus','TesController@hapusSession');

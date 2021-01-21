@@ -176,6 +176,7 @@
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Nama Alat :</label>
                                                         <div class="col-8">
+															<input name="user_id" class="form-control" value="{{ Auth::user()->id }}" type="hidden" id="example-text-input"/>
                                                             <input name="order_namaalat" value="{{ old('order_namaalat') }}" class="form-control" type="text" id="example-text-input"/>
                                                         </div>
                                                     </div>
@@ -209,10 +210,10 @@
                                                         <div class="col-5">
                                                             <select name="order_lokasilab" value="{{ old('order_lokasilab') }}" class="form-control" id="exampleSelectd">
                                                                 <option>Pilih Lokasi lab</option>
-                                                                <option value="jakarta">Jakarta</option>
-                                                                <option value="surabaya">Surabaya</option>
-                                                                <option value="medan">Medan</option>
-                                                                <option value="makassar">Makassar</option>
+                                                                <option value="Lab Jakarta">Jakarta</option>
+                                                                <option value="Lab Surabaya">Surabaya</option>
+                                                                <option value="Lab Medan">Medan</option>
+                                                                <option value="Lab Makassar">Makassar</option>
                                                             </select>
                                                         </div>
                                                     </div>

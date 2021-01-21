@@ -9,8 +9,10 @@ class Orderkalibrasi extends Model
 {
     use HasFactory;
     protected $primarykey = 'order_id';
+    protected $table = "orderkalibrasis";
     protected $fillable = [
         'order_id',
+        'user_id',
         'order_ccl',
         'order_namaalat',
         'order_model',
@@ -28,4 +30,9 @@ class Orderkalibrasi extends Model
         'order_teknisi',
         'order_tglantar',
     ];
+
+    public function user()
+    {
+    	return $this->belongsTo('App\Models\User');
+    }
 }

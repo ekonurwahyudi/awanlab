@@ -47,7 +47,7 @@
 									</div>
 									<div class="card-body">
 										<!--begin: Datatable-->
-										<table  class="table table-bordered table-checkable" id="order-listing">
+										<table  class="table table-bordered table-checkable" id="datatable">
 											<thead>
 												<tr>
 													<th>No</th>

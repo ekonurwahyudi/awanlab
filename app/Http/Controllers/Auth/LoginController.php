@@ -44,7 +44,7 @@ class LoginController extends Controller
         if($user->hasRole('superadmin')){
             return redirect()->route('awanlab');
         }elseif($user->hasRole('cs')){
-            return redirect()->route('dashboard-cs');
+            return redirect('/dashboard-cs');
         }elseif($user->hasRole('kortek')){
             return redirect()->route('dashboard-kortek');
         }elseif($user->hasRole('teknisi')){
@@ -55,4 +55,6 @@ class LoginController extends Controller
             return redirect()->route('home');
         }
     }
+
+
 }

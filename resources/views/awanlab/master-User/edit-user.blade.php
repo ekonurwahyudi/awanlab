@@ -156,7 +156,7 @@
 									<div class="col-2">
 									</div>
 									<div class="col-10">
-									<button type="submit" class="btn btn-success mr-2">Tambah User</button>
+									<button type="submit" class="btn btn-success mr-2">Update User</button>
 									<button type="reset" class="btn btn-secondary">Batal</button>
 									</div>
 								</div>

@@ -54,4 +54,8 @@ class User extends Authenticatable implements MustVerifyEmail
     	return $this->hasOne('App\Models\Roleuser');
     }
 
+    public function order(){
+        return $this->hasOne('App\Models\Order','id');
+    }
+
 }
