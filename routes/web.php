@@ -123,6 +123,7 @@ Route::post('/sphcus','OrderController@sphcus');
 Route::middleware('role:cs')->get('/dashboard-cs','CsController@index');
 Route::get('/order-diproses','CsController@orderdiproses');
 Route::get('/cetak-kup/{user_id}','CsController@kup');
+Route::get('/cetak-pap/{user_id}','CsController@pap');
 
 //Tes Session
 Route::get('/session/tampil','TesController@tampilkanSession');

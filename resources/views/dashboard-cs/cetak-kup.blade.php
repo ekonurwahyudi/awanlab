@@ -130,19 +130,19 @@
             
             <tr>
                 <td style="width: 21.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;'>&nbsp;&nbsp;&nbsp;{{$no++}}</p>
+                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 5px;'>&nbsp;{{$no++}}</p>
                 </td>
                 <td style="width: 81.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;'>{{$order->order_namaalat}}</p>
+                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 5px;'>{{$order->order_namaalat}}</p>
                 </td>
                 <td style="width: 46.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 10px;'>{{$order->order_merek}}</p>
                 </td>
                 <td style="width: 51.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 10px;'>{{$order->order_model}}</p>
                 </td>
                 <td style="width: 92.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 10px;'>{{$order->order_sn}}</p>
                 </td>
                 <td style="width: 24.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
                     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>

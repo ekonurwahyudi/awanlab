@@ -31,4 +31,10 @@ class CsController extends Controller
         $users = User::where('id',  $request->user_id)->get();
         return view('/dashboard-cs/cetak-kup',['orders' => $orders],['users' => $users]);
     }
+
+    public function pap(Request $request){
+        $orders = Order::where('user_id', $request->user_id)->get();
+        $users = User::where('id',  $request->user_id)->get();
+        return view('/dashboard-cs/cetak-pap',['orders' => $orders],['users' => $users]);
+    }
 }

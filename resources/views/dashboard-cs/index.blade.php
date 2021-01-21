@@ -304,7 +304,7 @@
 															</td>
 															<td width="100px" style="text-align:center;">
 																<a href="/cetak-kup/{{$order->user_id}}" class="btn btn-success btn-sm">KUP</a>
-																<a href="#" class="btn btn-danger btn-sm">PAP</a>
+																<a href="/cetak-pap/{{$order->user_id}}" class="btn btn-danger btn-sm">PAP</a>
 															</td>
 															<td width="140px" style="text-align:center;">
 																<select name="" class="form-control" id="">
