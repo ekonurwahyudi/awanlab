@@ -104,7 +104,7 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <a href="home"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>{{ __('header.Login')}}</div></a>
+                            <a href="{{ route('artikel') }}"><div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-user"></i></div>{{ __('header.Login')}}</div></a>
                         </div>
                     </div>
                 </div>

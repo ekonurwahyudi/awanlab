@@ -26,7 +26,9 @@ class CsController extends Controller
         return view('/dashboard-cs/order-diproses')->with(compact(array( 'orders' )));
     }
 
-    public function kup(){
-        return view('/dashboard-cs/cetak-kup');
+    public function kup(Request $request){
+        $orders = Order::where('user_id', $request->user_id)->get();
+        $users = User::where('id',  $request->user_id)->get();
+        return view('/dashboard-cs/cetak-kup',['orders' => $orders],['users' => $users]);
     }
 }

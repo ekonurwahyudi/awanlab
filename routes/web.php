@@ -122,7 +122,7 @@ Route::post('/sphcus','OrderController@sphcus');
 //Halaman Dashboard Customer Service (CS)
 Route::middleware('role:cs')->get('/dashboard-cs','CsController@index');
 Route::get('/order-diproses','CsController@orderdiproses');
-Route::get('cetak-kup','CsController@kup');
+Route::get('/cetak-kup/{user_id}','CsController@kup');
 
 //Tes Session
 Route::get('/session/tampil','TesController@tampilkanSession');
