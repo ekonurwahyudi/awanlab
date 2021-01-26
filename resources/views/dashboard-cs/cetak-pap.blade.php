@@ -116,6 +116,7 @@
             </tr>
             @php $no = 1; @endphp
             @foreach ($orders as $order)
+            @if ($order->order_status == "")
             <tr>
                 <td style="width: 23.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 15.35pt;vertical-align: top;">
                     <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding:4px;'><span style="font-size: 12px;">&nbsp;&nbsp;{{$no++}}</span></p>
@@ -160,6 +161,7 @@
                     <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
                 </td>
             </tr>
+            @endif
             @endforeach
             <tr>
                 <td style="width: 23.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 15.3pt;vertical-align: top;">
@@ -344,6 +346,9 @@
     <p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Waktu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Tanggal ......................................................................................... Jam .......................................................................................................................................</span></p>
     <p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Dilaksanakan Oleh : ......................................................................................../Jam : .............................................................. /TTD: ...........................................................................</span></p>
     <p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Mengetahui &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : ......................................................................................../NIK : .............................................................. /TTD: ...........................................................................</span><br></span></p>
+    <script>
+		window.print();
+	</script>
 </body>
 
 </html>

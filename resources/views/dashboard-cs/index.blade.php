@@ -87,15 +87,15 @@
 																	<!--begin::Svg Icon | path:/metronic/theme/html/demo5/dist/assets/media/svg/icons/Communication/Group.svg-->
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<polygon points="0 0 24 0 24 24 0 24"/>
-																			<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-																			<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+																			<rect x="0" y="0" width="24" height="24"/>
+																			<path d="M5.5,2 L18.5,2 C19.3284271,2 20,2.67157288 20,3.5 L20,6.5 C20,7.32842712 19.3284271,8 18.5,8 L5.5,8 C4.67157288,8 4,7.32842712 4,6.5 L4,3.5 C4,2.67157288 4.67157288,2 5.5,2 Z M11,4 C10.4477153,4 10,4.44771525 10,5 C10,5.55228475 10.4477153,6 11,6 L13,6 C13.5522847,6 14,5.55228475 14,5 C14,4.44771525 13.5522847,4 13,4 L11,4 Z" fill="#000000" opacity="0.3"/>
+																			<path d="M5.5,9 L18.5,9 C19.3284271,9 20,9.67157288 20,10.5 L20,13.5 C20,14.3284271 19.3284271,15 18.5,15 L5.5,15 C4.67157288,15 4,14.3284271 4,13.5 L4,10.5 C4,9.67157288 4.67157288,9 5.5,9 Z M11,11 C10.4477153,11 10,11.4477153 10,12 C10,12.5522847 10.4477153,13 11,13 L13,13 C13.5522847,13 14,12.5522847 14,12 C14,11.4477153 13.5522847,11 13,11 L11,11 Z M5.5,16 L18.5,16 C19.3284271,16 20,16.6715729 20,17.5 L20,20.5 C20,21.3284271 19.3284271,22 18.5,22 L5.5,22 C4.67157288,22 4,21.3284271 4,20.5 L4,17.5 C4,16.6715729 4.67157288,16 5.5,16 Z M11,18 C10.4477153,18 10,18.4477153 10,19 C10,19.5522847 10.4477153,20 11,20 L13,20 C13.5522847,20 14,19.5522847 14,19 C14,18.4477153 13.5522847,18 13,18 L11,18 Z" fill="#000000"/>
 																		</g>
 																	</svg>
 																	<!--end::Svg Icon-->
 																</span>
 															</span>
-															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Edit Profil</span>
+															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Riwayat Order</span>
 														</a>
 													</li>
 													<!--end::Item-->
@@ -282,6 +282,7 @@
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
+													  @if($order->order_status == "")
 														<tr>
 															<td>{{$no++}}</td>
 															<td>
@@ -303,23 +304,27 @@
 																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
 															</td>
 															<td width="100px" style="text-align:center;">
-																<a href="/cetak-kup/{{$order->user_id}}" class="btn btn-success btn-sm">KUP</a>
-																<a href="/cetak-pap/{{$order->user_id}}" class="btn btn-danger btn-sm">PAP</a>
+																<a href="/cetak-kup/{{$order->user_id}}" target="_blank" class="btn btn-success btn-sm">KUP</a>
+																<a href="/cetak-pap/{{$order->user_id}}" target="_blank" class="btn btn-danger btn-sm">PAP</a>
 															</td>
-															<td width="140px" style="text-align:center;">
-																<select name="" class="form-control" id="">
-																	<option value="">Pilih Status</option>
-																	<option value="">Order Diproses</option>
-																</select>
-																<a href="#" class="btn btn-danger btn-sm">Update</a>
-															</td>
-															<td width="130px" style="text-align:center;">
-																<input type="text" class="form-control datetimepicker-input" id="kt_datetimepicker_5" placeholder="Input Tgl"  data-toggle="datetimepicker" data-target="#kt_datetimepicker_5"/>
-                                                                <a href="#" class="btn btn-danger btn-sm">Update</a>
-															</td>
+															<form action="/statustgl-proses/{{$order->order_id}}" method="post">
+															@csrf
+																<td width="140px" style="text-align:center;">
+																	<select name="order_status" class="form-control" id="">
+																		<option value="">Pilih Status</option>
+																		<option value="order diproses">Order Diproses</option>
+																	</select>
+																	<button type="submit" class="btn btn-danger btn-sm">Update</button>
+																</td>
+																<td width="130px" style="text-align:center;">
+																	<input type="text" name="order_tglantar" class="form-control" id="kt_datepicker_1" readonly="readonly" placeholder="input tanggal" />
+																	<button  type="submit" class="btn btn-danger btn-sm">Update</button>
+																</td>
+															</form>
 															<td>{{$order->created_at}}</td>
 															
 														</tr>
+														@endif
 													@endif
 														
 													@endforeach

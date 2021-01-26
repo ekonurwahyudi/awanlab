@@ -20,10 +20,12 @@
 		<link href="../halamanuser/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../halamanuser/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../halamanuser/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanuser/plugins/custom/uppy/uppy.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="http://127.0.0.1:8000/images/facivon.png" />
+		<link rel="stylesheet" type="text/css" href="https://tympanus.net/Tutorials/CustomFileInputs/css/component.css">
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -303,161 +305,16 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-        <script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
+		<script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
+		<script src="../halamanuser/js/pages/crud/forms/widgets/bootstrap-datepicker.js"></script>
+		<script src="../halamanuser/plugins/custom/uppy/uppy.bundle.js"></script>
+		<script src="../halamanuser/js/pages/crud/file-upload/uppy.js"></script>
+		<script src="https://tympanus.net/Tutorials/CustomFileInputs/js/custom-file-input.js"></script>
 		<!--end::Page Scripts-->
-		<script>
-		// Class definition
-
-			var KTBootstrapDatepicker = function () {
-
-			var arrows;
-			if (KTUtil.isRTL()) {
-			arrows = {
-			leftArrow: '<i class="la la-angle-right"></i>',
-			rightArrow: '<i class="la la-angle-left"></i>'
-			}
-			} else {
-			arrows = {
-			leftArrow: '<i class="la la-angle-left"></i>',
-			rightArrow: '<i class="la la-angle-right"></i>'
-			}
-			}
-
-			// Private functions
-			var demos = function () {
-			// minimum setup
-			$('#kt_datepicker_1').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayHighlight: true,
-			orientation: "bottom left",
-			templates: arrows
-			});
-
-			// minimum setup for modal demo
-			$('#kt_datepicker_1_modal').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayHighlight: true,
-			orientation: "bottom left",
-			templates: arrows
-			});
-
-			// input group layout
-			$('#kt_datepicker_2').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayHighlight: true,
-			orientation: "bottom left",
-			templates: arrows
-			});
-
-			// input group layout for modal demo
-			$('#kt_datepicker_2_modal').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayHighlight: true,
-			orientation: "bottom left",
-			templates: arrows
-			});
-
-			// enable clear button
-			$('#kt_datepicker_3, #kt_datepicker_3_validate').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayBtn: "linked",
-			clearBtn: true,
-			todayHighlight: true,
-			templates: arrows
-			});
-
-			// enable clear button for modal demo
-			$('#kt_datepicker_3_modal').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayBtn: "linked",
-			clearBtn: true,
-			todayHighlight: true,
-			templates: arrows
-			});
-
-			// orientation
-			$('#kt_datepicker_4_1').datepicker({
-			rtl: KTUtil.isRTL(),
-			orientation: "top left",
-			todayHighlight: true,
-			templates: arrows
-			});
-
-			$('#kt_datepicker_4_2').datepicker({
-			rtl: KTUtil.isRTL(),
-			orientation: "top right",
-			todayHighlight: true,
-			templates: arrows
-			});
-
-			$('#kt_datepicker_4_3').datepicker({
-			rtl: KTUtil.isRTL(),
-			orientation: "bottom left",
-			todayHighlight: true,
-			templates: arrows
-			});
-
-			$('#kt_datepicker_4_4').datepicker({
-			rtl: KTUtil.isRTL(),
-			orientation: "bottom right",
-			todayHighlight: true,
-			templates: arrows
-			});
-
-			// range picker
-			$('#kt_datepicker_5').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayHighlight: true,
-			templates: arrows
-			});
-
-			// inline picker
-			$('#kt_datepicker_6').datepicker({
-			rtl: KTUtil.isRTL(),
-			todayHighlight: true,
-			templates: arrows
-			});
-			}
-
-			return {
-			// public functions
-			init: function() {
-			demos();
-			}
-			};
-			}();
-
-			jQuery(document).ready(function() {
-			KTBootstrapDatepicker.init();
-			});
-		</script>
-		<script type="text/javascript">
-				    $(document).on('click', '.edit-modal', function() {
-						$('#footer_action_button').text(" Update");
-						$('#footer_action_button').addClass('glyphicon-check');
-						$('#footer_action_button').removeClass('glyphicon-trash');
-						$('.actionBtn').addClass('btn-success');
-						$('.actionBtn').removeClass('btn-danger');
-						$('.actionBtn').addClass('edit');
-						$('.actionBtn').removeClass('delete');
-						$('.modal-title').text('Edit');
-						$('.deleteContent').hide();
-						$('.form-horizontal').show();
-						$('#order_id').val($(this).data('id'));
-        				$('#order_merek').val($(this).data('name'));
-						// var link : $('#order_id').val($(this).data('id'));
-						// var aku = text('id');
-						// $('#editForm').attr('action', '/spcsph/link');
-						$('#editModal').modal('show');
-					});
-					$('.modal-footer').on('click', '.edit', function() {
-
-						$.ajax({
-							type: 'post',
-							url: '/sphcus/qe',
-						});
-					});
-		</script>
+		<!--end::Page Scripts-->
+		
+	
+		
 	</body>
 	<!--end::Body-->
 </html>

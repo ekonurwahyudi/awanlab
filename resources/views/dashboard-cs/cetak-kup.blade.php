@@ -36,381 +36,145 @@
     </table> 
     @endforeach
     <br>
-    <table style="border: none;margin-left:5.35pt;border-collapse:collapse;">
+    <table style="width: 96%; border-collapse: collapse; border: 1px solid rgb(0, 0, 0); margin-right: calc(6%);">
         <tbody>
             <tr>
-                <td rowspan="3" style="width: 21.2pt;border: 1pt solid black;padding: 0cm;height: 14.1pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.25pt;line-height:12.0pt;'><span style="font-size:16px;">&nbsp;</span></p>
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:4.85pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>No</span></p>
-                </td>
-                <td rowspan="3" style="width: 81.2pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 14.1pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.25pt;line-height:12.0pt;'><span style="font-size:16px;">&nbsp;</span></p>
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:8.7pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Nama&nbsp;Perangkat</span></p>
-                </td>
-                <td rowspan="3" style="width: 46.2pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 14.1pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.25pt;line-height:12.0pt;'><span style="font-size:16px;">&nbsp;</span></p>
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:13.25pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Merk</span></p>
-                </td>
-                <td rowspan="3" style="width: 51.05pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 14.1pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.25pt;line-height:12.0pt;'><span style="font-size:16px;">&nbsp;</span></p>
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-right:.05pt;text-align:  center;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Tipe</span></p>
-                </td>
-                <td rowspan="3" style="width: 92.45pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 14.1pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.25pt;line-height:12.0pt;'><span style="font-size:16px;">&nbsp;</span></p>
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>S/N</span></p>
-                </td>
-                <td colspan="12" style="width: 310.9pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 14.1pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:1.45pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:90.05pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Beri&nbsp;tanda&nbsp;centang&nbsp;(</span><span style="font-size:11px;">&radic;</span><span style='font-size:11px;font-family:"Arial",sans-serif;'>) jika&nbsp;lengkap</span></p>
-                </td>
-                <td rowspan="3" style="width: 63.25pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 14.1pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.25pt;line-height:12.0pt;'><span style="font-size:16px;">&nbsp;</span></p>
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:9.4pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Keterangan</span></p>
-                </td>
+                <td rowspan="3" style="width: 4.5%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11px;">No</span></td>
+                <td rowspan="3" style="width: 20.1283%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Nama&nbsp;Perangkat</span>&nbsp;</span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td rowspan="3" style="width: 12.9912%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Merk</span>&nbsp;</span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td rowspan="3" style="width: 7.0569%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Tipe</span>&nbsp;</span></span></td>
+                <td rowspan="3" style="width: 9.3023%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">S/N</span></span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td colspan="12" style="width: 37.0489%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 11px; font-family: Arial, sans-serif;">Beri&nbsp;tanda&nbsp;centang&nbsp;(</span><span style="color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 11px;">&radic;</span><span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 11px; font-family: Arial, sans-serif;">) jika&nbsp;lengkap</span></span></span></td>
+                <td rowspan="3" style="width: 8.5004%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">Keterangan</span></span></td>
             </tr>
             <tr>
-                <td colspan="2" style="width: 53.3pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 10.15pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:8.2pt;line-height:9.5pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Kalibrator</span></p>
-                </td>
-                <td colspan="2" style="width: 51.65pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 10.15pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:10.15pt;line-height:9.5pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Personil</span></p>
-                </td>
-                <td colspan="2" style="width: 51.9pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 10.15pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:11.55pt;line-height:9.5pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Metode</span></p>
-                </td>
-                <td colspan="2" style="width: 51pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 10.15pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:15.55pt;line-height:9.5pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>CMC</span></p>
-                </td>
-                <td colspan="2" style="width: 51.5pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 10.15pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:12.3pt;line-height:9.5pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Jadwal</span></p>
-                </td>
-                <td colspan="2" style="width: 51.6pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 10.15pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-left:13.25pt;line-height:9.5pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>Lokasi</span></p>
-                </td>
+                <td colspan="2" style="width: 6.0145%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Kalibrator</span></span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td colspan="2" style="width: 6.1748%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Personil</span></span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td colspan="2" style="width: 6.4154%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Metode</span></span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td colspan="2" style="width: 6.0947%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">CMC</span></span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td colspan="2" style="width: 6.0947%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Jadwal</span></span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td colspan="2" style="width: 6.255%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Lokasi</span></span></span><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
             </tr>
             <tr>
-                <td style="width: 24.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:5.95pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>OK</span></p>
-                </td>
-                <td style="width: 28.55pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.75pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>NOK</span></p>
-                </td>
-                <td style="width: 23.15pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:5.1pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>OK</span></p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.75pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>NOK</span></p>
-                </td>
-                <td style="width: 23.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:5.2pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>OK</span></p>
-                </td>
-                <td style="width: 28.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.75pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>NOK</span></p>
-                </td>
-                <td style="width: 22.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.75pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>OK</span></p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.75pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>NOK</span></p>
-                </td>
-                <td style="width: 23pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.95pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>OK</span></p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.85pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>NOK</span></p>
-                </td>
-                <td style="width: 23.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:5.2pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>OK</span></p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 11.4pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:.35pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:4.75pt;'><span style='font-size:11px;font-family:"Arial",sans-serif;'>NOK</span></p>
+                <td style="width: 2.887%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">OK <br></span></span></td>
+                <td style="width: 3.1275%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">NOK</span></span></td>
+                <td style="width: 2.9671%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">OK</span></span></td>
+                <td style="width: 3.2077%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">NOK</span></span></td>
+                <td style="width: 3.0473%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">OK</span></span></td>
+                <td style="width: 3.368%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">NOK</span></span></td>
+                <td style="width: 2.8869%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">OK</span></span></td>
+                <td style="width: 3.2077%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">NOK</span></span></td>
+                <td style="width: 2.8869%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">OK</span></span></td>
+                <td style="width: 3.2077%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">NOK</span></span></td>
+                <td style="width: 2.9672%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">OK</span></span></td>
+                <td style="width: 3.3681%; vertical-align: middle; text-align: center; border: 1px solid rgb(0, 0, 0);">
+                    <div style="text-align: center;"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;">NOK</span></span></div>
                 </td>
             </tr>
-            @php $no = 1; @endphp
+            @php $no=1; @endphp
             @foreach ($orders as $order)
-            
+            @if ($order->order_status == "")
             <tr>
-                <td style="width: 21.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 5px;'>&nbsp;{{$no++}}</p>
-                </td>
-                <td style="width: 81.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 5px;'>{{$order->order_namaalat}}</p>
-                </td>
-                <td style="width: 46.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 10px;'>{{$order->order_merek}}</p>
-                </td>
-                <td style="width: 51.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 10px;'>{{$order->order_model}}</p>
-                </td>
-                <td style="width: 92.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:12px;font-family:"arial",sans-serif;padding: 10px;'>{{$order->order_sn}}</p>
-                </td>
-                <td style="width: 24.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.15pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 22.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 63.25pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
+                <td style="width: 5.3125%; border: 1px solid rgb(0, 0, 0); text-align: center;"><span style="font-size: 11px; "><span style="font-family: Arial, Helvetica, sans-serif;">{{$no++}}</span></span></td>
+                <td style="width: 20.1283%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;padding:4px;">{{$order->order_namaalat}}</span></span></td>
+                <td style="width: 12.9912%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;padding:4px;">{{$order->order_merek}}</span></span></td>
+                <td style="width: 7.0569%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;padding:4px;">{{$order->order_model}}</span></span></td>
+                <td style="width: 9.3023%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;padding:4px;">{{$order->order_sn}}</span></span></td>
+                <td style="width: 2.887%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 3.1275%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 2.9671%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 3.0473%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 3.368%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 2.9672%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 3.3681%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
+                <td style="width: 8.5004%; border: 1px solid rgb(0, 0, 0);"><span style="font-size: 11px;"><span style="font-family: Arial, Helvetica, sans-serif;"><br></span></span></td>
             </tr>
-           
+            @endif
             @endforeach
-                
-
             <tr>
-                <td style="width: 21.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 81.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 46.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 51.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 92.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 24.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.15pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 22.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 63.25pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.7pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
+                <td style="width: 5.3125%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 20.1283%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 12.9912%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 7.0569%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 9.3023%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.887%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.1275%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9671%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.0473%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.368%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9672%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.3681%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 8.5004%; border: 1px solid rgb(0, 0, 0);"><br></td>
             </tr>
             <tr>
-                <td style="width: 21.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 81.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 46.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 51.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 92.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 24.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.15pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 22.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 63.25pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
+                <td style="width: 5.3125%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 20.1283%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 12.9912%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 7.0569%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 9.3023%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.887%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.1275%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9671%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.0473%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.368%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9672%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.3681%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 8.5004%; border: 1px solid rgb(0, 0, 0);"><br></td>
             </tr>
             <tr>
-                <td style="width: 21.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 81.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 46.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 51.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 92.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 24.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.15pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 22.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 63.25pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.5pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
+                <td style="width: 5.3125%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 20.1283%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 12.9912%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 7.0569%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 9.3023%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.887%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.1275%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9671%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.0473%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.368%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9672%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.3681%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 8.5004%; border: 1px solid rgb(0, 0, 0);"><br></td>
             </tr>
             <tr>
-                <td style="width: 21.2pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 81.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 46.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 51.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 92.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 24.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.15pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.7pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 22.45pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 23.05pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 28.55pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
-                <td style="width: 63.25pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm;height: 27.6pt;vertical-align: top;">
-                    <p style='margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-                </td>
+                <td style="width: 5.3125%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 20.1283%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 12.9912%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 7.0569%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 9.3023%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.887%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.1275%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9671%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.0473%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.368%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.8869%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.2077%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 2.9672%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 3.3681%; border: 1px solid rgb(0, 0, 0);"><br></td>
+                <td style="width: 8.5004%; border: 1px solid rgb(0, 0, 0);"><br></td>
             </tr>
         </tbody>
     </table>
@@ -419,6 +183,9 @@
     <p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Waktu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Tanggal ................................................................................................ Jam .......................................................................................................................................</span></p>
     <p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Dilaksanakan : ................................................................................................/NIK : .............................................................. /TTD: ...........................................................................</span></p>
     <p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Mengetahui&nbsp; &nbsp;: ................................................................................................/NIK : .............................................................. /TTD: ...........................................................................</span><br></span></p>
+    <script>
+		window.print();
+	</script>
 </body>
 
 </html>

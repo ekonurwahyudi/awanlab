@@ -1,0 +1,3 @@
+Halaman tes
+
+aku : {{$makan}}

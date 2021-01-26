@@ -124,8 +124,11 @@ Route::middleware('role:cs')->get('/dashboard-cs','CsController@index');
 Route::get('/order-diproses','CsController@orderdiproses');
 Route::get('/cetak-kup/{user_id}','CsController@kup');
 Route::get('/cetak-pap/{user_id}','CsController@pap');
+Route::post('/statustgl-proses/{order_id}','CsController@statustgl');
+Route::post('/statusccl-proses/{order_id}','CsController@statusccl');
+Route::get('/form-ba-{user_id}','CsController@form_ba');
+Route::post('/cetak-ba-{user_id}','CsController@ba');
 
-//Tes Session
-Route::get('/session/tampil','TesController@tampilkanSession');
-Route::get('/session/buat','TesController@buatSession');
-Route::get('/session/hapus','TesController@hapusSession');
+Route::get('/tessph','CsController@tessph');
+Route::get('/inputsph-{user_id}','Cscontroller@inputsph');
+Route::post('/proses-inputsph');
