@@ -34,7 +34,7 @@
 		<!--begin::Header Mobile-->
 		<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
 			<!--begin::Logo-->
-			<a href="index.html">
+			<a href="/dashboard-cs">
 				<img alt="Logo" src="http://127.0.0.1:8000/images/logo-img.png" class="logo-default max-h-30px" />
 			</a>
 			<!--end::Logo-->
@@ -74,7 +74,7 @@
 								<!--begin::Aside Toggle-->
 								<!--end::Aside Toggle-->
 								<!--begin::Logo-->
-								<a href="index.html">
+								<a href="/dashboard-cs">
 									<img alt="Logo" src="http://127.0.0.1:8000/images/logo-img.png" class="logo-sticky max-h-35px" />
 								</a>
 								<!--end::Logo-->
@@ -305,15 +305,13 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-		<script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
+		<script src="../halamanuser/js/data-table.js"></script>
 		<script src="../halamanuser/js/pages/crud/forms/widgets/bootstrap-datepicker.js"></script>
 		<script src="../halamanuser/plugins/custom/uppy/uppy.bundle.js"></script>
 		<script src="../halamanuser/js/pages/crud/file-upload/uppy.js"></script>
 		<script src="https://tympanus.net/Tutorials/CustomFileInputs/js/custom-file-input.js"></script>
 		<!--end::Page Scripts-->
 		<!--end::Page Scripts-->
-		
-	
 		
 	</body>
 	<!--end::Body-->

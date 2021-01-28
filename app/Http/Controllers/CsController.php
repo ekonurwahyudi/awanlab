@@ -85,7 +85,37 @@ class CsController extends Controller
 
     public function inputsph(Request $request){
         $orders = Orderkalibrasi::where('user_id', $request->user_id)->get();
-        return view ('/dashboard-cs/inputsph',['orders' => $orders]);
+        $users = User::where('id', $request->user_id)->get();
+        $countsph = ['user_id' => $request->user_id, 'order_statussph' => NULL, 'order_filesph' => NULL];
+        $sedangsph = ['user_id' => $request->user_id, 'order_statussph' => NULL];
+        $revisisph = ['user_id' => $request->user_id, 'order_statussph' => "ditolak"];
+        $count = Orderkalibrasi::where($countsph)->count();
+        $count2 = Orderkalibrasi::where($revisisph)->count();
+        $count3 = DB::table('orderkalibrasis')
+                    ->where($sedangsph)
+                    ->whereNotNull('order_filesph')
+                    ->count();
+        return view ('/dashboard-cs/inputsph',['orders' => $orders],['users' => $users])->with('count', $count)->with('count2', $count2)->with('count3', $count3);
+    }
+
+    public function prosessph(Request $request){
+        $sph = ['user_id' => $request->user_id, 'order_statussph' => NULL];
+        if($order = Orderkalibrasi::where($sph)){
+                $order->update([
+                    'order_filesph' => $request->order_filesph,
+                ]);
+                return redirect('/order-diproses');
+        }
+    }
+
+    public function revisisph(Request $request){
+        $sph = ['user_id' => $request->user_id, 'order_statussph' => "ditolak"];
+        if($order = Orderkalibrasi::where($sph)){
+                $order->update([
+                    'order_filesph' => $request->order_filesph,
+                ]);
+                return redirect('/order-diproses');
+        }
     }
 
 }

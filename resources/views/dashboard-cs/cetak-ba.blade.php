@@ -65,6 +65,7 @@
             </tr>
             @php $no=1; @endphp
             @foreach ($orders as $order)
+            @if ($ba == "masuk")
             @if($order->order_status == "order diproses")
             <tr>
                 <td style="width: 5.5%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$no++}}</td>
@@ -76,6 +77,20 @@
                 <td style="width: 6.125%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$order->order_jumlah}}</td>
                 <td style="width: 9.875%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$order->order_ccl}}</td>
             </tr>
+            @endif
+            @else
+            @if($order->order_status == "Cetak ATE-04")
+            <tr>
+                <td style="width: 5.5%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$no++}}</td>
+                <td style="width: 8.875%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><br></td>
+                <td style="width: 23.375%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 0;" ><br>{{$order->order_namaalat}}</td>
+                <td style="width: 14.375%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$order->order_merek}}</td>
+                <td style="width: 13.625%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$order->order_model}}</td>
+                <td style="width: 18.25%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$order->order_sn}}</td>
+                <td style="width: 6.125%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$order->order_jumlah}}</td>
+                <td style="width: 9.875%; border: 1px solid rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; line-height: 0;"><br>{{$order->order_ccl}}</td>
+            </tr>
+            @endif
             @endif
             @endforeach
             <tr>

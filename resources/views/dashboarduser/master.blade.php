@@ -32,7 +32,7 @@
 		<!--begin::Header Mobile-->
 		<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
 			<!--begin::Logo-->
-			<a href="index.html">
+			<a href="/dashboard">
 				<img alt="Logo" src="http://127.0.0.1:8000/images/logo-img.png" class="logo-default max-h-30px" />
 			</a>
 			<!--end::Logo-->
@@ -72,7 +72,7 @@
 								<!--begin::Aside Toggle-->
 								<!--end::Aside Toggle-->
 								<!--begin::Logo-->
-								<a href="index.html">
+								<a href="/dashboard">
 									<img alt="Logo" src="http://127.0.0.1:8000/images/logo-img.png" class="logo-sticky max-h-35px" />
 								</a>
 								<!--end::Logo-->

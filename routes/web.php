@@ -128,7 +128,7 @@ Route::post('/statustgl-proses/{order_id}','CsController@statustgl');
 Route::post('/statusccl-proses/{order_id}','CsController@statusccl');
 Route::get('/form-ba-{user_id}','CsController@form_ba');
 Route::post('/cetak-ba-{user_id}','CsController@ba');
-
 Route::get('/tessph','CsController@tessph');
-Route::get('/inputsph-{user_id}','Cscontroller@inputsph');
-Route::post('/proses-inputsph');
+Route::get('/inputsph-{user_id}','CsController@inputsph');
+Route::post('/proses-inputsph/{user_id}','CsController@prosessph');
+Route::post('/proses-revisisph/{user_id}','CsController@revisisph');

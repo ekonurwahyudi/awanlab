@@ -160,7 +160,7 @@
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-md">
+														<span class="svg-icon svg-icon-danger svg-icon-2x">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
                                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -220,50 +220,6 @@
 													<!--end::Button-->
 												</div>
 											</div>
-										<!-- Modal SPH-->
-											<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-												<div class="modal-dialog" role="document">
-													<div class="modal-content">
-														<div class="modal-header">
-															<h5 class="modal-title" id="exampleModalLabel">SPH (Surat Penawaran Harga)</h5> 
-															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																<i aria-hidden="true" class="ki ki-close"></i>
-															</button>
-														</div>
-														<form class="form-horizontal" role="form">
-														@csrf
-														<div class="modal-body">
-														
-															<div class="form-group row">
-																<label class="col-3 col-form-label" for="exampleSelectd">SPH anda :</label>
-																<div class="col-8">
-																	<a href=""><button class="btn btn-primary btn-sm">Lihat SPH</button></a>
-																</div>
-															</div>
-															<div class="form-group row">
-																<label class="col-3 col-form-label" for="id">Status SPH :</label>
-																<div class="col-8">
-																<input type="text" name="order_merek" id="order_merek">
-																	<!-- <select name="order_statussph" value="{{ old('order_statussph') }}" class="form-control" id="exampleSelectd">
-																		<option>Pilih status SPH</option>
-																		<option value="diterima">Diterima</option>
-																		<option value="ditolak">Ditolak</option>
-																	</select> -->
-																</div>
-															</div>
-														</div>
-														<div class="modal-footer">
-														<button type="button" class="btn btn-warning" data-dismiss="modal">
-  							<span class='glyphicon glyphicon-remove'></span> Close
-  						</button>
-															<button type="button" class="edit btn actionBtn" data-dismiss="modal">
-  							<span id="footer_action_button" class='glyphicon'> </span>
-  						</button>
-														</div>
-														</form>
-													</div>
-												</div>
-											</div>
 											<div class="card-body">
 												<!--begin: Datatable-->
 												<table  class="table table-bordered table-checkable" id="order-listing">
@@ -314,7 +270,6 @@
 																		<option value="">Pilih Status</option>
 																		<option value="order diproses">Order Diproses</option>
 																	</select>
-																	<button type="submit" class="btn btn-danger btn-sm">Update</button>
 																</td>
 																<td width="130px" style="text-align:center;">
 																	<input type="text" name="order_tglantar" class="form-control" id="kt_datepicker_1" readonly="readonly" placeholder="input tanggal" />

@@ -156,12 +156,12 @@
 										<!--begin::Notice-->
 										
 										<!--end::Notice-->
-										<!--begin::Card-->
+										<!-- ORDER DI PROSES -->
 										<div class="card card-custom">
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-md">
+														<span class="svg-icon svg-icon-danger svg-icon-md">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
                                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -222,20 +222,18 @@
 													<!--end::Button-->
 												</div>
 											</div>
-								
 											<div class="card-body">
 												<!--begin: Datatable-->
-												<table  class="table table-separate table-head-custom table-checkable" id="order-listing">
+												<table  class="table table-bordered table-checkable" id="order-listing">
 													<thead>
 														<tr>
 															<th>No</th>
                                                             <th>Data Customer</th>
 															<th>Detail Alat</th>
-															<th>No. CCL</th>
+															<th>Nomor CCL</th>
 															<th>Input SPH</th>
 															<th>BA Masuk</th>
                                                             <th>Status Alat</th>
-                                                            <th>BA Keluar</th>
 															<th>Tanggal Order</th>
 														</tr>
 													</thead>
@@ -243,18 +241,17 @@
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-														@if($order->order_status != "")
-															@if($order->order_status != "selesai")
+														@if($order->order_status == "order diproses")
 														<tr>
 															<td>{{$no++}}</td>
-															<td>
+															<td width="70px">
 															<b>Nama :</b> {{$order->user->name}} <br>
 															<b>No.Hp :</b> {{$order->user->no_hp}} <br>
 															<b>Email :</b> {{$order->user->email}} <br>
 															<b>Perusahaan :</b> {{$order->user->nama_perusahaan}} <br>
 															<b>Alamat :</b> {{$order->user->alamat}}
 															</td>
-															<td width="230px">
+															<td>
 																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
 																<b>Merek: </b>{{$order->order_merek}}<br>
 																<b>Model: </b>{{$order->order_model}}<br>
@@ -267,28 +264,162 @@
 															</td>
 															<form action="/statusccl-proses/{{$order->order_id}}" method="post">
 															@csrf
-																<td width="130px" style="text-align:center;">
+																<td style="text-align:center;">
 																	<input type="text" name="order_ccl" class="form-control" value="{{$order->order_ccl}}" placeholder="Input CCL">
 																	<button type="submit" class="btn btn-danger btn-sm">Update</button>
 																</td>
-																<td style="text-align:center;">	
-																	<a href="/inputsph-{{$order->user_id}}" class="btn btn-danger btn-sm"><i class="fas fa-file-upload"></i></a>
+																<td>	
+																	<a href="/inputsph-{{$order->user_id}}" class="btn btn-icon btn-success"><i class="fas fa-file-upload"></i></a>
 																</td>
-																<td style="text-align:center;"><a href="/form-ba-{{$order->user_id}}"  class="btn btn-success btn-sm"><i class="fas fa-print"></i></a></td>
-																<td width="170px" style="text-align:center;">
+																<td>
+																	<a href="/form-ba-{{$order->user_id}}"  class="btn btn-icon btn-danger"><i class="fas fa-print"></i></a>
+																</td>
+																<td style="text-align:center;" width="145px">
 																	<select name="order_status" class="form-control" id="">
 																		<option value="{{$order->order_status}}">{{$order->order_status}}</option>
 																		<option value="alat kekorlab">Alat ke Korlab</option>
-																		<option value="alat keteknisi">Alat keteknisi</option>
-																		<option value="sedang dikalibrasi">Sedang dikalibrasi</option>
-																		<option value="cetak sertifikat">Cetak sertifikat</option>
 																	</select>
 																	<button type="submit" class="btn btn-danger btn-sm">Update</button>
 																</td>
 															</form>
-                                                            <td style="text-align:center;"><a href="/form-ba-{{$order->user_id}}" class="btn btn-success btn-sm"><i class="fas fa-print"></i></a></td>
 															<td>{{$order->created_at}}</td>
 														</tr>
+														@endif
+													@endif
+													@endforeach
+													
+													</tbody>
+												</table>
+												<!--end: Datatable-->
+											</div>
+										</div>
+										<br>
+										<br>
+
+										<!-- MONITORING ORDER -->
+										<div class="card card-custom">
+											<div class="card-header flex-wrap py-5">
+												<div class="card-title">
+													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
+														<span class="svg-icon svg-icon-danger svg-icon-2x">
+															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
+																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																	<rect x="0" y="0" width="24" height="24"/>
+																	<path d="M7,15 C7.55228475,15 8,15.4477153 8,16 C8,16.5522847 7.55228475,17 7,17 L6,17 C4.34314575,17 3,15.6568542 3,14 L3,7 C3,5.34314575 4.34314575,4 6,4 L18,4 C19.6568542,4 21,5.34314575 21,7 L21,14 C21,15.6568542 19.6568542,17 18,17 L17,17 C16.4477153,17 16,16.5522847 16,16 C16,15.4477153 16.4477153,15 17,15 L18,15 C18.5522847,15 19,14.5522847 19,14 L19,7 C19,6.44771525 18.5522847,6 18,6 L6,6 C5.44771525,6 5,6.44771525 5,7 L5,14 C5,14.5522847 5.44771525,15 6,15 L7,15 Z" fill="#000000" fill-rule="nonzero"/>
+																	<polygon fill="#000000" opacity="0.3" points="8 20 16 20 12 15"/>
+																</g>
+															</svg>
+															<!--end::Svg Icon-->
+														</span>&nbsp;Monitoring Order</h2>
+												</div>
+												<div class="card-toolbar">
+													<!--begin::Dropdown-->
+													<div class="dropdown dropdown-inline mr-2">
+														<button type="button" class="btn btn-success font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<span class="svg-icon svg-icon-md">
+															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/PenAndRuller.svg-->
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																	<rect x="0" y="0" width="24" height="24" />
+																	<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
+																	<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
+																</g>
+															</svg>
+															<!--end::Svg Icon-->
+														</span>Export</button>
+														<!--begin::Dropdown Menu-->
+														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+															<!--begin::Navigation-->
+															<ul class="navi flex-column navi-hover py-2">
+																<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
+																<li class="navi-item">
+																	<a href="#" class="navi-link">
+																		<span class="navi-icon">
+																			<i class="la la-print"></i>
+																		</span>
+																		<span class="navi-text">Print</span>
+																	</a>
+																</li>
+																<li class="navi-item">
+																	<a href="#" class="navi-link">
+																		<span class="navi-icon">
+																			<i class="la la-file-excel-o"></i>
+																		</span>
+																		<span class="navi-text">Excel</span>
+																	</a>
+																</li>
+															</ul>
+															<!--end::Navigation-->
+														</div>
+														<!--end::Dropdown Menu-->
+													</div>
+													<!--end::Dropdown-->
+													<!--begin::Button-->
+													
+													<!--end::Button-->
+												</div>
+											</div>
+											
+											<div class="card-body">
+												<!--begin: Datatable-->
+												<table  class="table table-bordered table-checkable" id="order-listing2">
+													<thead>
+														<tr>
+															<th>No</th>
+                                                            <th>Data Customer</th>
+															<th>Detail Alat</th>
+															<th>Nomor CCL</th>
+															<th>BA Keluar</th>
+															<th>Status Alat</th>
+															<th>Tanggal Order</th>
+														</tr>
+													</thead>
+													<tbody>
+													@php $no = 1; @endphp
+													@foreach ($orders as $order)
+													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
+														@if($order->order_status != "")
+															@if($order->order_status != "order diproses")
+																@if($order->order_status != "selesai")
+														<tr>
+															<td>{{$no++}}</td>
+															<td width="70px">
+															<b>Nama :</b> {{$order->user->name}} <br>
+															<b>No.Hp :</b> {{$order->user->no_hp}} <br>
+															<b>Email :</b> {{$order->user->email}} <br>
+															<b>Perusahaan :</b> {{$order->user->nama_perusahaan}} <br>
+															<b>Alamat :</b> {{$order->user->alamat}}
+															</td>
+															<td>
+																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
+																<b>Merek: </b>{{$order->order_merek}}<br>
+																<b>Model: </b>{{$order->order_model}}<br>
+																<b>S/N: </b>{{$order->order_sn}}<br>
+																<b>Jumlah: </b>{{$order->order_jumlah}} Unit<br>
+																<b>Lolasi Lab: </b>{{$order->order_lokasilab}}<br>
+																<b>Jenis kalibrasi: </b>{{$order->order_jeniskal}}<br>
+																<b>Nama pada sertifikat: </b>{{$order->order_namaser}}<br>
+																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
+															</td>
+															<td>{{$order->order_ccl}}</td>
+															<td>
+															<a href="/form-ba-{{$order->user_id}}"  class="btn btn-icon btn-success"><i class="fas fa-print"></i></a>
+															</td>
+															<form action="/statusccl-proses/{{$order->order_id}}" method="post">
+															@csrf
+															<td>
+																<input type="hidden" name="order_ccl" value="{{$order->order_ccl}}">
+																<select name="order_status" class="form-control" id="">
+																	<option value="{{$order->order_status}}">{{$order->order_status}}</option>
+																	<option value="selesai">Selesai</option>
+																</select>
+																<button type="submit" class="btn btn-danger btn-sm">Update</button>
+															</td>
+															</form>
+															<td>{{$order->created_at}}</td>
+														</tr>
+																@endif
 															@endif
 														@endif
 													@endif
@@ -304,7 +435,7 @@
 												<!--end: Datatable-->
 											</div>
 										</div>
-										<!--end::Card-->
+									
 										
 									</div>
 									<!--end::Container-->
