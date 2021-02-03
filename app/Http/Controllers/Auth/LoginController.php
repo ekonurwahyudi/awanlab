@@ -46,11 +46,11 @@ class LoginController extends Controller
         }elseif($user->hasRole('cs')){
             return redirect('/dashboard-cs');
         }elseif($user->hasRole('kortek')){
-            return redirect()->route('dashboard-kortek');
+            return redirect('/dashboard-kortek');
         }elseif($user->hasRole('teknisi')){
-            return redirect()->route('dashboard-teknisi');
+            return redirect('/dashboard-teknisi');
         }elseif($user->hasRole('admin')){
-            return redirect()->route('dashboard-admin');
+            return redirect('/dashboard-admin');
         }else{
             return redirect()->route('home');
         }

@@ -174,7 +174,7 @@
                                                 <a href="../hubungi-kami" >{{ __('lang.Hubungi')}}</a>
                                             </li>
                                             <li class="mega-menu-item">
-                                                <a href="#" >Tracking order</a>
+                                                <a href="/tracking-order" >Tracking order</a>
                                             </li>
                                         </ul>
                                     </nav>

@@ -5,7 +5,7 @@
 	<head><base href="">
 		<meta charset="utf-8" />
 		<meta name="csrf-token" content="{{ csrf_token() }}">
-		<title>Dashboard Pelanggan Telkom Kalibrasi</title>
+		<title>Dashboard Koordinator Teknik</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="canonical" href="https://keenthemes.com/metronic" />
@@ -20,10 +20,12 @@
 		<link href="../halamanuser/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../halamanuser/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../halamanuser/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../halamanuser/plugins/custom/uppy/uppy.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="http://127.0.0.1:8000/images/facivon.png" />
+		<link rel="stylesheet" type="text/css" href="https://tympanus.net/Tutorials/CustomFileInputs/css/component.css">
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -32,7 +34,7 @@
 		<!--begin::Header Mobile-->
 		<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
 			<!--begin::Logo-->
-			<a href="/dashboard">
+			<a href="/dashboard-kortek">
 				<img alt="Logo" src="http://127.0.0.1:8000/images/logo-img.png" class="logo-default max-h-30px" />
 			</a>
 			<!--end::Logo-->
@@ -72,7 +74,7 @@
 								<!--begin::Aside Toggle-->
 								<!--end::Aside Toggle-->
 								<!--begin::Logo-->
-								<a href="/dashboard">
+								<a href="/dashboard-kortek">
 									<img alt="Logo" src="http://127.0.0.1:8000/images/logo-img.png" class="logo-sticky max-h-35px" />
 								</a>
 								<!--end::Logo-->
@@ -197,8 +199,9 @@
 								@else
 									<div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" data-toggle="dropdown" data-offset="10px,0px">
 										<span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
-										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">{{ Auth::user()->name }}</span>
-										<span class="symbol symbol-lg-35 symbol-25 symbol-light-primary">
+										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3"> {{ Auth::user()->name }} / {{ Auth::user()->lokasi_kerja }} </span>
+										
+                                        <span class="symbol symbol-lg-35 symbol-25 symbol-light-primary">
 											<span class="symbol-label font-size-h5 font-weight-bold"><span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-12-28-020759/theme/html/demo5/dist/../src/media/svg/icons/General/User.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 													<polygon points="0 0 24 0 24 24 0 24"/>
@@ -215,14 +218,14 @@
 										<ul class="navi navi-hover py-4">
 											<!--begin::Item-->
 											<li class="navi-item">
-												<a href="/dashboard-profil" class="navi-link">
+												<a href="#" class="navi-link">
 													<span class="navi-text">Profil</span>
 												</a>
 											</li>
 											<!--end::Item-->
 											<!--begin::Item-->
 											<li class="navi-item active">
-												<a href="/dashboard-profil" class="navi-link">
+												<a href="#" class="navi-link">
 													<span class="navi-text">Ganti Password</span>
 												</a>
 											</li>
@@ -303,7 +306,13 @@
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="../halamanuser/js/data-table.js"></script>
+		<script src="../halamanuser/js/pages/crud/forms/widgets/bootstrap-datepicker.js"></script>
+		<script src="../halamanuser/plugins/custom/uppy/uppy.bundle.js"></script>
+		<script src="../halamanuser/js/pages/crud/file-upload/uppy.js"></script>
+		<script src="https://tympanus.net/Tutorials/CustomFileInputs/js/custom-file-input.js"></script>
 		<!--end::Page Scripts-->
+		<!--end::Page Scripts-->
+		
 	</body>
 	<!--end::Body-->
 </html>

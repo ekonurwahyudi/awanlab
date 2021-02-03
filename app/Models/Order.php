@@ -11,6 +11,7 @@ class Order extends Model
 
     protected $table = "orderkalibrasis";
 
+    // Membuat Relasi Order dengan User
     public function user(){
         return $this->belongsTo('App\Models\User','user_id');
     }

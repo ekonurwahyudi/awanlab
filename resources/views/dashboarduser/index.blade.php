@@ -57,7 +57,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" data-toggle="pill" href="#tab_forms_widget_3">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-profil">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Media/Movie-Lane2.svg-->
@@ -171,43 +171,19 @@
 												<div class="card-toolbar">
 													<!--begin::Dropdown-->
 													<div class="dropdown dropdown-inline mr-2">
-														<button type="button" class="btn btn-success font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<a href="/dashboard-sph-{{Auth::user()->id}}"><button type="button" class="btn btn-success font-weight-bolder">
 														<span class="svg-icon svg-icon-md">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/PenAndRuller.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24" />
-																	<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-																	<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
+															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																	<polygon points="0 0 24 0 24 24 0 24"/>
+																	<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+																	<rect fill="#000000" x="6" y="11" width="9" height="2" rx="1"/>
+																	<rect fill="#000000" x="6" y="15" width="5" height="2" rx="1"/>
 																</g>
 															</svg>
 															<!--end::Svg Icon-->
-														</span>Export</button>
-														<!--begin::Dropdown Menu-->
-														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-															<!--begin::Navigation-->
-															<ul class="navi flex-column navi-hover py-2">
-																<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-print"></i>
-																		</span>
-																		<span class="navi-text">Print</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-file-excel-o"></i>
-																		</span>
-																		<span class="navi-text">Excel</span>
-																	</a>
-																</li>
-															</ul>
-															<!--end::Navigation-->
-														</div>
-														<!--end::Dropdown Menu-->
+														</span>Lihat SPH & PO</button></a>
 													</div>
 													<!--end::Dropdown-->
 													<!--begin::Button-->
@@ -215,60 +191,14 @@
 													<!--end::Button-->
 												</div>
 											</div>
-										<!-- Modal SPH-->
-											<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-												<div class="modal-dialog" role="document">
-													<div class="modal-content">
-														<div class="modal-header">
-															<h5 class="modal-title" id="exampleModalLabel">SPH (Surat Penawaran Harga)</h5> 
-															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																<i aria-hidden="true" class="ki ki-close"></i>
-															</button>
-														</div>
-														<form class="form-horizontal" role="form">
-														@csrf
-														<div class="modal-body">
-														
-															<div class="form-group row">
-																<label class="col-3 col-form-label" for="exampleSelectd">SPH anda :</label>
-																<div class="col-8">
-																	<a href=""><button class="btn btn-primary btn-sm">Lihat SPH</button></a>
-																</div>
-															</div>
-															<div class="form-group row">
-																<label class="col-3 col-form-label" for="id">Status SPH :</label>
-																<div class="col-8">
-																<input type="text" name="order_merek" id="order_merek">
-																	<!-- <select name="order_statussph" value="{{ old('order_statussph') }}" class="form-control" id="exampleSelectd">
-																		<option>Pilih status SPH</option>
-																		<option value="diterima">Diterima</option>
-																		<option value="ditolak">Ditolak</option>
-																	</select> -->
-																</div>
-															</div>
-														</div>
-														<div class="modal-footer">
-														<button type="button" class="btn btn-warning" data-dismiss="modal">
-  							<span class='glyphicon glyphicon-remove'></span> Close
-  						</button>
-															<button type="button" class="edit btn actionBtn" data-dismiss="modal">
-  							<span id="footer_action_button" class='glyphicon'> </span>
-  						</button>
-														</div>
-														</form>
-													</div>
-												</div>
-											</div>
 											<div class="card-body">
 												<!--begin: Datatable-->
 												<table  class="table table-bordered table-checkable" id="order-listing">
 													<thead>
 														<tr>
-															<th scope="col">No</th>
-															<th scope="col">Detail Alat</th>
+															<th>No</th>
+															<th>Detail Alat</th>
 															<th>No. CCL</th>
-															<th>SPH</th>
-															<th>PO</th>
 															<th>Status Alat</th>
 															<th>Tanggal Antar</th>
 															<th>Tanggal Order</th>
@@ -281,7 +211,7 @@
 													@if(Auth::user()->id == $order->user_id )
 														<tr>
 															<td>{{$no++}}</td>
-															<td width="230px">
+															<td>
 																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
 																<b>Merek: </b>{{$order->order_merek}}<br>
 																<b>Model: </b>{{$order->order_model}}<br>
@@ -293,10 +223,11 @@
 																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
 															</td>
 															<td>{{$order->order_ccl}}</td>
-															<td width="80px">
-															<button class="edit-modal btn btn-primary" data-id="{{$order->order_id}}" data-name="{{$order->order_merek}}">Lihat SPH</button></td>
-															<td width="80px"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal">Input PO</button></td>
+															@if($order->order_status != "selesai" )
 															<td width=130px><span class="label label-light-primary label-inline font-weight-normal mr-2">{{$order->order_status}}</span></td>
+															@else
+															<td width=130px><span class="label label-light-success label-inline font-weight-normal mr-2">{{$order->order_status}}</span></td>
+															@endif
 															<td width="50px"><span class="label label-light-warning label-inline font-weight-normal mr-2">{{$order->order_tglantar}}</span></td>
 															<td width="10px">{{$order->created_at}}</td>
 														</tr>

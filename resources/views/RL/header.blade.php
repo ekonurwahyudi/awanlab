@@ -178,7 +178,7 @@
                                         </ul>
                                     </nav>
                                     <div class="header_extra d-flex flex-row align-items-center justify-content-end">
-                                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-icon-btn-left ttm-btn-color-grey" href="../tracking.php"> <i class="ti ti-target"></i>Tracking Order</a>
+                                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-icon-btn-left ttm-btn-color-grey" href="../tracking-order"> <i class="ti ti-target"></i>Tracking Order</a>
                                             <!-- <div id="appointment">
                                                 <h3>Buat Jadwal Kalibrasi</h3>
                                                 <form class="wrap-form appointment_form clearfix" method="post" action="#" id="tes">

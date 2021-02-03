@@ -1,6 +1,5 @@
-@extends('/dashboard-cs/master')
+@extends('/dashboard-kortek/master')
 @section('konten')
-
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Entry-->
 						<div class="d-flex flex-column-fluid">
@@ -18,7 +17,7 @@
 												<ul class="dashboard-tabs nav nav-pills nav-danger row row-paddingless m-0 p-0 flex-column flex-sm-row" role="tablist">
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-cs">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-kortek">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
@@ -39,23 +38,21 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link active border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/order-diproses">
+														<a class="nav-link active border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/monitoring-order">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 																			<rect x="0" y="0" width="24" height="24"/>
-																			<path d="M6,7 C7.1045695,7 8,6.1045695 8,5 C8,3.8954305 7.1045695,3 6,3 C4.8954305,3 4,3.8954305 4,5 C4,6.1045695 4.8954305,7 6,7 Z M6,9 C3.790861,9 2,7.209139 2,5 C2,2.790861 3.790861,1 6,1 C8.209139,1 10,2.790861 10,5 C10,7.209139 8.209139,9 6,9 Z" fill="#000000" fill-rule="nonzero"/>
-																			<path d="M7,11.4648712 L7,17 C7,18.1045695 7.8954305,19 9,19 L15,19 L15,21 L9,21 C6.790861,21 5,19.209139 5,17 L5,8 L5,7 L7,7 L7,8 C7,9.1045695 7.8954305,10 9,10 L15,10 L15,12 L9,12 C8.27142571,12 7.58834673,11.8052114 7,11.4648712 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-																			<path d="M18,22 C19.1045695,22 20,21.1045695 20,20 C20,18.8954305 19.1045695,18 18,18 C16.8954305,18 16,18.8954305 16,20 C16,21.1045695 16.8954305,22 18,22 Z M18,24 C15.790861,24 14,22.209139 14,20 C14,17.790861 15.790861,16 18,16 C20.209139,16 22,17.790861 22,20 C22,22.209139 20.209139,24 18,24 Z" fill="#000000" fill-rule="nonzero"/>
-																			<path d="M18,13 C19.1045695,13 20,12.1045695 20,11 C20,9.8954305 19.1045695,9 18,9 C16.8954305,9 16,9.8954305 16,11 C16,12.1045695 16.8954305,13 18,13 Z M18,15 C15.790861,15 14,13.209139 14,11 C14,8.790861 15.790861,7 18,7 C20.209139,7 22,8.790861 22,11 C22,13.209139 20.209139,15 18,15 Z" fill="#000000" fill-rule="nonzero"/>
+																			<path d="M7,15 C7.55228475,15 8,15.4477153 8,16 C8,16.5522847 7.55228475,17 7,17 L6,17 C4.34314575,17 3,15.6568542 3,14 L3,7 C3,5.34314575 4.34314575,4 6,4 L18,4 C19.6568542,4 21,5.34314575 21,7 L21,14 C21,15.6568542 19.6568542,17 18,17 L17,17 C16.4477153,17 16,16.5522847 16,16 C16,15.4477153 16.4477153,15 17,15 L18,15 C18.5522847,15 19,14.5522847 19,14 L19,7 C19,6.44771525 18.5522847,6 18,6 L6,6 C5.44771525,6 5,6.44771525 5,7 L5,14 C5,14.5522847 5.44771525,15 6,15 L7,15 Z" fill="#000000" fill-rule="nonzero"/>
+																			<polygon fill="#000000" opacity="0.3" points="8 20 16 20 12 15"/>
 																		</g>
 																	</svg>
 																	<!--end::Svg Icon-->
 																</span>
 															</span>
-															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Order di Proses</span>
+															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Monitoring Order</span>
 														</a>
 													</li>
 													<!--end::Item-->
@@ -156,71 +153,24 @@
 										<!--begin::Notice-->
 										
 										<!--end::Notice-->
-										<!-- ORDER DI PROSES -->
+										<!--begin::Card-->
 										<div class="card card-custom">
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-danger svg-icon-md">
+														<span class="svg-icon svg-icon-danger svg-icon-2x">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
                                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                                     <rect x="0" y="0" width="24" height="24"/>
-                                                                    <path d="M6,7 C7.1045695,7 8,6.1045695 8,5 C8,3.8954305 7.1045695,3 6,3 C4.8954305,3 4,3.8954305 4,5 C4,6.1045695 4.8954305,7 6,7 Z M6,9 C3.790861,9 2,7.209139 2,5 C2,2.790861 3.790861,1 6,1 C8.209139,1 10,2.790861 10,5 C10,7.209139 8.209139,9 6,9 Z" fill="#000000" fill-rule="nonzero"/>
-                                                                    <path d="M7,11.4648712 L7,17 C7,18.1045695 7.8954305,19 9,19 L15,19 L15,21 L9,21 C6.790861,21 5,19.209139 5,17 L5,8 L5,7 L7,7 L7,8 C7,9.1045695 7.8954305,10 9,10 L15,10 L15,12 L9,12 C8.27142571,12 7.58834673,11.8052114 7,11.4648712 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-                                                                    <path d="M18,22 C19.1045695,22 20,21.1045695 20,20 C20,18.8954305 19.1045695,18 18,18 C16.8954305,18 16,18.8954305 16,20 C16,21.1045695 16.8954305,22 18,22 Z M18,24 C15.790861,24 14,22.209139 14,20 C14,17.790861 15.790861,16 18,16 C20.209139,16 22,17.790861 22,20 C22,22.209139 20.209139,24 18,24 Z" fill="#000000" fill-rule="nonzero"/>
-                                                                    <path d="M18,13 C19.1045695,13 20,12.1045695 20,11 C20,9.8954305 19.1045695,9 18,9 C16.8954305,9 16,9.8954305 16,11 C16,12.1045695 16.8954305,13 18,13 Z M18,15 C15.790861,15 14,13.209139 14,11 C14,8.790861 15.790861,7 18,7 C20.209139,7 22,8.790861 22,11 C22,13.209139 20.209139,15 18,15 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                    <path d="M7,15 C7.55228475,15 8,15.4477153 8,16 C8,16.5522847 7.55228475,17 7,17 L6,17 C4.34314575,17 3,15.6568542 3,14 L3,7 C3,5.34314575 4.34314575,4 6,4 L18,4 C19.6568542,4 21,5.34314575 21,7 L21,14 C21,15.6568542 19.6568542,17 18,17 L17,17 C16.4477153,17 16,16.5522847 16,16 C16,15.4477153 16.4477153,15 17,15 L18,15 C18.5522847,15 19,14.5522847 19,14 L19,7 C19,6.44771525 18.5522847,6 18,6 L6,6 C5.44771525,6 5,6.44771525 5,7 L5,14 C5,14.5522847 5.44771525,15 6,15 L7,15 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                    <polygon fill="#000000" opacity="0.3" points="8 20 16 20 12 15"/>
                                                                 </g>
 															</svg>
 															<!--end::Svg Icon-->
-														</span>&nbsp;Order di Proses NON Telkom</h2>
+														</span>&nbsp;Monitoring Order</h2>
 												</div>
-												<div class="card-toolbar">
-													<!--begin::Dropdown-->
-													<div class="dropdown dropdown-inline mr-2">
-														<button type="button" class="btn btn-success font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<span class="svg-icon svg-icon-md">
-															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/PenAndRuller.svg-->
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24" />
-																	<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-																	<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-																</g>
-															</svg>
-															<!--end::Svg Icon-->
-														</span>Export</button>
-														<!--begin::Dropdown Menu-->
-														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-															<!--begin::Navigation-->
-															<ul class="navi flex-column navi-hover py-2">
-																<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-print"></i>
-																		</span>
-																		<span class="navi-text">Print</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-file-excel-o"></i>
-																		</span>
-																		<span class="navi-text">Excel</span>
-																	</a>
-																</li>
-															</ul>
-															<!--end::Navigation-->
-														</div>
-														<!--end::Dropdown Menu-->
-													</div>
-													<!--end::Dropdown-->
-													<!--begin::Button-->
-													
-													<!--end::Button-->
-												</div>
+												
 											</div>
 											<div class="card-body">
 												<!--begin: Datatable-->
@@ -230,148 +180,9 @@
 															<th>No</th>
                                                             <th>Data Customer</th>
 															<th>Detail Alat</th>
-															<th>Nomor CCL</th>
-															<th>Input SPH</th>
-															<th>BA Masuk</th>
-                                                            <th>Status Alat</th>
-															<th>Tanggal Order</th>
-														</tr>
-													</thead>
-													<tbody>
-													@php $no = 1; @endphp
-													@foreach ($orders as $order)
-													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-														@if($order->order_status == "order diproses")
-														<tr>
-															<td>{{$no++}}</td>
-															<td width="70px">
-															<b>Nama :</b> {{$order->user->name}} <br>
-															<b>No.Hp :</b> {{$order->user->no_hp}} <br>
-															<b>Email :</b> {{$order->user->email}} <br>
-															<b>Perusahaan :</b> {{$order->user->nama_perusahaan}} <br>
-															<b>Alamat :</b> {{$order->user->alamat}}
-															</td>
-															<td>
-																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
-																<b>Merek: </b>{{$order->order_merek}}<br>
-																<b>Model: </b>{{$order->order_model}}<br>
-																<b>S/N: </b>{{$order->order_sn}}<br>
-																<b>Jumlah: </b>{{$order->order_jumlah}} Unit<br>
-																<b>Lolasi Lab: </b>{{$order->order_lokasilab}}<br>
-																<b>Jenis kalibrasi: </b>{{$order->order_jeniskal}}<br>
-																<b>Nama pada sertifikat: </b>{{$order->order_namaser}}<br>
-																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
-															</td>
-															<form action="/statusccl-proses/{{$order->order_id}}" method="post">
-															@csrf
-																<td style="text-align:center;">
-																	<input type="text" name="order_ccl" class="form-control" value="{{$order->order_ccl}}" placeholder="Input CCL">
-																	<button type="submit" class="btn btn-danger btn-sm">Update</button>
-																</td>
-																<td>	
-																	<a href="/inputsph-{{$order->user_id}}" class="btn btn-icon btn-success"><i class="fas fa-file-upload"></i></a>
-																</td>
-																<td>
-																	<a href="/form-ba-{{$order->user_id}}"  class="btn btn-icon btn-danger"><i class="fas fa-print"></i></a>
-																</td>
-																<td style="text-align:center;" width="145px">
-																	<select name="order_status" class="form-control" id="">
-																		<option value="{{$order->order_status}}">{{$order->order_status}}</option>
-																		<option value="alat kekorlab">Alat ke Korlab</option>
-																	</select>
-																	<button type="submit" class="btn btn-danger btn-sm">Update</button>
-																</td>
-															</form>
-															<td>{{$order->created_at}}</td>
-														</tr>
-														@endif
-													@endif
-													@endforeach
-													
-													</tbody>
-												</table>
-												<!--end: Datatable-->
-											</div>
-										</div>
-										<br>
-										<br>
-
-										<!-- MONITORING ORDER -->
-										<div class="card card-custom">
-											<div class="card-header flex-wrap py-5">
-												<div class="card-title">
-													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-danger svg-icon-2x">
-															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24"/>
-																	<path d="M7,15 C7.55228475,15 8,15.4477153 8,16 C8,16.5522847 7.55228475,17 7,17 L6,17 C4.34314575,17 3,15.6568542 3,14 L3,7 C3,5.34314575 4.34314575,4 6,4 L18,4 C19.6568542,4 21,5.34314575 21,7 L21,14 C21,15.6568542 19.6568542,17 18,17 L17,17 C16.4477153,17 16,16.5522847 16,16 C16,15.4477153 16.4477153,15 17,15 L18,15 C18.5522847,15 19,14.5522847 19,14 L19,7 C19,6.44771525 18.5522847,6 18,6 L6,6 C5.44771525,6 5,6.44771525 5,7 L5,14 C5,14.5522847 5.44771525,15 6,15 L7,15 Z" fill="#000000" fill-rule="nonzero"/>
-																	<polygon fill="#000000" opacity="0.3" points="8 20 16 20 12 15"/>
-																</g>
-															</svg>
-															<!--end::Svg Icon-->
-														</span>&nbsp;Monitoring Order</h2>
-												</div>
-												<div class="card-toolbar">
-													<!--begin::Dropdown-->
-													<div class="dropdown dropdown-inline mr-2">
-														<button type="button" class="btn btn-success font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<span class="svg-icon svg-icon-md">
-															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/PenAndRuller.svg-->
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24" />
-																	<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-																	<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-																</g>
-															</svg>
-															<!--end::Svg Icon-->
-														</span>Export</button>
-														<!--begin::Dropdown Menu-->
-														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-															<!--begin::Navigation-->
-															<ul class="navi flex-column navi-hover py-2">
-																<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-print"></i>
-																		</span>
-																		<span class="navi-text">Print</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-file-excel-o"></i>
-																		</span>
-																		<span class="navi-text">Excel</span>
-																	</a>
-																</li>
-															</ul>
-															<!--end::Navigation-->
-														</div>
-														<!--end::Dropdown Menu-->
-													</div>
-													<!--end::Dropdown-->
-													<!--begin::Button-->
-													
-													<!--end::Button-->
-												</div>
-											</div>
-											
-											<div class="card-body">
-												<!--begin: Datatable-->
-												<table  class="table table-bordered table-checkable" id="order-listing2">
-													<thead>
-														<tr>
-															<th>No</th>
-                                                            <th>Data Customer</th>
-															<th>Detail Alat</th>
-															<th>Nomor CCL</th>
-															<th>BA Keluar</th>
 															<th>Status Alat</th>
+                                                            <th>Teknisi</th>
+                                                            <th>Update Order</th>
 															<th>Tanggal Order</th>
 														</tr>
 													</thead>
@@ -379,19 +190,17 @@
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-														@if($order->order_status != "")
-															@if($order->order_status != "order diproses")
-																@if($order->order_status != "selesai")
+													  @if($order->order_teknisi != "")
 														<tr>
 															<td>{{$no++}}</td>
-															<td width="70px">
+															<td width="170px">
 															<b>Nama :</b> {{$order->user->name}} <br>
 															<b>No.Hp :</b> {{$order->user->no_hp}} <br>
 															<b>Email :</b> {{$order->user->email}} <br>
 															<b>Perusahaan :</b> {{$order->user->nama_perusahaan}} <br>
 															<b>Alamat :</b> {{$order->user->alamat}}
 															</td>
-															<td>
+															<td width="215px">
 																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
 																<b>Merek: </b>{{$order->order_merek}}<br>
 																<b>Model: </b>{{$order->order_model}}<br>
@@ -402,33 +211,16 @@
 																<b>Nama pada sertifikat: </b>{{$order->order_namaser}}<br>
 																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
 															</td>
-															<td>{{$order->order_ccl}}</td>
-															<td>
-															<a href="/form-ba-{{$order->user_id}}"  class="btn btn-icon btn-success"><i class="fas fa-print"></i></a>
-															</td>
-															<form action="/statusccl-proses/{{$order->order_id}}" method="post">
-															@csrf
-															<td width="150px">
-																@if($order->order_status == "Cetak ATE-04")
-																<input type="hidden" name="order_ccl" value="{{$order->order_ccl}}">
-																<select name="order_status" class="form-control" id="">
-																	<option value="{{$order->order_status}}">{{$order->order_status}}</option>
-																	<option value="selesai">Selesai</option>
-																</select>
-																<button type="submit" class="btn btn-danger btn-sm">Update</button>
-																@else
-																<span class="label label-light-danger label-inline font-weight-normal mr-2">{{$order->order_status}}</span>
-																@endif
-															</td>
-															</form>
-															<td>{{$order->created_at}}</td>
+                                                            <td width="150px"><span class="label label-light-primary label-inline font-weight-normal mr-2">{{$order->order_status}}</span></td>
+															<td>{{$order->order_teknisi}}</td>
+                                                            <td>{{$order->updated_at}}</td>
+															<td>{{$order->order_tglantar}}</td>
+															
 														</tr>
-																@endif
-															@endif
 														@endif
 													@endif
+														
 													@endforeach
-													
 													</tbody>
 												</table>
 													
@@ -439,8 +231,7 @@
 												<!--end: Datatable-->
 											</div>
 										</div>
-									
-										
+										<!--end::Card-->
 									</div>
 									<!--end::Container-->
 								</div>

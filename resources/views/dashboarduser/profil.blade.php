@@ -37,13 +37,13 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link active border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" data-toggle="pill" href="#tab_forms_widget_2">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-order">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                            <rect x="0" y="0" width="24" height="24"/>
+																			<rect x="0" y="0" width="24" height="24"/>
 																			<path d="M12,4.56204994 L7.76822128,9.6401844 C7.4146572,10.0644613 6.7840925,10.1217854 6.3598156,9.76822128 C5.9355387,9.4146572 5.87821464,8.7840925 6.23177872,8.3598156 L11.2317787,2.3598156 C11.6315738,1.88006147 12.3684262,1.88006147 12.7682213,2.3598156 L17.7682213,8.3598156 C18.1217854,8.7840925 18.0644613,9.4146572 17.6401844,9.76822128 C17.2159075,10.1217854 16.5853428,10.0644613 16.2317787,9.6401844 L12,4.56204994 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
 																			<path d="M3.28077641,9 L20.7192236,9 C21.2715083,9 21.7192236,9.44771525 21.7192236,10 C21.7192236,10.0817618 21.7091962,10.163215 21.6893661,10.2425356 L19.5680983,18.7276069 C19.234223,20.0631079 18.0342737,21 16.6576708,21 L7.34232922,21 C5.96572629,21 4.76577697,20.0631079 4.43190172,18.7276069 L2.31063391,10.2425356 C2.17668518,9.70674072 2.50244587,9.16380623 3.03824078,9.0298575 C3.11756139,9.01002735 3.1990146,9 3.28077641,9 Z M12,12 C11.4477153,12 11,12.4477153 11,13 L11,17 C11,17.5522847 11.4477153,18 12,18 C12.5522847,18 13,17.5522847 13,17 L13,13 C13,12.4477153 12.5522847,12 12,12 Z M6.96472382,12.1362967 C6.43125772,12.2792385 6.11467523,12.8275755 6.25761704,13.3610416 L7.29289322,17.2247449 C7.43583503,17.758211 7.98417199,18.0747935 8.51763809,17.9318517 C9.05110419,17.7889098 9.36768668,17.2405729 9.22474487,16.7071068 L8.18946869,12.8434035 C8.04652688,12.3099374 7.49818992,11.9933549 6.96472382,12.1362967 Z M17.0352762,12.1362967 C16.5018101,11.9933549 15.9534731,12.3099374 15.8105313,12.8434035 L14.7752551,16.7071068 C14.6323133,17.2405729 14.9488958,17.7889098 15.4823619,17.9318517 C16.015828,18.0747935 16.564165,17.758211 16.7071068,17.2247449 L17.742383,13.3610416 C17.8853248,12.8275755 17.5687423,12.2792385 17.0352762,12.1362967 Z" fill="#000000"/>
 																		</g>
@@ -57,7 +57,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-profil">
+														<a class="nav-link active border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-profil">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Media/Movie-Lane2.svg-->
@@ -156,99 +156,87 @@
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-md">
+														<span class="svg-icon svg-icon-danger svg-icon-2x">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24"/>
-																			<path d="M12,4.56204994 L7.76822128,9.6401844 C7.4146572,10.0644613 6.7840925,10.1217854 6.3598156,9.76822128 C5.9355387,9.4146572 5.87821464,8.7840925 6.23177872,8.3598156 L11.2317787,2.3598156 C11.6315738,1.88006147 12.3684262,1.88006147 12.7682213,2.3598156 L17.7682213,8.3598156 C18.1217854,8.7840925 18.0644613,9.4146572 17.6401844,9.76822128 C17.2159075,10.1217854 16.5853428,10.0644613 16.2317787,9.6401844 L12,4.56204994 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-																			<path d="M3.28077641,9 L20.7192236,9 C21.2715083,9 21.7192236,9.44771525 21.7192236,10 C21.7192236,10.0817618 21.7091962,10.163215 21.6893661,10.2425356 L19.5680983,18.7276069 C19.234223,20.0631079 18.0342737,21 16.6576708,21 L7.34232922,21 C5.96572629,21 4.76577697,20.0631079 4.43190172,18.7276069 L2.31063391,10.2425356 C2.17668518,9.70674072 2.50244587,9.16380623 3.03824078,9.0298575 C3.11756139,9.01002735 3.1990146,9 3.28077641,9 Z M12,12 C11.4477153,12 11,12.4477153 11,13 L11,17 C11,17.5522847 11.4477153,18 12,18 C12.5522847,18 13,17.5522847 13,17 L13,13 C13,12.4477153 12.5522847,12 12,12 Z M6.96472382,12.1362967 C6.43125772,12.2792385 6.11467523,12.8275755 6.25761704,13.3610416 L7.29289322,17.2247449 C7.43583503,17.758211 7.98417199,18.0747935 8.51763809,17.9318517 C9.05110419,17.7889098 9.36768668,17.2405729 9.22474487,16.7071068 L8.18946869,12.8434035 C8.04652688,12.3099374 7.49818992,11.9933549 6.96472382,12.1362967 Z M17.0352762,12.1362967 C16.5018101,11.9933549 15.9534731,12.3099374 15.8105313,12.8434035 L14.7752551,16.7071068 C14.6323133,17.2405729 14.9488958,17.7889098 15.4823619,17.9318517 C16.015828,18.0747935 16.564165,17.758211 16.7071068,17.2247449 L17.742383,13.3610416 C17.8853248,12.8275755 17.5687423,12.2792385 17.0352762,12.1362967 Z" fill="#000000"/>
-																</g>
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <polygon points="0 0 24 0 24 24 0 24"/>
+                                                                    <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+                                                                    <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                </g>
 															</svg>
 															<!--end::Svg Icon-->
-														</span>&nbsp;Order Kalibrasi</h2>
+														</span>&nbsp;Pengaturan Profil</h2>
 												</div>
 											</div>
 											<div class="card-body">
-                                            <form action="/order-proses" method="POST">
-												@csrf
-                                                <div class="card-body">
+                                                <form action="/updateuser/{{Auth::user()->id}}" method="post">
+                                                @csrf
                                                     <div class="form-group row">
-                                                        <label  class="col-2 col-form-label">Nama Alat :</label>
-                                                        <div class="col-8">
-															<input name="user_id" class="form-control" value="{{ Auth::user()->id }}" type="hidden" id="example-text-input"/>
-                                                            <input name="order_namaalat" value="{{ old('order_namaalat') }}" class="form-control" type="text" id="example-text-input"/>
+                                                        <label  class="col-2 col-form-label">Nama Lengkap :</label>
+                                                        <div class="col-6">
+                                                            <input class="form-control @error('name') is-invalid @enderror" name="name" value="{{Auth::user()->name}}" type="text"  id="example-text-input"/>
+                                                        </div>
+                                                        @error('name')
+                                                            <div class="alert alert-danger mt-2">
+                                                                {{ $message }}
+                                                            </div>
+                                                        @enderror
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label  class="col-2 col-form-label">Nomor Handphone :</label>
+                                                        <div class="col-6">
+                                                            <input class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{Auth::user()->no_hp}}" type="text"  id="example-text-input"/>
+                                                        </div>
+                                                        @error('no_hp')
+                                                            <div class="alert alert-danger mt-2">
+                                                                {{ $message }}
+                                                            </div>
+                                                        @enderror
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label  class="col-2 col-form-label">Email :</label>
+                                                        <div class="col-6">
+                                                            <input class="form-control @error('email') is-invalid @enderror" name="email" value="{{Auth::user()->email}}" type="text"  id="example-text-input"/>
+                                                        </div>
+                                                        @error('email')
+                                                            <div class="alert alert-danger mt-2">
+                                                                {{ $message }}
+                                                            </div>
+                                                        @enderror
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label  class="col-2 col-form-label">Alamat :</label>
+                                                        <div class="col-6">
+                                                            <textarea class="form-control @error('alamat') is-invalid @enderror" id="exampleTextarea" name="alamat" rows="4" style="width:480px;">{{Auth::user()->alamat}}</textarea>
+                                                        </div>
+                                                        @error('alamat')
+                                                            <div class="alert alert-danger mt-2">
+                                                                {{ $message }}
+                                                            </div>
+                                                        @enderror
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label  class="col-2 col-form-label">Password :</label>
+                                                        <div class="col-6">
+                                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{Auth::user()->password}}" required autocomplete="new-password"/>
+                                                        </div>
+                                                        @error('password')
+                                                            <div class="alert alert-danger mt-2">
+                                                                {{ $message }}
+                                                            </div>
+                                                        @enderror
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label  class="col-2 col-form-label">Konfirmasi Password :</label>
+                                                        <div class="col-6">
+                                                            <input id="password-confirm" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" value="{{Auth::user()->password}}" required autocomplete="new-password"/>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label  class="col-2 col-form-label">Merek :</label>
-                                                        <div class="col-8">
-                                                            <input name="order_merek" value="{{ old('order_merek') }}" class="form-control" type="text" id="example-text-input"/>
-                                                        </div>
+                                                    <button type="submit" class="btn btn-success ml-12">Simpan</button>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label  class="col-2 col-form-label">Model :</label>
-                                                        <div class="col-8">
-                                                            <input name="order_model" value="{{ old('order_model') }}" class="form-control" type="text" id="example-text-input"/>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label  class="col-2 col-form-label">S/N :</label>
-                                                        <div class="col-5">
-                                                            <input name="order_sn" value="{{ old('order_sn') }}" class="form-control" type="text" id="example-text-input"/>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label  class="col-2 col-form-label">Jumlah :</label>
-                                                        <div class="col-5 input-group">
-                                                            <input name="order_jumlah" value="{{ old('order_jumlah') }}" class="form-control" type="number" id="example-text-input" aria-describedby="basic-addon2"/>
-															<div class="input-group-append"><span class="input-group-text">Unit</span></div> 
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-2 col-form-label" for="exampleSelectd">Lokasi Lab :</label>
-                                                        <div class="col-5">
-                                                            <select name="order_lokasilab" value="{{ old('order_lokasilab') }}" class="form-control" id="exampleSelectd">
-                                                                <option>Pilih Lokasi lab</option>
-                                                                <option value="Lab Jakarta">Jakarta</option>
-                                                                <option value="Lab Surabaya">Surabaya</option>
-                                                                <option value="Lab Medan">Medan</option>
-                                                                <option value="Lab Makassar">Makassar</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-2 col-form-label" for="exampleSelectd">Jenis Kalibrasi :</label>
-                                                        <div class="col-5">
-                                                            <select name="order_jeniskal" value="{{ old('order_jeniskal') }}" class="form-control" id="exampleSelectd">
-                                                                <option>Pilih jenis kalibrasi</option>
-                                                                <option value="inhouse">Inhouse</option>
-                                                                <option value="onsite">Onsite</option>
-                                                            </select>
-                                                            <span class="form-text" style="color:red;">Jika anda memilih Onsite akan ada biaya tranportasi Dll.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label  class="col-2 col-form-label">Nama pemilik pada sertifikat :</label>
-                                                        <div class="col-5">
-                                                            <input name="order_namaser" value="{{ old('order_namaser') }}" class="form-control" type="text" id="example-text-input"/>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label  class="col-2 col-form-label">Alamat pemilik pada sertifikat :</label>
-                                                        <div class="col-5">
-                                                            <textarea name="order_alamatser" value="{{ old('order_alamatser') }}" class="form-control" name="" id="" cols="30" rows="4"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3">
-                                                    </div>
-                                                    <div class="col-9">
-                                                    <button type="submit" class="btn btn-primary mr-2">Order Kalibrasi</button>
-                                                    </div>
-                                                </div>
-                                            </form>
+                                                </form>
 											</div>
 										</div>
 										<!--end::Card-->

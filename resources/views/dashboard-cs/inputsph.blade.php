@@ -82,7 +82,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-0 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" data-toggle="pill" href="#tab_forms_widget_5">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/riwayat-order">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:/metronic/theme/html/demo5/dist/assets/media/svg/icons/Communication/Group.svg-->
@@ -177,49 +177,20 @@
 												</div>
 												<div class="card-toolbar">
 													<!--begin::Dropdown-->
-													<div class="dropdown dropdown-inline mr-2">
-														<button type="button" class="btn btn-success font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<span class="svg-icon svg-icon-md">
+													<div class="mr-2">
+														<a href="/order-diproses"><button type="button" class="btn btn-success font-weight-bolder">
+														<span class="svg-icon svg-icon-light-white svg-icon-md">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/PenAndRuller.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24" />
-																	<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-																	<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-																</g>
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <polygon points="0 0 24 0 24 24 0 24"/>
+                                                                    <path d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z" fill="#000000" fill-rule="nonzero" transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999) "/>
+                                                                    <path d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999) "/>
+                                                                </g>
 															</svg>
 															<!--end::Svg Icon-->
-														</span>Export</button>
-														<!--begin::Dropdown Menu-->
-														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-															<!--begin::Navigation-->
-															<ul class="navi flex-column navi-hover py-2">
-																<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-print"></i>
-																		</span>
-																		<span class="navi-text">Print</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-file-excel-o"></i>
-																		</span>
-																		<span class="navi-text">Excel</span>
-																	</a>
-																</li>
-															</ul>
-															<!--end::Navigation-->
-														</div>
-														<!--end::Dropdown Menu-->
+														</span>Kembali</button></a>
 													</div>
-													<!--end::Dropdown-->
-													<!--begin::Button-->
-													
-													<!--end::Button-->
 												</div>
 											</div>
 								
@@ -270,9 +241,11 @@
                                                             <td style="text-align:center; vertical-align: middle;"><b>Belum ada</b></td>
                                                             <td style="vertical-align: middle;">
                                                                 <div class="custom-file">
-                                                                    <!-- <input type="file" class="custom-file-input" id="customFile"/> -->
-                                                                    <input type="text" name="order_filesph" id="" class="form-control">
-                                                                    <!-- <label class="custom-file-label" for="customFile">Pilih file surat penawaran harga (SPH)</label> -->
+                                                                    @foreach ($users as $user)
+                                                                    <input type="hidden" name="order_namaperusahaan" value="{{$user->nama_perusahaan}}">
+                                                                    @endforeach
+                                                                    <input type="file" name="order_filesph" class="custom-file-input" id="customFile"/>
+                                                                    <label class="custom-file-label" for="customFile">Pilih file surat penawaran harga (SPH)</label>
                                                                 </div>
                                                                 <br>
                                                                 <button type="submit" class="btn btn-danger btn-sm">Upload SPH</button>
@@ -343,52 +316,7 @@
 															<!--end::Svg Icon-->
 														</span>&nbsp;Input <b style="color:red;">&nbsp;(REVISI)&nbsp;</b> Surat Penawaran Harga</h2>
 												</div>
-												<div class="card-toolbar">
-													<!--begin::Dropdown-->
-													<div class="dropdown dropdown-inline mr-2">
-														<button type="button" class="btn btn-success font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<span class="svg-icon svg-icon-md">
-															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/PenAndRuller.svg-->
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24" />
-																	<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-																	<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-																</g>
-															</svg>
-															<!--end::Svg Icon-->
-														</span>Export</button>
-														<!--begin::Dropdown Menu-->
-														<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-															<!--begin::Navigation-->
-															<ul class="navi flex-column navi-hover py-2">
-																<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-print"></i>
-																		</span>
-																		<span class="navi-text">Print</span>
-																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-icon">
-																			<i class="la la-file-excel-o"></i>
-																		</span>
-																		<span class="navi-text">Excel</span>
-																	</a>
-																</li>
-															</ul>
-															<!--end::Navigation-->
-														</div>
-														<!--end::Dropdown Menu-->
-													</div>
-													<!--end::Dropdown-->
-													<!--begin::Button-->
-													
-													<!--end::Button-->
-												</div>
+
 											</div>
 								
 											<div class="card-body">
@@ -436,9 +364,11 @@
                                                             <td style="text-align:center;"><b style="color:red;">Ditolak</b></td>
                                                             <td>
                                                                 <div class="custom-file">
-                                                                    <!-- <input type="file" class="custom-file-input" id="customFile"/> -->
-                                                                    <input type="text" name="order_filesph" id="" class="form-control">
-                                                                    <!-- <label class="custom-file-label" for="customFile">Pilih file surat penawaran harga (SPH)</label> -->
+																@foreach ($users as $user)
+                                                                    <input type="hidden" name="order_namaperusahaan" value="{{$user->nama_perusahaan}}">
+                                                                    @endforeach
+                                                                    <input type="file" name="order_filesph" class="custom-file-input" id="customFile"/>
+                                                                    <label class="custom-file-label" for="customFile">Pilih file surat penawaran harga (SPH)</label>
                                                                 </div>
                                                                 <br>
                                                                 <button type="submit" class="btn btn-danger btn-sm">Update SPH</button>
@@ -447,6 +377,81 @@
                                                     </tr>
                                                     @endif
 													
+													</tbody>
+												</table>
+												<!--end: Datatable-->
+											</div>
+										</div>
+										<!--end::Card-->
+
+										<br>
+										<!-- Purchase Order (PO) -->
+										<div class="card card-custom">
+											<div class="card-header flex-wrap py-5">
+												<div class="card-title">
+													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
+														<span class="svg-icon svg-icon-md">
+															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"/>
+                                                                    <path d="M6,7 C7.1045695,7 8,6.1045695 8,5 C8,3.8954305 7.1045695,3 6,3 C4.8954305,3 4,3.8954305 4,5 C4,6.1045695 4.8954305,7 6,7 Z M6,9 C3.790861,9 2,7.209139 2,5 C2,2.790861 3.790861,1 6,1 C8.209139,1 10,2.790861 10,5 C10,7.209139 8.209139,9 6,9 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                    <path d="M7,11.4648712 L7,17 C7,18.1045695 7.8954305,19 9,19 L15,19 L15,21 L9,21 C6.790861,21 5,19.209139 5,17 L5,8 L5,7 L7,7 L7,8 C7,9.1045695 7.8954305,10 9,10 L15,10 L15,12 L9,12 C8.27142571,12 7.58834673,11.8052114 7,11.4648712 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+                                                                    <path d="M18,22 C19.1045695,22 20,21.1045695 20,20 C20,18.8954305 19.1045695,18 18,18 C16.8954305,18 16,18.8954305 16,20 C16,21.1045695 16.8954305,22 18,22 Z M18,24 C15.790861,24 14,22.209139 14,20 C14,17.790861 15.790861,16 18,16 C20.209139,16 22,17.790861 22,20 C22,22.209139 20.209139,24 18,24 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                    <path d="M18,13 C19.1045695,13 20,12.1045695 20,11 C20,9.8954305 19.1045695,9 18,9 C16.8954305,9 16,9.8954305 16,11 C16,12.1045695 16.8954305,13 18,13 Z M18,15 C15.790861,15 14,13.209139 14,11 C14,8.790861 15.790861,7 18,7 C20.209139,7 22,8.790861 22,11 C22,13.209139 20.209139,15 18,15 Z" fill="#000000" fill-rule="nonzero"/>
+                                                                </g>
+															</svg>
+															<!--end::Svg Icon-->
+														</span>&nbsp;Purchase Order (PO)</h2>
+												</div>
+
+											</div>
+								
+											<div class="card-body">
+												<!--begin: Datatable-->
+												<table  class="table table-bordered table-checkable" id="order-listing3">
+													<thead>
+														<tr>
+															<th>Data Customer</th>
+                                                            <th>Purchase Order</th>
+														</tr>
+													</thead>
+													<tbody>
+													@if ($count4 >= 1)
+                                                    <tr>
+															<td width="300px">
+                                                                @foreach ($users as $user)
+                                                                <b>Nama :</b> {{$user->name}} <br>
+                                                                <b>No.Hp :</b> {{$user->no_hp}} <br>
+                                                                <b>Email :</b> {{$user->email}} <br>
+                                                                <b>Perusahaan :</b> {{$user->nama_perusahaan}} <br>
+                                                                <b>Alamat :</b> {{$user->alamat}}
+                                                                <br>
+                                                                @endforeach
+                                                                <br><h6  style="color:red;">Detail Alat</h6>
+                                                                @php $no= 1; @endphp
+                                                                @foreach ($orders as $order)
+                                                                @if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
+                                                                    @if($order->order_status != "")
+                                                                        @if($order->order_status != "selesai")
+                                                                            @if($order->order_filepo != "")
+																<b>{{$no++}}. Nama Alat: </b>{{$order->order_namaalat}}<br>
+																<b>&nbsp;&nbsp;&nbsp;&nbsp;Merek: </b>{{$order->order_merek}}<br>
+																<b>&nbsp;&nbsp;&nbsp;&nbsp;Model: </b>{{$order->order_model}}<br>
+                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;S/N: </b>{{$order->order_sn}} <br>
+                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;No.CCL: </b>{{$order->order_ccl}} <br><br>
+																@php $filepo = $order->order_filepo @endphp
+                                                                            @endif
+                                                                        @endif
+                                                                    @endif
+                                                                @endif
+                                                            @endforeach
+                                                            </td>
+                                                            <td style="text-align:center;">
+																<a  href="/storage/PO/{{$filepo}}"><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-eye"></i>Lihat PO</button></a><br><br>
+															</td>
+													</tr>
+													@endif
 													</tbody>
 												</table>
 												<!--end: Datatable-->

@@ -36,6 +36,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::get('/struktur-organisasi','BerandaController@struktur');
     Route::get('/hubungi-kami','BerandaController@hubungikami');
     Route::get('artikel/','BerandaController@allartikel');
+    Route::get('/tracking-order','BerandaController@trackingorder');
+    Route::get('/check-order','BerandaController@searchorder');
 });
 
 
@@ -117,7 +119,11 @@ Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
 Route::middleware('role:customer')->get('/dashboard','HomeController@cus');
 Route::get('/dashboard-order','OrderController@index');
 Route::post('/order-proses','OrderController@proses');
-Route::post('/sphcus','OrderController@sphcus');
+Route::get('/dashboard-sph-{user_id}','OrderController@sph');
+Route::post('/status-sph-{user_id}','OrderController@statussph');
+Route::post('/input-po-{user_id}','OrderController@inputpo');
+Route::get('/dashboard-profil','HomeController@profilcus');
+Route::post('/updateuser/{user_id}','HomeController@updateuser');
 
 //Halaman Dashboard Customer Service (CS)
 Route::middleware('role:cs')->get('/dashboard-cs','CsController@index');
@@ -128,7 +134,23 @@ Route::post('/statustgl-proses/{order_id}','CsController@statustgl');
 Route::post('/statusccl-proses/{order_id}','CsController@statusccl');
 Route::get('/form-ba-{user_id}','CsController@form_ba');
 Route::post('/cetak-ba-{user_id}','CsController@ba');
-Route::get('/tessph','CsController@tessph');
 Route::get('/inputsph-{user_id}','CsController@inputsph');
 Route::post('/proses-inputsph/{user_id}','CsController@prosessph');
 Route::post('/proses-revisisph/{user_id}','CsController@revisisph');
+Route::get('/riwayat-order','CsController@riwayatorder');
+
+//Halaman Dashboard Koordinator Teknik (Kortek)
+Route::middleware('role:kortek')->get('/dashboard-kortek','KortekController@index');
+Route::get('/monitoring-order','KortekController@monitoring');
+Route::post('/pilihteknisi/{order_id}','KortekController@pilihteknisi');
+
+//Halaman Dashboard Teknisi
+Route::middleware('role:teknisi')->get('/dashboard-teknisi','TeknisiController@index');
+Route::get('/proses-kalibrasi','TeknisiController@proseskalibrasi');
+Route::post('/mulaikalibrasi/{order_id}','TeknisiController@mulaikalibrasi');
+Route::post('/cetaksertifikat/{order_id}','TeknisiController@cetaksertifikat');
+Route::get('/riwayat-kalibrasi','TeknisiController@riwayatkalibrasi');
+
+//Halaman Dahboard Admin
+Route::middleware('role:admin')->get('/dashboard-admin','AdminController@index');
+Route::post('/sertifikatselesai/{order_id}','AdminController@sertifikatselesai');

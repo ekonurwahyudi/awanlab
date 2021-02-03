@@ -6,6 +6,9 @@ use App\Models\Artikel;
 use App\Models\Slide;
 use App\Models\konsultasi;
 use App\Models\Faq;
+use App\Models\Orderkalibrasi;
+use App\Models\User;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facedes\Storage;
 use DB;
@@ -86,5 +89,18 @@ class BerandaController extends Controller
     }
     public function kritik_saran(){
         return view('kritik-saran');
+    }
+
+    // Controller Tracking Order 
+    public function trackingorder(){
+        $orders = Orderkalibrasi::paginate(5);
+        return view('/tracking-order',['orders' => $orders]);
+    }
+
+    public function searchorder(Request $request){
+        $orders = Orderkalibrasi::paginate(5);
+        $hasils = Order::where('order_ccl', $request->order_ccl)->get();
+        $noccl = $request->order_ccl;
+        return view('/result-tracking',['hasils' => $hasils],['orders' => $orders])->with('noccl', $noccl);
     }
 }

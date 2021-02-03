@@ -63,6 +63,7 @@
 											<tbody>
 											@php $no = 1; @endphp
                                             @foreach ($users as $user)
+												@if($user->roleuser->role_id != "2")
 												<tr>
 													<td>{{$no++}}</td>
 													<td>{{$user->name}}</td>
@@ -93,6 +94,7 @@
 													</td>
 													
 												</tr>
+												@endif
 											@endforeach
 											</tbody>
 										</table>

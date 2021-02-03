@@ -44,11 +44,38 @@ class OrderController extends Controller
         return redirect('/dashboard');
     }
 
-    public function sphcus(Request $request){
-        $statussph = DB::table('orderkalibrasis')->where('order_id',$request->order_id)->update([
-            'order_merek' => $request->order_merek,
-        ]);
+    public function sph(Request $request){
+        $orders = Orderkalibrasi::where('user_id', $request->user_id)->get();
+        $countsph = ['user_id' => $request->user_id, 'order_statussph' => NULL];
+        $revisisph = ['user_id' => $request->user_id , 'order_statussph' => "ditolak"];
+        $filepo = ['user_id' => $request->user_id , 'order_statussph' => "diterima",'order_filepo' => NULL];
+        $count = Orderkalibrasi::where($countsph)->count();
+        $count2 = Orderkalibrasi::where($revisisph)->count();
+        $count3 = Orderkalibrasi::where($filepo)->count();
+        return view('/dashboarduser/sph',['orders' => $orders])->with('count2', $count2)->with('count', $count)->with('count3', $count3);
+    }
 
-        return redirect('/dashboard');
+    public function statussph(Request $request){
+        $sph = ['user_id' => $request->user_id, 'order_statussph' => NULL];
+        if($order = Orderkalibrasi::where($sph)){
+            $order->update([
+                'order_statussph' => $request->order_statussph,
+            ]);
+            return redirect('/dashboard-sph-'.$request->user_id);
+        }
+    }
+
+    public function inputpo(Request $request){
+        $namaperusahaan = $request->order_namaperusahaan;
+        $order_filepo = $request->file('order_filepo');
+        $filepo = 'PO_'.$namaperusahaan.'_'.time().'.pdf'; 
+        $path_id = $request->file('order_filepo')->storeAs('public/PO', $filepo);
+        $po = ['user_id' => $request->user_id, 'order_filepo' => NULL];
+        if($order = Orderkalibrasi::where($po)){
+                $order->update([
+                    'order_filepo' => $filepo,
+                ]);
+                return redirect('/dashboard');
+        }
     }
 }
