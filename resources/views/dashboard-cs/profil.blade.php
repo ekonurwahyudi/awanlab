@@ -1,4 +1,4 @@
-@extends('/dashboarduser/master')
+@extends('/dashboard-cs/master')
 @section('konten')
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Entry-->
@@ -17,10 +17,74 @@
 												<ul class="dashboard-tabs nav nav-pills nav-danger row row-paddingless m-0 p-0 flex-column flex-sm-row" role="tablist">
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-cs">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <rect x="0" y="0" width="24" height="24"/>
+                                                                            <path d="M22,17 L22,21 C22,22.1045695 21.1045695,23 20,23 L4,23 C2.8954305,23 2,22.1045695 2,21 L2,17 L6.27924078,17 L6.82339262,18.6324555 C7.09562072,19.4491398 7.8598984,20 8.72075922,20 L15.381966,20 C16.1395101,20 16.8320364,19.5719952 17.1708204,18.8944272 L18.118034,17 L22,17 Z" fill="#000000"/>
+                                                                            <path d="M2.5625,15 L5.92654389,9.01947752 C6.2807805,8.38972356 6.94714834,8 7.66969497,8 L16.330305,8 C17.0528517,8 17.7192195,8.38972356 18.0734561,9.01947752 L21.4375,15 L18.118034,15 C17.3604899,15 16.6679636,15.4280048 16.3291796,16.1055728 L15.381966,18 L8.72075922,18 L8.17660738,16.3675445 C7.90437928,15.5508602 7.1401016,15 6.27924078,15 L2.5625,15 Z" fill="#000000" opacity="0.3"/>
+                                                                            <path d="M11.1288761,0.733697713 L11.1288761,2.69017121 L9.12120481,2.69017121 C8.84506244,2.69017121 8.62120481,2.91402884 8.62120481,3.19017121 L8.62120481,4.21346991 C8.62120481,4.48961229 8.84506244,4.71346991 9.12120481,4.71346991 L11.1288761,4.71346991 L11.1288761,6.66994341 C11.1288761,6.94608579 11.3527337,7.16994341 11.6288761,7.16994341 C11.7471877,7.16994341 11.8616664,7.12798964 11.951961,7.05154023 L15.4576222,4.08341738 C15.6683723,3.90498251 15.6945689,3.58948575 15.5161341,3.37873564 C15.4982803,3.35764848 15.4787093,3.33807751 15.4576222,3.32022374 L11.951961,0.352100892 C11.7412109,0.173666017 11.4257142,0.199862688 11.2472793,0.410612793 C11.1708299,0.500907473 11.1288761,0.615386087 11.1288761,0.733697713 Z" fill="#000000" fill-rule="nonzero" transform="translate(11.959697, 3.661508) rotate(-270.000000) translate(-11.959697, -3.661508) "/>
+                                                                        </g>
+																	</svg>
+																	<!--end::Svg Icon-->
+																</span>
+															</span>
+															<span class="nav-text font-size-lg py-2 font-weight-bold text-center">Order Masuk</span>
+														</a>
+													</li>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/order-diproses">
+															<span class="nav-icon py-2 w-auto">
+																<span class="svg-icon svg-icon-3x">
+																	<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																			<rect x="0" y="0" width="24" height="24"/>
+																			<path d="M6,7 C7.1045695,7 8,6.1045695 8,5 C8,3.8954305 7.1045695,3 6,3 C4.8954305,3 4,3.8954305 4,5 C4,6.1045695 4.8954305,7 6,7 Z M6,9 C3.790861,9 2,7.209139 2,5 C2,2.790861 3.790861,1 6,1 C8.209139,1 10,2.790861 10,5 C10,7.209139 8.209139,9 6,9 Z" fill="#000000" fill-rule="nonzero"/>
+																			<path d="M7,11.4648712 L7,17 C7,18.1045695 7.8954305,19 9,19 L15,19 L15,21 L9,21 C6.790861,21 5,19.209139 5,17 L5,8 L5,7 L7,7 L7,8 C7,9.1045695 7.8954305,10 9,10 L15,10 L15,12 L9,12 C8.27142571,12 7.58834673,11.8052114 7,11.4648712 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+																			<path d="M18,22 C19.1045695,22 20,21.1045695 20,20 C20,18.8954305 19.1045695,18 18,18 C16.8954305,18 16,18.8954305 16,20 C16,21.1045695 16.8954305,22 18,22 Z M18,24 C15.790861,24 14,22.209139 14,20 C14,17.790861 15.790861,16 18,16 C20.209139,16 22,17.790861 22,20 C22,22.209139 20.209139,24 18,24 Z" fill="#000000" fill-rule="nonzero"/>
+																			<path d="M18,13 C19.1045695,13 20,12.1045695 20,11 C20,9.8954305 19.1045695,9 18,9 C16.8954305,9 16,9.8954305 16,11 C16,12.1045695 16.8954305,13 18,13 Z M18,15 C15.790861,15 14,13.209139 14,11 C14,8.790861 15.790861,7 18,7 C20.209139,7 22,8.790861 22,11 C22,13.209139 20.209139,15 18,15 Z" fill="#000000" fill-rule="nonzero"/>
+																		</g>
+																	</svg>
+																	<!--end::Svg Icon-->
+																</span>
+															</span>
+															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Order di Proses</span>
+														</a>
+													</li>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" data-toggle="pill" href="#tab_forms_widget_3">
+															<span class="nav-icon py-2 w-auto">
+																<span class="svg-icon svg-icon-3x">
+																	<!--begin::Svg Icon | path:assets/media/svg/icons/Media/Movie-Lane2.svg-->
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <rect x="0" y="0" width="24" height="24"/>
+                                                                            <path d="M22,17 L22,21 C22,22.1045695 21.1045695,23 20,23 L4,23 C2.8954305,23 2,22.1045695 2,21 L2,17 L6.27924078,17 L6.82339262,18.6324555 C7.09562072,19.4491398 7.8598984,20 8.72075922,20 L15.381966,20 C16.1395101,20 16.8320364,19.5719952 17.1708204,18.8944272 L18.118034,17 L22,17 Z" fill="#000000"/>
+                                                                            <path d="M2.5625,15 L5.92654389,9.01947752 C6.2807805,8.38972356 6.94714834,8 7.66969497,8 L16.330305,8 C17.0528517,8 17.7192195,8.38972356 18.0734561,9.01947752 L21.4375,15 L18.118034,15 C17.3604899,15 16.6679636,15.4280048 16.3291796,16.1055728 L15.381966,18 L8.72075922,18 L8.17660738,16.3675445 C7.90437928,15.5508602 7.1401016,15 6.27924078,15 L2.5625,15 Z" fill="#000000" opacity="0.3"/>
+                                                                            <path d="M11.1288761,0.733697713 L11.1288761,2.69017121 L9.12120481,2.69017121 C8.84506244,2.69017121 8.62120481,2.91402884 8.62120481,3.19017121 L8.62120481,4.21346991 C8.62120481,4.48961229 8.84506244,4.71346991 9.12120481,4.71346991 L11.1288761,4.71346991 L11.1288761,6.66994341 C11.1288761,6.94608579 11.3527337,7.16994341 11.6288761,7.16994341 C11.7471877,7.16994341 11.8616664,7.12798964 11.951961,7.05154023 L15.4576222,4.08341738 C15.6683723,3.90498251 15.6945689,3.58948575 15.5161341,3.37873564 C15.4982803,3.35764848 15.4787093,3.33807751 15.4576222,3.32022374 L11.951961,0.352100892 C11.7412109,0.173666017 11.4257142,0.199862688 11.2472793,0.410612793 C11.1708299,0.500907473 11.1288761,0.615386087 11.1288761,0.733697713 Z" fill="#000000" fill-rule="nonzero" transform="translate(11.959697, 3.661508) rotate(-270.000000) translate(-11.959697, -3.661508) "/>
+                                                                        </g>
+																	</svg>
+																	<!--end::Svg Icon-->
+																</span>
+															</span>
+															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Order Masuk Telkom</span>
+														</a>
+													</li>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-0 mb-3 mb-lg-0">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center"  href="/riwayat-order">
+															<span class="nav-icon py-2 w-auto">
+																<span class="svg-icon svg-icon-3x">
+																	<!--begin::Svg Icon | path:/metronic/theme/html/demo5/dist/assets/media/svg/icons/Communication/Group.svg-->
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 																			<rect x="0" y="0" width="24" height="24"/>
@@ -31,67 +95,7 @@
 																	<!--end::Svg Icon-->
 																</span>
 															</span>
-															<span class="nav-text font-size-lg py-2 font-weight-bold text-center">Riwayat Order</span>
-														</a>
-													</li>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-order">
-															<span class="nav-icon py-2 w-auto">
-																<span class="svg-icon svg-icon-3x">
-																	<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24"/>
-																			<path d="M12,4.56204994 L7.76822128,9.6401844 C7.4146572,10.0644613 6.7840925,10.1217854 6.3598156,9.76822128 C5.9355387,9.4146572 5.87821464,8.7840925 6.23177872,8.3598156 L11.2317787,2.3598156 C11.6315738,1.88006147 12.3684262,1.88006147 12.7682213,2.3598156 L17.7682213,8.3598156 C18.1217854,8.7840925 18.0644613,9.4146572 17.6401844,9.76822128 C17.2159075,10.1217854 16.5853428,10.0644613 16.2317787,9.6401844 L12,4.56204994 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-																			<path d="M3.28077641,9 L20.7192236,9 C21.2715083,9 21.7192236,9.44771525 21.7192236,10 C21.7192236,10.0817618 21.7091962,10.163215 21.6893661,10.2425356 L19.5680983,18.7276069 C19.234223,20.0631079 18.0342737,21 16.6576708,21 L7.34232922,21 C5.96572629,21 4.76577697,20.0631079 4.43190172,18.7276069 L2.31063391,10.2425356 C2.17668518,9.70674072 2.50244587,9.16380623 3.03824078,9.0298575 C3.11756139,9.01002735 3.1990146,9 3.28077641,9 Z M12,12 C11.4477153,12 11,12.4477153 11,13 L11,17 C11,17.5522847 11.4477153,18 12,18 C12.5522847,18 13,17.5522847 13,17 L13,13 C13,12.4477153 12.5522847,12 12,12 Z M6.96472382,12.1362967 C6.43125772,12.2792385 6.11467523,12.8275755 6.25761704,13.3610416 L7.29289322,17.2247449 C7.43583503,17.758211 7.98417199,18.0747935 8.51763809,17.9318517 C9.05110419,17.7889098 9.36768668,17.2405729 9.22474487,16.7071068 L8.18946869,12.8434035 C8.04652688,12.3099374 7.49818992,11.9933549 6.96472382,12.1362967 Z M17.0352762,12.1362967 C16.5018101,11.9933549 15.9534731,12.3099374 15.8105313,12.8434035 L14.7752551,16.7071068 C14.6323133,17.2405729 14.9488958,17.7889098 15.4823619,17.9318517 C16.015828,18.0747935 16.564165,17.758211 16.7071068,17.2247449 L17.742383,13.3610416 C17.8853248,12.8275755 17.5687423,12.2792385 17.0352762,12.1362967 Z" fill="#000000"/>
-																		</g>
-																	</svg>
-																	<!--end::Svg Icon-->
-																</span>
-															</span>
-															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Order Kalibrasi</span>
-														</a>
-													</li>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0">
-														<a class="nav-link active border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="/dashboard-profil">
-															<span class="nav-icon py-2 w-auto">
-																<span class="svg-icon svg-icon-3x">
-																	<!--begin::Svg Icon | path:assets/media/svg/icons/Media/Movie-Lane2.svg-->
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<polygon points="0 0 24 0 24 24 0 24"/>
-																			<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-																			<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
-																		</g>
-																	</svg>
-																	<!--end::Svg Icon-->
-																</span>
-															</span>
-															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Edit Profil</span>
-														</a>
-													</li>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-0 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" target="_blank" href="https://web.whatsapp.com/send?phone=+628987088921&text=Halo,%20saya%20{{Auth::user()->name}}%20perlu%20bantuan">
-															<span class="nav-icon py-2 w-auto">
-																<span class="svg-icon svg-icon-3x">
-																	<!--begin::Svg Icon | path:/metronic/theme/html/demo5/dist/assets/media/svg/icons/Communication/Group.svg-->
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24"/>
-																			<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000"/>
-        																	<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3"/>
-																		</g>
-																	</svg>
-																	<!--end::Svg Icon-->
-																</span>
-															</span>
-															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Customer Support</span>
+															<span class="nav-text font-size-lg py-2 font-weight-bolder text-center">Riwayat Order</span>
 														</a>
 													</li>
 													<!--end::Item-->
@@ -121,7 +125,7 @@
 															<h4 class="text-warning font-weight-bolder">Waspada Covid</h4>
 															<p class="text-dark-50 font-weight-bold mt-3">Selalu menjaga 5M</p>
 														</div>
-														<a target="_blank" href='https://www.bing.com/covid/local/indonesia?vert=graph' class="btn btn-link btn-link-warning font-weight-bold">Penyebaran Covid-19
+														<a href='#' class="btn btn-link btn-link-warning font-weight-bold">Penyebaran Covid-19
 														<span class="svg-icon svg-icon-lg svg-icon-warning">
 															<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -156,7 +160,7 @@
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-danger svg-icon-2x mb-2">
+														<span class="svg-icon svg-icon-danger svg-icon-2x">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
                                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -170,7 +174,7 @@
 												</div>
 											</div>
 											<div class="card-body">
-                                                <form action="/updateuser/{{Auth::user()->id}}" method="post">
+                                                <form action="/updateprofilcs/{{Auth::user()->id}}" method="post">
                                                 @csrf
                                                     <div class="form-group row">
                                                         <label  class="col-2 col-form-label">Nama Lengkap :</label>

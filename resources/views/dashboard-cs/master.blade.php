@@ -218,14 +218,14 @@
 										<ul class="navi navi-hover py-4">
 											<!--begin::Item-->
 											<li class="navi-item">
-												<a href="#" class="navi-link">
+												<a href="/profilcs" class="navi-link">
 													<span class="navi-text">Profil</span>
 												</a>
 											</li>
 											<!--end::Item-->
 											<!--begin::Item-->
 											<li class="navi-item active">
-												<a href="#" class="navi-link">
+												<a href="/profilcs" class="navi-link">
 													<span class="navi-text">Ganti Password</span>
 												</a>
 											</li>

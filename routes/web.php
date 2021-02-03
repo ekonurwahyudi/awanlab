@@ -138,6 +138,8 @@ Route::get('/inputsph-{user_id}','CsController@inputsph');
 Route::post('/proses-inputsph/{user_id}','CsController@prosessph');
 Route::post('/proses-revisisph/{user_id}','CsController@revisisph');
 Route::get('/riwayat-order','CsController@riwayatorder');
+Route::get('/profilcs','CsController@profilcs');
+Route::post('/updateprofilcs/{user_id}','CsController@updateprofilcs');
 
 //Halaman Dashboard Koordinator Teknik (Kortek)
 Route::middleware('role:kortek')->get('/dashboard-kortek','KortekController@index');

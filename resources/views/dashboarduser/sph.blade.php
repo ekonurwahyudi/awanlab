@@ -77,7 +77,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-0 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" href="#tab_forms_widget_5">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" target="_blank" href="https://web.whatsapp.com/send?phone=+628987088921&text=Halo,%20saya%20{{Auth::user()->name}}%20perlu%20bantuan">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:/metronic/theme/html/demo5/dist/assets/media/svg/icons/Communication/Group.svg-->
@@ -121,7 +121,7 @@
 															<h4 class="text-warning font-weight-bolder">Waspada Covid</h4>
 															<p class="text-dark-50 font-weight-bold mt-3">Selalu menjaga 5M</p>
 														</div>
-														<a href='#' class="btn btn-link btn-link-warning font-weight-bold">Penyebaran Covid-19
+														<a target="_blank" href='https://www.bing.com/covid/local/indonesia?vert=graph' class="btn btn-link btn-link-warning font-weight-bold">Penyebaran Covid-19
 														<span class="svg-icon svg-icon-lg svg-icon-warning">
 															<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -153,14 +153,20 @@
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-md">
+														<span class="svg-icon svg-icon-danger svg-icon-2x">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
 																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<rect x="0" y="0" width="20" height="20"/>
-																		<path d="M5.5,2 L18.5,2 C19.3284271,2 20,2.67157288 20,3.5 L20,6.5 C20,7.32842712 19.3284271,8 18.5,8 L5.5,8 C4.67157288,8 4,7.32842712 4,6.5 L4,3.5 C4,2.67157288 4.67157288,2 5.5,2 Z M11,4 C10.4477153,4 10,4.44771525 10,5 C10,5.55228475 10.4477153,6 11,6 L13,6 C13.5522847,6 14,5.55228475 14,5 C14,4.44771525 13.5522847,4 13,4 L11,4 Z" fill="#000000" opacity="0.3"/>
-																		<path d="M5.5,9 L18.5,9 C19.3284271,9 20,9.67157288 20,10.5 L20,13.5 C20,14.3284271 19.3284271,15 18.5,15 L5.5,15 C4.67157288,15 4,14.3284271 4,13.5 L4,10.5 C4,9.67157288 4.67157288,9 5.5,9 Z M11,11 C10.4477153,11 10,11.4477153 10,12 C10,12.5522847 10.4477153,13 11,13 L13,13 C13.5522847,13 14,12.5522847 14,12 C14,11.4477153 13.5522847,11 13,11 L11,11 Z M5.5,16 L18.5,16 C19.3284271,16 20,16.6715729 20,17.5 L20,20.5 C20,21.3284271 19.3284271,22 18.5,22 L5.5,22 C4.67157288,22 4,21.3284271 4,20.5 L4,17.5 C4,16.6715729 4.67157288,16 5.5,16 Z M11,18 C10.4477153,18 10,18.4477153 10,19 C10,19.5522847 10.4477153,20 11,20 L13,20 C13.5522847,20 14,19.5522847 14,19 C14,18.4477153 13.5522847,18 13,18 L11,18 Z" fill="#000000"/>
-																</g>
+                                                                    <rect x="0" y="0" width="30" height="30"/>
+                                                                    <path d="M8,3 L8,3.5 C8,4.32842712 8.67157288,5 9.5,5 L14.5,5 C15.3284271,5 16,4.32842712 16,3.5 L16,3 L18,3 C19.1045695,3 20,3.8954305 20,5 L20,21 C20,22.1045695 19.1045695,23 18,23 L6,23 C4.8954305,23 4,22.1045695 4,21 L4,5 C4,3.8954305 4.8954305,3 6,3 L8,3 Z" fill="#000000" opacity="0.3"/>
+                                                                    <path d="M11,2 C11,1.44771525 11.4477153,1 12,1 C12.5522847,1 13,1.44771525 13,2 L14.5,2 C14.7761424,2 15,2.22385763 15,2.5 L15,3.5 C15,3.77614237 14.7761424,4 14.5,4 L9.5,4 C9.22385763,4 9,3.77614237 9,3.5 L9,2.5 C9,2.22385763 9.22385763,2 9.5,2 L11,2 Z" fill="#000000"/>
+                                                                    <rect fill="#000000" opacity="0.3" x="10" y="9" width="7" height="2" rx="1"/>
+                                                                    <rect fill="#000000" opacity="0.3" x="7" y="9" width="2" height="2" rx="1"/>
+                                                                    <rect fill="#000000" opacity="0.3" x="7" y="13" width="2" height="2" rx="1"/>
+                                                                    <rect fill="#000000" opacity="0.3" x="10" y="13" width="7" height="2" rx="1"/>
+                                                                    <rect fill="#000000" opacity="0.3" x="7" y="17" width="2" height="2" rx="1"/>
+                                                                    <rect fill="#000000" opacity="0.3" x="10" y="17" width="7" height="2" rx="1"/>
+                                                                </g>
 															</svg>
 															<!--end::Svg Icon-->
 														</span>&nbsp;Surat Penawaran Harga & Purchase Order</h2>

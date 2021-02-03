@@ -77,7 +77,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<li class="nav-item d-flex col-sm flex-grow-1 flex-shrink-0 mr-0 mb-3 mb-lg-0">
-														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" data-toggle="pill" href="#tab_forms_widget_5">
+														<a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center" target="_blank" href="https://web.whatsapp.com/send?phone=+628987088921&text=Halo,%20saya%20{{Auth::user()->name}}%20perlu%20bantuan">
 															<span class="nav-icon py-2 w-auto">
 																<span class="svg-icon svg-icon-3x">
 																	<!--begin::Svg Icon | path:/metronic/theme/html/demo5/dist/assets/media/svg/icons/Communication/Group.svg-->
@@ -121,7 +121,7 @@
 															<h4 class="text-warning font-weight-bolder">Waspada Covid</h4>
 															<p class="text-dark-50 font-weight-bold mt-3">Selalu menjaga 5M</p>
 														</div>
-														<a href='#' class="btn btn-link btn-link-warning font-weight-bold">Penyebaran Covid-19
+														<a target="_blank" href='https://www.bing.com/covid/local/indonesia?vert=graph' class="btn btn-link btn-link-warning font-weight-bold">Penyebaran Covid-19
 														<span class="svg-icon svg-icon-lg svg-icon-warning">
 															<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -156,7 +156,7 @@
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
-														<span class="svg-icon svg-icon-md">
+														<span class="svg-icon svg-icon-danger svg-icon-2x mb-2">
 															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
 																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

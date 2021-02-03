@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Orderkalibrasi;
 use App\Models\User;
 use App\Models\Order;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use DB;
 
@@ -131,6 +132,22 @@ class CsController extends Controller
     public function riwayatorder(){
         $orders = Order::all();
         return view('/dashboard-cs/riwayat-order')->with(compact(array( 'orders' )));
+    }
+
+    public function profilcs(){
+        return view('/dashboard-cs/profil');
+    }
+
+    public function updateprofilcs(Request $request){
+        $user = User::find($request->user_id);
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'alamat' => $request->alamat,
+            'no_hp' => $request->no_hp,
+            'password' => Hash::make($request->password),
+        ]);
+        return redirect('/profilcs');
     }
 
 }
