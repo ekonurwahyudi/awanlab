@@ -232,12 +232,16 @@
                                                                 <a  href="/storage/sph/{{$filesph}}"><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-eye"></i>Lihat SPH</button></a><br><br>
                                                                 <div class="row">
 																	<div class="col-8">
-																	<input type="hidden" name="order_filesph" value="{{$filesph}}">
-																	<select name="order_statussph" id="" class="form-control">
-																		<option>Pilih Status</option>
+																	<input type="hidden" name="order_filesph" value="{{$filesph}}" >
+																	<select name="order_statussph" id="" class="form-control" onchange="statussph(this);">
+																		<option selected disabled>Pilih Status</option>
 																		<option value="diterima">Diterima</option>
 																		<option value="ditolak">Ditolak</option>
 																	</select>
+																	<br>
+																	<div id="jika-ditolak" style="display: none;" >
+																		<textarea class="form-control" name="alasansph"cols="3" placeholder="Alasan ditolak?" rows="3"></textarea>
+																	</div>
 																	</div>
 																	<div class="col-4">
 																	<button type="submit" class="btn btn-success btn-sm">Update</button>

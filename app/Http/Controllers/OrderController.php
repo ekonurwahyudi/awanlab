@@ -60,6 +60,7 @@ class OrderController extends Controller
         if($order = Orderkalibrasi::where($sph)){
             $order->update([
                 'order_statussph' => $request->order_statussph,
+                'order_alasansph' => $request->alasansph,
             ]);
             return redirect('/dashboard-sph-'.$request->user_id);
         }

@@ -25,6 +25,7 @@ class Orderkalibrasi extends Model
         'order_alamatser',
         'order_filesph',
         'order_statussph',
+        'order_alasansph',
         'order_filepo',
         'order_status',
         'order_teknisi',

@@ -15,5 +15,6 @@ class Perusahaan extends Model
         'alamat_perusahaan',
         'telepon_perusahaan',
         'npwp_perusahaan',
+        'fotonpwp',
     ];
 }

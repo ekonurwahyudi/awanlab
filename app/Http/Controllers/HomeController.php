@@ -57,13 +57,23 @@ class HomeController extends Controller
 
     public function updateuser(Request $request){
         $user = User::find($request->user_id);
-        $user->update([
-            'name' => $request->name,
-            'email' => $request->email,
-            'alamat' => $request->alamat,
-            'no_hp' => $request->no_hp,
-            'password' => Hash::make($request->password),
-        ]);
-        return redirect('/dashboard-profil');
+        if($request->password == $user->password){
+            $user->update([
+                'name' => $request->name,
+                'email' => $request->email,
+                'alamat' => $request->alamat,
+                'no_hp' => $request->no_hp,
+            ]);
+            return redirect('/dashboard-profil');
+        }else{
+            $user->update([
+                'name' => $request->name,
+                'email' => $request->email,
+                'alamat' => $request->alamat,
+                'no_hp' => $request->no_hp,
+                'password' => Hash::make($request->password),
+            ]);
+            return redirect('/dashboard-profil');
+        }
     }
 }

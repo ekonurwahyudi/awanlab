@@ -303,6 +303,15 @@
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="../halamanuser/js/data-table.js"></script>
+		<script>
+			function statussph(that) {
+				if (that.value == "ditolak") {
+					document.getElementById("jika-ditolak").style.display = "block";
+				} else {
+					document.getElementById("jika-ditolak").style.display = "none";
+				}
+			}
+		</script>
 		<!--end::Page Scripts-->
 	</body>
 	<!--end::Body-->

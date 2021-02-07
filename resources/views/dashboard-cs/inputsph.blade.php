@@ -302,7 +302,7 @@
                                         <br>
 
                                         <!-- Input REVISI SPH -->
-										<div class="card card-custom">
+										<div id="revisi" class="card card-custom" >
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
@@ -327,7 +327,7 @@
 
 											</div>
 								
-											<div class="card-body">
+											<div class="card-body" >
 												<!--begin: Datatable-->
 												<table  class="table table-bordered table-checkable" id="order-listing2">
 													<thead>
@@ -361,6 +361,7 @@
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Model: </b>{{$order->order_model}}<br>
                                                                 <b>&nbsp;&nbsp;&nbsp;&nbsp;S/N: </b>{{$order->order_sn}} <br>
                                                                 <b>&nbsp;&nbsp;&nbsp;&nbsp;No.CCL: </b>{{$order->order_ccl}} <br><br>
+																<b>@php $alasan = $order->order_alasansph @endphp</b>
                                                                             @endif
                                                                         @endif
                                                                     @endif
@@ -369,7 +370,10 @@
                                                                 @csrf
                                                             @endforeach
                                                             </td>
-                                                            <td style="text-align:center;"><b style="color:red;">Ditolak</b></td>
+                                                            <td style="text-align:center;">
+																<b style="color:red;">Ditolak</b><br>
+																Alasannya : {{$alasan}}
+															</td>
                                                             <td>
                                                                 <div class="custom-file">
 																@foreach ($users as $user)
@@ -394,7 +398,7 @@
 
 										<br>
 										<!-- Purchase Order (PO) -->
-										<div class="card card-custom">
+										<div id="po" class="card card-custom">
 											<div class="card-header flex-wrap py-5">
 												<div class="card-title">
 													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">

@@ -41,6 +41,8 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama Alat</th>
+                                <th>Model</th>
+                                <th>S/N</th>
                                 <th>Status Alat</th>
                             </tr>
                         </thead>
@@ -51,6 +53,8 @@
                             <tr>
                                 <td>{{$no++}}</td>
                                 <td>{{$order->order_namaalat}}</td>
+                                <td>{{$order->order_model}}</td>
+                                <td>{{$order->order_sn}}</td>
                                 <td>{{$order->order_status}}</td>
                             </tr>
                             @endif

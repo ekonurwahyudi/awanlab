@@ -182,7 +182,6 @@
 								
 								<!--end::Create-->
 								<!--begin::User-->
-
 								<div class="topbar-item">
 								@guest
 									@if (Route::has('login'))
@@ -246,12 +245,73 @@
 										<!--end::Nav-->
 									</div>
 								</div>
+								
 								@endguest
+								<div class="dropdown">
+									<!--begin::Toggle-->
+									<div class="topbar-item mr-4" data-toggle="dropdown" data-offset="10px,0px">
+										<div class="ml-1 btn btn-light-warning">
+											<i class="flaticon2-bell-2 icon-lg"></i>
+											
+											@if($notifsph >= 1)
+											<span class="navi-link-badge">
+												<span class="label label-warning label-rounded font-weight-bold">{{$notifsph}}</span>
+											</span>
+											@else
+											<span class="navi-link-badge">
+												<span class="label label-xl label-dot label-warning mb-3"></span>
+											</span>
+											@endif
+										</div>
+									</div>
+									<!--end::Toggle-->
+									<!--begin::Dropdown-->
+									<div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-md">
+										<!--begin::Navigation-->
+										<ul class="navi navi-hover py-5">
+											@if(count($isinotif) > 0)
+											@foreach ($isinotif as $isinotif)
+												@if($isinotif->order_statussph == "ditolak")
+											<li class="navi-item">
+												<a href="/inputsph-{{$isinotif->user_id}}/#revisi" class="navi-link">
+													<span class="navi-icon">
+														<i class="far fa-file-pdf text-danger icon-lg"></i>
+													</span>
+													<span class="navi-text">File SPH Telah ditolak oleh {{$isinotif->user->nama_perusahaan}}</span>
+												</a>
+											</li>
+												@endif
+												@if($isinotif->order_filepo != "")
+													@if($isinotif->order_filepo != "selesai")
+														<li class="navi-item">
+															<a href="/inputsph-{{$isinotif->user_id}}/#po" class="navi-link">
+																<span class="navi-icon">
+																	<i class="far fa-file-pdf text-success icon-lg"></i>
+																</span>
+																<span class="navi-text">File PO telah dikirim oleh {{$isinotif->user->nama_perusahaan}}</span>
+															</a>
+														</li>
+													@endif
+												@endif
+											@endforeach
+											
+											@else
+											<li class="navi-item">
+												<center><span>Tidak ada notifikasi</span></center>
+											</li>
+											@endif
+										</ul>
+										<a href="/notifikasi-cs" class="btn btn-light-warning btn-sm btn-block btn-square">Lihat Semua</a>
+										<!--end::Navigation-->
+									</div>
+									<!--end::Dropdown-->
+								</div>
 								<!--end::User-->
 								<!--begin::Notifications-->
 								
 								<!--end::Notifications-->
 							</div>
+							
 							<!--end::Topbar-->
 						</div>
 						<!--end::Container-->

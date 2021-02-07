@@ -188,7 +188,7 @@
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-													  @if($order->order_status == "Alat ke korlab")
+													  @if($order->order_status == "alat kekorlab")
 														<tr>
 															<td>{{$no++}}</td>
 															<td width="200px">

@@ -252,7 +252,7 @@
 												</button>
 											</div>
 											<div class="modal-body">
-												<form method="POST" action="/perusahaandaftar-proses">
+												<form method="POST" action="/perusahaandaftar-proses" enctype="multipart/form-data">
 													@csrf
 													<div class="form-group row">
 														<label for="nama_perusahaan" class="col-md-3 col-form-label">Nama Perusahaan:</label>
@@ -295,6 +295,19 @@
 															<input id="npwp_perusahaan" type="text" class="form-control @error('npwp_perusahaan') is-invalid @enderror" name="npwp_perusahaan" required autocomplete="npwp_perusahaan" autofocus>
 
 															@error('npwp_perusahaan')
+																<span class="invalid-feedback" role="alert">
+																	<strong>{{ $message }}</strong>
+																</span>
+															@enderror
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="npwp_perusahaan" class="col-md-3 col-form-label">Upload Foto NPWP:</label>
+														<div class="col-md-8">
+															<input id="fotonpwp" type="file" class="form-control @error('fotonpwp') is-invalid @enderror" name="fotonpwp" required autocomplete="fotonpwp" autofocus>
+															<p style="color:red;font-size:10px" class="ml-2">Format foto : JPG, JPEG, dan PNG</p>
+
+															@error('fotonpwp')
 																<span class="invalid-feedback" role="alert">
 																	<strong>{{ $message }}</strong>
 																</span>

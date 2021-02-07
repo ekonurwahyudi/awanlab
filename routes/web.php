@@ -105,54 +105,66 @@ Route::post('/feedback-input','FeedbackController@input');
 Route::get('/pengaturan/kritik-saran','FeedbackController@index');
 
 //Route Master User
-Route::middleware('role:superadmin')->get('/master-user','SuperadminController@user');
-Route::get('/tambah-user','SuperadminController@tambah');
-Route::post('/tambah-user/proses','SuperadminController@proses');
-Route::post('/hapus-user/{id}','SuperadminController@hapus');
-Route::get('/edit-user/{id}','SuperadminController@edit');
-Route::post('/update-user/{id}','SuperadminController@update');
-
+Route::middleware('role:superadmin')->group(function(){
+    Route::get('/master-user','SuperadminController@user');
+    Route::get('/tambah-user','SuperadminController@tambah');
+    Route::post('/tambah-user/proses','SuperadminController@proses');
+    Route::post('/hapus-user/{id}','SuperadminController@hapus');
+    Route::get('/edit-user/{id}','SuperadminController@edit');
+    Route::post('/update-user/{id}','SuperadminController@update');
+});
 //Tambah Perusahaan
 Route::post('/perusahaandaftar-proses','PerusahaanController@proses');
 
 //Halaman Dashboard Customer
-Route::middleware('role:customer')->get('/dashboard','HomeController@cus');
-Route::get('/dashboard-order','OrderController@index');
-Route::post('/order-proses','OrderController@proses');
-Route::get('/dashboard-sph-{user_id}','OrderController@sph');
-Route::post('/status-sph-{user_id}','OrderController@statussph');
-Route::post('/input-po-{user_id}','OrderController@inputpo');
-Route::get('/dashboard-profil','HomeController@profilcus');
-Route::post('/updateuser/{user_id}','HomeController@updateuser');
+Route::middleware('role:customer')->group(function(){
+    Route::get('/dashboard','HomeController@cus');
+    Route::get('/dashboard-order','OrderController@index');
+    Route::post('/order-proses','OrderController@proses');
+    Route::get('/dashboard-sph-{user_id}','OrderController@sph');
+    Route::post('/status-sph-{user_id}','OrderController@statussph');
+    Route::post('/input-po-{user_id}','OrderController@inputpo');
+    Route::get('/dashboard-profil','HomeController@profilcus');
+    Route::post('/updateuser/{user_id}','HomeController@updateuser');
+});
 
 //Halaman Dashboard Customer Service (CS)
-Route::middleware('role:cs')->get('/dashboard-cs','CsController@index');
-Route::get('/order-diproses','CsController@orderdiproses');
-Route::get('/cetak-kup/{user_id}','CsController@kup');
-Route::get('/cetak-pap/{user_id}','CsController@pap');
-Route::post('/statustgl-proses/{order_id}','CsController@statustgl');
-Route::post('/statusccl-proses/{order_id}','CsController@statusccl');
-Route::get('/form-ba-{user_id}','CsController@form_ba');
-Route::post('/cetak-ba-{user_id}','CsController@ba');
-Route::get('/inputsph-{user_id}','CsController@inputsph');
-Route::post('/proses-inputsph/{user_id}','CsController@prosessph');
-Route::post('/proses-revisisph/{user_id}','CsController@revisisph');
-Route::get('/riwayat-order','CsController@riwayatorder');
-Route::get('/profilcs','CsController@profilcs');
-Route::post('/updateprofilcs/{user_id}','CsController@updateprofilcs');
+Route::middleware('role:cs')->group(function(){
+    Route::get('/dashboard-cs','CsController@index');
+    Route::get('/order-diproses','CsController@orderdiproses');
+    Route::get('/cetak-kup/{user_id}','CsController@kup');
+    Route::get('/cetak-pap/{user_id}','CsController@pap');
+    Route::post('/statustgl-proses/{order_id}','CsController@statustgl');
+    Route::post('/statusccl-proses/{order_id}','CsController@statusccl');
+    Route::get('/form-ba-{user_id}','CsController@form_ba');
+    Route::post('/cetak-ba-{user_id}','CsController@ba');
+    Route::get('/inputsph-{user_id}','CsController@inputsph');
+    Route::post('/proses-inputsph/{user_id}','CsController@prosessph');
+    Route::post('/proses-revisisph/{user_id}','CsController@revisisph');
+    Route::get('/riwayat-order','CsController@riwayatorder');
+    Route::get('/profilcs','CsController@profilcs');
+    Route::post('/updateprofilcs/{user_id}','CsController@updateprofilcs');
+    Route::get('/notifikasi-cs','CsController@notifikasi');
+});
 
 //Halaman Dashboard Koordinator Teknik (Kortek)
-Route::middleware('role:kortek')->get('/dashboard-kortek','KortekController@index');
-Route::get('/monitoring-order','KortekController@monitoring');
-Route::post('/pilihteknisi/{order_id}','KortekController@pilihteknisi');
+Route::middleware('role:kortek')->group(function(){
+    Route::get('/dashboard-kortek','KortekController@index');
+    Route::get('/monitoring-order','KortekController@monitoring');
+    Route::post('/pilihteknisi/{order_id}','KortekController@pilihteknisi');
+});
 
 //Halaman Dashboard Teknisi
-Route::middleware('role:teknisi')->get('/dashboard-teknisi','TeknisiController@index');
-Route::get('/proses-kalibrasi','TeknisiController@proseskalibrasi');
-Route::post('/mulaikalibrasi/{order_id}','TeknisiController@mulaikalibrasi');
-Route::post('/cetaksertifikat/{order_id}','TeknisiController@cetaksertifikat');
-Route::get('/riwayat-kalibrasi','TeknisiController@riwayatkalibrasi');
+Route::middleware('role:teknisi')->group(function(){
+    Route::get('/dashboard-teknisi','TeknisiController@index');
+    Route::get('/proses-kalibrasi','TeknisiController@proseskalibrasi');
+    Route::post('/mulaikalibrasi/{order_id}','TeknisiController@mulaikalibrasi');
+    Route::post('/cetaksertifikat/{order_id}','TeknisiController@cetaksertifikat');
+    Route::get('/riwayat-kalibrasi','TeknisiController@riwayatkalibrasi');
+    });
 
 //Halaman Dahboard Admin
-Route::middleware('role:admin')->get('/dashboard-admin','AdminController@index');
-Route::post('/sertifikatselesai/{order_id}','AdminController@sertifikatselesai');
+Route::middleware('role:admin')->group(function(){
+    Route::get('/dashboard-admin','AdminController@index');
+    Route::post('/sertifikatselesai/{order_id}','AdminController@sertifikatselesai');
+});
