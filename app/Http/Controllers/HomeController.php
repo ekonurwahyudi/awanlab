@@ -76,4 +76,8 @@ class HomeController extends Controller
             return redirect('/dashboard-profil');
         }
     }
+
+    public function feedback(){
+        return view('/dashboarduser/feedback');
+    }
 }

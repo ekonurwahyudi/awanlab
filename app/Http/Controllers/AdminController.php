@@ -29,4 +29,8 @@ class AdminController extends Controller
 
         return redirect("/dashboard-admin");
     }
+
+    public function feedback(){
+        return view('/dashboard-admin/feedback');
+    }
 }

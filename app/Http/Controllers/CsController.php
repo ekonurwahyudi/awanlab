@@ -184,4 +184,10 @@ class CsController extends Controller
         return view('/dashboard-cs/notifikasi',compact('notifikasipo'))->with(compact(array('notifsph','isinotif','notifikasi')));
     }
 
+    public function feedback(){
+        $notifsph = Orderkalibrasi::where('order_statussph', "ditolak")->distinct('user_id')->count();
+        $isinotif = Order::paginate(3)->unique('user_id');
+        return view('/dashboard-cs/feedback')->with(compact(array('notifsph','isinotif')));
+    }
+
 }

@@ -35,4 +35,8 @@ class KortekController extends Controller
 
         return redirect("/monitoring-order");
     }
+
+    public function feedback(){
+        return view('/dashboard-kortek/feedback');
+    }
 }

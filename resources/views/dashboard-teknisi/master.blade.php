@@ -219,6 +219,9 @@
 											<!--begin::Item-->
 											<li class="navi-item">
 												<a href="#" class="navi-link">
+													<span class="navi-icon">
+														<i class="far fa-user"></i>
+													</span>
 													<span class="navi-text">Profil</span>
 												</a>
 											</li>
@@ -226,7 +229,18 @@
 											<!--begin::Item-->
 											<li class="navi-item active">
 												<a href="#" class="navi-link">
+													<span class="navi-icon">
+														<i class="fas fa-fingerprint"></i>
+													</span>
 													<span class="navi-text">Ganti Password</span>
+												</a>
+											</li>
+											<li class="navi-item active">
+												<a href="/feedbackteknisi" class="navi-link">
+													<span class="navi-icon">
+														<i class="fas fa-mail-bulk"></i>
+													</span>
+													<span class="navi-text">Feedback</span>
 												</a>
 											</li>
 											<!--end::Item-->
@@ -235,6 +249,9 @@
 												<a class="dropdown-item" href="{{ route('logout') }}"
 													onclick="event.preventDefault();
 																	document.getElementById('logout-form').submit();">
+																	&nbsp;<span class="navi-icon">
+																		<i class="fas fa-sign-out-alt mr-2"></i>
+																	</span>
 														{{ __('Logout') }}
 												</a>
 
@@ -312,6 +329,27 @@
 		<script src="https://tympanus.net/Tutorials/CustomFileInputs/js/custom-file-input.js"></script>
 		<!--end::Page Scripts-->
 		<!--end::Page Scripts-->
+		<script>
+			function feedback(that) {
+				if (that.value == "error web") {
+					document.getElementById("jika-error").style.display = "block";
+				} else {
+					document.getElementById("jika-error").style.display = "none";
+				}
+			}
+		</script>
+		<script>
+			//message with toastr
+			@if(session()->has('success'))
+					
+				toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+			@elseif(session()->has('error'))
+
+				toastr.error('{{ session('error') }}', 'GAGAL!'); 
+						
+			@endif
+		</script>
 		
 	</body>
 	<!--end::Body-->

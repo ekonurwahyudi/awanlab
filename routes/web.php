@@ -126,6 +126,7 @@ Route::middleware('role:customer')->group(function(){
     Route::post('/input-po-{user_id}','OrderController@inputpo');
     Route::get('/dashboard-profil','HomeController@profilcus');
     Route::post('/updateuser/{user_id}','HomeController@updateuser');
+    Route::get('/feedback','HomeController@feedback');
 });
 
 //Halaman Dashboard Customer Service (CS)
@@ -145,13 +146,16 @@ Route::middleware('role:cs')->group(function(){
     Route::get('/profilcs','CsController@profilcs');
     Route::post('/updateprofilcs/{user_id}','CsController@updateprofilcs');
     Route::get('/notifikasi-cs','CsController@notifikasi');
+    Route::get('/feedbackcs','CsController@feedback');
 });
+Route::post('/input-feedback','FeedbackwebController@inputfeedback');
 
 //Halaman Dashboard Koordinator Teknik (Kortek)
 Route::middleware('role:kortek')->group(function(){
     Route::get('/dashboard-kortek','KortekController@index');
     Route::get('/monitoring-order','KortekController@monitoring');
     Route::post('/pilihteknisi/{order_id}','KortekController@pilihteknisi');
+    Route::get('/feedbackkortek','KortekController@feedback');
 });
 
 //Halaman Dashboard Teknisi
@@ -161,10 +165,12 @@ Route::middleware('role:teknisi')->group(function(){
     Route::post('/mulaikalibrasi/{order_id}','TeknisiController@mulaikalibrasi');
     Route::post('/cetaksertifikat/{order_id}','TeknisiController@cetaksertifikat');
     Route::get('/riwayat-kalibrasi','TeknisiController@riwayatkalibrasi');
-    });
+    Route::get('/feedbackteknisi','TeknisiController@feedback');
+});
 
 //Halaman Dahboard Admin
 Route::middleware('role:admin')->group(function(){
     Route::get('/dashboard-admin','AdminController@index');
     Route::post('/sertifikatselesai/{order_id}','AdminController@sertifikatselesai');
+    Route::get('/feedbackadmin','AdminController@feedback');
 });

@@ -50,4 +50,8 @@ class TeknisiController extends Controller
         $users = User::all();
         return view('/dashboard-teknisi/riwayat-kalibrasi',['users' => $users])->with(compact(array( 'orders' )));
     }
+
+    public function feedback(){
+        return view('/dashboard-teknisi/feedback');
+    }
 }
