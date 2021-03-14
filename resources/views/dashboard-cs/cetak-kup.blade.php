@@ -9,7 +9,7 @@
 
 <body spellcheck="false">
     @foreach ($users as $user)
-    <p><img src="https://myfiles.space/user_files/75281_7c976beaf89e5a7c/75281_custom_files/img1611218655.PNG" style="width: 927px;"></p>
+    <p><img src="/images/kup.png" style="width: 97%;"></p>
     <table style="width: 97%; border-collapse: collapse; border: 1px solid rgb(255, 255, 255);">
         <tbody>
             <tr>

@@ -446,10 +446,11 @@
 		<script src="../halamanadmin/plugins/global/plugins.bundle.js"></script>
 		<script src="../halamanadmin/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="../halamanadmin/js/scripts.bundle.js"></script>
+		<script src="../../halamanadmin/js/pages/crud/ktdatatable/base/html-table.js?v=7.1.7"></script>
 		<script src="../halamanadmin/plugins/custom/datatables/datatables.bundle.js"></script>
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-        <script src="../halamanadmin/js/data-table.js"></script>
+        <script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
 		<!-- <script src="halamanadmin/js/pages/widgets.js"></script> -->
 	</body>
 </html>

@@ -185,7 +185,7 @@
 															<th>No</th>
                                                             <th>Data Customer</th>
 															<th>Detail Alat</th>
-															<th>Nomor CCL</th>
+															<th>Nomor Order</th>
 															<th>Input SPH</th>
 															<th>BA Masuk</th>
                                                             <th>Status Alat</th>
@@ -220,7 +220,7 @@
 															<form action="/statusccl-proses/{{$order->order_id}}" method="post">
 															@csrf
 																<td style="text-align:center;">
-																	<input type="text" name="order_ccl" class="form-control" value="{{$order->order_ccl}}" placeholder="Input CCL">
+																	<input type="text" name="order_ccl" class="form-control" value="{{$order->order_ccl}}" placeholder="No. Order">
 																	<button type="submit" class="btn btn-danger btn-sm">Update</button>
 																</td>
 																<td>	
@@ -278,7 +278,7 @@
 															<th>No</th>
                                                             <th>Data Customer</th>
 															<th>Detail Alat</th>
-															<th>Nomor CCL</th>
+															<th>Nomor Order</th>
 															<th>BA Keluar</th>
 															<th>Status Alat</th>
 															<th>Tanggal Order</th>

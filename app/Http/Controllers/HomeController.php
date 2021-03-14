@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Orderkalibrasi;
 use App\Models\User;
+use App\Models\Order;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facedes\Storage;
@@ -39,7 +40,8 @@ class HomeController extends Controller
     }
 
     public function awanlab(){
-        return view('awanlab/index');
+        $orders = Order::all();
+        return view('awanlab/index',compact('orders'));
     }
 
     public function web(){

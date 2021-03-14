@@ -27,7 +27,7 @@
                             <form action="/check-order" role="search" method="get" class="search-form">
                             @csrf
                                 <label>
-                                    <span style="color:black; font-size: 16px;"><b><i class="fa fa-search"></i> Masukkan Nomor CCL anda</b></span>
+                                    <span style="color:black; font-size: 16px;"><b><i class="fa fa-search"></i> Masukkan Nomor Order anda</b></span>
                                     <input type="search" class="input-text" name="order_ccl" placeholder="Contoh : CCL-21-230">
                                 </label>
                                 <button type="submit" class="btn btn-danger btn-lg" value="Search"><i class="ti ti-search" aria-hidden="true"></i></button>

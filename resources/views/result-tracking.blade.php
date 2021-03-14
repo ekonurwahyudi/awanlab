@@ -27,7 +27,7 @@
                             <form action="/check-order" role="search" method="get" class="search-form">
                             @csrf
                                 <label>
-                                    <span style="color:black; font-size: 16px;"><b><i class="fa fa-search"></i> Masukkan Nomor CCL anda</b></span>
+                                    <span style="color:black; font-size: 16px;"><b><i class="fa fa-search"></i> Masukkan Nomor Order anda</b></span>
                                     <input type="search" class="input-text" name="order_ccl" value="{{$noccl}}" placeholder="Contoh : CCL-21-230">
                                 </label>
                                 <button type="submit" class="btn btn-danger btn-lg" value="Search"><i class="ti ti-search" aria-hidden="true"></i></button>
@@ -44,16 +44,20 @@
                                 <b>Merek   :</b> {{$hasil->order_merek}}<br>
                                 <b>Model   :</b> {{$hasil->order_model}}<br>
                                 <b>S/N   :</b> {{$hasil->order_sn}}<br>
-                                <b>Nomor CCL   :</b> {{$hasil->order_ccl}}<br>
+                                <b>Nomor Order   :</b> {{$hasil->order_ccl}}<br>
                                 <b>Tanggal Order :</b> {{$hasil->created_at}} <br>
                                 <b>Update Status :</b> {{$hasil->updated_at}} <br>
+                                @if($hasil->order_status == "")
+                                <b>Status Alat :</b> <b style="color:red;">Orderan Baru Masuk</b>
+                                @else
                                 <b>Status Alat :</b> <b style="color:red;">{{$hasil->order_status}}</b>
+                                @endif
                             </span>
                             </div>
                             @endforeach
                             @else
                             <div style="background-color: #f6faff;padding: 15px; width:470px;color:black; ">
-                                <span>Nomor <b>{{$noccl}}</b> tidak ditemukan</span>
+                                <span>Nomor Order <b>{{$noccl}}</b> tidak ditemukan</span>
                             </div>
                             @endif
                         </div>                    

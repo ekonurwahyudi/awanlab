@@ -171,7 +171,7 @@
                                                                 </g>
 															</svg>
 															<!--end::Svg Icon-->
-														</span>&nbsp;Order Masuk NON Telkom</h2>
+														</span>&nbsp;Order Masuk NON Telkom (InHouse)</h2>
 												</div>
 												
 											</div>
@@ -194,6 +194,7 @@
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
 													  @if($order->order_status == "")
+													     @if($order->order_jeniskal == "inhouse")
 														<tr>
 															<td>{{$no++}}</td>
 															<td>
@@ -216,7 +217,8 @@
 															</td>
 															<td width="100px" style="text-align:center;">
 																<a href="/cetak-kup/{{$order->user_id}}" target="_blank" class="btn btn-success btn-sm">KUP</a>
-																<a href="/cetak-pap/{{$order->user_id}}" target="_blank" class="btn btn-danger btn-sm">PAP</a>
+																<a href="/cetak-pap/{{$order->user_id}}" target="_blank" class="btn btn-danger btn-sm">PAP</a><br><br>
+																<a href="" target="_blank" class="btn btn-warning btn">Upload</a>
 															</td>
 															<form action="/statustgl-proses/{{$order->order_id}}" method="post">
 															@csrf
@@ -234,6 +236,110 @@
 															<td>{{$order->created_at}}</td>
 															
 														</tr>
+															@endif
+														@endif
+													@endif
+														
+													@endforeach
+													</tbody>
+												</table>
+												<!--end: Datatable-->
+											</div>
+										</div>
+										<!--end::Card-->
+									</div>
+									<!--end::Container-->
+								</div>
+								<br>
+								<br>
+								<div class="d-flex flex-column-fluid">
+									<!--begin::Container-->
+									<div class="container">
+										<!--begin::Notice-->
+										
+										<!--end::Notice-->
+										<!--begin::Card-->
+										<div class="card card-custom">
+											<div class="card-header flex-wrap py-5">
+												<div class="card-title">
+													<h2 class="d-flex align-items-center text-dark font-weight-bold my-1 mr-3">
+														<span class="svg-icon svg-icon-danger svg-icon-2x">
+															<!--begin::Svg Icon | path:../halamanuser/media/svg/icons/Design/Flatten.svg-->
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 23 23" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"/>
+                                                                    <path d="M22,17 L22,21 C22,22.1045695 21.1045695,23 20,23 L4,23 C2.8954305,23 2,22.1045695 2,21 L2,17 L6.27924078,17 L6.82339262,18.6324555 C7.09562072,19.4491398 7.8598984,20 8.72075922,20 L15.381966,20 C16.1395101,20 16.8320364,19.5719952 17.1708204,18.8944272 L18.118034,17 L22,17 Z" fill="#000000"/>
+                                                                    <path d="M2.5625,15 L5.92654389,9.01947752 C6.2807805,8.38972356 6.94714834,8 7.66969497,8 L16.330305,8 C17.0528517,8 17.7192195,8.38972356 18.0734561,9.01947752 L21.4375,15 L18.118034,15 C17.3604899,15 16.6679636,15.4280048 16.3291796,16.1055728 L15.381966,18 L8.72075922,18 L8.17660738,16.3675445 C7.90437928,15.5508602 7.1401016,15 6.27924078,15 L2.5625,15 Z" fill="#000000" opacity="0.3"/>
+                                                                    <path d="M11.1288761,0.733697713 L11.1288761,2.69017121 L9.12120481,2.69017121 C8.84506244,2.69017121 8.62120481,2.91402884 8.62120481,3.19017121 L8.62120481,4.21346991 C8.62120481,4.48961229 8.84506244,4.71346991 9.12120481,4.71346991 L11.1288761,4.71346991 L11.1288761,6.66994341 C11.1288761,6.94608579 11.3527337,7.16994341 11.6288761,7.16994341 C11.7471877,7.16994341 11.8616664,7.12798964 11.951961,7.05154023 L15.4576222,4.08341738 C15.6683723,3.90498251 15.6945689,3.58948575 15.5161341,3.37873564 C15.4982803,3.35764848 15.4787093,3.33807751 15.4576222,3.32022374 L11.951961,0.352100892 C11.7412109,0.173666017 11.4257142,0.199862688 11.2472793,0.410612793 C11.1708299,0.500907473 11.1288761,0.615386087 11.1288761,0.733697713 Z" fill="#000000" fill-rule="nonzero" transform="translate(11.959697, 3.661508) rotate(-270.000000) translate(-11.959697, -3.661508) "/>
+                                                                </g>
+															</svg>
+															<!--end::Svg Icon-->
+														</span>&nbsp;Order Masuk NON Telkom (OnSite)</h2>
+												</div>
+												
+											</div>
+											<div class="card-body">
+												<!--begin: Datatable-->
+												<table  class="table table-bordered table-checkable" id="order-listing2">
+													<thead>
+														<tr>
+															<th>No</th>
+                                                            <th>Data Customer</th>
+															<th>Detail Alat</th>
+															<th>Cetak KUP/PAP</th>
+															<th>Status Alat</th>
+															<th>Tanggal Antar</th>
+															<th>Tanggal Order</th>
+														</tr>
+													</thead>
+													<tbody>
+													@php $no = 1; @endphp
+													@foreach ($orders as $order)
+													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
+													  @if($order->order_status == "")
+													     @if($order->order_jeniskal == "onsite")
+														<tr>
+															<td>{{$no++}}</td>
+															<td>
+															<b>Nama :</b> {{$order->user->name}} <br>
+															<b>No.Hp :</b> {{$order->user->no_hp}} <br>
+															<b>Email :</b> {{$order->user->email}} <br>
+															<b>Perusahaan :</b> {{$order->user->nama_perusahaan}} <br>
+															<b>Alamat :</b> {{$order->user->alamat}}
+															</td>
+															<td width="215px">
+																<b>Nama Alat: </b>{{$order->order_namaalat}}<br>
+																<b>Merek: </b>{{$order->order_merek}}<br>
+																<b>Model: </b>{{$order->order_model}}<br>
+																<b>S/N: </b>{{$order->order_sn}}<br>
+																<b>Jumlah: </b>{{$order->order_jumlah}} Unit<br>
+																<b>Lolasi Lab: </b>{{$order->order_lokasilab}}<br>
+																<b>Jenis kalibrasi: </b>{{$order->order_jeniskal}}<br>
+																<b>Nama pada sertifikat: </b>{{$order->order_namaser}}<br>
+																<b>Alamat pada sertifikat: </b>{{$order->order_alamatser}}<br>
+															</td>
+															<td width="100px" style="text-align:center;">
+																<a href="/cetak-kup/{{$order->user_id}}" target="_blank" class="btn btn-success btn-sm">KUP</a>
+																<a href="/cetak-pap/{{$order->user_id}}" target="_blank" class="btn btn-danger btn-sm">PAP</a><br><br>
+																<a href="" target="_blank" class="btn btn-warning btn">Upload</a>
+															</td>
+															<form action="/statustgl-proses/{{$order->order_id}}" method="post">
+															@csrf
+																<td width="140px" style="text-align:center;">
+																	<select name="order_status" class="form-control" id="">
+																		<option value="">Pilih Status</option>
+																		<option value="order diproses">Order Diproses</option>
+																	</select>
+																</td>
+																<td width="130px" style="text-align:center;">
+																	<input type="text" name="order_tglantar" class="form-control" id="kt_datepicker_1" readonly="readonly" placeholder="input tanggal" />
+																	<button  type="submit" class="btn btn-danger btn-sm">Update</button>
+																</td>
+															</form>
+															<td>{{$order->created_at}}</td>
+															
+														</tr>
+															@endif
 														@endif
 													@endif
 														

@@ -232,7 +232,7 @@
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Merek: </b>{{$order->order_merek}}<br>
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Model: </b>{{$order->order_model}}<br>
                                                                 <b>&nbsp;&nbsp;&nbsp;&nbsp;S/N: </b>{{$order->order_sn}} <br>
-                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;No.CCL: </b>{{$order->order_ccl}} <br><br>
+                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;No.Order: </b>{{$order->order_ccl}} <br><br>
                                                                                 @endif
                                                                             @endif
                                                                         @endif
@@ -360,7 +360,7 @@
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Merek: </b>{{$order->order_merek}}<br>
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Model: </b>{{$order->order_model}}<br>
                                                                 <b>&nbsp;&nbsp;&nbsp;&nbsp;S/N: </b>{{$order->order_sn}} <br>
-                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;No.CCL: </b>{{$order->order_ccl}} <br><br>
+                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;No.Order: </b>{{$order->order_ccl}} <br><br>
 																<b>@php $alasan = $order->order_alasansph @endphp</b>
                                                                             @endif
                                                                         @endif
@@ -455,7 +455,7 @@
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Merek: </b>{{$order->order_merek}}<br>
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Model: </b>{{$order->order_model}}<br>
                                                                 <b>&nbsp;&nbsp;&nbsp;&nbsp;S/N: </b>{{$order->order_sn}} <br>
-                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;No.CCL: </b>{{$order->order_ccl}} <br><br>
+                                                                <b>&nbsp;&nbsp;&nbsp;&nbsp;No.Order: </b>{{$order->order_ccl}} <br><br>
 																@php $filepo = $order->order_filepo @endphp
                                                                             @endif
                                                                         @endif
