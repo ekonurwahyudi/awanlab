@@ -38,6 +38,7 @@ class OrderController extends Controller
             'order_lokasilab'  => $request->order_lokasilab,
             'order_jeniskal'  => $request->order_jeniskal,
             'order_namaser'  => $request->order_namaser,
+            'order_status'  => "orderan baru",
             'order_alamatser'  => $request->order_alamatser
         ]);
 

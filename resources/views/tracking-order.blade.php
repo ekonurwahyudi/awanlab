@@ -31,6 +31,7 @@
                                     <input type="search" class="input-text" name="order_ccl" placeholder="Contoh : CCL-21-230">
                                 </label>
                                 <button type="submit" class="btn btn-danger btn-lg" value="Search"><i class="ti ti-search" aria-hidden="true"></i></button>
+                                <br><span style="color:red;font-size:12px;"><b>*Note:</b>  Jika order kalibrasi tidak menggunakan web, maka hasilnya <b>tidak ada.</b></span>
                             </form>
                             <br>
                         </div>                    

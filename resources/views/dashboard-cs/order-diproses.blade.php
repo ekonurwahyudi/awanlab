@@ -288,7 +288,7 @@
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-														@if($order->order_status != "")
+														@if($order->order_status != "orderan baru")
 															@if($order->order_status != "order diproses")
 																@if($order->order_status != "selesai")
 														<tr>

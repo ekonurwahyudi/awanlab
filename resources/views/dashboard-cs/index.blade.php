@@ -193,7 +193,7 @@
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-													  @if($order->order_status == "")
+													  @if($order->order_status == "orderan baru")
 													     @if($order->order_jeniskal == "inhouse")
 														<tr>
 															<td>{{$no++}}</td>
@@ -296,7 +296,7 @@
 													@php $no = 1; @endphp
 													@foreach ($orders as $order)
 													@if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-													  @if($order->order_status == "")
+													  @if($order->order_status == "orderan baru")
 													     @if($order->order_jeniskal == "onsite")
 														<tr>
 															<td>{{$no++}}</td>

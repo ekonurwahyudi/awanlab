@@ -224,7 +224,7 @@
                                                                 @php $no= 1; @endphp
                                                                 @foreach ($orders as $order)
                                                                 @if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-                                                                    @if($order->order_status != "")
+                                                                    @if($order->order_status != "orderan baru")
                                                                         @if($order->order_status != "selesai")
                                                                             @if($order->order_statussph == "")
                                                                                 @if($order->order_filesph == "")
@@ -273,7 +273,7 @@
                                                                 @php $no= 1; @endphp
                                                                 @foreach ($orders as $order)
                                                                 @if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-                                                                    @if($order->order_status != "")
+                                                                    @if($order->order_status != "orderan baru")
                                                                         @if($order->order_status != "selesai")
                                                                             @if($order->order_statussph == "")
                                                                                @if($order->order_filesph != "")
@@ -353,7 +353,7 @@
                                                                 @php $no= 1; @endphp
                                                                 @foreach ($orders as $order)
                                                                 @if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-                                                                    @if($order->order_status != "")
+                                                                    @if($order->order_status != "orderan baru")
                                                                         @if($order->order_status != "selesai")
                                                                             @if($order->order_statussph == "ditolak")
 																<b>{{$no++}}. Nama Alat: </b>{{$order->order_namaalat}}<br>
@@ -448,7 +448,7 @@
                                                                 @php $no= 1; @endphp
                                                                 @foreach ($orders as $order)
                                                                 @if(Auth::user()->lokasi_kerja == $order->order_lokasilab)
-                                                                    @if($order->order_status != "")
+                                                                    @if($order->order_status != "orderan baru")
                                                                         @if($order->order_status != "selesai")
                                                                             @if($order->order_filepo != "")
 																<b>{{$no++}}. Nama Alat: </b>{{$order->order_namaalat}}<br>

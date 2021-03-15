@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<title>Dashboard Awanlab</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<link href="../halamanadmin/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../halamanadmin/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../halamanadmin/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
@@ -443,6 +444,7 @@
 			<!--end::Page-->
 		</div>
 		<!--end::Main-->
+
 		<script src="../halamanadmin/plugins/global/plugins.bundle.js"></script>
 		<script src="../halamanadmin/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="../halamanadmin/js/scripts.bundle.js"></script>
