@@ -88,7 +88,7 @@ class CsController extends Controller
     public function inputsph(Request $request){
         $orders = Orderkalibrasi::where('user_id', $request->user_id)->get();
         $users = User::where('id', $request->user_id)->get();
-        $countsph = ['user_id' => $request->user_id, 'order_statussph' => NULL, 'order_filesph' => NULL];
+        $countsph = ['user_id' => $request->user_id, 'order_statussph' => NULL, 'order_filesph' => NULL,'order_status' => "order diproses"];
         $sedangsph = ['user_id' => $request->user_id, 'order_statussph' => NULL];
         $revisisph = ['user_id' => $request->user_id, 'order_statussph' => "ditolak"];
         $po = ['user_id' => $request->user_id];
@@ -130,7 +130,7 @@ class CsController extends Controller
         $filesph = 'SPH_'.$namaperusahaan.'_'.time().'.pdf'; 
         $path_id = $request->file('order_filesph')->storeAs('public/sph', $filesph);
 
-        $sph = ['user_id' => $request->user_id, 'order_statussph' => "ditolak"];
+        $sph = ['user_id' => $request->user_id, 'order_statussph' => "ditolak",'order_status' => "order diproses"];
         if($order = Orderkalibrasi::where($sph)){
                 $order->update([
                     'order_filesph' => $filesph,

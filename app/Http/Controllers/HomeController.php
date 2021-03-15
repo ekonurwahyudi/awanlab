@@ -90,8 +90,20 @@ class HomeController extends Controller
     public function feedback(){
         return view('/dashboarduser/feedback');
     }
-    public function monitoring(){
+    public function monitoring_jakarta(){
         $orders = Order::all();
         return view('/awanlab/monitoringorder/labjakarta',compact('orders'));
+    }
+    public function monitoring_surabaya(){
+        $orders = Order::all();
+        return view('/awanlab/monitoringorder/labsurabaya',compact('orders'));
+    }
+    public function monitoring_medan(){
+        $orders = Order::all();
+        return view('/awanlab/monitoringorder/labmedan',compact('orders'));
+    }
+    public function monitoring_makassar(){
+        $orders = Order::all();
+        return view('/awanlab/monitoringorder/labmakassar',compact('orders'));
     }
 }

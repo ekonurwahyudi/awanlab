@@ -112,7 +112,10 @@ Route::middleware('role:superadmin')->group(function(){
     Route::post('/hapus-user/{id}','SuperadminController@hapus');
     Route::get('/edit-user/{id}','SuperadminController@edit');
     Route::post('/update-user/{id}','SuperadminController@update');
-    Route::get('/monitoring-jakarta','HomeController@monitoring');
+    Route::get('/monitoring-jakarta','HomeController@monitoring_jakarta');
+    Route::get('/monitoring-surabaya','HomeController@monitoring_surabaya');
+    Route::get('/monitoring-medan','HomeController@monitoring_medan');
+    Route::get('/monitoring-makassar','HomeController@monitoring_makassar');
 });
 //Tambah Perusahaan
 Route::post('/perusahaandaftar-proses','PerusahaanController@proses');

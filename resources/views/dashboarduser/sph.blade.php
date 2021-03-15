@@ -201,15 +201,15 @@
 													</thead>
 													<tbody>
 													
-													@if ($count >= 1)
+													@if ($count > 1)
 														<tr>
 															<td width="230px">
 															@php $no = 1; @endphp
 															@foreach ($orders as $order)
 															@php $noid = $order->order_id; @endphp
-															@php $filesph ="" @endphp
+															@php $filesph2 = $order->order_filesph @endphp
 															@if(Auth::user()->id == $order->user_id )
-																	@if($order->order_status != "")
+																	@if($order->order_status != "oderan baru")
                                                                         @if($order->order_status != "selesai")
                                                                             @if($order->order_statussph == "")
                                                                                @if($order->order_filesph != "")
@@ -218,7 +218,7 @@
 																<b>&nbsp;&nbsp;&nbsp;&nbsp;Model: </b>{{$order->order_model}}<br>
                                                                 <b>&nbsp;&nbsp;&nbsp;&nbsp;S/N: </b>{{$order->order_sn}} <br>
                                                                 <b style="color:red;">&nbsp;&nbsp;&nbsp;&nbsp;No.CCL: </b>{{$order->order_ccl}} <br><br>
-																<b>@php $filesph = $order->order_filesph @endphp</b>
+																<b>@php $filesph2 = $order->order_filesph @endphp</b>
 																				@endif
 																			@endif
 																		@endif
@@ -229,10 +229,10 @@
 																@endforeach
 															</td>
                                                             <td style="text-align:center;">
-                                                                <a  href="/storage/sph/{{$filesph}}"><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-eye"></i>Lihat SPH</button></a><br><br>
+                                                                <a  href="/storage/sph/{{$filesph2}}"><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-eye"></i>Lihat SPH</button></a><br><br>
                                                                 <div class="row">
 																	<div class="col-8">
-																	<input type="hidden" name="order_filesph" value="{{$filesph}}" >
+																	<input type="hidden" name="order_filesph" value="{{$filesph2}}" >
 																	<select name="order_statussph" id="" class="form-control" onchange="statussph(this);">
 																		<option selected disabled>Pilih Status</option>
 																		<option value="diterima">Diterima</option>
@@ -261,7 +261,7 @@
 															@foreach ($orders as $order)
 															@php $noid = $order->order_id; @endphp
 															@if(Auth::user()->id == $order->user_id )
-																	@if($order->order_status != "")
+																	@if($order->order_status != "orderan baru")
                                                                         @if($order->order_status != "selesai")
                                                                             @if($order->order_statussph == "ditolak")
                                                                                @if($order->order_filesph != "")
@@ -293,7 +293,7 @@
 															@foreach ($orders as $order)
 															@php $noid = $order->order_id; @endphp
 															@if(Auth::user()->id == $order->user_id )
-																	@if($order->order_status != "")
+																	@if($order->order_status != "orderan baru")
                                                                         @if($order->order_status != "selesai")
                                                                             @if($order->order_statussph == "diterima")
                                                                                @if($order->order_po == "")

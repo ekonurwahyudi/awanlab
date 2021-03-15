@@ -1,6 +1,6 @@
 
 @extends('awanlab/master')
-@section('judul_halaman', 'Monitoring Order Lab Jakarta')
+@section('judul_halaman', 'Monitoring Order Lab Medan')
 @section('konten')
     <div class="d-flex flex-column-fluid">
 		<div class="container">
@@ -48,7 +48,7 @@
                                 @php $no = 1; @endphp
                                 @foreach ($orders as $order)
                                     @if($order->order_status == "orderan baru")
-                                        @if($order->order_lokasilab == "Lab Jakarta")
+                                        @if($order->order_lokasilab == "Lab Medan")
                                     <tr>
                                         <td>{{$no++}}</td>
                                         <td width="200px">
@@ -114,7 +114,7 @@
                                 @foreach ($orders as $order)
                                     @if($order->order_status != "orderan baru")
                                         @if($order->order_status != "selesai")
-                                            @if($order->order_lokasilab == "Lab Jakarta")
+                                            @if($order->order_lokasilab == "Lab Medan")
                                     <tr>
                                         <td>{{$no++}}</td>
                                         <td width="200px">
@@ -181,7 +181,7 @@
                                 @foreach ($orders as $order)
                                     @if($order->order_teknisi != "")
                                         @if($order->order_status != "selesai")
-                                                @if($order->order_lokasilab == "Lab Jakarta")
+                                                @if($order->order_lokasilab == "Lab Medan")
                                     <tr>
                                         <td>{{$no++}}</td>
                                         <td width="200px">{{$order->order_teknisi}}</td>

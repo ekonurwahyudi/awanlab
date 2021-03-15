@@ -155,7 +155,7 @@
 														</a>
 													</li>
 													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-														<a href="../pengaturan/ruanglingkup" class="menu-link">
+														<a href="/monitoring-surabaya" class="menu-link">
 															<span class="svg-icon menu-icon">
 																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -170,7 +170,7 @@
 														</a>
 													</li>
 													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-														<a href="../pengaturan/ruanglingkup" class="menu-link">
+														<a href="/monitoring-medan" class="menu-link">
 															<span class="svg-icon menu-icon">
 																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -185,7 +185,7 @@
 														</a>
 													</li>
 													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-														<a href="../pengaturan/ruanglingkup" class="menu-link">
+														<a href="/monitoring-makassar" class="menu-link">
 															<span class="svg-icon menu-icon">
 																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">

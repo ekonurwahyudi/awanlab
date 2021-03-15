@@ -47,7 +47,7 @@ class OrderController extends Controller
 
     public function sph(Request $request){
         $orders = Orderkalibrasi::where('user_id', $request->user_id)->get();
-        $countsph = ['user_id' => $request->user_id, 'order_statussph' => NULL];
+        $countsph = ['user_id' => $request->user_id, 'order_statussph' => NULL,'order_status' => "order diproses"];
         $revisisph = ['user_id' => $request->user_id , 'order_statussph' => "ditolak"];
         $filepo = ['user_id' => $request->user_id , 'order_statussph' => "diterima",'order_filepo' => NULL];
         $count = Orderkalibrasi::where($countsph)->count();
@@ -57,7 +57,7 @@ class OrderController extends Controller
     }
 
     public function statussph(Request $request){
-        $sph = ['user_id' => $request->user_id, 'order_statussph' => NULL];
+        $sph = ['user_id' => $request->user_id, 'order_statussph' => NULL,'order_status' => "order diproses"];
         if($order = Orderkalibrasi::where($sph)){
             $order->update([
                 'order_statussph' => $request->order_statussph,
@@ -72,7 +72,7 @@ class OrderController extends Controller
         $order_filepo = $request->file('order_filepo');
         $filepo = 'PO_'.$namaperusahaan.'_'.time().'.pdf'; 
         $path_id = $request->file('order_filepo')->storeAs('public/PO', $filepo);
-        $po = ['user_id' => $request->user_id, 'order_filepo' => NULL];
+        $po = ['user_id' => $request->user_id, 'order_filepo' => NULL,'order_status' => "order diproses"];
         if($order = Orderkalibrasi::where($po)){
                 $order->update([
                     'order_filepo' => $filepo,

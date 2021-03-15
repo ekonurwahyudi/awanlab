@@ -10,7 +10,7 @@
 					<div class="row">
 						<div class="col-xl-3">
 							<!--begin::Stats Widget 29-->
-							<div class="card card-custom bgi-no-repeat card-stretch gutter-b" style="background-position: right top; background-size: 30% auto; background-image: url(/metronic/theme/html/demo1/dist/assets/media/svg/shapes/abstract-1.svg)">
+							<div class="card card-custom bgi-no-repeat card-stretch gutter-b" style="background-position: right top; background-size: 30% auto; background-image: url(/halamanadmin/media/svg/shapes/abstract-1.svg)">
 								<!--begin::Body-->
 								<div class="card-body">
 									<div class="row">
@@ -44,7 +44,7 @@
 						</div>
 						<div class="col-xl-3">
 							<!--begin::Stats Widget 30-->
-							<div class="card card-custom bg-info card-stretch gutter-b">
+							<div class="card card-custom bg-info card-stretch gutter-b" >
 								<!--begin::Body-->
 								<div class="card-body">
 									<div class="row">

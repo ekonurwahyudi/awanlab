@@ -209,7 +209,7 @@
 														</tr>
 													</thead>
 													<tbody>
-                                                    @if ($count >= 1)
+                                                    @if ($count > 1)
                                                     <tr>
 															<td width="300px">
                                                                 @foreach ($users as $user)
