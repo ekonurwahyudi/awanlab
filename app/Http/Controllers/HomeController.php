@@ -43,12 +43,14 @@ class HomeController extends Controller
         $orders = Order::all();
         
         $labjakarta = Orderkalibrasi::where('order_lokasilab', "Lab Jakarta")->get();
-        $on_labjakarta = Orderkalibrasi::where('order_lokasilab',"Lab Jakarta")->whereNotIn('order_status',["selesai"])->orWhereNull('order_status')->get();
-        
+        $on_labjakarta = Orderkalibrasi::where('order_lokasilab',"Lab Jakarta")->whereNotIn('order_status',["selesai"])->get();
         $labsurabaya = Orderkalibrasi::where('order_lokasilab', "Lab Surabaya")->get();
+        $on_labsurabaya = Orderkalibrasi::where('order_lokasilab', "Lab Surabaya")->whereNotIn('order_status',["selesai"])->get();
         $labmedan = Orderkalibrasi::where('order_lokasilab', "Lab Medan")->get();
+        $on_labmedan = Orderkalibrasi::where('order_lokasilab', "Lab Medan")->whereNotIn('order_status',["selesai"])->get();
         $labmakassar = Orderkalibrasi::where('order_lokasilab', "Lab Makassar")->get();
-        return view('awanlab/index')->with(compact(array( 'orders', 'labjakarta','on_labjakarta','labsurabaya','labmedan','labmakassar' )));
+        $on_labmakassar = Orderkalibrasi::where('order_lokasilab', "Lab Makassar")->whereNotIn('order_status',["selesai"])->get();
+        return view('awanlab/index')->with(compact(array( 'orders', 'labjakarta','on_labjakarta','labsurabaya','on_labsurabaya','labmedan','on_labmedan','labmakassar','on_labmakassar' )));
     }
 
     public function web(){

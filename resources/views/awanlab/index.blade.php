@@ -62,8 +62,12 @@
 										</span>
 									  </div>
 									  <div class="col-7">
-									 		<span class="font-weight-bold text-white font-size-sm">Total Order</span>
-											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">{{count($labsurabaya) != "selesai"}}/{{count($labsurabaya)}}</span>
+									  		<span class="font-weight-bold text-white font-size-sm">Total Order</span>
+											@if(count($on_labsurabaya) < 1)
+											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">0/{{count($labsurabaya)}}</span>
+											@else
+											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">{{count($on_labsurabaya)}}/{{count($labsurabaya)}}</span>
+											@endif
 											<span class="font-weight-bold text-white font-size-sm">Lab Surabaya</span>
 									  </div>
 									</div>
@@ -93,7 +97,11 @@
 									  </div>
 									  <div class="col-7">
 									 		<span class="font-weight-bold text-white font-size-sm">Total Order</span>
-											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">{{count($labmedan) != "selesai"}}/{{count($labmedan)}}</span>
+											@if(count($on_labmedan) < 1)
+											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">0/{{count($labmedan)}}</span>
+											@else
+											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">{{count($on_labmedan)}}/{{count($labmedan)}}</span>
+											@endif
 											<span class="font-weight-bold text-white font-size-sm">Lab Medan</span>
 									  </div>
 									</div>
@@ -123,7 +131,11 @@
 									  </div>
 									  <div class="col-7">
 									 		<span class="font-weight-bold text-white font-size-sm">Total Order</span>
-											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">{{count($labmakassar)}}/{{count($labmakassar)}}</span>
+											@if(count($on_labmakassar) < 1)
+											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">0/{{count($labmakassar)}}</span>
+											@else
+											<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 text-hover-primary d-block">{{count($on_labmakassar)}}/{{count($labmakassar)}}</span>
+											@endif
 											<span class="font-weight-bold text-white font-size-sm">Lab Makassar</span>
 									  </div>
 									</div>
@@ -194,7 +206,11 @@
 													@endif
 												</td>
 												<td width="130px">{{$order->order_ccl}}</td>
-												<td width="130px"><span class="label label-light-danger label-inline font-weight-normal mr-2">{{$order->order_status}}</span></td>
+												@if($order->order_status == "orderan baru")
+												<td width="130px"><span class="label label-success label-inline font-weight-normal mr-2">{{$order->order_status}}</span></td>
+												@else
+												<td width="130px"><span class="label label-danger label-inline font-weight-normal mr-2">{{$order->order_status}}</span></td>
+												@endif
 												<td >{{$order->created_at}}</td>
 												<td><button class="btn btn-outline-warning btn-sm edit"
 												data-perusahaan="{{$order->user->nama_perusahaan}}"
