@@ -112,6 +112,100 @@
 										<span class="menu-text">Dashboard</span>
 									</a>
 								</li>
+								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+									<a href="javascript:;" class="menu-link menu-toggle">
+										<span class="svg-icon menu-icon">
+											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+													<rect x="0" y="0" width="24" height="24"/>
+													<path d="M7,15 C7.55228475,15 8,15.4477153 8,16 C8,16.5522847 7.55228475,17 7,17 L6,17 C4.34314575,17 3,15.6568542 3,14 L3,7 C3,5.34314575 4.34314575,4 6,4 L18,4 C19.6568542,4 21,5.34314575 21,7 L21,14 C21,15.6568542 19.6568542,17 18,17 L17,17 C16.4477153,17 16,16.5522847 16,16 C16,15.4477153 16.4477153,15 17,15 L18,15 C18.5522847,15 19,14.5522847 19,14 L19,7 C19,6.44771525 18.5522847,6 18,6 L6,6 C5.44771525,6 5,6.44771525 5,7 L5,14 C5,14.5522847 5.44771525,15 6,15 L7,15 Z" fill="#000000" fill-rule="nonzero"/>
+													<polygon fill="#000000" opacity="0.3" points="8 20 16 20 12 15"/>
+												</g>
+											</svg>
+											<!--end::Svg Icon-->
+										</span>
+										<span class="menu-text">Monitoring Order</span>
+										<i class="menu-arrow"></i>
+									</a>
+									<div class="menu-submenu">
+										<i class="menu-arrow"></i>
+										<ul class="menu-subnav">
+											<li class="menu-item menu-item-parent" aria-haspopup="true">
+												<span class="menu-link">
+													<span class="menu-text">Monitoring order</span>
+												</span>
+											</li>
+											<div class="menu-item menu-item-submenu">
+												<i class="menu-arrow"></i>
+												<ul class="menu-subnav">
+													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+														<a href="/monitoring-jakarta" class="menu-link">
+															<span class="svg-icon menu-icon">
+																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																	<g stroke="none" stroke-width="1">
+																		<rect x="14" y="9" width="6" height="6" rx="3" fill="black"/>
+																		<rect x="3" y="9" width="6" height="6" rx="3" fill="black" fill-opacity="0.7"/>
+																	</g>
+																</svg>
+																<!--end::Svg Icon-->
+															</span>
+															<span class="menu-text">Lab Jakarta</span>
+														</a>
+													</li>
+													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+														<a href="../pengaturan/ruanglingkup" class="menu-link">
+															<span class="svg-icon menu-icon">
+																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																	<g stroke="none" stroke-width="1">
+																		<rect x="14" y="9" width="6" height="6" rx="3" fill="black"/>
+																		<rect x="3" y="9" width="6" height="6" rx="3" fill="black" fill-opacity="0.7"/>
+																	</g>
+																</svg>
+																<!--end::Svg Icon-->
+															</span>
+															<span class="menu-text">Lab Surabaya</span>
+														</a>
+													</li>
+													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+														<a href="../pengaturan/ruanglingkup" class="menu-link">
+															<span class="svg-icon menu-icon">
+																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																	<g stroke="none" stroke-width="1">
+																		<rect x="14" y="9" width="6" height="6" rx="3" fill="black"/>
+																		<rect x="3" y="9" width="6" height="6" rx="3" fill="black" fill-opacity="0.7"/>
+																	</g>
+																</svg>
+																<!--end::Svg Icon-->
+															</span>
+															<span class="menu-text">Lab Medan</span>
+														</a>
+													</li>
+													<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+														<a href="../pengaturan/ruanglingkup" class="menu-link">
+															<span class="svg-icon menu-icon">
+																<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																	<g stroke="none" stroke-width="1">
+																		<rect x="14" y="9" width="6" height="6" rx="3" fill="black"/>
+																		<rect x="3" y="9" width="6" height="6" rx="3" fill="black" fill-opacity="0.7"/>
+																	</g>
+																</svg>
+																<!--end::Svg Icon-->
+															</span>
+															<span class="menu-text">Lab Makassar</span>
+														</a>
+													</li>
+													
+												</ul>
+											</div>
+										</ul>
+									</div>
+								</li>
+
 								<li class="menu-section">
 									<h4 class="menu-text">Pengaturan Web</h4>
 									<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
@@ -452,7 +546,7 @@
 		<script src="../halamanadmin/plugins/custom/datatables/datatables.bundle.js"></script>
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-        <script src="https://udahkadoinaja.com/mimin/assets/js/data-table.js"></script>
+        <script src="../halamanuser/js/data-table.js"></script>
 		<!-- <script src="halamanadmin/js/pages/widgets.js"></script> -->
 	</body>
 </html>

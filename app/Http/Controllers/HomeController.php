@@ -41,7 +41,6 @@ class HomeController extends Controller
 
     public function awanlab(){
         $orders = Order::all();
-        
         $labjakarta = Orderkalibrasi::where('order_lokasilab', "Lab Jakarta")->get();
         $on_labjakarta = Orderkalibrasi::where('order_lokasilab',"Lab Jakarta")->whereNotIn('order_status',["selesai"])->get();
         $labsurabaya = Orderkalibrasi::where('order_lokasilab', "Lab Surabaya")->get();
@@ -90,5 +89,9 @@ class HomeController extends Controller
 
     public function feedback(){
         return view('/dashboarduser/feedback');
+    }
+    public function monitoring(){
+        $orders = Order::all();
+        return view('/awanlab/monitoringorder/labjakarta',compact('orders'));
     }
 }
